@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="description" content="version 1.0.1">
+        <meta name="author" content="Michael Ruane">     
+        <title>Regional Traffic Counts</title>
+        <link href="lib/locals/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="lib/locals/leaflet.css" rel="stylesheet" type="text/css">
+        <!--<link href="lib/assets/typeahead.min.css" rel="stylesheet" type="text/css">-->
+        <link rel="stylesheet" href="lib/core/dyna.css"><!--declare stylesheet for desire icon font set  -->
+        <link rel="stylesheet" href="lib/core/core.css">
+        <link rel="stylesheet" href="lib/style.css" />
+        <style>
+
+
+        #loading {
+                position: absolute;
+                width: 220px;
+                height: 19px;
+                top: 50%;
+                left: 50%;
+                margin: -10px 0 0 -110px;
+                z-index: 1028;
+            }
+        .omodal{
+            position: absolute;
+            width: 220px;
+            height: 19px;
+            top: 50%;
+            left: 50%;
+            margin: -10px 0 0 -110px;
+            z-index: 1028;
+            display: none;
+            overflow: hidden;
+            outline: 0px none;
+        }
+        .navbar-brand h3{
+            margin:15px;
+        }
+        
+
+
+        @media screen and (min-width: 768px) {
+                .modal-dialog {
+                    width:730px!important;
+                }
+            }
+            @media (max-width: 1360px){
+                .search-container{
+                    width:250px!important;
+                }
+            }
+            @media (max-width: 1270px) {
+                .navbar .navbar-brand {
+                    font-size: 18px;
+                    float: left;
+                }
+                .leaflet-control-attribution {
+                    display: none;
+                }
+                
+            }
+            @media (max-width: 1200px) {
+               .search-container {
+                    width: 200px!important;
+                }
+            }
+            @media (max-width: 960px) {
+               .search-container {
+                    display :none!important;
+                }
+
+            }
+            @media (max-width: 768px){
+                .search-container {
+                    display: table!important;
+                    width: 100%!important;
+                }
+                .logo-container{
+                    padding:0px;
+                }
+                .navbar-nav .open .dropdown-menu{
+                    background-color:#fff;
+                }
+                #infobox_ {
+                    right:10px;
+                }
+            }
+            @media (max-width: 376px){
+                .infowrap{
+                    padding:20px;
+                    height:auto;
+                }
+                #infobox_ {
+                    display:none;
+                }
+            }
+            /* Print Handling */
+            @media print {
+                .navbar, .toggle, #sidebar {
+                    display: none !important;
+                }
+            }
+        </style> 
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div id="TC_header" class="navbar navbar-inverse navbar-top oheader">
+        <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            <div class="navbar-brand">
+                <h3>Traffic Count Test Build</h3>
+            </div>
+        </div>
+        <div id="navbar-links" class="navbar-collapse collapse">
+            <ul id="landing" class="nav navbar-nav navbar-right">
+                <li><a href="#home" class="toggleLanding" data-tab="home" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;Home</a></li>
+                <li class="dropdown">
+                        <a id="AboutDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-question-sign"></i>&nbsp;&nbsp;Dropdown <b class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#page1" class="landingLink" data-tab="PhillyFreightFinder" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;Page 1</a></li>
+                                <li><a href="#page2" class="landingLink" data-tab="data" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;Page 2</a></li>
+                            </ul>
+                </li>
+            </ul>
+           
+        </div><!--/.navbar-collapse -->
+    </div>
+        
+    <!--Map and Sidebar-->
+       <div class="row ocontent" id="container">
+            
+            <!---Map Pane -->
+            <div id="landing_map" class="col-sm-12 col-lg-12">
+
+                <div id="landingSearch" class="col-lg-8 center-block" style="float:none;">
+                    <div class="row">
+                        <form class="">
+                            <div class="form-group">
+                                <div class="col-lg-9">
+                                    <label class="sr-only" for="userLocation">Amount (in dollars)</label>
+                                    
+                                      <input type="text" class="form-control input-lg" id="userQuery" placeholder="City, State or Zip">  
+                                </div>
+                                <div class="col-lg-3">
+                                  <div id="homeLocSearch" class="col-lg-12 btn btn-primary btn-lg">Search</div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3"><button class="col-lg-12 btn btn-primary btn-lg">Draw your own<br/>Area of Interest</button></div>
+                        <div class="col-lg-3"><button class="col-lg-12 btn btn-primary btn-lg">Access counts</br>as Service</button></div>
+                        <div class="col-lg-3"><button class="col-lg-12 btn btn-primary btn-lg">Search counts <br/>by record number</button></div>
+                    </div>
+                </div>
+                <ul id="results"><ul>
+            </div>
+            <div class="col-sm-6 col-lg-6 off-right" id="sidebarMirror"></div>
+            
+            <!--sidebar -->
+            
+                <!--Siderbar Close-->
+            </div>
+        </div><!--end Map and Sidebar-->
+        <div class="row dataEnvironment" id="appContainer">
+            <div id="map" class="col-sm-6 col-lg-6">
+                <div id="mapDIV" class="col-sm-12 col-lg-12" style="opacity:0.0;"></div>
+            </div>
+            <div class="col-sm-6 col-lg-6 off-right" id="sidebar">
+                
+                <div class="tab-content" >
+                        <!--ADD LAYER CONTROL GROUPS HERE -->
+                        <!---Layer Group 2-->
+                        <div class="collapse" id="filter">
+                            <div class="well"><p>Filter criteria to fill this content area</p></div>
+                        </div>
+
+                       <div class="panel-group legend">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <!--<a href="modal_2.html" data-toggle="modal" data-target="#modal_2" ><div class="panelinfo group2_panel"> </div></a>-->
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_" href="#filter">
+                                        <div class="panellink filter_panel">
+                                            <span>Show Filter</span>
+                                        </div>
+                                    </a>
+                                </div> 
+                            </div>
+                        </div>
+                </div>
+
+        </div>
+        <!--Footer container-->
+            <!--no footer included-->
+
+      
+                
+        <script type="text/javascript" src="lib/locals/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="lib/locals/leaflet.js"></script>
+        <script type="text/javascript" src="lib/locals/bootstrap.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/leaflet.esri/1.0.0-rc.7/esri-leaflet.js"></script>
+        <script type="text/javascript" src="lib/core/dyna-icons.js"></script>
+        <script type="text/javascript" src="lib/typeahead.bundle.js"></script>
+        <script type="text/javascript" src="lib/map.js"></script><!--customized mapping functions to load data -->
+        <script type="text/javascript" src="lib/assets/numeral.min.js"></script>       
+        
+    </body>
+</html>
