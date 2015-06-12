@@ -160,6 +160,7 @@
   position:absolute;
   top: 60px; 
   bottom: 0px; 
+  margin:0px;
 }
 #map{
   height:100%;
@@ -167,6 +168,40 @@
 }
 #sidebarMirror{
   background-color: #efefef;
+}
+#filterWrapper{
+
+  padding:15px;
+  background-color:#efefef;
+}
+#filter{z-index:100;}
+
+
+/*slider styles */
+#sliderWrap{
+  min-height: 80px;
+}
+.sliders{  
+  margin: 15px 20px 0px;
+}
+.years{
+  font-weight: bold;
+}
+.noUi-connect {
+  background: #5876A2;
+}
+.noUi-marker-horizontal.noUi-marker-sub {
+  height: 5px;
+}
+.noUi-marker-horizontal.noUi-marker-large {
+  height: 8px;
+}
+.noUi-value-horizontal {
+  margin-left: -20px;
+  padding-top: 10px;
+}
+.noUi-value-horizontal.noUi-value-sub {
+  padding-top: 10px;
 }
 
 #filter .well{
@@ -177,6 +212,22 @@
 /*--------------------------------------------------------*/
 #sidebar {
     padding:0px;
+    z-index:1;
+}
+#sidebar-nav{
+  padding:10px;
+  border-bottom:1px #ddd solid;
+}
+#results-panel{
+  width:100%;
+  z-index:-1;
+  position:absolute;
+  top:51px;
+  bottom:0;
+  margin-top:-1px;
+  border-top:1px #ddd solid;
+  padding: 10px;
+  background-color:#fff;
 }
 #sidebar .panel{
   border:0px;
