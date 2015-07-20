@@ -88,3 +88,8 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
 #mapDIV{
     transtion: all 8.5s linear;
 }
+
+.progress{
+    width:80%;
+    margin:auto;
+}
