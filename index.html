@@ -127,19 +127,12 @@
                     <span class="icon-bar"></span>
                 </button>
             <div class="navbar-brand">
-                <h3>Traffic Count Test Build</h3>
+                <h3>Traffic Count Concept</h3>
             </div>
         </div>
         <div id="navbar-links" class="navbar-collapse collapse">
             <ul id="landing" class="nav navbar-nav navbar-right">
-                <li><a href="#home" class="toggleLanding" data-tab="home" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;Home</a></li>
-                <li class="dropdown">
-                        <a id="AboutDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-question-sign"></i>&nbsp;&nbsp;Dropdown <b class="caret"></b></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#page1" class="landingLink" data-tab="PhillyFreightFinder" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;Page 1</a></li>
-                                <li><a href="#page2" class="landingLink" data-tab="data" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;&nbsp;Page 2</a></li>
-                            </ul>
-                </li>
+                <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;About</a></li>
             </ul>
            
         </div><!--/.navbar-collapse -->
@@ -168,7 +161,7 @@
                         </form>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3"><button class="col-lg-12 btn btn-primary btn-lg">Draw your own<br/>Area of Interest</button></div>
+                        <div class="col-lg-3"><button id="aoiSearch" class="col-lg-12 btn btn-primary btn-lg">Draw your own<br/>Area of Interest</button></div>
                         <div class="col-lg-3"><button class="col-lg-12 btn btn-primary btn-lg">Access counts</br>as Service</button></div>
                         <div class="col-lg-3"><button class="col-lg-12 btn btn-primary btn-lg">Search counts <br/>by record number</button></div>
                     </div>
@@ -201,9 +194,9 @@
                 
                 <div class="tab-content" >
                         <div id="sidebar-nav">
-                            <button id="filterBtn" class="btn btn-primary accordion-toggle btn-sm" data-toggle="collapse" href="#filter">Filters</button>
+                            <button id="filterBtn" class="btn btn-primary accordion-toggle btn-sm" data-toggle="collapse" href="#filter"><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;<span id="preFilter">Show</span> Filters</button>
                         </div>
-                        <div class="collapse in" id="filter">
+                        <div class="collapse" id="filter">
                             <div id="filterWrapper">
                                 <h5></h5>
                                 <h5>Specify years of interest: <span id="yearMin"class="years"></span> - <span id="yearMax"class="years"></span></h5>

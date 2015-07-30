@@ -60,36 +60,3 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
     float: right;
 }
 
-
-#landing_map{
-    z-index:20;
-    background-color:#5876A2;
-    height:100%;
-    position:relative;
-    transition: all 0.8s linear;
-    padding:0px!important;
-}
-#landingSearch{
-    padding-top:40px;
-    transition: all 0.3s linear;
-}
-#landingSearch .row{
-    margin-bottom:15px;
-}
-.oheader{
-    height:40%;
-    margin-bottom:0px;
-    z-index:25;
-    transition: all 0.8s linear;
-}
-.ocontent{
-    padding-bottom:0!important;
-}
-#mapDIV{
-    transtion: all 8.5s linear;
-}
-
-.progress{
-    width:80%;
-    margin:auto;
-}
