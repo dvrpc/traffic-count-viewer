@@ -22,7 +22,13 @@ label {
 a:focus {
 outline:none;
 }
-
+.pagination>li>a, .pagination>li>span{
+    font-size:13px;
+    padding: 4px 8px;
+}
+#table{
+    font-size:12px;
+}
 
 /*--------------------------------------------------------*/
 /*--------  UI Element Color Styles  ---------------------*/

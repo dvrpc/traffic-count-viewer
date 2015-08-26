@@ -231,6 +231,7 @@
   border-left:1px #ddd solid;
   padding: 10px;
   background-color:#fff;
+  overflow: hidden;
 }
 #sidebar .panel{
   border:0px;
