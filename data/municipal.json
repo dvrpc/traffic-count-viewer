@@ -1,0 +1,2489 @@
+{
+ "objectIdFieldName": "OBJECTID",
+ "globalIdFieldName": "",
+ "fields": [
+  {
+   "name": "OBJECTID",
+   "alias": "OBJECTID",
+   "type": "esriFieldTypeOID"
+  },
+  {
+   "name": "MUN_NAME",
+   "alias": "MUN_NAME",
+   "type": "esriFieldTypeString",
+   "length": 40
+  },
+  {
+   "name": "STATE",
+   "alias": "STATE",
+   "type": "esriFieldTypeString",
+   "length": 2
+  }
+ ],
+ "features": [
+  {
+   "attributes": {
+    "OBJECTID": 1,
+    "MUN_NAME": "Mantua Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2,
+    "MUN_NAME": "Pine Valley Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3,
+    "MUN_NAME": "Waterford Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 5,
+    "MUN_NAME": "Winslow Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1329,
+    "MUN_NAME": "West Norriton Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1330,
+    "MUN_NAME": "Cheltenham Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1331,
+    "MUN_NAME": "Upper Dublin Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1332,
+    "MUN_NAME": "East Norriton Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1333,
+    "MUN_NAME": "Whitpain Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1334,
+    "MUN_NAME": "Schwenksville Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1335,
+    "MUN_NAME": "Green Lane Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1336,
+    "MUN_NAME": "Souderton Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1337,
+    "MUN_NAME": "Upper Frederick Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1338,
+    "MUN_NAME": "Upper Salford Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1339,
+    "MUN_NAME": "Worcester Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1340,
+    "MUN_NAME": "Collegeville Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1170,
+    "MUN_NAME": "Washington Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1171,
+    "MUN_NAME": "Harrison Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1172,
+    "MUN_NAME": "Swedesboro Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1173,
+    "MUN_NAME": "Pitman Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1174,
+    "MUN_NAME": "Chesilhurst Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1175,
+    "MUN_NAME": "Glassboro Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2360,
+    "MUN_NAME": "Burlington Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1290,
+    "MUN_NAME": "Newfield Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1341,
+    "MUN_NAME": "Trappe Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1342,
+    "MUN_NAME": "Lower Gwynedd Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1343,
+    "MUN_NAME": "North Wales Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1344,
+    "MUN_NAME": "Lansdale Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1345,
+    "MUN_NAME": "Skippack Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1346,
+    "MUN_NAME": "Hatfield Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1347,
+    "MUN_NAME": "New Hanover Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1348,
+    "MUN_NAME": "Lower Frederick Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1349,
+    "MUN_NAME": "Lower Salford Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1554,
+    "MUN_NAME": "Hopewell Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1140,
+    "MUN_NAME": "Bass River Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1184,
+    "MUN_NAME": "South Harrison Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1191,
+    "MUN_NAME": "Elk Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1192,
+    "MUN_NAME": "Clayton Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1193,
+    "MUN_NAME": "Franklin Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1314,
+    "MUN_NAME": "Monroe Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1354,
+    "MUN_NAME": "Franconia Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1355,
+    "MUN_NAME": "Horsham Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1356,
+    "MUN_NAME": "Montgomery Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1359,
+    "MUN_NAME": "Perkiomen Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1360,
+    "MUN_NAME": "Towamencin Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1361,
+    "MUN_NAME": "Upper Gwynedd Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1362,
+    "MUN_NAME": "Hatfield Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1364,
+    "MUN_NAME": "Bordentown Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1365,
+    "MUN_NAME": "Chesterfield Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1315,
+    "MUN_NAME": "Brooklawn Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1316,
+    "MUN_NAME": "Maple Shade Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1317,
+    "MUN_NAME": "Evesham Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1318,
+    "MUN_NAME": "Palmyra Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1319,
+    "MUN_NAME": "Rockledge Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1320,
+    "MUN_NAME": "Conshohocken Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1321,
+    "MUN_NAME": "Abington Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1322,
+    "MUN_NAME": "Springfield Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1323,
+    "MUN_NAME": "Whitemarsh Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1324,
+    "MUN_NAME": "Plymouth Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1325,
+    "MUN_NAME": "Norristown Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1326,
+    "MUN_NAME": "Ambler Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1327,
+    "MUN_NAME": "Bridgeport Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1328,
+    "MUN_NAME": "Jenkintown Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1369,
+    "MUN_NAME": "North Hanover Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1370,
+    "MUN_NAME": "Hamilton Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1371,
+    "MUN_NAME": "Cherry Hill Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1373,
+    "MUN_NAME": "Shamong Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2396,
+    "MUN_NAME": "Delran Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2397,
+    "MUN_NAME": "Cinnaminson Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2398,
+    "MUN_NAME": "Eastampton Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2399,
+    "MUN_NAME": "Riverton Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2400,
+    "MUN_NAME": "Philadelphia City",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2401,
+    "MUN_NAME": "Moorestown Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2402,
+    "MUN_NAME": "Mount Holly Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2403,
+    "MUN_NAME": "Mount Laurel Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2404,
+    "MUN_NAME": "Hainesport Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2405,
+    "MUN_NAME": "Pennsauken Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2449,
+    "MUN_NAME": "Millbourne Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2450,
+    "MUN_NAME": "Upper Merion Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2451,
+    "MUN_NAME": "Narberth Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2452,
+    "MUN_NAME": "Tavistock Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2453,
+    "MUN_NAME": "Lawnside Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2454,
+    "MUN_NAME": "Bellmawr Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2455,
+    "MUN_NAME": "Voorhees Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2456,
+    "MUN_NAME": "Medford Lakes Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2457,
+    "MUN_NAME": "Deptford Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2406,
+    "MUN_NAME": "West Conshohocken Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2407,
+    "MUN_NAME": "Lower Merion Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2408,
+    "MUN_NAME": "Lumberton Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2409,
+    "MUN_NAME": "Southampton Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2410,
+    "MUN_NAME": "Pemberton Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2411,
+    "MUN_NAME": "Camden City",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2412,
+    "MUN_NAME": "Merchantville Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2458,
+    "MUN_NAME": "Magnolia Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2459,
+    "MUN_NAME": "Runnemede Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2460,
+    "MUN_NAME": "Somerdale Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2026,
+    "MUN_NAME": "Hightstown Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2440,
+    "MUN_NAME": "Barrington Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2441,
+    "MUN_NAME": "Westville Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2442,
+    "MUN_NAME": "Tabernacle Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2469,
+    "MUN_NAME": "Woodbury City",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2470,
+    "MUN_NAME": "Gloucester Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2471,
+    "MUN_NAME": "Greenwich Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2472,
+    "MUN_NAME": "Malvern Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2473,
+    "MUN_NAME": "Nether Providence Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2474,
+    "MUN_NAME": "Radnor Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2475,
+    "MUN_NAME": "Ridley Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2361,
+    "MUN_NAME": "Burlington City",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2362,
+    "MUN_NAME": "Langhorne Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2363,
+    "MUN_NAME": "Bristol Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2364,
+    "MUN_NAME": "Hulmeville Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2365,
+    "MUN_NAME": "Bristol Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2443,
+    "MUN_NAME": "National Park Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2444,
+    "MUN_NAME": "Yeadon Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2445,
+    "MUN_NAME": "Colwyn Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2446,
+    "MUN_NAME": "Darby Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2447,
+    "MUN_NAME": "East Lansdowne Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2448,
+    "MUN_NAME": "Lansdowne Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2476,
+    "MUN_NAME": "Haverford Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2477,
+    "MUN_NAME": "Rutledge Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2084,
+    "MUN_NAME": "Robbinsville Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2085,
+    "MUN_NAME": "Trenton City",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2086,
+    "MUN_NAME": "Morrisville Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2087,
+    "MUN_NAME": "Lower Makefield Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2366,
+    "MUN_NAME": "Middletown Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2367,
+    "MUN_NAME": "Springfield Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2368,
+    "MUN_NAME": "Edgewater Park Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2369,
+    "MUN_NAME": "Beverly City",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2370,
+    "MUN_NAME": "Langhorne Manor Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2371,
+    "MUN_NAME": "Bensalem Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2461,
+    "MUN_NAME": "Paulsboro Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2462,
+    "MUN_NAME": "Aldan Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2463,
+    "MUN_NAME": "Sharon Hill Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2464,
+    "MUN_NAME": "Clifton Heights Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2465,
+    "MUN_NAME": "Collingdale Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2466,
+    "MUN_NAME": "Folcroft Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2467,
+    "MUN_NAME": "Tinicum Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2431,
+    "MUN_NAME": "Woodlynne Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2432,
+    "MUN_NAME": "Haddonfield Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2433,
+    "MUN_NAME": "Oaklyn Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2434,
+    "MUN_NAME": "Gloucester City",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2435,
+    "MUN_NAME": "Audubon Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2436,
+    "MUN_NAME": "Audubon Park Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2437,
+    "MUN_NAME": "Haddon Heights Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2372,
+    "MUN_NAME": "Penndel Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2373,
+    "MUN_NAME": "Northampton Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2374,
+    "MUN_NAME": "Delanco Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2375,
+    "MUN_NAME": "Hatboro Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2376,
+    "MUN_NAME": "Upper Moreland Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2377,
+    "MUN_NAME": "Lower Moreland Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2468,
+    "MUN_NAME": "Darby Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2438,
+    "MUN_NAME": "Mount Ephraim Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2439,
+    "MUN_NAME": "West Deptford Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2002,
+    "MUN_NAME": "Lawrence Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2003,
+    "MUN_NAME": "West Windsor Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2004,
+    "MUN_NAME": "Pennington Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2005,
+    "MUN_NAME": "Ewing Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 1924,
+    "MUN_NAME": "Princeton",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2006,
+    "MUN_NAME": "Upper Makefield Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2007,
+    "MUN_NAME": "Yardley Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2008,
+    "MUN_NAME": "Newtown Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2378,
+    "MUN_NAME": "Bryn Athyn Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2379,
+    "MUN_NAME": "Lower Southampton Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2380,
+    "MUN_NAME": "Upper Southampton Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2381,
+    "MUN_NAME": "Warminster Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2382,
+    "MUN_NAME": "Warrington Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2383,
+    "MUN_NAME": "Ivyland Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2413,
+    "MUN_NAME": "Collingswood Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2418,
+    "MUN_NAME": "Woodland Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2384,
+    "MUN_NAME": "Willingboro Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2387,
+    "MUN_NAME": "New Hanover Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2394,
+    "MUN_NAME": "Riverside Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2395,
+    "MUN_NAME": "Westampton Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2009,
+    "MUN_NAME": "Newtown Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2664,
+    "MUN_NAME": "West Marlborough Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2668,
+    "MUN_NAME": "West Nantmeal Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2669,
+    "MUN_NAME": "West Nottingham Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2709,
+    "MUN_NAME": "Chester City",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2748,
+    "MUN_NAME": "Kennett Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2751,
+    "MUN_NAME": "Honey Brook Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2754,
+    "MUN_NAME": "London Grove Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3182,
+    "MUN_NAME": "Perkasie Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3183,
+    "MUN_NAME": "Plumstead Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3184,
+    "MUN_NAME": "Solebury Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2489,
+    "MUN_NAME": "Phoenixville Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2490,
+    "MUN_NAME": "Tredyffrin Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2527,
+    "MUN_NAME": "Gibbsboro Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3185,
+    "MUN_NAME": "West Rockhill Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3187,
+    "MUN_NAME": "Upper Hanover Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3188,
+    "MUN_NAME": "Doylestown Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2621,
+    "MUN_NAME": "Franklin Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2624,
+    "MUN_NAME": "Highland Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2491,
+    "MUN_NAME": "Edgmont Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2492,
+    "MUN_NAME": "Glenolden Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2493,
+    "MUN_NAME": "East Pikeland Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2494,
+    "MUN_NAME": "East Whiteland Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2495,
+    "MUN_NAME": "Upper Providence Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2670,
+    "MUN_NAME": "West Pikeland Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2672,
+    "MUN_NAME": "West Sadsbury Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2714,
+    "MUN_NAME": "Sadsbury Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2575,
+    "MUN_NAME": "Elverson Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2576,
+    "MUN_NAME": "Honey Brook Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2577,
+    "MUN_NAME": "Lower Chichester Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2578,
+    "MUN_NAME": "Caln Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2579,
+    "MUN_NAME": "Thornbury Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2580,
+    "MUN_NAME": "Upper Chichester Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2586,
+    "MUN_NAME": "Upland Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2628,
+    "MUN_NAME": "Coatesville City",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2631,
+    "MUN_NAME": "East Nottingham Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2634,
+    "MUN_NAME": "East Marlborough Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2676,
+    "MUN_NAME": "West Goshen Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2679,
+    "MUN_NAME": "Atglen Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2680,
+    "MUN_NAME": "West Chester Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2758,
+    "MUN_NAME": "Pennsbury Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2762,
+    "MUN_NAME": "Valley Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3042,
+    "MUN_NAME": "Hi-Nella Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3043,
+    "MUN_NAME": "Stratford Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3044,
+    "MUN_NAME": "Lindenwold Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3171,
+    "MUN_NAME": "Dublin Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3172,
+    "MUN_NAME": "New Hope Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3173,
+    "MUN_NAME": "Trumbauersville Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3045,
+    "MUN_NAME": "Laurel Springs Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3046,
+    "MUN_NAME": "Woodbury Heights Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3047,
+    "MUN_NAME": "East Greenwich Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3048,
+    "MUN_NAME": "Berlin Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3049,
+    "MUN_NAME": "Clementon Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3050,
+    "MUN_NAME": "Berlin Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2496,
+    "MUN_NAME": "Newtown Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2497,
+    "MUN_NAME": "Charlestown Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2498,
+    "MUN_NAME": "Easttown Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3174,
+    "MUN_NAME": "Telford Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3175,
+    "MUN_NAME": "Buckingham Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3177,
+    "MUN_NAME": "East Rockhill Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3178,
+    "MUN_NAME": "New Britain Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3179,
+    "MUN_NAME": "Richlandtown Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3180,
+    "MUN_NAME": "Sellersville Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3181,
+    "MUN_NAME": "Silverdale Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2635,
+    "MUN_NAME": "London Britain Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2637,
+    "MUN_NAME": "West Vincent Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2638,
+    "MUN_NAME": "West Whiteland Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2639,
+    "MUN_NAME": "East Fallowfield Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2640,
+    "MUN_NAME": "East Goshen Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2499,
+    "MUN_NAME": "Springfield Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2500,
+    "MUN_NAME": "Upper Darby Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2501,
+    "MUN_NAME": "Schuylkill Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2502,
+    "MUN_NAME": "Royersford Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2682,
+    "MUN_NAME": "West Caln Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2683,
+    "MUN_NAME": "Avondale Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2684,
+    "MUN_NAME": "Thornbury Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2685,
+    "MUN_NAME": "Oxford Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2686,
+    "MUN_NAME": "Parkesburg Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2590,
+    "MUN_NAME": "Chester Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2591,
+    "MUN_NAME": "Brookhaven Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2592,
+    "MUN_NAME": "Parkside Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2593,
+    "MUN_NAME": "Wallace Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2596,
+    "MUN_NAME": "Chester Heights Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2597,
+    "MUN_NAME": "Chadds Ford Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2598,
+    "MUN_NAME": "Trainer Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2648,
+    "MUN_NAME": "Concord Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2687,
+    "MUN_NAME": "West Brandywine Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2688,
+    "MUN_NAME": "Downingtown Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2689,
+    "MUN_NAME": "Upper Oxford Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2690,
+    "MUN_NAME": "Newlin Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2729,
+    "MUN_NAME": "Uwchlan Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2730,
+    "MUN_NAME": "Westtown Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3051,
+    "MUN_NAME": "Pine Hill Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3052,
+    "MUN_NAME": "Washington Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3053,
+    "MUN_NAME": "Wenonah Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3189,
+    "MUN_NAME": "Richland Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3190,
+    "MUN_NAME": "Hilltown Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3191,
+    "MUN_NAME": "Quakertown Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3192,
+    "MUN_NAME": "Milford Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3161,
+    "MUN_NAME": "Red Hill Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3162,
+    "MUN_NAME": "New Britain Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3163,
+    "MUN_NAME": "Pennsburg Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3164,
+    "MUN_NAME": "Marlborough Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3054,
+    "MUN_NAME": "Bordentown City",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3055,
+    "MUN_NAME": "Fieldsboro Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3056,
+    "MUN_NAME": "Falls Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3057,
+    "MUN_NAME": "Florence Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3058,
+    "MUN_NAME": "Tullytown Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3059,
+    "MUN_NAME": "Mansfield Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2503,
+    "MUN_NAME": "East Coventry Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2504,
+    "MUN_NAME": "East Vincent Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2505,
+    "MUN_NAME": "Lower Pottsgrove Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2506,
+    "MUN_NAME": "Douglass Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2599,
+    "MUN_NAME": "Aston Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3165,
+    "MUN_NAME": "Salford Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3166,
+    "MUN_NAME": "Bedminster Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3167,
+    "MUN_NAME": "Warwick Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3168,
+    "MUN_NAME": "Wrightstown Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3169,
+    "MUN_NAME": "Chalfont Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3170,
+    "MUN_NAME": "Doylestown Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2653,
+    "MUN_NAME": "Bethel Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2507,
+    "MUN_NAME": "Pottstown Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2508,
+    "MUN_NAME": "West Pottsgrove Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2509,
+    "MUN_NAME": "Limerick Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2510,
+    "MUN_NAME": "North Coventry Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2692,
+    "MUN_NAME": "Upper Uwchlan Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2694,
+    "MUN_NAME": "West Grove Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2696,
+    "MUN_NAME": "West Bradford Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2604,
+    "MUN_NAME": "East Nantmeal Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2605,
+    "MUN_NAME": "East Brandywine Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2655,
+    "MUN_NAME": "Pocopson Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2658,
+    "MUN_NAME": "West Fallowfield Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2834,
+    "MUN_NAME": "South Coventry Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2836,
+    "MUN_NAME": "Warwick Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2697,
+    "MUN_NAME": "South Coatesville Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2699,
+    "MUN_NAME": "Londonderry Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2701,
+    "MUN_NAME": "Lower Oxford Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2702,
+    "MUN_NAME": "New London Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2741,
+    "MUN_NAME": "Marcus Hook Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3150,
+    "MUN_NAME": "Woolwich Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2478,
+    "MUN_NAME": "Swarthmore Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2479,
+    "MUN_NAME": "Rose Valley Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2480,
+    "MUN_NAME": "Eddystone Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2516,
+    "MUN_NAME": "Upper Pottsgrove Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2517,
+    "MUN_NAME": "Lower Providence Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3158,
+    "MUN_NAME": "Hopewell Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3159,
+    "MUN_NAME": "East Greenville Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3160,
+    "MUN_NAME": "Telford Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2608,
+    "MUN_NAME": "Penn Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2611,
+    "MUN_NAME": "East Caln Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2614,
+    "MUN_NAME": "Birmingham Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2481,
+    "MUN_NAME": "Norwood Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2482,
+    "MUN_NAME": "Media Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2483,
+    "MUN_NAME": "Marple Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2484,
+    "MUN_NAME": "Morton Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2485,
+    "MUN_NAME": "Prospect Park Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2486,
+    "MUN_NAME": "Ridley Park Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2487,
+    "MUN_NAME": "Willistown Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2488,
+    "MUN_NAME": "Spring City Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2660,
+    "MUN_NAME": "Elk Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2520,
+    "MUN_NAME": "Upper Providence Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2703,
+    "MUN_NAME": "New Garden Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2705,
+    "MUN_NAME": "Middletown Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2570,
+    "MUN_NAME": "Logan Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2571,
+    "MUN_NAME": "Kennett Square Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2574,
+    "MUN_NAME": "Modena Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 2619,
+    "MUN_NAME": "East Bradford Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3240,
+    "MUN_NAME": "Durham Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3244,
+    "MUN_NAME": "Riegelsville Borough",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3245,
+    "MUN_NAME": "Nockamixon Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3246,
+    "MUN_NAME": "Haycock Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3459,
+    "MUN_NAME": "East Windsor Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3257,
+    "MUN_NAME": "Tinicum Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3263,
+    "MUN_NAME": "Springfield Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3265,
+    "MUN_NAME": "Bridgeton Township",
+    "STATE": "PA"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3471,
+    "MUN_NAME": "Wrightstown Borough",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3472,
+    "MUN_NAME": "Pemberton Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3473,
+    "MUN_NAME": "Medford Township",
+    "STATE": "NJ"
+   }
+  },
+  {
+   "attributes": {
+    "OBJECTID": 3474,
+    "MUN_NAME": "Haddon Township",
+    "STATE": "NJ"
+   }
+  }
+ ]
+}

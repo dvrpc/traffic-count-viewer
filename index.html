@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="description" content="version 1.0.1">
+        <meta name="author" content="Michael Ruane">     
+        <title>Regional Traffic Counts</title>
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.datatables.net/1.10.8/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
+
+        <!--<link href="lib/locals/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+        <link href="lib/locals/leaflet.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="lib/core/jquery.nouislider.min.css">
+        <!--<link href="lib/assets/typeahead.min.css" rel="stylesheet" type="text/css">-->
+        <link rel="stylesheet" href="lib/dvrpc.draw.css">
+        <link rel="stylesheet" href="lib/core/dyna.css"><!--declare stylesheet for desire icon font set  -->
+        <link rel="stylesheet" href="lib/core/core.css">
+        
+        <link rel="stylesheet" href="lib/style.css" />
+        <style>
+
+
+        #loading {
+          position: absolute;
+          width: 220px;
+          
+          top: 50%;
+          left: 50%;
+          margin: -40px 0 0 -110px;
+          z-index: 1028;
+          text-align: center;
+            }
+        .omodal{
+            position: absolute;
+            width: 220px;
+            height: 19px;
+            top: 50%;
+            left: 50%;
+            margin: -10px 0 0 -110px;
+            z-index: 1028;
+            display: none;
+            overflow: hidden;
+            outline: 0px none;
+        }
+        .navbar-brand h3{
+            margin:15px;
+        }
+        
+
+
+        @media screen and (min-width: 768px) {
+                .modal-dialog {
+                    width:730px!important;
+                }
+            }
+            @media (max-width: 1360px){
+                .search-container{
+                    width:250px!important;
+                }
+            }
+            @media (max-width: 1270px) {
+                .navbar .navbar-brand {
+                    font-size: 18px;
+                    float: left;
+                }
+                .leaflet-control-attribution {
+                    display: none;
+                }
+                
+            }
+            @media (max-width: 1200px) {
+               .search-container {
+                    width: 200px!important;
+                }
+            }
+            @media (max-width: 960px) {
+               .search-container {
+                    display :none!important;
+                }
+
+            }
+            @media (max-width: 768px){
+                .search-container {
+                    display: table!important;
+                    width: 100%!important;
+                }
+                .logo-container{
+                    padding:0px;
+                }
+                .navbar-nav .open .dropdown-menu{
+                    background-color:#fff;
+                }
+                #infobox_ {
+                    right:10px;
+                }
+            }
+            @media (max-width: 376px){
+                .infowrap{
+                    padding:20px;
+                    height:auto;
+                }
+                #infobox_ {
+                    display:none;
+                }
+            }
+            /* Print Handling */
+            @media print {
+                .navbar, .toggle, #sidebar {
+                    display: none !important;
+                }
+            }
+        </style> 
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div id="TC_header" class="navbar navbar-inverse navbar-top oheader">
+        <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            <div class="navbar-brand">
+                <h3>Traffic Count Concept</h3>
+            </div>
+        </div>
+        <div id="navbar-links" class="navbar-collapse collapse">
+            <ul id="landing" class="nav navbar-nav navbar-right">
+                <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;About</a></li>
+            </ul>
+           
+        </div><!--/.navbar-collapse -->
+    </div>
+        
+    <!--Map and Sidebar-->
+       <div class="row ocontent" id="container">
+            
+            <!---Map Pane -->
+            <div id="landing_map" class="col-sm-12 col-lg-12">
+
+                <div id="landingSearch" class="col-lg-8 center-block" style="float:none;">
+                    <div class="row">
+                        <form class="">
+                            <div class="form-group">
+                                <div class="col-lg-9">
+                                    <label class="sr-only" for="userLocation">Amount (in dollars)</label>
+                                    
+                                      <input type="text" class="form-control input-lg" id="userQuery" placeholder="City, State or Zip">  
+                                </div>
+                                <div class="col-lg-3">
+                                  <div id="homeLocSearch" class="col-lg-12 btn btn-primary btn-lg">Search</div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3"><button id="aoiSearch" class="col-lg-12 btn btn-primary btn-lg">Draw your own<br/>Area of Interest</button></div>
+                        <div class="col-lg-3"><button class="col-lg-12 btn btn-primary btn-lg">Access counts</br>as Service</button></div>
+                        <div class="col-lg-3"><button class="col-lg-12 btn btn-primary btn-lg">Search counts <br/>by record number</button></div>
+                    </div>
+                </div>
+                <ul id="results"><ul>
+            </div>
+            <div class="col-sm-6 col-lg-6 off-right" id="sidebarMirror"></div>
+            
+            <!--sidebar -->
+            
+                <!--Siderbar Close-->
+            </div>
+        </div><!--end Map and Sidebar-->
+        <div class="row dataEnvironment" id="appContainer">
+            <div id="mapDIV" class="col-sm-6 col-lg-6 mapElement" style="opacity:0.0;">
+ 
+                <div id="loading" class="panel panel-default">
+                    <div class="panel-body">
+                        <span>Loading search results...</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div id="mapDIV" class="col-sm-12 col-lg-12" style="opacity:0.0;"></div>-->
+            </div>
+            <div class="col-sm-6 col-lg-6 off-right" id="sidebar">
+                
+                <div class="tab-content" >
+                        <div id="sidebar-nav">
+                            <button id="filterBtn" class="btn btn-primary accordion-toggle btn-sm" data-toggle="collapse" href="#filter"><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;<span id="preFilter">Show</span> Filters</button>
+                        </div>
+                        <div class="collapse" id="filter">
+                            <div id="filterWrapper">
+                                <h5>Specify count types:</h5>
+                                <h5>Specify years of interest: <span id="yearMin"class="years"></span> - <span id="yearMax"class="years"></span></h5>
+                                <!--<p>Current selection: <span id="yearMin">1999</span> - <span id="yearMax">2015</span></p>-->
+                                <div id="sliderWrap">
+                                    <div class="sliders" id="yearSlider"></div>
+                                </div>
+                                <button id="updateSearchbtn" class="btn btn-primary accordion-toggle btn-sm" data-toggle="collapse" href="#">Update Search</button>
+                            </div>   
+                        </div>
+                        <div id="results-panel" >
+                            
+                            <table id="table" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Street Name</th>
+                                        <th>Count Type</th>
+                                        <th>Count Date</th>
+                                        <th>AADT</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tableRows">
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                </div>
+
+        </div>
+        <!--Footer container-->
+            <!--no footer included-->
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/dataTables.bootstrap.min.js"></script>
+        
+        <!--<script type="text/javascript" src="lib/locals/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="lib/locals/leaflet.js"></script>
+        <script type="text/javascript" src="lib/locals/bootstrap.min.js"></script>-->
+        <!--<script src="http://cdn.jsdelivr.net/leaflet.esri/1.0.0-rc.7/esri-leaflet.js"></script>-->
+        <script type="text/javascript" src="lib/locals/esri.tasks.js"></script>
+        <script type="text/javascript" src="lib/core/jquery.nouislider.min.js"></script>
+        <script type="text/javascript" src="lib/dvrpc.draw.js"></script>
+        <script type="text/javascript" src="lib/core/dyna-icons.js"></script>
+        <script type="text/javascript" src="lib/typeahead.bundle.js"></script>
+        <script type="text/javascript" src="lib/assets/numeral.min.js"></script>
+        <script type="text/javascript" src="lib/map.js"></script><!--customized mapping functions to load data -->
+               
+        
+    </body>
+</html>
