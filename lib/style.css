@@ -29,7 +29,16 @@ outline:none;
 #table{
     font-size:12px;
 }
-
+.select-record{
+    cursor: pointer;
+    text-align: center;
+}
+.select-report{
+    cursor: pointer;
+}
+#table tbody tr:hover,#table tbody tr:hover>td{
+    background-color:#A4D2F9!important;
+}
 /*--------------------------------------------------------*/
 /*--------  UI Element Color Styles  ---------------------*/
 /*------- Change to alter color theme  -------------------*/
