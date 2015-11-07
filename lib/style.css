@@ -22,8 +22,23 @@ label {
 a:focus {
 outline:none;
 }
-
-
+.pagination>li>a, .pagination>li>span{
+    font-size:13px;
+    padding: 4px 8px;
+}
+#table{
+    font-size:12px;
+}
+.select-record{
+    cursor: pointer;
+    text-align: center;
+}
+.select-report{
+    cursor: pointer;
+}
+#table tbody tr:hover,#table tbody tr:hover>td{
+    background-color:#A4D2F9!important;
+}
 /*--------------------------------------------------------*/
 /*--------  UI Element Color Styles  ---------------------*/
 /*------- Change to alter color theme  -------------------*/
