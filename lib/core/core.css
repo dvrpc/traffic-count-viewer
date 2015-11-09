@@ -610,7 +610,7 @@ input[type=checkbox]:checked + label, input[type=checkbox]:checked + label > div
 
 #landing_map{
     z-index:20;
-    background-color:#5876A2;
+    background-color:#efefef;
     height:100%;
     position:relative;
     transition: all 0.8s linear;
@@ -624,7 +624,7 @@ input[type=checkbox]:checked + label, input[type=checkbox]:checked + label > div
     margin-bottom:15px;
 }
 .oheader{
-    height:40%;
+    height:45%;
     margin-bottom:0px;
     z-index:25;
     transition: all 0.8s linear;
