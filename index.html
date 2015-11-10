@@ -122,7 +122,7 @@
 
     <body>
         <div id="TC_header" class="navbar navbar-inverse navbar-top oheader">
-        <div class="navbar-header">
+        <div class="navbar-header" >
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -136,8 +136,24 @@
             <ul id="landing" class="nav navbar-nav navbar-right">
                 <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;About</a></li>
             </ul>
-           
+        
         </div><!--/.navbar-collapse -->
+        <div class="video-hero" >
+            <div class="video-bg demo-video">
+                <video autoplay muted loop poster="files/blurred-traffic-crosswalk.jpg">
+                    <source src="lib/files/blurred-traffic-crosswalk.mp4" type="video/mp4">
+                    <source src="lib/files/blurred-traffic-crosswalk.webm" type="video/webm">
+                    <source src="lib/files/blurred-traffic-crosswalk.ogv" type="video/ogg">
+                </video>
+            </div>
+            <div class="video-overlay"></div>
+            <div class="page-width">
+                <div class="video-hero--content">
+                    <h2>DVRPC Travel Monitoring</h2>
+                    <p>Counting a region in motion</p>
+                </div>
+            </div>
+        </div> 
     </div>
         
     <!--Map and Sidebar-->
