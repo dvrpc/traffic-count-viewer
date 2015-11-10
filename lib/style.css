@@ -78,3 +78,147 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
     float: right;
 }
 
+/* =============================================== *\
+    HTML5 VIDEO BACKGROUND
+    This is the important part
+    It can be used for a 'hero' section or a
+    full-screen background
+\* =============================================== */
+/* This first class is not necessary for full-screen backgrounds */
+.video-hero {
+    position: relative;
+    overflow: hidden;
+}
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+            background-size: cover;
+}
+.video-bg video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+       -moz-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+    /**
+     * For full-screen video backgrounds, add the
+     * .video-bg--fullscreen class to .video-bg div
+     */
+    .video-bg--fullscreen {
+        position: fixed;
+    }
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none; /* Allows right click menu on the video */
+    background: rgba(0,0,0,0.5); /* You can play with the opacity */
+}
+/**
+ * This part should be set separately for each video
+ * if there are multiple videos in your site.
+ * I.e. '.demo-video' is the name of the video
+ */
+.video-bg.demo-video {
+    background-image: url(files/blurred-traffic-crosswalk.jpg);
+}
+/**
+ * Fade in videos
+ * Note the .js class - so non js users still
+ * see the video
+ */
+.js .video-bg video {
+    opacity: 0;
+    -webkit-transition: opacity .8s linear;
+       -moz-transition: opacity .8s linear;
+            transition: opacity .8s linear;
+}
+.js .video-bg video.is-playing {
+    opacity: 1;
+}
+
+/* =============================================== *\
+    HTML5 VIDEO HERO
+    You don't need to copy this, but you might
+    draw some inspiration from it
+\* =============================================== */
+.page-width{
+    height:100%;
+    -ms-transform: translateY(40%);
+    -webkit-transform: translateY(40%);
+    transform: translateY(40%);
+}
+.video-hero h2{
+    color:#fff;
+}
+.video-hero {
+    transition: all 0.8s linear;
+    background-color:#efefef;
+    height: 101%;
+    top: -50px;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+.video-hero--content {
+    position: relative;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+/* =============================================== *\
+    OTHER STUFF - no need to copy this
+\* =============================================== */
+.title {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+.subtitle {
+    display: block;
+    font-weight: normal;
+    font-size: 15px;
+    color: #959699;
+}
+a:hover .subtitle {
+    color: #FFF;
+}
+#site-title {
+    float: left;
+    margin: 0;
+}
+#menu {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu li {
+    margin: 0;
+    padding: 0 15px;
+    display: inline-block;
+}
+.video-hero--content h2 {
+    font-size: 34px;
+    margin: 0 0 10px;
+}
+.video-hero--content p {
+    font-size: 20px;
+    margin: 0;
+}
