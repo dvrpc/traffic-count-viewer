@@ -261,6 +261,33 @@ font-size: 75%;
 .btn.inactive{
     color:#949494;
 }
+.ct-vol{
+color:#1a9850;
+}
+.ct-15min{
+color:#FEE900;
+}
+.ct-speed{
+color:#810f7c;
+}
+.ct-class{
+color:#1a9850;
+}
+.ct-mclass{
+color:#F7911E;
+}
+.ct-tm{
+color:#EE3224;
+}
+.ct-loop{
+color:#c51b7d;
+}
+.ct-8day{
+color:#35978f;
+}
+.ct-cwalk{
+color:#6baed6;
+}
 
 
 
