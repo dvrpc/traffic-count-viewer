@@ -217,18 +217,18 @@
                         </div>
                         <div class="collapse" id="filter">
                             <div id="filterWrapper">
-                                <h5>Specify count types:</h5><div class="btn-group-sm" role="group" aria-label="...">
-                                  <button type="button" class="btn btn-type"><i class="fa fa-circle"></i>
-Volume</button>
-                                  <button type="button" class="btn btn-type"><i class="fa fa-circle"></i>15 Min Volume</button>
-                                  <button type="button" class="btn btn-type"><i class="fa fa-circle"></i>Speed</button>
-                                  <button type="button" class="btn btn-type"><i class="fa fa-circle"></i>Class</button>
-                                  <button type="button" class="btn btn-type"><i class="fa fa-circle"></i>Manual Class</button>
-                                  <button type="button" class="btn btn-type"><i class="fa fa-circle"></i>Turning Movement</button>
-                                  <button type="button" class="btn btn-type"><i class="fa fa-circle"></i>Loop</button>
-                                  <button type="button" class="btn btn-type"><i class="fa fa-circle"></i>8 Day</button>
-                                  <button type="button" class="btn btn-type"><i class="fa fa-circle"></i>Crosswalk</button>
+                                <h5>Specify count types:</h5><div id="count_types" class="btn-group-sm" role="group" aria-label="...">
+                                  <button type="button" data-layer="Volume" data-render="true" class="col-sm-3 btn btn-default"><i class="fa fa-circle"></i>&nbsp;&nbsp;Volume</button>
+                                  <button type="button" data-layer="15 min Volume" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle"></i>&nbsp;&nbsp;15 Min Volume</button>
+                                  <button type="button" data-layer="Speed" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle"></i>&nbsp;&nbsp;Speed</button>
+                                  <button type="button" data-layer="Class" data-render="true" class="col-sm-3 btn btn-default"><i class="fa fa-circle"></i>&nbsp;&nbsp;Class</button>
+                                  <button type="button" data-layer="Manual Class" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle"></i>&nbsp;&nbsp;Manual Class</button>
+                                  <button type="button" data-layer="Turning Movement" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle"></i>&nbsp;&nbsp;Turning Movement</button>
+                                  <button type="button" data-layer="Loop" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle"></i>&nbsp;&nbsp;Loop</button>
+                                  <button type="button" data-layer="8 Day" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle"></i>&nbsp;&nbsp;8 Day</button>
+                                  <button type="button" data-layer="Crosswalk" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle"></i>&nbsp;&nbsp;Crosswalk</button>
                                 </div>
+                                <div style="clear:both;"></div>
                                 <h5>Specify years of interest: <span id="yearMin"class="years"></span> - <span id="yearMax"class="years"></span></h5>
                                 <!--<p>Current selection: <span id="yearMin">1999</span> - <span id="yearMax">2015</span></p>-->
                                 <div id="sliderWrap">
