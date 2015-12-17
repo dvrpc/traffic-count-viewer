@@ -30,10 +30,12 @@ outline:none;
     font-size:12px;
 }
 .select-record{
+
     cursor: pointer;
     text-align: center;
 }
 .select-report{
+    padding: 5px 9px!important;
     cursor: pointer;
 }
 #table tbody tr:hover,#table tbody tr:hover>td{
