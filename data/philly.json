@@ -1,0 +1,1641 @@
+{
+  "objectIdFieldName" : "FID", 
+  "globalIdFieldName" : "", 
+  "geometryType" : "esriGeometryPolygon", 
+  "spatialReference" : {
+    "wkid" : 102100, 
+    "latestWkid" : 3857
+  }, 
+  "fields" : [
+    {
+      "name" : "FID", 
+      "type" : "esriFieldTypeInteger", 
+      "alias" : "FID", 
+      "sqlType" : "sqlTypeInteger", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "NAME", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "NAME", 
+      "sqlType" : "sqlTypeNVarchar", "length" : 20, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "LISTNAME", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "LISTNAME", 
+      "sqlType" : "sqlTypeNVarchar", "length" : 50, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "MAPNAME", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "MAPNAME", 
+      "sqlType" : "sqlTypeNVarchar", "length" : 50, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Shape_Leng", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "Shape_Leng", 
+      "sqlType" : "sqlTypeFloat", 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "Shape_Area", 
+      "type" : "esriFieldTypeDouble", 
+      "alias" : "Shape_Area", 
+      "sqlType" : "sqlTypeFloat", 
+      "domain" : null, 
+      "defaultValue" : null
+    }
+  ], 
+  "features" : [
+    {
+      "attributes" : {
+        "FID" : 1, 
+        "NAME" : "BRIDESBURG", 
+        "LISTNAME" : "Bridesburg", 
+        "MAPNAME" : "Bridesburg", 
+        "Shape_Leng" : 27814.5465208, 
+        "Shape_Area" : 44586263.6032
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 2, 
+        "NAME" : "BUSTLETON", 
+        "LISTNAME" : "Bustleton", 
+        "MAPNAME" : "Bustleton", 
+        "Shape_Leng" : 48868.4583648, 
+        "Shape_Area" : 114050423.594
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 3, 
+        "NAME" : "CEDARBROOK", 
+        "LISTNAME" : "Cedarbrook", 
+        "MAPNAME" : "Cedarbrook", 
+        "Shape_Leng" : 20021.4158021, 
+        "Shape_Area" : 24871744.6315
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 4, 
+        "NAME" : "CHESTNUT_HILL", 
+        "LISTNAME" : "Chestnut Hill", 
+        "MAPNAME" : "Chestnut Hill", 
+        "Shape_Leng" : 56394.2971946, 
+        "Shape_Area" : 79664975.1899
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 5, 
+        "NAME" : "EAST_FALLS", 
+        "LISTNAME" : "East Falls", 
+        "MAPNAME" : "East Falls", 
+        "Shape_Leng" : 27400.7764171, 
+        "Shape_Area" : 40576887.8464
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 6, 
+        "NAME" : "MOUNT_AIRY_EAST", 
+        "LISTNAME" : "Mount Airy, East", 
+        "MAPNAME" : "East Mount Airy", 
+        "Shape_Leng" : 28845.549808, 
+        "Shape_Area" : 43152469.5661
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 7, 
+        "NAME" : "GRAYS_FERRY", 
+        "LISTNAME" : "Grays Ferry", 
+        "MAPNAME" : "Grays Ferry", 
+        "Shape_Leng" : 25521.5723562, 
+        "Shape_Area" : 31311634.9529
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 8, 
+        "NAME" : "OLNEY", 
+        "LISTNAME" : "Olney", 
+        "MAPNAME" : "Olney", 
+        "Shape_Leng" : 32197.2052706, 
+        "Shape_Area" : 50308402.6667
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 9, 
+        "NAME" : "PENNYPACK_PARK", 
+        "LISTNAME" : "Pennypack Park", 
+        "MAPNAME" : "Pennypack Park", 
+        "Shape_Leng" : 87084.2855886, 
+        "Shape_Area" : 60140755.7554
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 10, 
+        "NAME" : "SOMERTON", 
+        "LISTNAME" : "Somerton", 
+        "MAPNAME" : "Somerton", 
+        "Shape_Leng" : 55054.575496, 
+        "Shape_Area" : 129254596.792
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 11, 
+        "NAME" : "MOUNT_AIRY_WEST", 
+        "LISTNAME" : "Mount Airy, West", 
+        "MAPNAME" : "West Mount Airy", 
+        "Shape_Leng" : 37723.3789332, 
+        "Shape_Area" : 53743368.5593
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 12, 
+        "NAME" : "WEST_OAK_LANE", 
+        "LISTNAME" : "West Oak Lane", 
+        "MAPNAME" : "West Oak Lane", 
+        "Shape_Leng" : 30804.2062001, 
+        "Shape_Area" : 52596735.8648
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 13, 
+        "NAME" : "WISSAHICKON_PARK", 
+        "LISTNAME" : "Wissahickon Park", 
+        "MAPNAME" : "Wissahickon Park", 
+        "Shape_Leng" : 95219.1927059, 
+        "Shape_Area" : 63483783.9789
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 14, 
+        "NAME" : "RIVERFRONT", 
+        "LISTNAME" : "Riverfront", 
+        "MAPNAME" : "Riverfront", 
+        "Shape_Leng" : 47425.5088329, 
+        "Shape_Area" : 62838389.8779
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 15, 
+        "NAME" : "BYBERRY", 
+        "LISTNAME" : "Byberry", 
+        "MAPNAME" : "Byberry", 
+        "Shape_Leng" : 33932.9472042, 
+        "Shape_Area" : 46168309.6006
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 16, 
+        "NAME" : "WEST_TORRESDALE", 
+        "LISTNAME" : "West Torresdale", 
+        "MAPNAME" : "West Torresdale", 
+        "Shape_Leng" : 10730.0049215, 
+        "Shape_Area" : 5820666.51407
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 17, 
+        "NAME" : "MECHANICSVILLE", 
+        "LISTNAME" : "Mechanicsville", 
+        "MAPNAME" : "Mechanicsville", 
+        "Shape_Leng" : 5941.33261823, 
+        "Shape_Area" : 1646440.4726
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 18, 
+        "NAME" : "PARKWOOD_MANOR", 
+        "LISTNAME" : "Parkwood Manor", 
+        "MAPNAME" : "Parkwood Manor", 
+        "Shape_Leng" : 36872.9348753, 
+        "Shape_Area" : 47006036.3223
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 19, 
+        "NAME" : "FRANKLIN_MILLS", 
+        "LISTNAME" : "Franklin Mills", 
+        "MAPNAME" : "Franklin Mills", 
+        "Shape_Leng" : 18142.2281448, 
+        "Shape_Area" : 14847439.2465
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 20, 
+        "NAME" : "NORTHEAST_AIRPORT", 
+        "LISTNAME" : "Northeast Phila Airport", 
+        "MAPNAME" : "Northeast Phila Airport", 
+        "Shape_Leng" : 36657.1016715, 
+        "Shape_Area" : 81858025.4635
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 21, 
+        "NAME" : "MODENA", 
+        "LISTNAME" : "Modena", 
+        "MAPNAME" : "Modena", 
+        "Shape_Leng" : 20886.7062751, 
+        "Shape_Area" : 23628846.5994
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 22, 
+        "NAME" : "MORRELL_PARK", 
+        "LISTNAME" : "Morrell Park", 
+        "MAPNAME" : "Morrell Park", 
+        "Shape_Leng" : 22335.0658962, 
+        "Shape_Area" : 25924042.0297
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 23, 
+        "NAME" : "MILLBROOK", 
+        "LISTNAME" : "Millbrook", 
+        "MAPNAME" : "Millbrook", 
+        "Shape_Leng" : 15957.8199402, 
+        "Shape_Area" : 12626016.9653
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 24, 
+        "NAME" : "CRESTMONT_FARMS", 
+        "LISTNAME" : "Crestmont Farms", 
+        "MAPNAME" : "Crestmont Farms", 
+        "Shape_Leng" : 9263.538528, 
+        "Shape_Area" : 3624101.55692
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 25, 
+        "NAME" : "ACADEMY_GARDENS", 
+        "LISTNAME" : "Academy Gardens", 
+        "MAPNAME" : "Academy Gardens", 
+        "Shape_Leng" : 18120.0398063, 
+        "Shape_Area" : 15080135.9799
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 26, 
+        "NAME" : "PENNYPACK", 
+        "LISTNAME" : "Pennypack", 
+        "MAPNAME" : "Pennypack", 
+        "Shape_Leng" : 24887.2118247, 
+        "Shape_Area" : 34685420.1413
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 27, 
+        "NAME" : "ASTON_WOODBRIDGE", 
+        "LISTNAME" : "Aston-Woodbridge", 
+        "MAPNAME" : "Aston-Woodbridge", 
+        "Shape_Leng" : 17216.8671936, 
+        "Shape_Area" : 14147909.4454
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 28, 
+        "NAME" : "PENNYPACK_WOODS", 
+        "LISTNAME" : "Pennypack Woods", 
+        "MAPNAME" : "Pennypack Woods", 
+        "Shape_Leng" : 19811.0332176, 
+        "Shape_Area" : 13509409.2188
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 29, 
+        "NAME" : "WINCHESTER_PARK", 
+        "LISTNAME" : "Winchester Park", 
+        "MAPNAME" : "Winchester Park", 
+        "Shape_Leng" : 11984.696725, 
+        "Shape_Area" : 6558582.96029
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 30, 
+        "NAME" : "TORRESDALE", 
+        "LISTNAME" : "Torresdale", 
+        "MAPNAME" : "Torresdale", 
+        "Shape_Leng" : 35702.4924982, 
+        "Shape_Area" : 65136117.6726
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 31, 
+        "NAME" : "LEXINGTON_PARK", 
+        "LISTNAME" : "Lexington Park", 
+        "MAPNAME" : "Lexington Park", 
+        "Shape_Leng" : 15293.6136901, 
+        "Shape_Area" : 11359376.6636
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 32, 
+        "NAME" : "RHAWNHURST", 
+        "LISTNAME" : "Rhawnhurst", 
+        "MAPNAME" : "Rhawnhurst", 
+        "Shape_Leng" : 37982.4400094, 
+        "Shape_Area" : 56786859.4536
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 33, 
+        "NAME" : "FOX_CHASE", 
+        "LISTNAME" : "Fox Chase", 
+        "MAPNAME" : "Fox Chase", 
+        "Shape_Leng" : 35027.5171787, 
+        "Shape_Area" : 54942234.8065
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 34, 
+        "NAME" : "BURHOLME", 
+        "LISTNAME" : "Burholme", 
+        "MAPNAME" : "Burholme", 
+        "Shape_Leng" : 18179.2233406, 
+        "Shape_Area" : 10450451.3157
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 35, 
+        "NAME" : "OXFORD_CIRCLE", 
+        "LISTNAME" : "Oxford Circle", 
+        "MAPNAME" : "Oxford Circle", 
+        "Shape_Leng" : 31820.6223266, 
+        "Shape_Area" : 59779885.4576
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 36, 
+        "NAME" : "SUMMERDALE", 
+        "LISTNAME" : "Summerdale", 
+        "MAPNAME" : "Summerdale", 
+        "Shape_Leng" : 12065.377599, 
+        "Shape_Area" : 7236096.76093
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 37, 
+        "NAME" : "CRESCENTVILLE", 
+        "LISTNAME" : "Crescentville", 
+        "MAPNAME" : "Crescentville", 
+        "Shape_Leng" : 18197.1391982, 
+        "Shape_Area" : 16230908.784
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 38, 
+        "NAME" : "LAWNDALE", 
+        "LISTNAME" : "Lawndale", 
+        "MAPNAME" : "Lawndale", 
+        "Shape_Leng" : 32758.368098, 
+        "Shape_Area" : 38060419.8366
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 39, 
+        "NAME" : "NORTHWOOD", 
+        "LISTNAME" : "Northwood", 
+        "MAPNAME" : "Northwood", 
+        "Shape_Leng" : 27334.1220893, 
+        "Shape_Area" : 28028130.7406
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 40, 
+        "NAME" : "HOLMESBURG", 
+        "LISTNAME" : "Holmesburg", 
+        "MAPNAME" : "Holmesburg", 
+        "Shape_Leng" : 40376.2775353, 
+        "Shape_Area" : 84064467.3235
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 41, 
+        "NAME" : "FRANKFORD", 
+        "LISTNAME" : "Frankford", 
+        "MAPNAME" : "Frankford", 
+        "Shape_Leng" : 26646.6063939, 
+        "Shape_Area" : 41352420.6523
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 42, 
+        "NAME" : "MAYFAIR", 
+        "LISTNAME" : "Mayfair", 
+        "MAPNAME" : "Mayfair", 
+        "Shape_Leng" : 38261.5752063, 
+        "Shape_Area" : 52171748.5331
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 43, 
+        "NAME" : "TACONY", 
+        "LISTNAME" : "Tacony", 
+        "MAPNAME" : "Tacony", 
+        "Shape_Leng" : 32404.9977888, 
+        "Shape_Area" : 49925598.6705
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 44, 
+        "NAME" : "WISSINOMING", 
+        "LISTNAME" : "Wissinoming", 
+        "MAPNAME" : "Wissinoming", 
+        "Shape_Leng" : 29226.4744992, 
+        "Shape_Area" : 42361155.0398
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 45, 
+        "NAME" : "ANDORRA", 
+        "LISTNAME" : "Andorra", 
+        "MAPNAME" : "Andorra", 
+        "Shape_Leng" : 26469.7742884, 
+        "Shape_Area" : 24518134.0115
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 46, 
+        "NAME" : "UPPER_ROXBOROUGH", 
+        "LISTNAME" : "Upper Roxborough", 
+        "MAPNAME" : "Upper Roxborough", 
+        "Shape_Leng" : 50882.0814075, 
+        "Shape_Area" : 68691431.6958
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 47, 
+        "NAME" : "DEARNLEY_PARK", 
+        "LISTNAME" : "Dearnley Park", 
+        "MAPNAME" : "Dearnley Park", 
+        "Shape_Leng" : 17330.8420224, 
+        "Shape_Area" : 16215770.7346
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 48, 
+        "NAME" : "ROXBOROUGH_PARK", 
+        "LISTNAME" : "Roxborough Park", 
+        "MAPNAME" : "Roxborough Park", 
+        "Shape_Leng" : 13388.15641, 
+        "Shape_Area" : 9697307.65918
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 49, 
+        "NAME" : "GERMANY_HILL", 
+        "LISTNAME" : "Germany Hill", 
+        "MAPNAME" : "Germany Hill", 
+        "Shape_Leng" : 13041.9390872, 
+        "Shape_Area" : 6949968.42772
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 50, 
+        "NAME" : "WISSAHICKON_HILLS", 
+        "LISTNAME" : "Wissahickon Hills", 
+        "MAPNAME" : "Wissahickon Hills", 
+        "Shape_Leng" : 7113.02864233, 
+        "Shape_Area" : 3048525.57286
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 51, 
+        "NAME" : "ROXBOROUGH", 
+        "LISTNAME" : "Roxborough", 
+        "MAPNAME" : "Roxborough", 
+        "Shape_Leng" : 23054.7098435, 
+        "Shape_Area" : 22416604.1318
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 52, 
+        "NAME" : "MANAYUNK", 
+        "LISTNAME" : "Manayunk", 
+        "MAPNAME" : "Manayunk", 
+        "Shape_Leng" : 16157.0546719, 
+        "Shape_Area" : 14712063.374
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 53, 
+        "NAME" : "WISSAHICKON", 
+        "LISTNAME" : "Wissahickon", 
+        "MAPNAME" : "Wissahickon", 
+        "Shape_Leng" : 17714.1859718, 
+        "Shape_Area" : 9064239.11735
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 54, 
+        "NAME" : "GERMANTOWN_EAST", 
+        "LISTNAME" : "Germantown, East", 
+        "MAPNAME" : "East Germantown", 
+        "Shape_Leng" : 22052.7346609, 
+        "Shape_Area" : 25689796.5206
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 55, 
+        "NAME" : "GERMANTOWN_MORTON", 
+        "LISTNAME" : "Germantown, Morton", 
+        "MAPNAME" : "Germantown - Morton", 
+        "Shape_Leng" : 13572.1805481, 
+        "Shape_Area" : 10124433.1088
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 56, 
+        "NAME" : "GERMANTOWN_WEST_CENT", 
+        "LISTNAME" : "Germantown, West Central", 
+        "MAPNAME" : "West Central Germantown", 
+        "Shape_Leng" : 17090.4513309, 
+        "Shape_Area" : 17048848.22
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 57, 
+        "NAME" : "GERMANTOWN_PENN_KNOX", 
+        "LISTNAME" : "Germantown, Penn Knox", 
+        "MAPNAME" : "Germantown - Penn Knox", 
+        "Shape_Leng" : 9550.41261311, 
+        "Shape_Area" : 5075548.61747
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 58, 
+        "NAME" : "GERMANTOWN_WESTSIDE", 
+        "LISTNAME" : "Germantown, Westside", 
+        "MAPNAME" : "Germantown - Westside", 
+        "Shape_Leng" : 10355.1783896, 
+        "Shape_Area" : 6574067.57331
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 59, 
+        "NAME" : "GERMANTOWN_SOUTHWEST", 
+        "LISTNAME" : "Germantown, Southwest", 
+        "MAPNAME" : "Southwest Germantown", 
+        "Shape_Leng" : 14880.7436082, 
+        "Shape_Area" : 14418666.0223
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 60, 
+        "NAME" : "OGONTZ", 
+        "LISTNAME" : "Ogontz", 
+        "MAPNAME" : "Ogontz", 
+        "Shape_Leng" : 17256.5827084, 
+        "Shape_Area" : 18032499.7512
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 61, 
+        "NAME" : "WISTER", 
+        "LISTNAME" : "Wister", 
+        "MAPNAME" : "Wister", 
+        "Shape_Leng" : 15136.0986992, 
+        "Shape_Area" : 10443333.5228
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 62, 
+        "NAME" : "NICETOWN", 
+        "LISTNAME" : "Nicetown", 
+        "MAPNAME" : "Nicetown", 
+        "Shape_Leng" : 11237.318154, 
+        "Shape_Area" : 6587595.76427
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 63, 
+        "NAME" : "TIOGA", 
+        "LISTNAME" : "Tioga", 
+        "MAPNAME" : "Tioga", 
+        "Shape_Leng" : 27189.6670807, 
+        "Shape_Area" : 31627964.4932
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 64, 
+        "NAME" : "ALLEGHENY_WEST", 
+        "LISTNAME" : "Allegheny West", 
+        "MAPNAME" : "Allegheny West", 
+        "Shape_Leng" : 24468.9064427, 
+        "Shape_Area" : 32220705.1812
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 65, 
+        "NAME" : "GLENWOOD", 
+        "LISTNAME" : "Glenwood", 
+        "MAPNAME" : "Glenwood", 
+        "Shape_Leng" : 12350.882116, 
+        "Shape_Area" : 9652807.95378
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 66, 
+        "NAME" : "FERN_ROCK", 
+        "LISTNAME" : "Fern Rock", 
+        "MAPNAME" : "Fern Rock", 
+        "Shape_Leng" : 11426.5545597, 
+        "Shape_Area" : 8325509.45495
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 67, 
+        "NAME" : "EAST_OAK_LANE", 
+        "LISTNAME" : "East Oak Lane", 
+        "MAPNAME" : "East Oak Lane", 
+        "Shape_Leng" : 20501.3566277, 
+        "Shape_Area" : 24048138.6303
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 68, 
+        "NAME" : "MELROSE_PARK_GARDENS", 
+        "LISTNAME" : "Melrose Park Gardens", 
+        "MAPNAME" : "Melrose Park Gardens", 
+        "Shape_Leng" : 11457.2652622, 
+        "Shape_Area" : 7205121.69899
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 69, 
+        "NAME" : "FRANKLINVILLE", 
+        "LISTNAME" : "Franklinville", 
+        "MAPNAME" : "Franklinville", 
+        "Shape_Leng" : 17874.5350814, 
+        "Shape_Area" : 14189794.7307
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 70, 
+        "NAME" : "FELTONVILLE", 
+        "LISTNAME" : "Feltonville", 
+        "MAPNAME" : "Feltonville", 
+        "Shape_Leng" : 22648.9887485, 
+        "Shape_Area" : 27907972.4786
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 71, 
+        "NAME" : "RICHMOND", 
+        "LISTNAME" : "Richmond", 
+        "MAPNAME" : "Richmond", 
+        "Shape_Leng" : 45405.1546272, 
+        "Shape_Area" : 78360637.683
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 72, 
+        "NAME" : "PORT_RICHMOND", 
+        "LISTNAME" : "Port Richmond", 
+        "MAPNAME" : "Port Richmond", 
+        "Shape_Leng" : 17870.1822878, 
+        "Shape_Area" : 17061791.6222
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 73, 
+        "NAME" : "HUNTING_PARK", 
+        "LISTNAME" : "Hunting Park", 
+        "MAPNAME" : "Hunting Park", 
+        "Shape_Leng" : 32920.7993595, 
+        "Shape_Area" : 39024501.3163
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 74, 
+        "NAME" : "JUNIATA_PARK", 
+        "LISTNAME" : "Juniata Park", 
+        "MAPNAME" : "Juniata Park", 
+        "Shape_Leng" : 30347.1877843, 
+        "Shape_Area" : 32441851.8233
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 75, 
+        "NAME" : "HARROWGATE", 
+        "LISTNAME" : "Harrowgate", 
+        "MAPNAME" : "Harrowgate", 
+        "Shape_Leng" : 23231.2468158, 
+        "Shape_Area" : 25350470.9579
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 76, 
+        "NAME" : "FAIRHILL", 
+        "LISTNAME" : "Fairhill", 
+        "MAPNAME" : "Fairhill", 
+        "Shape_Leng" : 12327.7650097, 
+        "Shape_Area" : 7514288.07639
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 77, 
+        "NAME" : "UPPER_KENSINGTON", 
+        "LISTNAME" : "Upper Kensington", 
+        "MAPNAME" : "Upper Kensington", 
+        "Shape_Leng" : 19841.0992776, 
+        "Shape_Area" : 22783026.1311
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 78, 
+        "NAME" : "MCGUIRE", 
+        "LISTNAME" : "McGuire", 
+        "MAPNAME" : "McGuire", 
+        "Shape_Leng" : 8681.67645939, 
+        "Shape_Area" : 3555354.62034
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 79, 
+        "NAME" : "STANTON", 
+        "LISTNAME" : "Stanton", 
+        "MAPNAME" : "Stanton", 
+        "Shape_Leng" : 16115.7451693, 
+        "Shape_Area" : 12654858.3202
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 80, 
+        "NAME" : "BREWERYTOWN", 
+        "LISTNAME" : "Brewerytown", 
+        "MAPNAME" : "Brewerytown", 
+        "Shape_Leng" : 14790.6737359, 
+        "Shape_Area" : 11256539.3166
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 81, 
+        "NAME" : "SHARSWOOD", 
+        "LISTNAME" : "Sharswood", 
+        "MAPNAME" : "Sharswood", 
+        "Shape_Leng" : 9641.89101249, 
+        "Shape_Area" : 5371791.19264
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 82, 
+        "NAME" : "NORTH_CENTRAL", 
+        "LISTNAME" : "North Central", 
+        "MAPNAME" : "North Central", 
+        "Shape_Leng" : 19020.1009197, 
+        "Shape_Area" : 19847852.3284
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 83, 
+        "NAME" : "YORKTOWN", 
+        "LISTNAME" : "Yorktown", 
+        "MAPNAME" : "Yorktown", 
+        "Shape_Leng" : 11213.9637532, 
+        "Shape_Area" : 7722353.00128
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 84, 
+        "NAME" : "LUDLOW", 
+        "LISTNAME" : "Ludlow", 
+        "MAPNAME" : "Ludlow", 
+        "Shape_Leng" : 8574.16968706, 
+        "Shape_Area" : 3679175.82774
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 85, 
+        "NAME" : "HARTRANFT", 
+        "LISTNAME" : "Hartranft", 
+        "MAPNAME" : "Hartranft", 
+        "Shape_Leng" : 23082.015936, 
+        "Shape_Area" : 26159658.7055
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 86, 
+        "NAME" : "WEST_KENSINGTON", 
+        "LISTNAME" : "Kensington, West", 
+        "MAPNAME" : "West Kensington", 
+        "Shape_Leng" : 20074.2409466, 
+        "Shape_Area" : 19544179.7878
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 87, 
+        "NAME" : "FISHTOWN", 
+        "LISTNAME" : "Fishtown - Lower Kensington", 
+        "MAPNAME" : "Fishtown - Lower Kensington", 
+        "Shape_Leng" : 25973.3958005, 
+        "Shape_Area" : 33605828.4272
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 88, 
+        "NAME" : "OLD_KENSINGTON", 
+        "LISTNAME" : "Kensington, Old", 
+        "MAPNAME" : "Old Kensington", 
+        "Shape_Leng" : 10913.733421, 
+        "Shape_Area" : 7476740.47963
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 89, 
+        "NAME" : "NORTHERN_LIBERTIES", 
+        "LISTNAME" : "Northern Liberties", 
+        "MAPNAME" : "Northern Liberties", 
+        "Shape_Leng" : 20685.0153986, 
+        "Shape_Area" : 20313755.973
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 90, 
+        "NAME" : "LOGAN", 
+        "LISTNAME" : "Logan", 
+        "MAPNAME" : "Logan", 
+        "Shape_Leng" : 29512.474658, 
+        "Shape_Area" : 39038966.3862
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 91, 
+        "NAME" : "SOCIETY_HILL", 
+        "LISTNAME" : "Society Hill", 
+        "MAPNAME" : "Society Hill", 
+        "Shape_Leng" : 10711.7713783, 
+        "Shape_Area" : 6861824.15721
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 92, 
+        "NAME" : "OLD_CITY", 
+        "LISTNAME" : "Old City", 
+        "MAPNAME" : "Old City", 
+        "Shape_Leng" : 14323.3716974, 
+        "Shape_Area" : 12554436.2257
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 93, 
+        "NAME" : "CHINATOWN", 
+        "LISTNAME" : "Chinatown", 
+        "MAPNAME" : "Chinatown", 
+        "Shape_Leng" : 4936.52461685, 
+        "Shape_Area" : 1360164.87128
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 94, 
+        "NAME" : "CENTER_CITY", 
+        "LISTNAME" : "Center City East", 
+        "MAPNAME" : "Center City East", 
+        "Shape_Leng" : 10358.0900976, 
+        "Shape_Area" : 4098334.07183
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 95, 
+        "NAME" : "WASHINGTON_SQUARE", 
+        "LISTNAME" : "Washington Square West", 
+        "MAPNAME" : "Washington Square West", 
+        "Shape_Leng" : 12119.2682525, 
+        "Shape_Area" : 9148298.93017
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 96, 
+        "NAME" : "FAIRMOUNT", 
+        "LISTNAME" : "Fairmount", 
+        "MAPNAME" : "Fairmount", 
+        "Shape_Leng" : 13473.0527819, 
+        "Shape_Area" : 7889607.78894
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 97, 
+        "NAME" : "FRANCISVILLE", 
+        "LISTNAME" : "Francisville", 
+        "MAPNAME" : "Francisville", 
+        "Shape_Leng" : 10512.7437017, 
+        "Shape_Area" : 5893974.41778
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 98, 
+        "NAME" : "SPRING_GARDEN", 
+        "LISTNAME" : "Spring Garden", 
+        "MAPNAME" : "Spring Garden", 
+        "Shape_Leng" : 13574.8062342, 
+        "Shape_Area" : 6775875.8228
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 99, 
+        "NAME" : "LOGAN_SQUARE", 
+        "LISTNAME" : "Logan Square", 
+        "MAPNAME" : "Logan Square", 
+        "Shape_Leng" : 18613.9089914, 
+        "Shape_Area" : 18608228.2928
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 100, 
+        "NAME" : "RITTENHOUSE", 
+        "LISTNAME" : "Rittenhouse", 
+        "MAPNAME" : "Rittenhouse", 
+        "Shape_Leng" : 16365.2709581, 
+        "Shape_Area" : 14620958.3061
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 101, 
+        "NAME" : "FITLER_SQUARE", 
+        "LISTNAME" : "Fitler Square", 
+        "MAPNAME" : "Fitler Square", 
+        "Shape_Leng" : 6822.59824096, 
+        "Shape_Area" : 2838658.61025
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 102, 
+        "NAME" : "GRADUATE_HOSPITAL", 
+        "LISTNAME" : "Graduate Hospital", 
+        "MAPNAME" : "Graduate Hospital", 
+        "Shape_Leng" : 18603.0117459, 
+        "Shape_Area" : 14126514.5652
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 103, 
+        "NAME" : "POINT_BREEZE", 
+        "LISTNAME" : "Point Breeze", 
+        "MAPNAME" : "Point Breeze", 
+        "Shape_Leng" : 17529.2837139, 
+        "Shape_Area" : 16937721.0269
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 104, 
+        "NAME" : "HAWTHORNE", 
+        "LISTNAME" : "Hawthorne", 
+        "MAPNAME" : "Hawthorne", 
+        "Shape_Leng" : 8321.26991108, 
+        "Shape_Area" : 4250950.65731
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 105, 
+        "NAME" : "BELLA_VISTA", 
+        "LISTNAME" : "Bella Vista", 
+        "MAPNAME" : "Bella Vista", 
+        "Shape_Leng" : 8360.05369559, 
+        "Shape_Area" : 4253834.71172
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 106, 
+        "NAME" : "QUEEN_VILLAGE", 
+        "LISTNAME" : "Queen Village", 
+        "MAPNAME" : "Queen Village", 
+        "Shape_Leng" : 10414.195744, 
+        "Shape_Area" : 6631987.93829
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 107, 
+        "NAME" : "DICKINSON_NARROWS", 
+        "LISTNAME" : "Dickinson Narrows", 
+        "MAPNAME" : "Dickinson Narrows", 
+        "Shape_Leng" : 10062.1547741, 
+        "Shape_Area" : 4927491.97891
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 108, 
+        "NAME" : "PASSYUNK_SQUARE", 
+        "LISTNAME" : "Passyunk Square", 
+        "MAPNAME" : "Passyunk Square", 
+        "Shape_Leng" : 11751.5037197, 
+        "Shape_Area" : 8709395.7535
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 109, 
+        "NAME" : "GREENWICH", 
+        "LISTNAME" : "Greenwich", 
+        "MAPNAME" : "Greenwich", 
+        "Shape_Leng" : 6232.87043811, 
+        "Shape_Area" : 1970548.7845
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 110, 
+        "NAME" : "LOWER_MOYAMENSING", 
+        "LISTNAME" : "Lower Moyamensing", 
+        "MAPNAME" : "Lower Moyamensing", 
+        "Shape_Leng" : 12975.3434458, 
+        "Shape_Area" : 10345496.8838
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 111, 
+        "NAME" : "WHITMAN", 
+        "LISTNAME" : "Whitman", 
+        "MAPNAME" : "Whitman", 
+        "Shape_Leng" : 10895.2137948, 
+        "Shape_Area" : 7475589.53503
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 112, 
+        "NAME" : "INDUSTRIAL", 
+        "LISTNAME" : "Industrial", 
+        "MAPNAME" : "Industrial", 
+        "Shape_Leng" : 53290.7829178, 
+        "Shape_Area" : 119437430.82
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 113, 
+        "NAME" : "AIRPORT", 
+        "LISTNAME" : "Airport", 
+        "MAPNAME" : "Airport", 
+        "Shape_Leng" : 49698.1915211, 
+        "Shape_Area" : 97738683.7255
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 114, 
+        "NAME" : "CLEARVIEW", 
+        "LISTNAME" : "Clearview", 
+        "MAPNAME" : "Clearview", 
+        "Shape_Leng" : 14683.4594501, 
+        "Shape_Area" : 7095165.52126
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 115, 
+        "NAME" : "PENROSE", 
+        "LISTNAME" : "Penrose", 
+        "MAPNAME" : "Penrose", 
+        "Shape_Leng" : 11694.2136344, 
+        "Shape_Area" : 8079790.79084
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 116, 
+        "NAME" : "PASCHALL", 
+        "LISTNAME" : "Paschall", 
+        "MAPNAME" : "Paschall", 
+        "Shape_Leng" : 22650.029678, 
+        "Shape_Area" : 19662014.0038
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 117, 
+        "NAME" : "BARTRAM_VILLAGE", 
+        "LISTNAME" : "Bartram Village", 
+        "MAPNAME" : "Bartram Village", 
+        "Shape_Leng" : 20667.980476, 
+        "Shape_Area" : 14839895.3214
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 118, 
+        "NAME" : "KINGSESSING", 
+        "LISTNAME" : "Kingsessing", 
+        "MAPNAME" : "Kingsessing", 
+        "Shape_Leng" : 30544.7764449, 
+        "Shape_Area" : 28773636.549
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 119, 
+        "NAME" : "COBBS_CREEK", 
+        "LISTNAME" : "Cobbs Creek", 
+        "MAPNAME" : "Cobbs Creek", 
+        "Shape_Leng" : 25355.9944604, 
+        "Shape_Area" : 37552297.3735
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 120, 
+        "NAME" : "WALNUT_HILL", 
+        "LISTNAME" : "Walnut Hill", 
+        "MAPNAME" : "Walnut Hill", 
+        "Shape_Leng" : 10705.1426541, 
+        "Shape_Area" : 6693679.4906
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 121, 
+        "NAME" : "CEDAR_PARK", 
+        "LISTNAME" : "Cedar Park", 
+        "MAPNAME" : "Cedar Park", 
+        "Shape_Leng" : 12495.3704755, 
+        "Shape_Area" : 9085793.01606
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 122, 
+        "NAME" : "GARDEN_COURT", 
+        "LISTNAME" : "Garden Court", 
+        "MAPNAME" : "Garden Court", 
+        "Shape_Leng" : 8630.28226907, 
+        "Shape_Area" : 3202937.32919
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 123, 
+        "NAME" : "WOODLAND_TERRACE", 
+        "LISTNAME" : "Woodland Terrace", 
+        "MAPNAME" : "Woodland Terrace", 
+        "Shape_Leng" : 5188.77055752, 
+        "Shape_Area" : 1276673.90456
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 124, 
+        "NAME" : "SPRUCE_HILL", 
+        "LISTNAME" : "Spruce Hill", 
+        "MAPNAME" : "Spruce Hill", 
+        "Shape_Leng" : 14095.2624941, 
+        "Shape_Area" : 9214557.75032
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 125, 
+        "NAME" : "SOUTHWEST_SCHUYLKILL", 
+        "LISTNAME" : "Southwest Schuylkill", 
+        "MAPNAME" : "Southwest Schuylkill", 
+        "Shape_Leng" : 19282.6381694, 
+        "Shape_Area" : 13782430.5986
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 126, 
+        "NAME" : "UNIVERSITY_CITY", 
+        "LISTNAME" : "University City", 
+        "MAPNAME" : "University City", 
+        "Shape_Leng" : 26985.3088647, 
+        "Shape_Area" : 32993640.9892
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 127, 
+        "NAME" : "POWELTON", 
+        "LISTNAME" : "Powelton", 
+        "MAPNAME" : "Powelton", 
+        "Shape_Leng" : 8846.6881179, 
+        "Shape_Area" : 3356992.30425
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 128, 
+        "NAME" : "WEST_POWELTON", 
+        "LISTNAME" : "West Powelton", 
+        "MAPNAME" : "West Powelton", 
+        "Shape_Leng" : 12588.9313207, 
+        "Shape_Area" : 6840857.33772
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 129, 
+        "NAME" : "EAST_PARKSIDE", 
+        "LISTNAME" : "East Parkside", 
+        "MAPNAME" : "East Parkside", 
+        "Shape_Leng" : 10885.7815353, 
+        "Shape_Area" : 4230999.8669
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 130, 
+        "NAME" : "BELMONT", 
+        "LISTNAME" : "Belmont", 
+        "MAPNAME" : "Belmont", 
+        "Shape_Leng" : 10727.5746146, 
+        "Shape_Area" : 5562268.82542
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 131, 
+        "NAME" : "HAVERFORD_NORTH", 
+        "LISTNAME" : "Haverford North", 
+        "MAPNAME" : "Haverford North", 
+        "Shape_Leng" : 8163.07457694, 
+        "Shape_Area" : 2839016.79027
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 132, 
+        "NAME" : "WEST_PARKSIDE", 
+        "LISTNAME" : "West Parkside", 
+        "MAPNAME" : "West Parkside", 
+        "Shape_Leng" : 11392.2493318, 
+        "Shape_Area" : 7502885.31823
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 133, 
+        "NAME" : "MILL_CREEK", 
+        "LISTNAME" : "Mill Creek", 
+        "MAPNAME" : "Mill Creek", 
+        "Shape_Leng" : 16852.5280123, 
+        "Shape_Area" : 15395244.6903
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 134, 
+        "NAME" : "DUNLAP", 
+        "LISTNAME" : "Dunlap", 
+        "MAPNAME" : "Dunlap", 
+        "Shape_Leng" : 6513.13059011, 
+        "Shape_Area" : 2366600.49147
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 135, 
+        "NAME" : "MANTUA", 
+        "LISTNAME" : "Mantua", 
+        "MAPNAME" : "Mantua", 
+        "Shape_Leng" : 25053.449835, 
+        "Shape_Area" : 22922775.3069
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 136, 
+        "NAME" : "HADDINGTON", 
+        "LISTNAME" : "Haddington", 
+        "MAPNAME" : "Haddington", 
+        "Shape_Leng" : 22913.7361917, 
+        "Shape_Area" : 22297710.8938
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 137, 
+        "NAME" : "CARROLL_PARK", 
+        "LISTNAME" : "Carroll Park", 
+        "MAPNAME" : "Carroll Park", 
+        "Shape_Leng" : 17104.323942, 
+        "Shape_Area" : 13055104.6484
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 138, 
+        "NAME" : "OVERBROOK", 
+        "LISTNAME" : "Overbrook", 
+        "MAPNAME" : "Overbrook", 
+        "Shape_Leng" : 57004.9246069, 
+        "Shape_Area" : 76924994.536
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 139, 
+        "NAME" : "WYNNEFIELD_HEIGHTS", 
+        "LISTNAME" : "Wynnefield Heights", 
+        "MAPNAME" : "Wynnefield Heights", 
+        "Shape_Leng" : 19368.9785372, 
+        "Shape_Area" : 16384674.9145
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 140, 
+        "NAME" : "CALLOWHILL", 
+        "LISTNAME" : "Callowhill", 
+        "MAPNAME" : "Callowhill", 
+        "Shape_Leng" : 10543.653354, 
+        "Shape_Area" : 5835330.92903
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 141, 
+        "NAME" : "WEST_POPLAR", 
+        "LISTNAME" : "West Poplar", 
+        "MAPNAME" : "West Poplar", 
+        "Shape_Leng" : 11636.9581236, 
+        "Shape_Area" : 8130260.63542
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 142, 
+        "NAME" : "EAST_POPLAR", 
+        "LISTNAME" : "East Poplar", 
+        "MAPNAME" : "East Poplar", 
+        "Shape_Leng" : 9108.87313506, 
+        "Shape_Area" : 4139158.70723
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 143, 
+        "NAME" : "STRAWBERRY_MANSION", 
+        "LISTNAME" : "Strawberry Mansion", 
+        "MAPNAME" : "Strawberry Mansion", 
+        "Shape_Leng" : 28308.1681324, 
+        "Shape_Area" : 25752961.6797
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 144, 
+        "NAME" : "EAST_PARK", 
+        "LISTNAME" : "East Park", 
+        "MAPNAME" : "East Park", 
+        "Shape_Leng" : 34259.9978561, 
+        "Shape_Area" : 33003060.9742
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 145, 
+        "NAME" : "WYNNEFIELD", 
+        "LISTNAME" : "Wynnefield", 
+        "MAPNAME" : "Wynnefield", 
+        "Shape_Leng" : 29540.6131177, 
+        "Shape_Area" : 31690782.2296
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 146, 
+        "NAME" : "WEST_PARK", 
+        "LISTNAME" : "West Park", 
+        "MAPNAME" : "West Park", 
+        "Shape_Leng" : 46219.2623016, 
+        "Shape_Area" : 62772662.0598
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 147, 
+        "NAME" : "NORMANDY_VILLAGE", 
+        "LISTNAME" : "Normandy Village", 
+        "MAPNAME" : "Normandy Village", 
+        "Shape_Leng" : 12444.2215274, 
+        "Shape_Area" : 8034864.19343
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 148, 
+        "NAME" : "STADIUM_DISTRICT", 
+        "LISTNAME" : "Stadium District", 
+        "MAPNAME" : "Stadium District", 
+        "Shape_Leng" : 37632.2859292, 
+        "Shape_Area" : 70693515.6765
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 149, 
+        "NAME" : "NAVY_YARD", 
+        "LISTNAME" : "Navy Yard", 
+        "MAPNAME" : "Navy Yard", 
+        "Shape_Leng" : 42694.5496439, 
+        "Shape_Area" : 80181568.733
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 150, 
+        "NAME" : "EAST_KENSINGTON", 
+        "LISTNAME" : "East Kensington", 
+        "MAPNAME" : "East Kensington", 
+        "Shape_Leng" : 11570.5147893, 
+        "Shape_Area" : 7672347.1013
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 151, 
+        "NAME" : "ELMWOOD", 
+        "LISTNAME" : "Elmwood", 
+        "MAPNAME" : "Elmwood", 
+        "Shape_Leng" : 23215.7245206, 
+        "Shape_Area" : 21901439.6201
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 152, 
+        "NAME" : "GIRARD_ESTATES", 
+        "LISTNAME" : "Girard Estates", 
+        "MAPNAME" : "Girard Estates", 
+        "Shape_Leng" : 17375.9724498, 
+        "Shape_Area" : 17926205.9702
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 153, 
+        "NAME" : "EASTWICK", 
+        "LISTNAME" : "Eastwick", 
+        "MAPNAME" : "Eastwick", 
+        "Shape_Leng" : 43668.9052843, 
+        "Shape_Area" : 74132096.2631
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 154, 
+        "NAME" : "PACKER_PARK", 
+        "LISTNAME" : "Packer Park", 
+        "MAPNAME" : "Packer Park", 
+        "Shape_Leng" : 21816.0179479, 
+        "Shape_Area" : 28888967.1096
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 155, 
+        "NAME" : "PENNSPORT", 
+        "LISTNAME" : "Pennsport", 
+        "MAPNAME" : "Pennsport", 
+        "Shape_Leng" : 11823.2331084, 
+        "Shape_Area" : 6492472.62159
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 156, 
+        "NAME" : "NEWBOLD", 
+        "LISTNAME" : "Newbold", 
+        "MAPNAME" : "Newbold", 
+        "Shape_Leng" : 10052.5708849, 
+        "Shape_Area" : 5876852.81252
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 157, 
+        "NAME" : "WEST_PASSYUNK", 
+        "LISTNAME" : "West Passyunk", 
+        "MAPNAME" : "West Passyunk", 
+        "Shape_Leng" : 10499.291848, 
+        "Shape_Area" : 6494799.38332
+      }
+    }, 
+    {
+      "attributes" : {
+        "FID" : 158, 
+        "NAME" : "EAST_PASSYUNK", 
+        "LISTNAME" : "East Passyunk", 
+        "MAPNAME" : "East Passyunk", 
+        "Shape_Leng" : 10987.761846, 
+        "Shape_Area" : 6502097.10396
+      }
+    }
+  ]
+}
