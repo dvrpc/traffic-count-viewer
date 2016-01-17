@@ -45,6 +45,7 @@
 /*--------------------------------------------------------*/
 /*--------  Typeahead Search Styles  ---------------------*/
 /*--------------------------------------------------------*/
+
 .typeahead {
     background-color: #FFF;
 }
@@ -216,15 +217,17 @@
     z-index:1;
 }
 #sidebar-nav{
-  padding:10px;
-  border-bottom:1px #ddd solid;
-  border-left:1px #ddd solid;
+  background-color: #428BCA;
+  padding: 10px;
+  border-bottom: 1px #3881C0 solid;
+  border-left: 1px #3881C0 solid;
+
 }
 #results-panel{
   width:100%;
   z-index:-1;
   position:absolute;
-  top:51px;
+  top:55px;
   bottom:0;
   margin-top:-1px;
   border-top:1px #ddd solid;
