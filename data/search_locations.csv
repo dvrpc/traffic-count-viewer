@@ -1,0 +1,868 @@
+OBJECT_ID,TERM,LAYER
+1,"Mantua Township, NJ",mun_boundary
+2,"Pine Valley Borough, NJ",mun_boundary
+3,"Waterford Township, NJ",mun_boundary
+5,"Winslow Township, NJ",mun_boundary
+1329,"West Norriton Township, PA",mun_boundary
+1330,"Cheltenham Township, PA",mun_boundary
+1331,"Upper Dublin Township, PA",mun_boundary
+1332,"East Norriton Township, PA",mun_boundary
+1333,"Whitpain Township, PA",mun_boundary
+1334,"Schwenksville Borough, PA",mun_boundary
+1335,"Green Lane Borough, PA",mun_boundary
+1336,"Souderton Borough, PA",mun_boundary
+1337,"Upper Frederick Township, PA",mun_boundary
+1338,"Upper Salford Township, PA",mun_boundary
+1339,"Worcester Township, PA",mun_boundary
+1340,"Collegeville Borough, PA",mun_boundary
+1170,"Washington Township, NJ",mun_boundary
+1171,"Harrison Township, NJ",mun_boundary
+1172,"Swedesboro Borough, NJ",mun_boundary
+1173,"Pitman Borough, NJ",mun_boundary
+1174,"Chesilhurst Borough, NJ",mun_boundary
+1175,"Glassboro Borough, NJ",mun_boundary
+2360,"Burlington Township, NJ",mun_boundary
+1290,"Newfield Borough, NJ",mun_boundary
+1341,"Trappe Borough, PA",mun_boundary
+1342,"Lower Gwynedd Township, PA",mun_boundary
+1343,"North Wales Borough, PA",mun_boundary
+1344,"Lansdale Borough, PA",mun_boundary
+1345,"Skippack Township, PA",mun_boundary
+1346,"Hatfield Borough, PA",mun_boundary
+1347,"New Hanover Township, PA",mun_boundary
+1348,"Lower Frederick Township, PA",mun_boundary
+1349,"Lower Salford Township, PA",mun_boundary
+1554,"Hopewell Borough, NJ",mun_boundary
+1140,"Bass River Township, NJ",mun_boundary
+1184,"South Harrison Township, NJ",mun_boundary
+1191,"Elk Township, NJ",mun_boundary
+1192,"Clayton Borough, NJ",mun_boundary
+1193,"Franklin Township, NJ",mun_boundary
+1314,"Monroe Township, NJ",mun_boundary
+1354,"Franconia Township, PA",mun_boundary
+1355,"Horsham Township, PA",mun_boundary
+1356,"Montgomery Township, PA",mun_boundary
+1359,"Perkiomen Township, PA",mun_boundary
+1360,"Towamencin Township, PA",mun_boundary
+1361,"Upper Gwynedd Township, PA",mun_boundary
+1362,"Hatfield Township, PA",mun_boundary
+1364,"Bordentown Township, NJ",mun_boundary
+1365,"Chesterfield Township, NJ",mun_boundary
+1315,"Brooklawn Borough, NJ",mun_boundary
+1316,"Maple Shade Township, NJ",mun_boundary
+1317,"Evesham Township, NJ",mun_boundary
+1318,"Palmyra Borough, NJ",mun_boundary
+1319,"Rockledge Borough, PA",mun_boundary
+1320,"Conshohocken Borough, PA",mun_boundary
+1321,"Abington Township, PA",mun_boundary
+1322,"Springfield Township, PA",mun_boundary
+1323,"Whitemarsh Township, PA",mun_boundary
+1324,"Plymouth Township, PA",mun_boundary
+1325,"Norristown Borough, PA",mun_boundary
+1326,"Ambler Borough, PA",mun_boundary
+1327,"Bridgeport Borough, PA",mun_boundary
+1328,"Jenkintown Borough, PA",mun_boundary
+1369,"North Hanover Township, NJ",mun_boundary
+1370,"Hamilton Township, NJ",mun_boundary
+1371,"Cherry Hill Township, NJ",mun_boundary
+1373,"Shamong Township, NJ",mun_boundary
+2396,"Delran Township, NJ",mun_boundary
+2397,"Cinnaminson Township, NJ",mun_boundary
+2398,"Eastampton Township, NJ",mun_boundary
+2399,"Riverton Borough, NJ",mun_boundary
+2400,"Philadelphia City, PA",mun_boundary
+2401,"Moorestown Township, NJ",mun_boundary
+2402,"Mount Holly Township, NJ",mun_boundary
+2403,"Mount Laurel Township, NJ",mun_boundary
+2404,"Hainesport Township, NJ",mun_boundary
+2405,"Pennsauken Township, NJ",mun_boundary
+2449,"Millbourne Borough, PA",mun_boundary
+2450,"Upper Merion Township, PA",mun_boundary
+2451,"Narberth Borough, PA",mun_boundary
+2452,"Tavistock Borough, NJ",mun_boundary
+2453,"Lawnside Borough, NJ",mun_boundary
+2454,"Bellmawr Borough, NJ",mun_boundary
+2455,"Voorhees Township, NJ",mun_boundary
+2456,"Medford Lakes Borough, NJ",mun_boundary
+2457,"Deptford Township, NJ",mun_boundary
+2406,"West Conshohocken Borough, PA",mun_boundary
+2407,"Lower Merion Township, PA",mun_boundary
+2408,"Lumberton Township, NJ",mun_boundary
+2409,"Southampton Township, NJ",mun_boundary
+2410,"Pemberton Borough, NJ",mun_boundary
+2411,"Camden City, NJ",mun_boundary
+2412,"Merchantville Borough, NJ",mun_boundary
+2458,"Magnolia Borough, NJ",mun_boundary
+2459,"Runnemede Borough, NJ",mun_boundary
+2460,"Somerdale Borough, NJ",mun_boundary
+2026,"Hightstown Borough, NJ",mun_boundary
+2440,"Barrington Borough, NJ",mun_boundary
+2441,"Westville Borough, NJ",mun_boundary
+2442,"Tabernacle Township, NJ",mun_boundary
+2469,"Woodbury City, NJ",mun_boundary
+2470,"Gloucester Township, NJ",mun_boundary
+2471,"Greenwich Township, NJ",mun_boundary
+2472,"Malvern Borough, PA",mun_boundary
+2473,"Nether Providence Township, PA",mun_boundary
+2474,"Radnor Township, PA",mun_boundary
+2475,"Ridley Township, PA",mun_boundary
+2361,"Burlington City, NJ",mun_boundary
+2362,"Langhorne Borough, PA",mun_boundary
+2363,"Bristol Borough, PA",mun_boundary
+2364,"Hulmeville Borough, PA",mun_boundary
+2365,"Bristol Township, PA",mun_boundary
+2443,"National Park Borough, NJ",mun_boundary
+2444,"Yeadon Borough, PA",mun_boundary
+2445,"Colwyn Borough, PA",mun_boundary
+2446,"Darby Borough, PA",mun_boundary
+2447,"East Lansdowne Borough, PA",mun_boundary
+2448,"Lansdowne Borough, PA",mun_boundary
+2476,"Haverford Township, PA",mun_boundary
+2477,"Rutledge Borough, PA",mun_boundary
+2084,"Robbinsville Township, NJ",mun_boundary
+2085,"Trenton City, NJ",mun_boundary
+2086,"Morrisville Borough, PA",mun_boundary
+2087,"Lower Makefield Township, PA",mun_boundary
+2366,"Middletown Township, PA",mun_boundary
+2367,"Springfield Township, NJ",mun_boundary
+2368,"Edgewater Park Township, NJ",mun_boundary
+2369,"Beverly City, NJ",mun_boundary
+2370,"Langhorne Manor Borough, PA",mun_boundary
+2371,"Bensalem Township, PA",mun_boundary
+2461,"Paulsboro Borough, NJ",mun_boundary
+2462,"Aldan Borough, PA",mun_boundary
+2463,"Sharon Hill Borough, PA",mun_boundary
+2464,"Clifton Heights Borough, PA",mun_boundary
+2465,"Collingdale Borough, PA",mun_boundary
+2466,"Folcroft Borough, PA",mun_boundary
+2467,"Tinicum Township, PA",mun_boundary
+2431,"Woodlynne Borough, NJ",mun_boundary
+2432,"Haddonfield Borough, NJ",mun_boundary
+2433,"Oaklyn Borough, NJ",mun_boundary
+2434,"Gloucester City, NJ",mun_boundary
+2435,"Audubon Borough, NJ",mun_boundary
+2436,"Audubon Park Borough, NJ",mun_boundary
+2437,"Haddon Heights Borough, NJ",mun_boundary
+2372,"Penndel Borough, PA",mun_boundary
+2373,"Northampton Township, PA",mun_boundary
+2374,"Delanco Township, NJ",mun_boundary
+2375,"Hatboro Borough, PA",mun_boundary
+2376,"Upper Moreland Township, PA",mun_boundary
+2377,"Lower Moreland Township, PA",mun_boundary
+2468,"Darby Township, PA",mun_boundary
+2438,"Mount Ephraim Borough, NJ",mun_boundary
+2439,"West Deptford Township, NJ",mun_boundary
+2002,"Lawrence Township, NJ",mun_boundary
+2003,"West Windsor Township, NJ",mun_boundary
+2004,"Pennington Borough, NJ",mun_boundary
+2005,"Ewing Township, NJ",mun_boundary
+1924,"Princeton, NJ",mun_boundary
+2006,"Upper Makefield Township, PA",mun_boundary
+2007,"Yardley Borough, PA",mun_boundary
+2008,"Newtown Borough, PA",mun_boundary
+2378,"Bryn Athyn Borough, PA",mun_boundary
+2379,"Lower Southampton Township, PA",mun_boundary
+2380,"Upper Southampton Township, PA",mun_boundary
+2381,"Warminster Township, PA",mun_boundary
+2382,"Warrington Township, PA",mun_boundary
+2383,"Ivyland Borough, PA",mun_boundary
+2413,"Collingswood Borough, NJ",mun_boundary
+2418,"Woodland Township, NJ",mun_boundary
+2384,"Willingboro Township, NJ",mun_boundary
+2387,"New Hanover Township, NJ",mun_boundary
+2394,"Riverside Township, NJ",mun_boundary
+2395,"Westampton Township, NJ",mun_boundary
+2009,"Newtown Township, PA",mun_boundary
+2664,"West Marlborough Township, PA",mun_boundary
+2668,"West Nantmeal Township, PA",mun_boundary
+2669,"West Nottingham Township, PA",mun_boundary
+2709,"Chester City, PA",mun_boundary
+2748,"Kennett Township, PA",mun_boundary
+2751,"Honey Brook Township, PA",mun_boundary
+2754,"London Grove Township, PA",mun_boundary
+3182,"Perkasie Borough, PA",mun_boundary
+3183,"Plumstead Township, PA",mun_boundary
+3184,"Solebury Township, PA",mun_boundary
+2489,"Phoenixville Borough, PA",mun_boundary
+2490,"Tredyffrin Township, PA",mun_boundary
+2527,"Gibbsboro Borough, NJ",mun_boundary
+3185,"West Rockhill Township, PA",mun_boundary
+3187,"Upper Hanover Township, PA",mun_boundary
+3188,"Doylestown Township, PA",mun_boundary
+2621,"Franklin Township, PA",mun_boundary
+2624,"Highland Township, PA",mun_boundary
+2491,"Edgmont Township, PA",mun_boundary
+2492,"Glenolden Borough, PA",mun_boundary
+2493,"East Pikeland Township, PA",mun_boundary
+2494,"East Whiteland Township, PA",mun_boundary
+2495,"Upper Providence Township, PA",mun_boundary
+2670,"West Pikeland Township, PA",mun_boundary
+2672,"West Sadsbury Township, PA",mun_boundary
+2714,"Sadsbury Township, PA",mun_boundary
+2575,"Elverson Borough, PA",mun_boundary
+2576,"Honey Brook Borough, PA",mun_boundary
+2577,"Lower Chichester Township, PA",mun_boundary
+2578,"Caln Township, PA",mun_boundary
+2579,"Thornbury Township, PA",mun_boundary
+2580,"Upper Chichester Township, PA",mun_boundary
+2586,"Upland Borough, PA",mun_boundary
+2628,"Coatesville City, PA",mun_boundary
+2631,"East Nottingham Township, PA",mun_boundary
+2634,"East Marlborough Township, PA",mun_boundary
+2676,"West Goshen Township, PA",mun_boundary
+2679,"Atglen Borough, PA",mun_boundary
+2680,"West Chester Borough, PA",mun_boundary
+2758,"Pennsbury Township, PA",mun_boundary
+2762,"Valley Township, PA",mun_boundary
+3042,"Hi-Nella Borough, NJ",mun_boundary
+3043,"Stratford Borough, NJ",mun_boundary
+3044,"Lindenwold Borough, NJ",mun_boundary
+3171,"Dublin Borough, PA",mun_boundary
+3172,"New Hope Borough, PA",mun_boundary
+3173,"Trumbauersville Borough, PA",mun_boundary
+3045,"Laurel Springs Borough, NJ",mun_boundary
+3046,"Woodbury Heights Borough, NJ",mun_boundary
+3047,"East Greenwich Township, NJ",mun_boundary
+3048,"Berlin Township, NJ",mun_boundary
+3049,"Clementon Borough, NJ",mun_boundary
+3050,"Berlin Borough, NJ",mun_boundary
+2496,"Newtown Township, PA",mun_boundary
+2497,"Charlestown Township, PA",mun_boundary
+2498,"Easttown Township, PA",mun_boundary
+3174,"Telford Borough, PA",mun_boundary
+3175,"Buckingham Township, PA",mun_boundary
+3177,"East Rockhill Township, PA",mun_boundary
+3178,"New Britain Township, PA",mun_boundary
+3179,"Richlandtown Borough, PA",mun_boundary
+3180,"Sellersville Borough, PA",mun_boundary
+3181,"Silverdale Borough, PA",mun_boundary
+2635,"London Britain Township, PA",mun_boundary
+2637,"West Vincent Township, PA",mun_boundary
+2638,"West Whiteland Township, PA",mun_boundary
+2639,"East Fallowfield Township, PA",mun_boundary
+2640,"East Goshen Township, PA",mun_boundary
+2499,"Springfield Township, PA",mun_boundary
+2500,"Upper Darby Township, PA",mun_boundary
+2501,"Schuylkill Township, PA",mun_boundary
+2502,"Royersford Borough, PA",mun_boundary
+2682,"West Caln Township, PA",mun_boundary
+2683,"Avondale Borough, PA",mun_boundary
+2684,"Thornbury Township, PA",mun_boundary
+2685,"Oxford Borough, PA",mun_boundary
+2686,"Parkesburg Borough, PA",mun_boundary
+2590,"Chester Township, PA",mun_boundary
+2591,"Brookhaven Borough, PA",mun_boundary
+2592,"Parkside Borough, PA",mun_boundary
+2593,"Wallace Township, PA",mun_boundary
+2596,"Chester Heights Borough, PA",mun_boundary
+2597,"Chadds Ford Township, PA",mun_boundary
+2598,"Trainer Borough, PA",mun_boundary
+2648,"Concord Township, PA",mun_boundary
+2687,"West Brandywine Township, PA",mun_boundary
+2688,"Downingtown Borough, PA",mun_boundary
+2689,"Upper Oxford Township, PA",mun_boundary
+2690,"Newlin Township, PA",mun_boundary
+2729,"Uwchlan Township, PA",mun_boundary
+2730,"Westtown Township, PA",mun_boundary
+3051,"Pine Hill Borough, NJ",mun_boundary
+3052,"Washington Township, NJ",mun_boundary
+3053,"Wenonah Borough, NJ",mun_boundary
+3189,"Richland Township, PA",mun_boundary
+3190,"Hilltown Township, PA",mun_boundary
+3191,"Quakertown Borough, PA",mun_boundary
+3192,"Milford Township, PA",mun_boundary
+3161,"Red Hill Borough, PA",mun_boundary
+3162,"New Britain Borough, PA",mun_boundary
+3163,"Pennsburg Borough, PA",mun_boundary
+3164,"Marlborough Township, PA",mun_boundary
+3054,"Bordentown City, NJ",mun_boundary
+3055,"Fieldsboro Borough, NJ",mun_boundary
+3056,"Falls Township, PA",mun_boundary
+3057,"Florence Township, NJ",mun_boundary
+3058,"Tullytown Borough, PA",mun_boundary
+3059,"Mansfield Township, NJ",mun_boundary
+2503,"East Coventry Township, PA",mun_boundary
+2504,"East Vincent Township, PA",mun_boundary
+2505,"Lower Pottsgrove Township, PA",mun_boundary
+2506,"Douglass Township, PA",mun_boundary
+2599,"Aston Township, PA",mun_boundary
+3165,"Salford Township, PA",mun_boundary
+3166,"Bedminster Township, PA",mun_boundary
+3167,"Warwick Township, PA",mun_boundary
+3168,"Wrightstown Township, PA",mun_boundary
+3169,"Chalfont Borough, PA",mun_boundary
+3170,"Doylestown Borough, PA",mun_boundary
+2653,"Bethel Township, PA",mun_boundary
+2507,"Pottstown Borough, PA",mun_boundary
+2508,"West Pottsgrove Township, PA",mun_boundary
+2509,"Limerick Township, PA",mun_boundary
+2510,"North Coventry Township, PA",mun_boundary
+2692,"Upper Uwchlan Township, PA",mun_boundary
+2694,"West Grove Borough, PA",mun_boundary
+2696,"West Bradford Township, PA",mun_boundary
+2604,"East Nantmeal Township, PA",mun_boundary
+2605,"East Brandywine Township, PA",mun_boundary
+2655,"Pocopson Township, PA",mun_boundary
+2658,"West Fallowfield Township, PA",mun_boundary
+2834,"South Coventry Township, PA",mun_boundary
+2836,"Warwick Township, PA",mun_boundary
+2697,"South Coatesville Borough, PA",mun_boundary
+2699,"Londonderry Township, PA",mun_boundary
+2701,"Lower Oxford Township, PA",mun_boundary
+2702,"New London Township, PA",mun_boundary
+2741,"Marcus Hook Borough, PA",mun_boundary
+3150,"Woolwich Township, NJ",mun_boundary
+2478,"Swarthmore Borough, PA",mun_boundary
+2479,"Rose Valley Borough, PA",mun_boundary
+2480,"Eddystone Borough, PA",mun_boundary
+2516,"Upper Pottsgrove Township, PA",mun_boundary
+2517,"Lower Providence Township, PA",mun_boundary
+3158,"Hopewell Township, NJ",mun_boundary
+3159,"East Greenville Borough, PA",mun_boundary
+3160,"Telford Borough, PA",mun_boundary
+2608,"Penn Township, PA",mun_boundary
+2611,"East Caln Township, PA",mun_boundary
+2614,"Birmingham Township, PA",mun_boundary
+2481,"Norwood Borough, PA",mun_boundary
+2482,"Media Borough, PA",mun_boundary
+2483,"Marple Township, PA",mun_boundary
+2484,"Morton Borough, PA",mun_boundary
+2485,"Prospect Park Borough, PA",mun_boundary
+2486,"Ridley Park Borough, PA",mun_boundary
+2487,"Willistown Township, PA",mun_boundary
+2488,"Spring City Borough, PA",mun_boundary
+2660,"Elk Township, PA",mun_boundary
+2520,"Upper Providence Township, PA",mun_boundary
+2703,"New Garden Township, PA",mun_boundary
+2705,"Middletown Township, PA",mun_boundary
+2570,"Logan Township, NJ",mun_boundary
+2571,"Kennett Square Borough, PA",mun_boundary
+2574,"Modena Borough, PA",mun_boundary
+2619,"East Bradford Township, PA",mun_boundary
+3240,"Durham Township, PA",mun_boundary
+3244,"Riegelsville Borough, PA",mun_boundary
+3245,"Nockamixon Township, PA",mun_boundary
+3246,"Haycock Township, PA",mun_boundary
+3459,"East Windsor Township, NJ",mun_boundary
+3257,"Tinicum Township, PA",mun_boundary
+3263,"Springfield Township, PA",mun_boundary
+3265,"Bridgeton Township, PA",mun_boundary
+3471,"Wrightstown Borough, NJ",mun_boundary
+3472,"Pemberton Township, NJ",mun_boundary
+3473,"Medford Township, NJ",mun_boundary
+3474,"Haddon Township, NJ",mun_boundary
+2252,"Cherry Hill, NJ 08002",zip
+2253,"Cherry Hill, NJ 08003",zip
+2254,"Atco, NJ 08004",zip
+2255,"Barnegat, NJ 08005",zip
+2257,"Barrington, NJ 08007",zip
+2259,"Berlin, NJ 08009",zip
+2260,"Beverly, NJ 08010",zip
+2261,"Blackwood, NJ 08012",zip
+2262,"Bridgeport, NJ 08014",zip
+2263,"Browns Mills, NJ 08015",zip
+2264,"Burlington, NJ 08016",zip
+2265,"Chatsworth, NJ 08019",zip
+2266,"Clarksboro, NJ 08020",zip
+2267,"Clementon, NJ 08021",zip
+2268,"Columbus, NJ 08022",zip
+2269,"Gibbsboro, NJ 08026",zip
+2270,"Gibbstown, NJ 08027",zip
+2271,"Glassboro, NJ 08028",zip
+2272,"Glendora, NJ 08029",zip
+2273,"Gloucester City, NJ 08030",zip
+2274,"Bellmawr, NJ 08031",zip
+2275,"Grenloch, NJ 08032",zip
+2276,"Haddonfield, NJ 08033",zip
+2277,"Cherry Hill, NJ 08034",zip
+2278,"Haddon Heights, NJ 08035",zip
+2279,"Hainesport, NJ 08036",zip
+2280,"Hammonton, NJ 08037",zip
+2281,"Jobstown, NJ 08041",zip
+2282,"Voorhees, NJ 08043",zip
+2283,"Lawnside, NJ 08045",zip
+2284,"Willingboro, NJ 08046",zip
+2285,"Lumberton, NJ 08048",zip
+2286,"Magnolia, NJ 08049",zip
+2288,"Mantua, NJ 08051",zip
+2289,"Maple Shade, NJ 08052",zip
+2290,"Marlton, NJ 08053",zip
+2291,"Mount Laurel, NJ 08054",zip
+2292,"Medford, NJ 08055",zip
+2293,"Mickleton, NJ 08056",zip
+2294,"Moorestown, NJ 08057",zip
+2295,"Mount Ephraim, NJ 08059",zip
+2296,"Mount Holly, NJ 08060",zip
+2297,"Mount Royal, NJ 08061",zip
+2298,"Mullica Hill, NJ 08062",zip
+2299,"National Park, NJ 08063",zip
+2300,"Palmyra, NJ 08065",zip
+2301,"Paulsboro, NJ 08066",zip
+2302,"Pedricktown, NJ 08067",zip
+2303,"Pemberton, NJ 08068",zip
+2306,"Pitman, NJ 08071",zip
+2307,"Riverside, NJ 08075",zip
+2308,"Riverton, NJ 08077",zip
+2309,"Runnemede, NJ 08078",zip
+2311,"Sewell, NJ 08080",zip
+2312,"Sicklerville, NJ 08081",zip
+2313,"Somerdale, NJ 08083",zip
+2314,"Stratford, NJ 08084",zip
+2315,"Swedesboro, NJ 08085",zip
+2316,"Thorofare, NJ 08086",zip
+2317,"Tuckerton, NJ 08087",zip
+2318,"Vincentown, NJ 08088",zip
+2319,"Waterford Works, NJ 08089",zip
+2320,"Wenonah, NJ 08090",zip
+2321,"West Berlin, NJ 08091",zip
+2323,"Westville, NJ 08093",zip
+2324,"Williamstown, NJ 08094",zip
+2325,"Woodbury, NJ 08096",zip
+2326,"Woodbury Heights, NJ 08097",zip
+2327,"Woodstown, NJ 08098",zip
+2328,"Camden, NJ 08102",zip
+2329,"Camden, NJ 08103",zip
+2330,"Camden, NJ 08104",zip
+2331,"Camden, NJ 08105",zip
+2332,"Audubon, NJ 08106",zip
+2333,"Oaklyn, NJ 08107",zip
+2334,"Collingswood, NJ 08108",zip
+2335,"Merchantville, NJ 08109",zip
+2336,"Pennsauken, NJ 08110",zip
+2343,"Egg Harbor City, NJ 08215",zip
+2351,"Port Republic, NJ 08241",zip
+2363,"Clayton, NJ 08312",zip
+2366,"Elmer, NJ 08318",zip
+2368,"Franklinville, NJ 08322",zip
+2373,"Malaga, NJ 08328",zip
+2378,"Monroeville, NJ 08343",zip
+2379,"Newfield, NJ 08344",zip
+2385,"Vineland, NJ 08360",zip
+2391,"Allentown, NJ 08501",zip
+2393,"Bordentown, NJ 08505",zip
+2395,"Cookstown, NJ 08511",zip
+2396,"Cranbury, NJ 08512",zip
+2397,"Cream Ridge, NJ 08514",zip
+2398,"Chesterfield, NJ 08515",zip
+2399,"Florence, NJ 08518",zip
+2400,"Hightstown, NJ 08520",zip
+2401,"Hopewell, NJ 08525",zip
+2404,"Lambertville, NJ 08530",zip
+2405,"New Egypt, NJ 08533",zip
+2406,"Pennington, NJ 08534",zip
+2407,"Millstone Township, NJ 08535",zip
+2408,"Plainsboro, NJ 08536",zip
+2409,"Princeton, NJ 08540",zip
+2410,"Princeton, NJ 08542",zip
+2411,"Princeton, NJ 08544",zip
+2412,"Princeton Junction, NJ 08550",zip
+2415,"Roebling, NJ 08554",zip
+2418,"Skillman, NJ 08558",zip
+2419,"Stockton, NJ 08559",zip
+2420,"Titusville, NJ 08560",zip
+2421,"Wrightstown, NJ 08562",zip
+2422,"Trenton, NJ 08608",zip
+2423,"Trenton, NJ 08609",zip
+2424,"Trenton, NJ 08610",zip
+2425,"Trenton, NJ 08611",zip
+2426,"Trenton, NJ 08618",zip
+2427,"Trenton, NJ 08619",zip
+2428,"Trenton, NJ 08620",zip
+2429,"Trenton, NJ 08628",zip
+2430,"Trenton, NJ 08629",zip
+2431,"Trenton, NJ 08638",zip
+2432,"Fort Dix, NJ 08640",zip
+2433,"Trenton, NJ 08641",zip
+2434,"Lawrence Township, NJ 08648",zip
+2435,"Trenton, NJ 08690",zip
+2436,"Trenton, NJ 08691",zip
+2446,"Lakehurst, NJ 08733",zip
+2461,"Manchester Township, NJ 08759",zip
+2476,"Frenchtown, NJ 08825",zip
+2482,"Monroe Township, NJ 08831",zip
+2491,"Milford, NJ 08848",zip
+2500,"Phillipsburg, NJ 08865",zip
+4997,"Christiana, PA 17509",zip
+5005,"Gap, PA 17527",zip
+5009,"Kirkwood, PA 17536",zip
+5018,"Narvon, PA 17555",zip
+5022,"Peach Bottom, PA 17563",zip
+5150,"Coopersburg, PA 18036",zip
+5154,"East Greenville, PA 18041",zip
+5155,"Easton, PA 18042",zip
+5161,"Green Lane, PA 18054",zip
+5162,"Hellertown, PA 18055",zip
+5171,"Palm, PA 18070",zip
+5174,"Pennsburg, PA 18073",zip
+5175,"Perkiomenville, PA 18074",zip
+5176,"Red Hill, PA 18076",zip
+5177,"Riegelsville, PA 18077",zip
+5370,"Doylestown, PA 18901",zip
+5371,"Doylestown, PA 18902",zip
+5372,"Carversville, PA 18913",zip
+5373,"Chalfont, PA 18914",zip
+5374,"Colmar, PA 18915",zip
+5375,"Dublin, PA 18917",zip
+5376,"Erwinna, PA 18920",zip
+5377,"Fountainville, PA 18923",zip
+5378,"Furlong, PA 18925",zip
+5379,"Hilltown, PA 18927",zip
+5380,"Jamison, PA 18929",zip
+5381,"Kintnersville, PA 18930",zip
+5382,"Line Lexington, PA 18932",zip
+5383,"Lumberville, PA 18933",zip
+5384,"Mechanicsville, PA 18934",zip
+5385,"Montgomeryville, PA 18936",zip
+5386,"New Hope, PA 18938",zip
+5387,"Newtown, PA 18940",zip
+5388,"Ottsville, PA 18942",zip
+5389,"Perkasie, PA 18944",zip
+5390,"Pipersville, PA 18947",zip
+5391,"Quakertown, PA 18951",zip
+5392,"Richboro, PA 18954",zip
+5393,"Richlandtown, PA 18955",zip
+5394,"Sellersville, PA 18960",zip
+5395,"Souderton, PA 18964",zip
+5396,"Southampton, PA 18966",zip
+5397,"Telford, PA 18969",zip
+5398,"Upper Black Eddy, PA 18972",zip
+5399,"Warminster, PA 18974",zip
+5400,"Warrington, PA 18976",zip
+5401,"Washington Crossing, PA 18977",zip
+5402,"Abington, PA 19001",zip
+5403,"Ambler, PA 19002",zip
+5404,"Ardmore, PA 19003",zip
+5405,"Bala Cynwyd, PA 19004",zip
+5406,"Huntingdon Valley, PA 19006",zip
+5407,"Bristol, PA 19007",zip
+5408,"Broomall, PA 19008",zip
+5409,"Bryn Athyn, PA 19009",zip
+5410,"Bryn Mawr, PA 19010",zip
+5411,"Cheltenham, PA 19012",zip
+5412,"Chester, PA 19013",zip
+5413,"Aston, PA 19014",zip
+5414,"Brookhaven, PA 19015",zip
+5415,"Clifton Heights, PA 19018",zip
+5416,"Bensalem, PA 19020",zip
+5417,"Croydon, PA 19021",zip
+5418,"Crum Lynne, PA 19022",zip
+5419,"Darby, PA 19023",zip
+5420,"Dresher, PA 19025",zip
+5421,"Drexel Hill, PA 19026",zip
+5422,"Elkins Park, PA 19027",zip
+5423,"Essington, PA 19029",zip
+5424,"Fairless Hills, PA 19030",zip
+5425,"Flourtown, PA 19031",zip
+5426,"Folcroft, PA 19032",zip
+5427,"Folsom, PA 19033",zip
+5428,"Fort Washington, PA 19034",zip
+5429,"Gladwyne, PA 19035",zip
+5430,"Glenolden, PA 19036",zip
+5431,"Glenside, PA 19038",zip
+5432,"Hatboro, PA 19040",zip
+5433,"Haverford, PA 19041",zip
+5434,"Holmes, PA 19043",zip
+5435,"Horsham, PA 19044",zip
+5436,"Jenkintown, PA 19046",zip
+5437,"Langhorne, PA 19047",zip
+5438,"Lansdowne, PA 19050",zip
+5439,"Feasterville Trevose, PA 19053",zip
+5440,"Levittown, PA 19054",zip
+5441,"Levittown, PA 19055",zip
+5442,"Levittown, PA 19056",zip
+5443,"Levittown, PA 19057",zip
+5444,"Garnet Valley, PA 19060",zip
+5445,"Marcus Hook, PA 19061",zip
+5446,"Media, PA 19063",zip
+5447,"Springfield, PA 19064",zip
+5448,"Merion Station, PA 19066",zip
+5449,"Morrisville, PA 19067",zip
+5450,"Morton, PA 19070",zip
+5451,"Narberth, PA 19072",zip
+5452,"Newtown Square, PA 19073",zip
+5453,"Norwood, PA 19074",zip
+5454,"Oreland, PA 19075",zip
+5455,"Prospect Park, PA 19076",zip
+5456,"Ridley Park, PA 19078",zip
+5457,"Sharon Hill, PA 19079",zip
+5458,"Swarthmore, PA 19081",zip
+5459,"Upper Darby, PA 19082",zip
+5460,"Havertown, PA 19083",zip
+5461,"Villanova, PA 19085",zip
+5462,"Wallingford, PA 19086",zip
+5463,"Wayne, PA 19087",zip
+5464,"Willow Grove, PA 19090",zip
+5465,"Woodlyn, PA 19094",zip
+5466,"Wyncote, PA 19095",zip
+5467,"Wynnewood, PA 19096",zip
+5468,"Philadelphia, PA 19102",zip
+5469,"Philadelphia, PA 19103",zip
+5470,"Philadelphia, PA 19104",zip
+5471,"Philadelphia, PA 19106",zip
+5472,"Philadelphia, PA 19107",zip
+5473,"Philadelphia, PA 19111",zip
+5474,"Philadelphia, PA 19112",zip
+5475,"Philadelphia, PA 19113",zip
+5476,"Philadelphia, PA 19114",zip
+5477,"Philadelphia, PA 19115",zip
+5478,"Philadelphia, PA 19116",zip
+5479,"Philadelphia, PA 19118",zip
+5480,"Philadelphia, PA 19119",zip
+5481,"Philadelphia, PA 19120",zip
+5482,"Philadelphia, PA 19121",zip
+5483,"Philadelphia, PA 19122",zip
+5484,"Philadelphia, PA 19123",zip
+5485,"Philadelphia, PA 19124",zip
+5486,"Philadelphia, PA 19125",zip
+5487,"Philadelphia, PA 19126",zip
+5488,"Philadelphia, PA 19127",zip
+5489,"Philadelphia, PA 19128",zip
+5490,"Philadelphia, PA 19129",zip
+5491,"Philadelphia, PA 19130",zip
+5492,"Philadelphia, PA 19131",zip
+5493,"Philadelphia, PA 19132",zip
+5494,"Philadelphia, PA 19133",zip
+5495,"Philadelphia, PA 19134",zip
+5496,"Philadelphia, PA 19135",zip
+5497,"Philadelphia, PA 19136",zip
+5498,"Philadelphia, PA 19137",zip
+5499,"Philadelphia, PA 19138",zip
+5500,"Philadelphia, PA 19139",zip
+5501,"Philadelphia, PA 19140",zip
+5502,"Philadelphia, PA 19141",zip
+5503,"Philadelphia, PA 19142",zip
+5504,"Philadelphia, PA 19143",zip
+5505,"Philadelphia, PA 19144",zip
+5506,"Philadelphia, PA 19145",zip
+5507,"Philadelphia, PA 19146",zip
+5508,"Philadelphia, PA 19147",zip
+5509,"Philadelphia, PA 19148",zip
+5510,"Philadelphia, PA 19149",zip
+5511,"Philadelphia, PA 19150",zip
+5512,"Philadelphia, PA 19151",zip
+5513,"Philadelphia, PA 19152",zip
+5514,"Philadelphia, PA 19153",zip
+5515,"Philadelphia, PA 19154",zip
+5516,"Paoli, PA 19301",zip
+5517,"Atglen, PA 19310",zip
+5518,"Avondale, PA 19311",zip
+5519,"Berwyn, PA 19312",zip
+5520,"Chadds Ford, PA 19317",zip
+5521,"Cheyney, PA 19319",zip
+5522,"Coatesville, PA 19320",zip
+5523,"Cochranville, PA 19330",zip
+5524,"Devon, PA 19333",zip
+5525,"Downingtown, PA 19335",zip
+5526,"Exton, PA 19341",zip
+5527,"Glen Mills, PA 19342",zip
+5528,"Glenmoore, PA 19343",zip
+5529,"Honey Brook, PA 19344",zip
+5530,"Kennett Square, PA 19348",zip
+5531,"Landenberg, PA 19350",zip
+5532,"Lincoln University, PA 19352",zip
+5533,"Malvern, PA 19355",zip
+5534,"Nottingham, PA 19362",zip
+5535,"Oxford, PA 19363",zip
+5536,"Parkesburg, PA 19365",zip
+5537,"Thorndale, PA 19372",zip
+5538,"Thornton, PA 19373",zip
+5539,"Toughkenamon, PA 19374",zip
+5540,"West Chester, PA 19380",zip
+5541,"West Chester, PA 19382",zip
+5542,"West Chester, PA 19383",zip
+5543,"West Grove, PA 19390",zip
+5544,"Norristown, PA 19401",zip
+5545,"Norristown, PA 19403",zip
+5546,"Bridgeport, PA 19405",zip
+5547,"King of Prussia, PA 19406",zip
+5548,"Blue Bell, PA 19422",zip
+5549,"Chester Springs, PA 19425",zip
+5550,"Collegeville, PA 19426",zip
+5551,"Conshohocken, PA 19428",zip
+5552,"Frederick, PA 19435",zip
+5553,"Gwynedd, PA 19436",zip
+5554,"Harleysville, PA 19438",zip
+5555,"Hatfield, PA 19440",zip
+5556,"Lafayette Hill, PA 19444",zip
+5557,"Lansdale, PA 19446",zip
+5558,"Mont Clare, PA 19453",zip
+5559,"North Wales, PA 19454",zip
+5560,"Phoenixville, PA 19460",zip
+5561,"Plymouth Meeting, PA 19462",zip
+5562,"Pottstown, PA 19464",zip
+5563,"Pottstown, PA 19465",zip
+5564,"Royersford, PA 19468",zip
+5565,"Schwenksville, PA 19473",zip
+5566,"Spring City, PA 19475",zip
+5567,"Spring House, PA 19477",zip
+5568,"Zieglerville, PA 19492",zip
+5571,"Barto, PA 19504",zip
+5572,"Bechtelsville, PA 19505",zip
+5577,"Boyertown, PA 19512",zip
+5578,"Douglassville, PA 19518",zip
+5579,"Elverson, PA 19520",zip
+5581,"Gilbertsville, PA 19525",zip
+5590,"Morgantown, PA 19543",zip
+5615,"Newark, DE 19711",zip
+5630,"Wilmington, DE 19807",zip
+5633,"Wilmington, DE 19810",zip
+6172,"Rising Sun, MD 21911",zip
+6180,"Elkton, MD 21921",zip
+1,Bridesburg (Philadelphia neighborhood),neighborhood
+2,Bustleton (Philadelphia neighborhood),neighborhood
+3,Cedarbrook (Philadelphia neighborhood),neighborhood
+4,Chestnut Hill (Philadelphia neighborhood),neighborhood
+5,East Falls (Philadelphia neighborhood),neighborhood
+6,East Mount Airy (Philadelphia neighborhood),neighborhood
+7,Grays Ferry (Philadelphia neighborhood),neighborhood
+8,Olney (Philadelphia neighborhood),neighborhood
+9,Pennypack Park (Philadelphia neighborhood),neighborhood
+10,Somerton (Philadelphia neighborhood),neighborhood
+11,West Mount Airy (Philadelphia neighborhood),neighborhood
+12,West Oak Lane (Philadelphia neighborhood),neighborhood
+13,Wissahickon Park (Philadelphia neighborhood),neighborhood
+14,Riverfront (Philadelphia neighborhood),neighborhood
+15,Byberry (Philadelphia neighborhood),neighborhood
+16,West Torresdale (Philadelphia neighborhood),neighborhood
+17,Mechanicsville (Philadelphia neighborhood),neighborhood
+18,Parkwood Manor (Philadelphia neighborhood),neighborhood
+19,Franklin Mills (Philadelphia neighborhood),neighborhood
+20,Northeast Phila Airport (Philadelphia neighborhood),neighborhood
+21,Modena (Philadelphia neighborhood),neighborhood
+22,Morrell Park (Philadelphia neighborhood),neighborhood
+23,Millbrook (Philadelphia neighborhood),neighborhood
+24,Crestmont Farms (Philadelphia neighborhood),neighborhood
+25,Academy Gardens (Philadelphia neighborhood),neighborhood
+26,Pennypack (Philadelphia neighborhood),neighborhood
+27,Aston-Woodbridge (Philadelphia neighborhood),neighborhood
+28,Pennypack Woods (Philadelphia neighborhood),neighborhood
+29,Winchester Park (Philadelphia neighborhood),neighborhood
+30,Torresdale (Philadelphia neighborhood),neighborhood
+31,Lexington Park (Philadelphia neighborhood),neighborhood
+32,Rhawnhurst (Philadelphia neighborhood),neighborhood
+33,Fox Chase (Philadelphia neighborhood),neighborhood
+34,Burholme (Philadelphia neighborhood),neighborhood
+35,Oxford Circle (Philadelphia neighborhood),neighborhood
+36,Summerdale (Philadelphia neighborhood),neighborhood
+37,Crescentville (Philadelphia neighborhood),neighborhood
+38,Lawndale (Philadelphia neighborhood),neighborhood
+39,Northwood (Philadelphia neighborhood),neighborhood
+40,Holmesburg (Philadelphia neighborhood),neighborhood
+41,Frankford (Philadelphia neighborhood),neighborhood
+42,Mayfair (Philadelphia neighborhood),neighborhood
+43,Tacony (Philadelphia neighborhood),neighborhood
+44,Wissinoming (Philadelphia neighborhood),neighborhood
+45,Andorra (Philadelphia neighborhood),neighborhood
+46,Upper Roxborough (Philadelphia neighborhood),neighborhood
+47,Dearnley Park (Philadelphia neighborhood),neighborhood
+48,Roxborough Park (Philadelphia neighborhood),neighborhood
+49,Germany Hill (Philadelphia neighborhood),neighborhood
+50,Wissahickon Hills (Philadelphia neighborhood),neighborhood
+51,Roxborough (Philadelphia neighborhood),neighborhood
+52,Manayunk (Philadelphia neighborhood),neighborhood
+53,Wissahickon (Philadelphia neighborhood),neighborhood
+54,East Germantown (Philadelphia neighborhood),neighborhood
+55,Germantown - Morton (Philadelphia neighborhood),neighborhood
+56,West Central Germantown (Philadelphia neighborhood),neighborhood
+57,Germantown - Penn Knox (Philadelphia neighborhood),neighborhood
+58,Germantown - Westside (Philadelphia neighborhood),neighborhood
+59,Southwest Germantown (Philadelphia neighborhood),neighborhood
+60,Ogontz (Philadelphia neighborhood),neighborhood
+61,Wister (Philadelphia neighborhood),neighborhood
+62,Nicetown (Philadelphia neighborhood),neighborhood
+63,Tioga (Philadelphia neighborhood),neighborhood
+64,Allegheny West (Philadelphia neighborhood),neighborhood
+65,Glenwood (Philadelphia neighborhood),neighborhood
+66,Fern Rock (Philadelphia neighborhood),neighborhood
+67,East Oak Lane (Philadelphia neighborhood),neighborhood
+68,Melrose Park Gardens (Philadelphia neighborhood),neighborhood
+69,Franklinville (Philadelphia neighborhood),neighborhood
+70,Feltonville (Philadelphia neighborhood),neighborhood
+71,Richmond (Philadelphia neighborhood),neighborhood
+72,Port Richmond (Philadelphia neighborhood),neighborhood
+73,Hunting Park (Philadelphia neighborhood),neighborhood
+74,Juniata Park (Philadelphia neighborhood),neighborhood
+75,Harrowgate (Philadelphia neighborhood),neighborhood
+76,Fairhill (Philadelphia neighborhood),neighborhood
+77,Upper Kensington (Philadelphia neighborhood),neighborhood
+78,McGuire (Philadelphia neighborhood),neighborhood
+79,Stanton (Philadelphia neighborhood),neighborhood
+80,Brewerytown (Philadelphia neighborhood),neighborhood
+81,Sharswood (Philadelphia neighborhood),neighborhood
+82,North Central (Philadelphia neighborhood),neighborhood
+83,Yorktown (Philadelphia neighborhood),neighborhood
+84,Ludlow (Philadelphia neighborhood),neighborhood
+85,Hartranft (Philadelphia neighborhood),neighborhood
+86,West Kensington (Philadelphia neighborhood),neighborhood
+87,Fishtown - Lower Kensington (Philadelphia neighborhood),neighborhood
+88,Old Kensington (Philadelphia neighborhood),neighborhood
+89,Northern Liberties (Philadelphia neighborhood),neighborhood
+90,Logan (Philadelphia neighborhood),neighborhood
+91,Society Hill (Philadelphia neighborhood),neighborhood
+92,Old City (Philadelphia neighborhood),neighborhood
+93,Chinatown (Philadelphia neighborhood),neighborhood
+94,Center City East (Philadelphia neighborhood),neighborhood
+95,Washington Square West (Philadelphia neighborhood),neighborhood
+96,Fairmount (Philadelphia neighborhood),neighborhood
+97,Francisville (Philadelphia neighborhood),neighborhood
+98,Spring Garden (Philadelphia neighborhood),neighborhood
+99,Logan Square (Philadelphia neighborhood),neighborhood
+100,Rittenhouse (Philadelphia neighborhood),neighborhood
+101,Fitler Square (Philadelphia neighborhood),neighborhood
+102,Graduate Hospital (Philadelphia neighborhood),neighborhood
+103,Point Breeze (Philadelphia neighborhood),neighborhood
+104,Hawthorne (Philadelphia neighborhood),neighborhood
+105,Bella Vista (Philadelphia neighborhood),neighborhood
+106,Queen Village (Philadelphia neighborhood),neighborhood
+107,Dickinson Narrows (Philadelphia neighborhood),neighborhood
+108,Passyunk Square (Philadelphia neighborhood),neighborhood
+109,Greenwich (Philadelphia neighborhood),neighborhood
+110,Lower Moyamensing (Philadelphia neighborhood),neighborhood
+111,Whitman (Philadelphia neighborhood),neighborhood
+112,Industrial (Philadelphia neighborhood),neighborhood
+113,Airport (Philadelphia neighborhood),neighborhood
+114,Clearview (Philadelphia neighborhood),neighborhood
+115,Penrose (Philadelphia neighborhood),neighborhood
+116,Paschall (Philadelphia neighborhood),neighborhood
+117,Bartram Village (Philadelphia neighborhood),neighborhood
+118,Kingsessing (Philadelphia neighborhood),neighborhood
+119,Cobbs Creek (Philadelphia neighborhood),neighborhood
+120,Walnut Hill (Philadelphia neighborhood),neighborhood
+121,Cedar Park (Philadelphia neighborhood),neighborhood
+122,Garden Court (Philadelphia neighborhood),neighborhood
+123,Woodland Terrace (Philadelphia neighborhood),neighborhood
+124,Spruce Hill (Philadelphia neighborhood),neighborhood
+125,Southwest Schuylkill (Philadelphia neighborhood),neighborhood
+126,University City (Philadelphia neighborhood),neighborhood
+127,Powelton (Philadelphia neighborhood),neighborhood
+128,West Powelton (Philadelphia neighborhood),neighborhood
+129,East Parkside (Philadelphia neighborhood),neighborhood
+130,Belmont (Philadelphia neighborhood),neighborhood
+131,Haverford North (Philadelphia neighborhood),neighborhood
+132,West Parkside (Philadelphia neighborhood),neighborhood
+133,Mill Creek (Philadelphia neighborhood),neighborhood
+134,Dunlap (Philadelphia neighborhood),neighborhood
+135,Mantua (Philadelphia neighborhood),neighborhood
+136,Haddington (Philadelphia neighborhood),neighborhood
+137,Carroll Park (Philadelphia neighborhood),neighborhood
+138,Overbrook (Philadelphia neighborhood),neighborhood
+139,Wynnefield Heights (Philadelphia neighborhood),neighborhood
+140,Callowhill (Philadelphia neighborhood),neighborhood
+141,West Poplar (Philadelphia neighborhood),neighborhood
+142,East Poplar (Philadelphia neighborhood),neighborhood
+143,Strawberry Mansion (Philadelphia neighborhood),neighborhood
+144,East Park (Philadelphia neighborhood),neighborhood
+145,Wynnefield (Philadelphia neighborhood),neighborhood
+146,West Park (Philadelphia neighborhood),neighborhood
+147,Normandy Village (Philadelphia neighborhood),neighborhood
+148,Stadium District (Philadelphia neighborhood),neighborhood
+149,Navy Yard (Philadelphia neighborhood),neighborhood
+150,East Kensington (Philadelphia neighborhood),neighborhood
+151,Elmwood (Philadelphia neighborhood),neighborhood
+152,Girard Estates (Philadelphia neighborhood),neighborhood
+153,Eastwick (Philadelphia neighborhood),neighborhood
+154,Packer Park (Philadelphia neighborhood),neighborhood
+155,Pennsport (Philadelphia neighborhood),neighborhood
+156,Newbold (Philadelphia neighborhood),neighborhood
+157,West Passyunk (Philadelphia neighborhood),neighborhood
+158,East Passyunk (Philadelphia neighborhood),neighborhood
