@@ -110,7 +110,7 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
     min-height: 100%;
     width: auto;
     height: auto;
-    top: 50%;
+    top: 80%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
        -moz-transform: translate(-50%,-50%);
@@ -130,7 +130,7 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
     bottom: 0;
     right: 0;
     pointer-events: none; /* Allows right click menu on the video */
-    background: rgba(0,0,0,0.5); /* You can play with the opacity */
+    background: rgba(0, 0, 0, 0.2); /* You can play with the opacity */
 }
 /**
  * This part should be set separately for each video
@@ -138,7 +138,8 @@ a:hover, .navbar-inverse .navbar-nav>li>a:hover, .footer_btn:hover , .legend-che
  * I.e. '.demo-video' is the name of the video
  */
 .video-bg.demo-video {
-    background-image: url(files/blurred-traffic-crosswalk.jpg);
+    /*background-image: url(files/blurred-traffic-crosswalk.jpg);*/
+    background-image: url(files/Street-View.jpg);
 }
 /**
  * Fade in videos
