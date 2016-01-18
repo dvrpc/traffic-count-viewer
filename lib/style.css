@@ -339,7 +339,7 @@ color:#6baed6;
     position: absolute;
     top: 10px;
     right: 10px;
-    max-width: 315px;
+    width: 315px;
     z-index: 3000;
 }
 #aoi-draw #filterWrapper{
