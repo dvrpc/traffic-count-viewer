@@ -355,7 +355,7 @@ color:#6baed6;
     color: #fff;
     padding: 15px;
 }
-#noresults .panel-heading{
+#noresults .panel-heading, #return-to-search .panel-heading{
     padding: 10px 15px!important;
 }
 .results-toolbar{
