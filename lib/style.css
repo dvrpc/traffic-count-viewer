@@ -357,4 +357,10 @@ color:#6baed6;
 }
 #noresults .panel-heading{
     padding: 10px 15px!important;
-    }
+}
+.results-toolbar{
+    float: left;
+    padding-top: 5px;
+    color: #B1B1B1;
+    font-weight: 200;
+}
