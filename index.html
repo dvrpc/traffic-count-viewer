@@ -10,10 +10,11 @@
         <title>Regional Traffic Counts</title>
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="https://cdn.datatables.net/1.10.8/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-        <!--<link href="lib/locals/bootstrap.min.css" rel="stylesheet" type="text/css">-->
-        <link href="lib/locals/leaflet.css" rel="stylesheet" type="text/css">
+        <!--<link href="lib/locals/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="lib/locals/leaflet.css" rel="stylesheet" type="text/css">-->
         <link rel="stylesheet" href="lib/core/jquery.nouislider.min.css">
         <!--<link href="lib/assets/typeahead.min.css" rel="stylesheet" type="text/css">-->
         <link rel="stylesheet" href="lib/dvrpc.draw.css">
@@ -24,7 +25,7 @@
         <style>
 
 
-        #loading, #noresults {
+        #loading, #noresults, #return-to-search {
           position: absolute;
           width: 220px;
           
@@ -187,7 +188,7 @@
                     <div class="row">
                         <div class="col-lg-3"><button id="aoiSearch" class="col-lg-12 btn btn-primary btn-lg" data-toggle="collapse" href="#aoi-draw">Draw your own<br/>Area of Interest</button></div>
                         <div class="col-lg-3"><a target="_new" href="http://arcgis.dvrpc.org/arcgis/rest/services/Transportation/TrafficCounts/MapServer"><button class="col-lg-12 btn btn-primary btn-lg">Access counts</br>as Service</button></a></div>
-                        <div class="col-lg-3"><button class="col-lg-12 btn btn-primary btn-lg">Search counts <br/>by record number</button></div>
+                        <div class="col-lg-3"><button id="count_num" onclick="$('#count-modal').modal('show'); return false;" class="col-lg-12 btn btn-primary btn-lg">Search counts <br/>by record number</button></div>
                     </div>
                 </div>
                 <ul id="results"><ul>
@@ -235,6 +236,13 @@
                         <p>No counts were found for your search criteria. Please modify the search area and/or filter criteria.</p>
                     </div>
                 </div>
+                <div id="return-to-search" class="panel panel-danger" style="display:none;">
+                    <div class="panel-heading"> <h3 class="panel-title"><i class="glyphicon glyphicon-exclamation-sign"></i>&nbsp;&nbsp;No counts found!</h3></div>
+                    <div class="panel-body">
+                        <p>No counts were found for your search criteria. You may need to return to your search area.</p>
+                        <button id="fit-search" type="button" class="btn btn-danger"><i class="glyphicon glyphicon-search"></i>&nbsp;&nbsp;Return to Search Area</button>
+                    </div>
+                </div>
                 <!--<div id="mapDIV" class="col-sm-12 col-lg-12" style="opacity:0.0;"></div>-->
             </div>
             <div class="col-sm-6 col-lg-6 off-right" id="sidebar">
@@ -242,7 +250,7 @@
                         <div id="sidebar-nav">
                             <button id="filterBtn" class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" href="#filter" ><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;<span id="preFilter">Show</span> Filters</button>
                             <button id="searchBtn" class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" href="#search" ><i class="glyphicon glyphicon-search"></i>&nbsp;&nbsp;Modify Search Area</button>
-                            <!--<button id="filterBtn" class="btn btn-primary accordion-toggle btn-sm" data-toggle="collapse" href="#filter" ><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;Download Data</button>-->
+                            <button id="records-by-number" onclick="$('#count-modal').modal('show'); return false;" class="btn btn-primary accordion-toggle btn-sm"><i class="glyphicon glyphicon-flash"></i>&nbsp;&nbsp;Search by Record #</button>
                             <div style="clear:both;"></div>
                         </div>
                         <div class="collapse" id="filter">
@@ -307,6 +315,30 @@
                         
                 </div>
         </div>
+        <!--modal -->
+        <div class="modal fade" id="count-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title white">Search by record number</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form id="recnum-form">
+                        <p>Enter the DVRPC record number for counts which you would like to view. When entering more than one record number, values should be in a comma separated list.</p>
+                        
+                            <div class="form-group">
+                                <label for="comment">Record numbers:</label>
+                                <textarea class="form-control" rows="8" id="records"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="rec-num-submit" class="btn btn-primary pull-right">Get Counts</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div>
         <!--Footer container-->
             <!--no footer included-->
 
@@ -316,11 +348,7 @@
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/dataTables.bootstrap.min.js"></script>
         
-        <!--<script type="text/javascript" src="lib/locals/jquery-1.10.2.min.js"></script>
-        <script type="text/javascript" src="lib/locals/leaflet.js"></script>
-        <script type="text/javascript" src="lib/locals/bootstrap.min.js"></script>-->
-        <!--<script src="http://cdn.jsdelivr.net/leaflet.esri/1.0.0-rc.7/esri-leaflet.js"></script>-->
-    <!--     <script type="text/javascript" src="lib/locals/esri.tasks.js"></script> -->
+         <script type="text/javascript" src="lib/locals/esri.tasks.js"></script> 
         <script type="text/javascript" src="lib/core/jquery.nouislider.min.js"></script>
         <script type="text/javascript" src="lib/dvrpc.draw.js"></script>
         <script type="text/javascript" src="lib/core/dyna-icons.js"></script>

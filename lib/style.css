@@ -355,6 +355,12 @@ color:#6baed6;
     color: #fff;
     padding: 15px;
 }
-#noresults .panel-heading{
+#noresults .panel-heading, #return-to-search .panel-heading{
     padding: 10px 15px!important;
-    }
+}
+.results-toolbar{
+    float: left;
+    padding-top: 5px;
+    color: #B1B1B1;
+    font-weight: 200;
+}
