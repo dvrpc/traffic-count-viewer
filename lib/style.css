@@ -41,6 +41,10 @@ outline:none;
 #table tbody tr:hover,#table tbody tr:hover>td{
     background-color:#A4D2F9!important;
 }
+.table-striped>tbody>.coincident>td, .coincident {
+    background-color: #FBE8CC!important;
+}
+
 /*--------------------------------------------------------*/
 /*--------  UI Element Color Styles  ---------------------*/
 /*------- Change to alter color theme  -------------------*/
@@ -363,4 +367,8 @@ color:#6baed6;
     padding-top: 5px;
     color: #B1B1B1;
     font-weight: 200;
+}
+span.cnt-direction{
+    color: #9C9C9C;
+    padding-left:4px;
 }
