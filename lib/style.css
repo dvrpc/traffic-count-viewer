@@ -28,6 +28,7 @@ outline:none;
 }
 #table{
     font-size:12px;
+    width: auto !important;
 }
 .select-record{
 
