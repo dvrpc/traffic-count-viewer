@@ -3,6 +3,33 @@ OBJECT_ID,TERM,LAYER
 2,"Pine Valley Borough, NJ",mun_boundary
 3,"Waterford Township, NJ",mun_boundary
 5,"Winslow Township, NJ",mun_boundary
+1140,"Bass River Township, NJ",mun_boundary
+1170,"Washington Township, Burlington County, NJ",mun_boundary
+1171,"Harrison Township, NJ",mun_boundary
+1172,"Swedesboro Borough, NJ",mun_boundary
+1173,"Pitman Borough, NJ",mun_boundary
+1174,"Chesilhurst Borough, NJ",mun_boundary
+1175,"Glassboro Borough, NJ",mun_boundary
+1184,"South Harrison Township, NJ",mun_boundary
+1191,"Elk Township, NJ",mun_boundary
+1192,"Clayton Borough, NJ",mun_boundary
+1193,"Franklin Township, NJ",mun_boundary
+1290,"Newfield Borough, NJ",mun_boundary
+1314,"Monroe Township, NJ",mun_boundary
+1315,"Brooklawn Borough, NJ",mun_boundary
+1316,"Maple Shade Township, NJ",mun_boundary
+1317,"Evesham Township, NJ",mun_boundary
+1318,"Palmyra Borough, NJ",mun_boundary
+1319,"Rockledge Borough, PA",mun_boundary
+1320,"Conshohocken Borough, PA",mun_boundary
+1321,"Abington Township, PA",mun_boundary
+1322,"Springfield Township, Montgomery County, PA",mun_boundary
+1323,"Whitemarsh Township, PA",mun_boundary
+1324,"Plymouth Township, PA",mun_boundary
+1325,"Norristown Borough, PA",mun_boundary
+1326,"Ambler Borough, PA",mun_boundary
+1327,"Bridgeport Borough, PA",mun_boundary
+1328,"Jenkintown Borough, PA",mun_boundary
 1329,"West Norriton Township, PA",mun_boundary
 1330,"Cheltenham Township, PA",mun_boundary
 1331,"Upper Dublin Township, PA",mun_boundary
@@ -15,14 +42,6 @@ OBJECT_ID,TERM,LAYER
 1338,"Upper Salford Township, PA",mun_boundary
 1339,"Worcester Township, PA",mun_boundary
 1340,"Collegeville Borough, PA",mun_boundary
-1170,"Washington Township, NJ",mun_boundary
-1171,"Harrison Township, NJ",mun_boundary
-1172,"Swedesboro Borough, NJ",mun_boundary
-1173,"Pitman Borough, NJ",mun_boundary
-1174,"Chesilhurst Borough, NJ",mun_boundary
-1175,"Glassboro Borough, NJ",mun_boundary
-2360,"Burlington Township, NJ",mun_boundary
-1290,"Newfield Borough, NJ",mun_boundary
 1341,"Trappe Borough, PA",mun_boundary
 1342,"Lower Gwynedd Township, PA",mun_boundary
 1343,"North Wales Borough, PA",mun_boundary
@@ -32,13 +51,6 @@ OBJECT_ID,TERM,LAYER
 1347,"New Hanover Township, PA",mun_boundary
 1348,"Lower Frederick Township, PA",mun_boundary
 1349,"Lower Salford Township, PA",mun_boundary
-1554,"Hopewell Borough, NJ",mun_boundary
-1140,"Bass River Township, NJ",mun_boundary
-1184,"South Harrison Township, NJ",mun_boundary
-1191,"Elk Township, NJ",mun_boundary
-1192,"Clayton Borough, NJ",mun_boundary
-1193,"Franklin Township, NJ",mun_boundary
-1314,"Monroe Township, NJ",mun_boundary
 1354,"Franconia Township, PA",mun_boundary
 1355,"Horsham Township, PA",mun_boundary
 1356,"Montgomery Township, PA",mun_boundary
@@ -48,24 +60,53 @@ OBJECT_ID,TERM,LAYER
 1362,"Hatfield Township, PA",mun_boundary
 1364,"Bordentown Township, NJ",mun_boundary
 1365,"Chesterfield Township, NJ",mun_boundary
-1315,"Brooklawn Borough, NJ",mun_boundary
-1316,"Maple Shade Township, NJ",mun_boundary
-1317,"Evesham Township, NJ",mun_boundary
-1318,"Palmyra Borough, NJ",mun_boundary
-1319,"Rockledge Borough, PA",mun_boundary
-1320,"Conshohocken Borough, PA",mun_boundary
-1321,"Abington Township, PA",mun_boundary
-1322,"Springfield Township, PA",mun_boundary
-1323,"Whitemarsh Township, PA",mun_boundary
-1324,"Plymouth Township, PA",mun_boundary
-1325,"Norristown Borough, PA",mun_boundary
-1326,"Ambler Borough, PA",mun_boundary
-1327,"Bridgeport Borough, PA",mun_boundary
-1328,"Jenkintown Borough, PA",mun_boundary
 1369,"North Hanover Township, NJ",mun_boundary
 1370,"Hamilton Township, NJ",mun_boundary
 1371,"Cherry Hill Township, NJ",mun_boundary
 1373,"Shamong Township, NJ",mun_boundary
+1554,"Hopewell Borough, NJ",mun_boundary
+1924,"Princeton, NJ",mun_boundary
+2002,"Lawrence Township, NJ",mun_boundary
+2003,"West Windsor Township, NJ",mun_boundary
+2004,"Pennington Borough, NJ",mun_boundary
+2005,"Ewing Township, NJ",mun_boundary
+2006,"Upper Makefield Township, PA",mun_boundary
+2007,"Yardley Borough, PA",mun_boundary
+2008,"Newtown Borough, PA",mun_boundary
+2009,"Newtown Township, Bucks County, PA",mun_boundary
+2026,"Hightstown Borough, NJ",mun_boundary
+2084,"Robbinsville Township, NJ",mun_boundary
+2085,"Trenton City, NJ",mun_boundary
+2086,"Morrisville Borough, PA",mun_boundary
+2087,"Lower Makefield Township, PA",mun_boundary
+2360,"Burlington Township, NJ",mun_boundary
+2361,"Burlington City, NJ",mun_boundary
+2362,"Langhorne Borough, PA",mun_boundary
+2363,"Bristol Borough, PA",mun_boundary
+2364,"Hulmeville Borough, PA",mun_boundary
+2365,"Bristol Township, PA",mun_boundary
+2366,"Middletown Township, Bucks County, PA",mun_boundary
+2367,"Springfield Township, NJ",mun_boundary
+2368,"Edgewater Park Township, NJ",mun_boundary
+2369,"Beverly City, NJ",mun_boundary
+2370,"Langhorne Manor Borough, PA",mun_boundary
+2371,"Bensalem Township, PA",mun_boundary
+2372,"Penndel Borough, PA",mun_boundary
+2373,"Northampton Township, PA",mun_boundary
+2374,"Delanco Township, NJ",mun_boundary
+2375,"Hatboro Borough, PA",mun_boundary
+2376,"Upper Moreland Township, PA",mun_boundary
+2377,"Lower Moreland Township, PA",mun_boundary
+2378,"Bryn Athyn Borough, PA",mun_boundary
+2379,"Lower Southampton Township, PA",mun_boundary
+2380,"Upper Southampton Township, PA",mun_boundary
+2381,"Warminster Township, PA",mun_boundary
+2382,"Warrington Township, PA",mun_boundary
+2383,"Ivyland Borough, PA",mun_boundary
+2384,"Willingboro Township, NJ",mun_boundary
+2387,"New Hanover Township, NJ",mun_boundary
+2394,"Riverside Township, NJ",mun_boundary
+2395,"Westampton Township, NJ",mun_boundary
 2396,"Delran Township, NJ",mun_boundary
 2397,"Cinnaminson Township, NJ",mun_boundary
 2398,"Eastampton Township, NJ",mun_boundary
@@ -76,6 +117,33 @@ OBJECT_ID,TERM,LAYER
 2403,"Mount Laurel Township, NJ",mun_boundary
 2404,"Hainesport Township, NJ",mun_boundary
 2405,"Pennsauken Township, NJ",mun_boundary
+2406,"West Conshohocken Borough, PA",mun_boundary
+2407,"Lower Merion Township, PA",mun_boundary
+2408,"Lumberton Township, NJ",mun_boundary
+2409,"Southampton Township, NJ",mun_boundary
+2410,"Pemberton Borough, NJ",mun_boundary
+2411,"Camden City, NJ",mun_boundary
+2412,"Merchantville Borough, NJ",mun_boundary
+2413,"Collingswood Borough, NJ",mun_boundary
+2418,"Woodland Township, NJ",mun_boundary
+2431,"Woodlynne Borough, NJ",mun_boundary
+2432,"Haddonfield Borough, NJ",mun_boundary
+2433,"Oaklyn Borough, NJ",mun_boundary
+2434,"Gloucester City, NJ",mun_boundary
+2435,"Audubon Borough, NJ",mun_boundary
+2436,"Audubon Park Borough, NJ",mun_boundary
+2437,"Haddon Heights Borough, NJ",mun_boundary
+2438,"Mount Ephraim Borough, NJ",mun_boundary
+2439,"West Deptford Township, NJ",mun_boundary
+2440,"Barrington Borough, NJ",mun_boundary
+2441,"Westville Borough, NJ",mun_boundary
+2442,"Tabernacle Township, NJ",mun_boundary
+2443,"National Park Borough, NJ",mun_boundary
+2444,"Yeadon Borough, PA",mun_boundary
+2445,"Colwyn Borough, PA",mun_boundary
+2446,"Darby Borough, PA",mun_boundary
+2447,"East Lansdowne Borough, PA",mun_boundary
+2448,"Lansdowne Borough, PA",mun_boundary
 2449,"Millbourne Borough, PA",mun_boundary
 2450,"Upper Merion Township, PA",mun_boundary
 2451,"Narberth Borough, PA",mun_boundary
@@ -85,20 +153,17 @@ OBJECT_ID,TERM,LAYER
 2455,"Voorhees Township, NJ",mun_boundary
 2456,"Medford Lakes Borough, NJ",mun_boundary
 2457,"Deptford Township, NJ",mun_boundary
-2406,"West Conshohocken Borough, PA",mun_boundary
-2407,"Lower Merion Township, PA",mun_boundary
-2408,"Lumberton Township, NJ",mun_boundary
-2409,"Southampton Township, NJ",mun_boundary
-2410,"Pemberton Borough, NJ",mun_boundary
-2411,"Camden City, NJ",mun_boundary
-2412,"Merchantville Borough, NJ",mun_boundary
 2458,"Magnolia Borough, NJ",mun_boundary
 2459,"Runnemede Borough, NJ",mun_boundary
 2460,"Somerdale Borough, NJ",mun_boundary
-2026,"Hightstown Borough, NJ",mun_boundary
-2440,"Barrington Borough, NJ",mun_boundary
-2441,"Westville Borough, NJ",mun_boundary
-2442,"Tabernacle Township, NJ",mun_boundary
+2461,"Paulsboro Borough, NJ",mun_boundary
+2462,"Aldan Borough, PA",mun_boundary
+2463,"Sharon Hill Borough, PA",mun_boundary
+2464,"Clifton Heights Borough, PA",mun_boundary
+2465,"Collingdale Borough, PA",mun_boundary
+2466,"Folcroft Borough, PA",mun_boundary
+2467,"Tinicum Township, Delaware County, PA",mun_boundary
+2468,"Darby Township, PA",mun_boundary
 2469,"Woodbury City, NJ",mun_boundary
 2470,"Gloucester Township, NJ",mun_boundary
 2471,"Greenwich Township, NJ",mun_boundary
@@ -106,223 +171,11 @@ OBJECT_ID,TERM,LAYER
 2473,"Nether Providence Township, PA",mun_boundary
 2474,"Radnor Township, PA",mun_boundary
 2475,"Ridley Township, PA",mun_boundary
-2361,"Burlington City, NJ",mun_boundary
-2362,"Langhorne Borough, PA",mun_boundary
-2363,"Bristol Borough, PA",mun_boundary
-2364,"Hulmeville Borough, PA",mun_boundary
-2365,"Bristol Township, PA",mun_boundary
-2443,"National Park Borough, NJ",mun_boundary
-2444,"Yeadon Borough, PA",mun_boundary
-2445,"Colwyn Borough, PA",mun_boundary
-2446,"Darby Borough, PA",mun_boundary
-2447,"East Lansdowne Borough, PA",mun_boundary
-2448,"Lansdowne Borough, PA",mun_boundary
 2476,"Haverford Township, PA",mun_boundary
 2477,"Rutledge Borough, PA",mun_boundary
-2084,"Robbinsville Township, NJ",mun_boundary
-2085,"Trenton City, NJ",mun_boundary
-2086,"Morrisville Borough, PA",mun_boundary
-2087,"Lower Makefield Township, PA",mun_boundary
-2366,"Middletown Township, PA",mun_boundary
-2367,"Springfield Township, NJ",mun_boundary
-2368,"Edgewater Park Township, NJ",mun_boundary
-2369,"Beverly City, NJ",mun_boundary
-2370,"Langhorne Manor Borough, PA",mun_boundary
-2371,"Bensalem Township, PA",mun_boundary
-2461,"Paulsboro Borough, NJ",mun_boundary
-2462,"Aldan Borough, PA",mun_boundary
-2463,"Sharon Hill Borough, PA",mun_boundary
-2464,"Clifton Heights Borough, PA",mun_boundary
-2465,"Collingdale Borough, PA",mun_boundary
-2466,"Folcroft Borough, PA",mun_boundary
-2467,"Tinicum Township, PA",mun_boundary
-2431,"Woodlynne Borough, NJ",mun_boundary
-2432,"Haddonfield Borough, NJ",mun_boundary
-2433,"Oaklyn Borough, NJ",mun_boundary
-2434,"Gloucester City, NJ",mun_boundary
-2435,"Audubon Borough, NJ",mun_boundary
-2436,"Audubon Park Borough, NJ",mun_boundary
-2437,"Haddon Heights Borough, NJ",mun_boundary
-2372,"Penndel Borough, PA",mun_boundary
-2373,"Northampton Township, PA",mun_boundary
-2374,"Delanco Township, NJ",mun_boundary
-2375,"Hatboro Borough, PA",mun_boundary
-2376,"Upper Moreland Township, PA",mun_boundary
-2377,"Lower Moreland Township, PA",mun_boundary
-2468,"Darby Township, PA",mun_boundary
-2438,"Mount Ephraim Borough, NJ",mun_boundary
-2439,"West Deptford Township, NJ",mun_boundary
-2002,"Lawrence Township, NJ",mun_boundary
-2003,"West Windsor Township, NJ",mun_boundary
-2004,"Pennington Borough, NJ",mun_boundary
-2005,"Ewing Township, NJ",mun_boundary
-1924,"Princeton, NJ",mun_boundary
-2006,"Upper Makefield Township, PA",mun_boundary
-2007,"Yardley Borough, PA",mun_boundary
-2008,"Newtown Borough, PA",mun_boundary
-2378,"Bryn Athyn Borough, PA",mun_boundary
-2379,"Lower Southampton Township, PA",mun_boundary
-2380,"Upper Southampton Township, PA",mun_boundary
-2381,"Warminster Township, PA",mun_boundary
-2382,"Warrington Township, PA",mun_boundary
-2383,"Ivyland Borough, PA",mun_boundary
-2413,"Collingswood Borough, NJ",mun_boundary
-2418,"Woodland Township, NJ",mun_boundary
-2384,"Willingboro Township, NJ",mun_boundary
-2387,"New Hanover Township, NJ",mun_boundary
-2394,"Riverside Township, NJ",mun_boundary
-2395,"Westampton Township, NJ",mun_boundary
-2009,"Newtown Township, PA",mun_boundary
-2664,"West Marlborough Township, PA",mun_boundary
-2668,"West Nantmeal Township, PA",mun_boundary
-2669,"West Nottingham Township, PA",mun_boundary
-2709,"Chester City, PA",mun_boundary
-2748,"Kennett Township, PA",mun_boundary
-2751,"Honey Brook Township, PA",mun_boundary
-2754,"London Grove Township, PA",mun_boundary
-3182,"Perkasie Borough, PA",mun_boundary
-3183,"Plumstead Township, PA",mun_boundary
-3184,"Solebury Township, PA",mun_boundary
-2489,"Phoenixville Borough, PA",mun_boundary
-2490,"Tredyffrin Township, PA",mun_boundary
-2527,"Gibbsboro Borough, NJ",mun_boundary
-3185,"West Rockhill Township, PA",mun_boundary
-3187,"Upper Hanover Township, PA",mun_boundary
-3188,"Doylestown Township, PA",mun_boundary
-2621,"Franklin Township, PA",mun_boundary
-2624,"Highland Township, PA",mun_boundary
-2491,"Edgmont Township, PA",mun_boundary
-2492,"Glenolden Borough, PA",mun_boundary
-2493,"East Pikeland Township, PA",mun_boundary
-2494,"East Whiteland Township, PA",mun_boundary
-2495,"Upper Providence Township, PA",mun_boundary
-2670,"West Pikeland Township, PA",mun_boundary
-2672,"West Sadsbury Township, PA",mun_boundary
-2714,"Sadsbury Township, PA",mun_boundary
-2575,"Elverson Borough, PA",mun_boundary
-2576,"Honey Brook Borough, PA",mun_boundary
-2577,"Lower Chichester Township, PA",mun_boundary
-2578,"Caln Township, PA",mun_boundary
-2579,"Thornbury Township, PA",mun_boundary
-2580,"Upper Chichester Township, PA",mun_boundary
-2586,"Upland Borough, PA",mun_boundary
-2628,"Coatesville City, PA",mun_boundary
-2631,"East Nottingham Township, PA",mun_boundary
-2634,"East Marlborough Township, PA",mun_boundary
-2676,"West Goshen Township, PA",mun_boundary
-2679,"Atglen Borough, PA",mun_boundary
-2680,"West Chester Borough, PA",mun_boundary
-2758,"Pennsbury Township, PA",mun_boundary
-2762,"Valley Township, PA",mun_boundary
-3042,"Hi-Nella Borough, NJ",mun_boundary
-3043,"Stratford Borough, NJ",mun_boundary
-3044,"Lindenwold Borough, NJ",mun_boundary
-3171,"Dublin Borough, PA",mun_boundary
-3172,"New Hope Borough, PA",mun_boundary
-3173,"Trumbauersville Borough, PA",mun_boundary
-3045,"Laurel Springs Borough, NJ",mun_boundary
-3046,"Woodbury Heights Borough, NJ",mun_boundary
-3047,"East Greenwich Township, NJ",mun_boundary
-3048,"Berlin Township, NJ",mun_boundary
-3049,"Clementon Borough, NJ",mun_boundary
-3050,"Berlin Borough, NJ",mun_boundary
-2496,"Newtown Township, PA",mun_boundary
-2497,"Charlestown Township, PA",mun_boundary
-2498,"Easttown Township, PA",mun_boundary
-3174,"Telford Borough, PA",mun_boundary
-3175,"Buckingham Township, PA",mun_boundary
-3177,"East Rockhill Township, PA",mun_boundary
-3178,"New Britain Township, PA",mun_boundary
-3179,"Richlandtown Borough, PA",mun_boundary
-3180,"Sellersville Borough, PA",mun_boundary
-3181,"Silverdale Borough, PA",mun_boundary
-2635,"London Britain Township, PA",mun_boundary
-2637,"West Vincent Township, PA",mun_boundary
-2638,"West Whiteland Township, PA",mun_boundary
-2639,"East Fallowfield Township, PA",mun_boundary
-2640,"East Goshen Township, PA",mun_boundary
-2499,"Springfield Township, PA",mun_boundary
-2500,"Upper Darby Township, PA",mun_boundary
-2501,"Schuylkill Township, PA",mun_boundary
-2502,"Royersford Borough, PA",mun_boundary
-2682,"West Caln Township, PA",mun_boundary
-2683,"Avondale Borough, PA",mun_boundary
-2684,"Thornbury Township, PA",mun_boundary
-2685,"Oxford Borough, PA",mun_boundary
-2686,"Parkesburg Borough, PA",mun_boundary
-2590,"Chester Township, PA",mun_boundary
-2591,"Brookhaven Borough, PA",mun_boundary
-2592,"Parkside Borough, PA",mun_boundary
-2593,"Wallace Township, PA",mun_boundary
-2596,"Chester Heights Borough, PA",mun_boundary
-2597,"Chadds Ford Township, PA",mun_boundary
-2598,"Trainer Borough, PA",mun_boundary
-2648,"Concord Township, PA",mun_boundary
-2687,"West Brandywine Township, PA",mun_boundary
-2688,"Downingtown Borough, PA",mun_boundary
-2689,"Upper Oxford Township, PA",mun_boundary
-2690,"Newlin Township, PA",mun_boundary
-2729,"Uwchlan Township, PA",mun_boundary
-2730,"Westtown Township, PA",mun_boundary
-3051,"Pine Hill Borough, NJ",mun_boundary
-3052,"Washington Township, NJ",mun_boundary
-3053,"Wenonah Borough, NJ",mun_boundary
-3189,"Richland Township, PA",mun_boundary
-3190,"Hilltown Township, PA",mun_boundary
-3191,"Quakertown Borough, PA",mun_boundary
-3192,"Milford Township, PA",mun_boundary
-3161,"Red Hill Borough, PA",mun_boundary
-3162,"New Britain Borough, PA",mun_boundary
-3163,"Pennsburg Borough, PA",mun_boundary
-3164,"Marlborough Township, PA",mun_boundary
-3054,"Bordentown City, NJ",mun_boundary
-3055,"Fieldsboro Borough, NJ",mun_boundary
-3056,"Falls Township, PA",mun_boundary
-3057,"Florence Township, NJ",mun_boundary
-3058,"Tullytown Borough, PA",mun_boundary
-3059,"Mansfield Township, NJ",mun_boundary
-2503,"East Coventry Township, PA",mun_boundary
-2504,"East Vincent Township, PA",mun_boundary
-2505,"Lower Pottsgrove Township, PA",mun_boundary
-2506,"Douglass Township, PA",mun_boundary
-2599,"Aston Township, PA",mun_boundary
-3165,"Salford Township, PA",mun_boundary
-3166,"Bedminster Township, PA",mun_boundary
-3167,"Warwick Township, PA",mun_boundary
-3168,"Wrightstown Township, PA",mun_boundary
-3169,"Chalfont Borough, PA",mun_boundary
-3170,"Doylestown Borough, PA",mun_boundary
-2653,"Bethel Township, PA",mun_boundary
-2507,"Pottstown Borough, PA",mun_boundary
-2508,"West Pottsgrove Township, PA",mun_boundary
-2509,"Limerick Township, PA",mun_boundary
-2510,"North Coventry Township, PA",mun_boundary
-2692,"Upper Uwchlan Township, PA",mun_boundary
-2694,"West Grove Borough, PA",mun_boundary
-2696,"West Bradford Township, PA",mun_boundary
-2604,"East Nantmeal Township, PA",mun_boundary
-2605,"East Brandywine Township, PA",mun_boundary
-2655,"Pocopson Township, PA",mun_boundary
-2658,"West Fallowfield Township, PA",mun_boundary
-2834,"South Coventry Township, PA",mun_boundary
-2836,"Warwick Township, PA",mun_boundary
-2697,"South Coatesville Borough, PA",mun_boundary
-2699,"Londonderry Township, PA",mun_boundary
-2701,"Lower Oxford Township, PA",mun_boundary
-2702,"New London Township, PA",mun_boundary
-2741,"Marcus Hook Borough, PA",mun_boundary
-3150,"Woolwich Township, NJ",mun_boundary
 2478,"Swarthmore Borough, PA",mun_boundary
 2479,"Rose Valley Borough, PA",mun_boundary
 2480,"Eddystone Borough, PA",mun_boundary
-2516,"Upper Pottsgrove Township, PA",mun_boundary
-2517,"Lower Providence Township, PA",mun_boundary
-3158,"Hopewell Township, NJ",mun_boundary
-3159,"East Greenville Borough, PA",mun_boundary
-3160,"Telford Borough, PA",mun_boundary
-2608,"Penn Township, PA",mun_boundary
-2611,"East Caln Township, PA",mun_boundary
-2614,"Birmingham Township, PA",mun_boundary
 2481,"Norwood Borough, PA",mun_boundary
 2482,"Media Borough, PA",mun_boundary
 2483,"Marple Township, PA",mun_boundary
@@ -331,22 +184,169 @@ OBJECT_ID,TERM,LAYER
 2486,"Ridley Park Borough, PA",mun_boundary
 2487,"Willistown Township, PA",mun_boundary
 2488,"Spring City Borough, PA",mun_boundary
-2660,"Elk Township, PA",mun_boundary
-2520,"Upper Providence Township, PA",mun_boundary
-2703,"New Garden Township, PA",mun_boundary
-2705,"Middletown Township, PA",mun_boundary
+2489,"Phoenixville Borough, PA",mun_boundary
+2490,"Tredyffrin Township, PA",mun_boundary
+2491,"Edgmont Township, PA",mun_boundary
+2492,"Glenolden Borough, PA",mun_boundary
+2493,"East Pikeland Township, PA",mun_boundary
+2494,"East Whiteland Township, PA",mun_boundary
+2495,"Upper Providence Township, Delaware County, PA",mun_boundary
+2496,"Newtown Township, Delaware County, PA",mun_boundary
+2497,"Charlestown Township, PA",mun_boundary
+2498,"Easttown Township, PA",mun_boundary
+2499,"Springfield Township, Delaware County, PA",mun_boundary
+2500,"Upper Darby Township, PA",mun_boundary
+2501,"Schuylkill Township, PA",mun_boundary
+2502,"Royersford Borough, PA",mun_boundary
+2503,"East Coventry Township, PA",mun_boundary
+2504,"East Vincent Township, PA",mun_boundary
+2505,"Lower Pottsgrove Township, PA",mun_boundary
+2506,"Douglass Township, PA",mun_boundary
+2507,"Pottstown Borough, PA",mun_boundary
+2508,"West Pottsgrove Township, PA",mun_boundary
+2509,"Limerick Township, PA",mun_boundary
+2510,"North Coventry Township, PA",mun_boundary
+2516,"Upper Pottsgrove Township, PA",mun_boundary
+2517,"Lower Providence Township, PA",mun_boundary
+2520,"Upper Providence Township, Montgomery County, PA",mun_boundary
+2527,"Gibbsboro Borough, NJ",mun_boundary
 2570,"Logan Township, NJ",mun_boundary
 2571,"Kennett Square Borough, PA",mun_boundary
 2574,"Modena Borough, PA",mun_boundary
+2575,"Elverson Borough, PA",mun_boundary
+2576,"Honey Brook Borough, PA",mun_boundary
+2577,"Lower Chichester Township, PA",mun_boundary
+2578,"Caln Township, PA",mun_boundary
+2579,"Thornbury Township, Delaware County, PA",mun_boundary
+2580,"Upper Chichester Township, PA",mun_boundary
+2586,"Upland Borough, PA",mun_boundary
+2590,"Chester Township, PA",mun_boundary
+2591,"Brookhaven Borough, PA",mun_boundary
+2592,"Parkside Borough, PA",mun_boundary
+2593,"Wallace Township, PA",mun_boundary
+2596,"Chester Heights Borough, PA",mun_boundary
+2597,"Chadds Ford Township, PA",mun_boundary
+2598,"Trainer Borough, PA",mun_boundary
+2599,"Aston Township, PA",mun_boundary
+2604,"East Nantmeal Township, PA",mun_boundary
+2605,"East Brandywine Township, PA",mun_boundary
+2608,"Penn Township, PA",mun_boundary
+2611,"East Caln Township, PA",mun_boundary
+2614,"Birmingham Township, PA",mun_boundary
 2619,"East Bradford Township, PA",mun_boundary
+2621,"Franklin Township, PA",mun_boundary
+2624,"Highland Township, PA",mun_boundary
+2628,"Coatesville City, PA",mun_boundary
+2631,"East Nottingham Township, PA",mun_boundary
+2634,"East Marlborough Township, PA",mun_boundary
+2635,"London Britain Township, PA",mun_boundary
+2637,"West Vincent Township, PA",mun_boundary
+2638,"West Whiteland Township, PA",mun_boundary
+2639,"East Fallowfield Township, PA",mun_boundary
+2640,"East Goshen Township, PA",mun_boundary
+2648,"Concord Township, PA",mun_boundary
+2653,"Bethel Township, PA",mun_boundary
+2655,"Pocopson Township, PA",mun_boundary
+2658,"West Fallowfield Township, PA",mun_boundary
+2660,"Elk Township, PA",mun_boundary
+2664,"West Marlborough Township, PA",mun_boundary
+2668,"West Nantmeal Township, PA",mun_boundary
+2669,"West Nottingham Township, PA",mun_boundary
+2670,"West Pikeland Township, PA",mun_boundary
+2672,"West Sadsbury Township, PA",mun_boundary
+2676,"West Goshen Township, PA",mun_boundary
+2679,"Atglen Borough, PA",mun_boundary
+2680,"West Chester Borough, PA",mun_boundary
+2682,"West Caln Township, PA",mun_boundary
+2683,"Avondale Borough, PA",mun_boundary
+2684,"Thornbury Township, Chester County, PA",mun_boundary
+2685,"Oxford Borough, PA",mun_boundary
+2686,"Parkesburg Borough, PA",mun_boundary
+2687,"West Brandywine Township, PA",mun_boundary
+2688,"Downingtown Borough, PA",mun_boundary
+2689,"Upper Oxford Township, PA",mun_boundary
+2690,"Newlin Township, PA",mun_boundary
+2692,"Upper Uwchlan Township, PA",mun_boundary
+2694,"West Grove Borough, PA",mun_boundary
+2696,"West Bradford Township, PA",mun_boundary
+2697,"South Coatesville Borough, PA",mun_boundary
+2699,"Londonderry Township, PA",mun_boundary
+2701,"Lower Oxford Township, PA",mun_boundary
+2702,"New London Township, PA",mun_boundary
+2703,"New Garden Township, PA",mun_boundary
+2705,"Middletown Township, Delaware County, PA",mun_boundary
+2709,"Chester City, PA",mun_boundary
+2714,"Sadsbury Township, PA",mun_boundary
+2729,"Uwchlan Township, PA",mun_boundary
+2730,"Westtown Township, PA",mun_boundary
+2741,"Marcus Hook Borough, PA",mun_boundary
+2748,"Kennett Township, PA",mun_boundary
+2751,"Honey Brook Township, PA",mun_boundary
+2754,"London Grove Township, PA",mun_boundary
+2758,"Pennsbury Township, PA",mun_boundary
+2762,"Valley Township, PA",mun_boundary
+2834,"South Coventry Township, PA",mun_boundary
+2836,"Warwick Township, Chester County, PA",mun_boundary
+3042,"Hi-Nella Borough, NJ",mun_boundary
+3043,"Stratford Borough, NJ",mun_boundary
+3044,"Lindenwold Borough, NJ",mun_boundary
+3045,"Laurel Springs Borough, NJ",mun_boundary
+3046,"Woodbury Heights Borough, NJ",mun_boundary
+3047,"East Greenwich Township, NJ",mun_boundary
+3048,"Berlin Township, NJ",mun_boundary
+3049,"Clementon Borough, NJ",mun_boundary
+3050,"Berlin Borough, NJ",mun_boundary
+3051,"Pine Hill Borough, NJ",mun_boundary
+3052,"Washington Township, Gloucester County, NJ",mun_boundary
+3053,"Wenonah Borough, NJ",mun_boundary
+3054,"Bordentown City, NJ",mun_boundary
+3055,"Fieldsboro Borough, NJ",mun_boundary
+3056,"Falls Township, PA",mun_boundary
+3057,"Florence Township, NJ",mun_boundary
+3058,"Tullytown Borough, PA",mun_boundary
+3059,"Mansfield Township, NJ",mun_boundary
+3150,"Woolwich Township, NJ",mun_boundary
+3158,"Hopewell Township, NJ",mun_boundary
+3159,"East Greenville Borough, PA",mun_boundary
+3160,"Telford Borough, Montgomery County, PA",mun_boundary
+3161,"Red Hill Borough, PA",mun_boundary
+3162,"New Britain Borough, PA",mun_boundary
+3163,"Pennsburg Borough, PA",mun_boundary
+3164,"Marlborough Township, PA",mun_boundary
+3165,"Salford Township, PA",mun_boundary
+3166,"Bedminster Township, PA",mun_boundary
+3167,"Warwick Township, Bucks County, PA",mun_boundary
+3168,"Wrightstown Township, PA",mun_boundary
+3169,"Chalfont Borough, PA",mun_boundary
+3170,"Doylestown Borough, PA",mun_boundary
+3171,"Dublin Borough, PA",mun_boundary
+3172,"New Hope Borough, PA",mun_boundary
+3173,"Trumbauersville Borough, PA",mun_boundary
+3174,"Telford Borough, Bucks County, PA",mun_boundary
+3175,"Buckingham Township, PA",mun_boundary
+3177,"East Rockhill Township, PA",mun_boundary
+3178,"New Britain Township, PA",mun_boundary
+3179,"Richlandtown Borough, PA",mun_boundary
+3180,"Sellersville Borough, PA",mun_boundary
+3181,"Silverdale Borough, PA",mun_boundary
+3182,"Perkasie Borough, PA",mun_boundary
+3183,"Plumstead Township, PA",mun_boundary
+3184,"Solebury Township, PA",mun_boundary
+3185,"West Rockhill Township, PA",mun_boundary
+3187,"Upper Hanover Township, PA",mun_boundary
+3188,"Doylestown Township, PA",mun_boundary
+3189,"Richland Township, PA",mun_boundary
+3190,"Hilltown Township, PA",mun_boundary
+3191,"Quakertown Borough, PA",mun_boundary
+3192,"Milford Township, PA",mun_boundary
 3240,"Durham Township, PA",mun_boundary
 3244,"Riegelsville Borough, PA",mun_boundary
 3245,"Nockamixon Township, PA",mun_boundary
 3246,"Haycock Township, PA",mun_boundary
-3459,"East Windsor Township, NJ",mun_boundary
-3257,"Tinicum Township, PA",mun_boundary
-3263,"Springfield Township, PA",mun_boundary
+3257,"Tinicum Township, Bucks County, PA",mun_boundary
+3263,"Springfield Township, Bucks County, PA",mun_boundary
 3265,"Bridgeton Township, PA",mun_boundary
+3459,"East Windsor Township, NJ",mun_boundary
 3471,"Wrightstown Borough, NJ",mun_boundary
 3472,"Pemberton Township, NJ",mun_boundary
 3473,"Medford Township, NJ",mun_boundary
