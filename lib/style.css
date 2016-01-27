@@ -270,31 +270,31 @@ font-size: 75%;
     color:#949494;
 }
 .ct-vol{
-color:#1a9850;
+color:#0055BE;
 }
 .ct-15min{
-color:#FEE900;
+color:#FFD700;
 }
 .ct-speed{
-color:#810f7c;
+color:#F57D41;
 }
 .ct-class{
-color:#1a9850;
+color:#8CBE28;
 }
 .ct-mclass{
-color:#F7911E;
+color:#6932BE;
 }
 .ct-tm{
-color:#EE3224;
+color:#D7280F;
 }
 .ct-loop{
-color:#c51b7d;
+color:#26E3DE;
 }
 .ct-8day{
-color:#35978f;
+color:#140055;
 }
 .ct-cwalk{
-color:#6baed6;
+color:#B900AA;
 }
 #map_query .tt-hint, #map_query .form-control{
     font-size:13px!important;
@@ -372,4 +372,32 @@ color:#6baed6;
 span.cnt-direction{
     color: #9C9C9C;
     padding-left:4px;
+}
+
+table.table-bordered.dataTable tbody td.max-char, table.table-bordered.dataTable tbody td.table-type, table.table-bordered.dataTable tbody td.table-date{
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+    width:auto;
+    transition: height 500ms;
+}
+table.table-bordered.dataTable tbody td.max-char {
+    max-width:200px;
+}
+table.table-bordered.dataTable tbody td.table-type{
+    max-width:115px;
+}
+table.table-bordered.dataTable tbody td.table-type{
+    max-width:90px;
+}
+
+table.table-bordered.dataTable tbody td.max-char:hover, table.table-bordered.dataTable tbody td.table-type:hover, table.table-bordered.dataTable tbody td.table-date:hover {
+    white-space: normal;
+    overflow:visible;
+}
+.table>thead>tr>th.select-report, .table>tbody>tr>th.select-report{
+    padding: 8px 10px 8px 8px!important;
+}
+.dataTables_paginate.pull-right{
+    margin-right:-15px;
 }
