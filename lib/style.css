@@ -28,6 +28,7 @@ outline:none;
 }
 #table{
     font-size:12px;
+    width: auto !important;
 }
 .select-record{
 
@@ -269,31 +270,31 @@ font-size: 75%;
     color:#949494;
 }
 .ct-vol{
-color:#1a9850;
+color:#b2df8a;
 }
 .ct-15min{
-color:#FEE900;
+color:#33a02c;
 }
 .ct-speed{
-color:#810f7c;
+color:#a6cee3;
 }
 .ct-class{
-color:#1a9850;
+color:#fb9a99;
 }
 .ct-mclass{
-color:#F7911E;
+color:#e31a1c;
 }
 .ct-tm{
-color:#EE3224;
+color:#1f78b4;
 }
 .ct-loop{
-color:#c51b7d;
+color:#cab2d6;
 }
 .ct-8day{
-color:#35978f;
+color:#fdbf6f;
 }
 .ct-cwalk{
-color:#6baed6;
+color:#ff7f00;
 }
 #map_query .tt-hint, #map_query .form-control{
     font-size:13px!important;
@@ -371,4 +372,32 @@ color:#6baed6;
 span.cnt-direction{
     color: #9C9C9C;
     padding-left:4px;
+}
+
+table.table-bordered.dataTable tbody td.max-char, table.table-bordered.dataTable tbody td.table-type, table.table-bordered.dataTable tbody td.table-date{
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+    width:auto;
+    transition: height 500ms;
+}
+table.table-bordered.dataTable tbody td.max-char {
+    max-width:200px;
+}
+table.table-bordered.dataTable tbody td.table-type{
+    max-width:115px;
+}
+table.table-bordered.dataTable tbody td.table-type{
+    max-width:90px;
+}
+
+table.table-bordered.dataTable tbody td.max-char:hover, table.table-bordered.dataTable tbody td.table-type:hover, table.table-bordered.dataTable tbody td.table-date:hover {
+    white-space: normal;
+    overflow:visible;
+}
+.table>thead>tr>th.select-report, .table>tbody>tr>th.select-report{
+    padding: 8px 10px 8px 8px!important;
+}
+.dataTables_paginate.pull-right{
+    margin-right:-15px;
 }
