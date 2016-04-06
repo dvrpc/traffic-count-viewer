@@ -210,6 +210,26 @@
   margin-bottom:0px;
 }
 /*--------------------------------------------------------*/
+/*--------  Search-Bar-Container styles  ----------------------*/
+/*--------------------------------------------------------*/
+#search-bar-container{
+ /* background-color: #428BCA; */
+  background-color: #7aadd9;
+  padding: 10px;
+  border-bottom: 1px #3881C0 solid;
+  border-left: 1px #3881C0 solid;
+}
+#map_query{
+  float:left;
+  width:300px;
+  margin-right:10px;
+}
+#search-bar-nav{
+ float:left; 
+ margin-left:35px;
+}
+
+/*--------------------------------------------------------*/
 /*--------  Side Bar/Legend Styles  ----------------------*/
 /*--------------------------------------------------------*/
 #sidebar {
@@ -226,9 +246,9 @@
 #results-panel{
   width:100%;
   z-index:-1;
-  position:absolute;
-  top:55px;
-  bottom:0;
+ /* position:absolute; */
+  top:5px;
+  bottom:0px;
   margin-top:-1px;
   border-top:1px #ddd solid;
   border-left:1px #ddd solid;

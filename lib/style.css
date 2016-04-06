@@ -401,3 +401,7 @@ table.table-bordered.dataTable tbody td.max-char:hover, table.table-bordered.dat
 .dataTables_paginate.pull-right{
     margin-right:-15px;
 }
+.title-logo{
+    width:120px;
+    margin-top: 2px;
+}

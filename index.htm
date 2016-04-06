@@ -7,7 +7,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="description" content="version 1.0.1">
         <meta name="author" content="Michael Ruane">     
-        <title>Regional Traffic Counts</title>
+        <title>DVRPC - Regional Traffic Counts</title>
         <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="https://cdn.datatables.net/1.10.8/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet" type="text/css">
@@ -23,8 +23,6 @@
         
         <link rel="stylesheet" href="lib/style.css" />
         <style>
-
-
         #loading, #noresults, #return-to-search {
           position: absolute;
           width: 220px;
@@ -50,9 +48,6 @@
         .navbar-brand h3{
             margin:15px;
         }
-        
-
-
         @media screen and (min-width: 768px) {
                 .modal-dialog {
                     width:730px!important;
@@ -131,12 +126,16 @@
                     <span class="icon-bar"></span>
                 </button>
             <div class="navbar-brand">
-                <h3>Traffic Count Concept</h3>
+               <!--  <span><a href="http://www.dvrpc.org/" target="_blank"><img class="title-logo" src="http://www.dvrpc.org/webmaps/img/dataportal/banner_logo.png" alt="DVRPC"/></a></span> -->
+                     <a class="navbar-brand" href="http://www.dvrpc.org" style="color:#428BCA;margin:6px 0px 0px 5px;"><img src="http://www.dvrpc.org/webmaps/pedbikecounts/img/dvrpc_tiny.png" height="40" style="margin:2px 0px 0px 5px;"/>   Regional Traffic Counts</a>
+                
             </div>
         </div>
         <div id="navbar-links" class="navbar-collapse collapse">
+
             <ul id="landing" class="nav navbar-nav navbar-right">
                 <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#aboutModal').modal('show'); return false;"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;About</a></li>
+                  <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#aboutModal').modal('show'); return false;"><i class="glyphicon glyphicon-question-sign"></i>&nbsp;&nbsp;Help</a></li>
             </ul>
         
         </div><!--/.navbar-collapse -->
@@ -200,8 +199,65 @@
                 <!--Siderbar Close-->
             </div>
         </div><!--end Map and Sidebar-->
+
         <div class="row dataEnvironment" id="appContainer">
-            
+                 <div class="col-sm-12 col-lg-12" id="search-bar-container">
+                        <div id="search-bar-nav">
+                            <span>
+                            <form id="map_query" class="">
+                                <div class="input-group ">
+                                <label class="sr-only" for="userLocation">Location query</label>
+                                <input type="text" class="form-control " id="mapQuery" data-provide="typeahead" placeholder="City, State or Zip">
+                                <span class="search-addon"><i class="glyphicon glyphicon-search"></i></span>  
+                                </div>
+                            </form>
+                            <button id="doaSearch" class="btn btn-primary btn-md" data-toggle="collapse" href="#aoi-draw"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button> 
+                            <button id="filterBtn" class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" href="#filter" ><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;<span id="preFilter">Show</span> Filters</button>
+                         <!--    <button id="searchBtn" class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" href="#search" ><i class="glyphicon glyphicon-search"></i>&nbsp;&nbsp;Modify Search Area</button> -->
+                            <button id="records-by-number" onclick="$('#count-modal').modal('show'); return false;" class="btn btn-primary accordion-toggle btn-md"><i class="glyphicon glyphicon-flash"></i>&nbsp;&nbsp;Search by Record #</button> 
+                           
+                          </span>                  
+                          <div style="clear:both;"></div>
+                        </div>
+                        <div class="collapse" id="filter">
+                            <div id="filterWrapper">
+                                <div id="count_types" class="btn-group-sm" role="group" aria-label="...">
+                                 <h5>Specify count types:</h5>
+                                  <button type="button" data-layer="Volume" data-render="true" class="col-sm-3 btn btn-default"><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</button>
+                                  <button type="button" data-layer="15 min Volume" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-15min"></i>&nbsp;&nbsp;15 Min Volume</button>
+                                  <button type="button" data-layer="Speed" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</button>
+                                  <button type="button" data-layer="Class" data-render="true" class="col-sm-3 btn btn-default"><i class="fa fa-circle ct-class"></i>&nbsp;&nbsp;Class</button>
+                                  <button type="button" data-layer="Manual Class" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class</button>
+                                  <button type="button" data-layer="Turning Movement" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement</button>
+                                  <button type="button" data-layer="Loop" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-loop"></i>&nbsp;&nbsp;Loop</button>
+                                  <button type="button" data-layer="8 Day" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-8day"></i>&nbsp;&nbsp;8 Day</button>
+                                  <button type="button" data-layer="Crosswalk" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk</button>
+                                </div>
+                                <div style="clear:both;"></div>
+                                <h5>Specify years of interest: <span id="yearMin"class="years"></span> - <span id="yearMax"class="years"></span></h5>
+                                <!--<p>Current selection: <span id="yearMin">1999</span> - <span id="yearMax">2015</span></p>-->
+                                <div id="sliderWrap">
+                                    <div class="sliders" id="yearSlider"></div>
+                                </div>
+                                <button id="updateSearchbtn" class="btn btn-primary accordion-toggle btn-sm" data-toggle="collapse" href="#">Update Search</button>
+                            </div>   
+                        </div>  
+                        <div class="collapse" id="search"> <!-- start location query -->
+                            <div id="filterWrapper">
+                                <span>Search by location:</span>
+                                            <form id="map_query" class="">
+                                                <div class="input-group ">
+                                                    <label class="sr-only" for="userLocation">Location query</label>
+                                                    <input type="text" class="form-control " id="mapQuery" data-provide="typeahead" placeholder="City, State or Zip">
+                                                    <span class="search-addon"><i class="glyphicon glyphicon-search"></i></span>  
+                                                </div>
+                                            </form>
+                                <div style="clear:both;"></div>
+                            </div>   
+                        </div> <!-- end location query -->
+                
+                </div>
+
             <div id="mapDIV" class="col-md-5 col-lg-6 mapElement" style="opacity:0.0;">
                 <div class="collapse fade" id="aoi-draw">
                     <div id="filterWrapper">
@@ -246,74 +302,10 @@
                 <!--<div id="mapDIV" class="col-sm-12 col-lg-12" style="opacity:0.0;"></div>-->
             </div>
             <div class="col-md-7 col-lg-6 off-right" id="sidebar">
-                <div class="tab-content" >
-                        <div id="sidebar-nav">
-                            <button id="filterBtn" class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" href="#filter" ><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;<span id="preFilter">Show</span> Filters</button>
-                            <button id="searchBtn" class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" href="#search" ><i class="glyphicon glyphicon-search"></i>&nbsp;&nbsp;Modify Search Area</button>
-                            <button id="records-by-number" onclick="$('#count-modal').modal('show'); return false;" class="btn btn-primary accordion-toggle btn-sm"><i class="glyphicon glyphicon-flash"></i>&nbsp;&nbsp;Search by Record #</button>
-                            <div style="clear:both;"></div>
-                        </div>
-                        <div class="collapse" id="filter">
-                            <div id="filterWrapper">
-                                <h5>Specify count types:</h5><div id="count_types" class="btn-group-sm" role="group" aria-label="...">
-                                  <button type="button" data-layer="Volume" data-render="true" class="col-sm-3 btn btn-default"><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</button>
-                                  <button type="button" data-layer="15 min Volume" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-15min"></i>&nbsp;&nbsp;15 Min Volume</button>
-                                  <button type="button" data-layer="Speed" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</button>
-                                  <button type="button" data-layer="Class" data-render="true" class="col-sm-3 btn btn-default"><i class="fa fa-circle ct-class"></i>&nbsp;&nbsp;Class</button>
-                                  <button type="button" data-layer="Manual Class" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class</button>
-                                  <button type="button" data-layer="Turning Movement" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement</button>
-                                  <button type="button" data-layer="Loop" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-loop"></i>&nbsp;&nbsp;Loop</button>
-                                  <button type="button" data-layer="8 Day" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-8day"></i>&nbsp;&nbsp;8 Day</button>
-                                  <button type="button" data-layer="Crosswalk" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk</button>
-                                </div>
-                                <div style="clear:both;"></div>
-                                <h5>Specify years of interest: <span id="yearMin"class="years"></span> - <span id="yearMax"class="years"></span></h5>
-                                <!--<p>Current selection: <span id="yearMin">1999</span> - <span id="yearMax">2015</span></p>-->
-                                <div id="sliderWrap">
-                                    <div class="sliders" id="yearSlider"></div>
-                                </div>
-                                <button id="updateSearchbtn" class="btn btn-primary accordion-toggle btn-sm" data-toggle="collapse" href="#">Update Search</button>
-                            </div>   
-                        </div>
-                        <div class="collapse" id="search">
-                            <div id="filterWrapper">
-                                <span>Search by location:</span>
-                                    <div class="row">
-                                        <div class="col-lg-8">
-                                            <form id="map_query" class="">
-                                                <div class="input-group ">
-                                                    <label class="sr-only" for="userLocation">Location query</label>
-                                                    <input type="text" class="form-control " id="mapQuery" data-provide="typeahead" placeholder="City, State or Zip">
-                                                    <span class="search-addon"><i class="glyphicon glyphicon-search"></i></span>  
-                                                </div>
-                                            </form>
-                                        </div>
-                                        <div class="col-lg-4 left-border">
-                                            <div id="doaSearch" class="col-lg-12 btn btn-primary btn-md" data-toggle="collapse" href="#aoi-draw"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</div>
-                                        </div>
-                                    </div>
-                                <div style="clear:both;"></div>
-                            </div>   
-                        </div>
                         <div id="results-panel" >
-                            
                             <table id="table" class="table table-striped table-bordered">
-                                <!--<thead>
-                                    <tr>
-                                        <th>Street Name</th>
-                                        <th>Count Type</th>
-                                        <th>Count Date</th>
-                                        <th>AADT</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="tableRows">
-                                </tbody>-->
-                            </table>
-                            
-                            
-                        </div>
-                        
-                </div>
+                            </table> 
+                        </div>    
         </div>
         <!--modal -->
 <!-- start About Modal -->
