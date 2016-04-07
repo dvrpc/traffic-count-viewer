@@ -13,14 +13,8 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-        <!--<link href="lib/locals/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="lib/locals/leaflet.css" rel="stylesheet" type="text/css">-->
-        <link rel="stylesheet" href="lib/core/jquery.nouislider.min.css">
-        <!--<link href="lib/assets/typeahead.min.css" rel="stylesheet" type="text/css">-->
-        <link rel="stylesheet" href="lib/dvrpc.draw.css">
-        <link rel="stylesheet" href="lib/core/dyna.css"><!--declare stylesheet for desire icon font set  -->
-        <link rel="stylesheet" href="lib/core/core.css">
-        
+        <link rel="stylesheet" href="lib/assets/jquery.nouislider.min.css">
+        <link rel="stylesheet" href="lib/dvrpc.draw.css">       
         <link rel="stylesheet" href="lib/style.css" />
         <style>
 
@@ -51,69 +45,16 @@
             margin:15px;
         }
         
-
-
-        @media screen and (min-width: 768px) {
-                .modal-dialog {
-                    width:730px!important;
-                }
+        @media (max-width: 1270px) {
+            .navbar .navbar-brand {
+                font-size: 18px;
+                float: left;
             }
-            @media (max-width: 1360px){
-                .search-container{
-                    width:250px!important;
-                }
+            .leaflet-control-attribution {
+                display: none;
             }
-            @media (max-width: 1270px) {
-                .navbar .navbar-brand {
-                    font-size: 18px;
-                    float: left;
-                }
-                .leaflet-control-attribution {
-                    display: none;
-                }
-                
-            }
-            @media (max-width: 1200px) {
-               .search-container {
-                    width: 200px!important;
-                }
-            }
-            @media (max-width: 960px) {
-               .search-container {
-                    display :none!important;
-                }
-
-            }
-            @media (max-width: 768px){
-                .search-container {
-                    display: table!important;
-                    width: 100%!important;
-                }
-                .logo-container{
-                    padding:0px;
-                }
-                .navbar-nav .open .dropdown-menu{
-                    background-color:#fff;
-                }
-                #infobox_ {
-                    right:10px;
-                }
-            }
-            @media (max-width: 376px){
-                .infowrap{
-                    padding:20px;
-                    height:auto;
-                }
-                #infobox_ {
-                    display:none;
-                }
-            }
-            /* Print Handling */
-            @media print {
-                .navbar, .toggle, #sidebar {
-                    display: none !important;
-                }
-            }
+            
+        }
         </style> 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -123,9 +64,9 @@
     </head>
 
     <body>
-        <div id="TC_header" class="navbar navbar-inverse navbar-top oheader">
+        <div id="TC_header" class="navbar navbar-inverse navbar-top dk-gray-border oheader">
         <div class="navbar-header" >
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse dk-gray-border">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -194,10 +135,7 @@
                 <ul id="results"><ul>
             </div>
             <div class="col-sm-6 col-lg-6 off-right" id="sidebarMirror"></div>
-            
-            <!--sidebar -->
-            
-                <!--Siderbar Close-->
+    
             </div>
         </div><!--end Map and Sidebar-->
         <div class="row dataEnvironment" id="appContainer">
@@ -243,7 +181,6 @@
                         <button id="fit-search" type="button" class="btn btn-danger"><i class="glyphicon glyphicon-search"></i>&nbsp;&nbsp;Return to Search Area</button>
                     </div>
                 </div>
-                <!--<div id="mapDIV" class="col-sm-12 col-lg-12" style="opacity:0.0;"></div>-->
             </div>
             <div class="col-md-7 col-lg-6 off-right" id="sidebar">
                 <div class="tab-content" >
@@ -255,7 +192,7 @@
                         </div>
                         <div class="collapse" id="filter">
                             <div id="filterWrapper">
-                                <h5>Specify count types:</h5><div id="count_types" class="btn-group-sm" role="group" aria-label="...">
+                                <h5>Specify count types:</h5><div id="count_types" class="btn-group-sm" role="group" aria-label="Legend of count types">
                                   <button type="button" data-layer="Volume" data-render="true" class="col-sm-3 btn btn-default"><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</button>
                                   <button type="button" data-layer="15 min Volume" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-15min"></i>&nbsp;&nbsp;15 Min Volume</button>
                                   <button type="button" data-layer="Speed" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</button>
@@ -268,7 +205,6 @@
                                 </div>
                                 <div style="clear:both;"></div>
                                 <h5>Specify years of interest: <span id="yearMin"class="years"></span> - <span id="yearMax"class="years"></span></h5>
-                                <!--<p>Current selection: <span id="yearMin">1999</span> - <span id="yearMax">2015</span></p>-->
                                 <div id="sliderWrap">
                                     <div class="sliders" id="yearSlider"></div>
                                 </div>
@@ -284,7 +220,7 @@
                                                 <div class="input-group ">
                                                     <label class="sr-only" for="userLocation">Location query</label>
                                                     <input type="text" class="form-control " id="mapQuery" data-provide="typeahead" placeholder="City, State or Zip">
-                                                    <span class="search-addon"><i class="glyphicon glyphicon-search"></i></span>  
+                                                    <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>  
                                                 </div>
                                             </form>
                                         </div>
@@ -296,21 +232,9 @@
                             </div>   
                         </div>
                         <div id="results-panel" >
-                            
                             <table id="table" class="table table-striped table-bordered">
-                                <!--<thead>
-                                    <tr>
-                                        <th>Street Name</th>
-                                        <th>Count Type</th>
-                                        <th>Count Date</th>
-                                        <th>AADT</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="tableRows">
-                                </tbody>-->
-                            </table>
-                            
-                            
+                                <!-- table content build here -->
+                            </table>                            
                         </div>
                         
                 </div>
@@ -349,9 +273,9 @@
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/dataTables.bootstrap.min.js"></script>
         
          <script type="text/javascript" src="lib/locals/esri.tasks.js"></script> 
-        <script type="text/javascript" src="lib/core/jquery.nouislider.min.js"></script>
+        <script type="text/javascript" src="lib/assets/jquery.nouislider.min.js"></script>
         <script type="text/javascript" src="lib/dvrpc.draw.js"></script>
-        <script type="text/javascript" src="lib/core/dyna-icons.js"></script>
+        <!-- <script type="text/javascript" src="lib/core/dyna-icons.js"></script> -->
         <script type="text/javascript" src="lib/typeahead.bundle.js"></script>
         <script type="text/javascript" src="lib/assets/numeral.min.js"></script>
         <script type="text/javascript" src="lib/assets/leaflet.label.js"></script>
