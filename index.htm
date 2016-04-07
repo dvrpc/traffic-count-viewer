@@ -151,32 +151,41 @@
                         </div>
                     </form>
                     <button id="doaSearch" class="btn btn-primary btn-md" data-toggle="collapse" href="#aoi-draw"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
-                    <button id="filterBtn" class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" href="#filter" ><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;<span id="preFilter">Show</span> Filters</button>
+                  <!--   <button id="filterBtn" class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" href="#filter" ><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;<span id="preFilter">Show</span> Filters</button> -->
                     <!--    <button id="searchBtn" class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" href="#search" ><i class="glyphicon glyphicon-search"></i>&nbsp;&nbsp;Modify Search Area</button> -->
                     <button class="btn btn-primary accordion-toggle btn-md" id="records-by-number" onclick="$('#count-modal').modal('show'); return false;"><i class="glyphicon glyphicon-flash"></i>&nbsp;&nbsp;Search by Record #</button>
-                    <div style="clear:both;"></div>
-                </div>
-                <div class="collapse" id="filter">
-                    <div id="filterWrapper">
-                        <div aria-label="..." class="btn-group-sm" id="count_types" role="group">
-                            <h5>Specify count types:</h5>
-                            <button class="col-sm-3 btn btn-default" data-layer="Volume" data-render="true" type="button"><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</button> 
-                            <button class="col-sm-3 btn btn-default" data-layer="15 min Volume" data-render="true" type="button"><i class="fa fa-circle ct-15min"></i>&nbsp;&nbsp;15 Min Volume</button> 
-                            <button class="col-sm-3 btn btn-default" data-layer="Speed" data-render="true" type="button"><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</button> 
-                            <button class="col-sm-3 btn btn-default" data-layer="Class" data-render="true" type="button"><i class="fa fa-circle ct-class"></i>&nbsp;&nbsp;Class</button> 
-                            <button class="col-sm-3 btn btn-default" data-layer="Manual Class" data-render="true" type="button"><i class="fa fa-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class</button> 
-                            <button class="col-sm-3 btn btn-default" data-layer="Turning Movement" data-render="true" type="button"><i class="fa fa-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement</button> 
-                            <button class="col-sm-3 btn btn-default" data-layer="Loop" data-render="true" type="button"><i class="fa fa-circle ct-loop"></i>&nbsp;&nbsp;Loop</button> 
-                            <button class="col-sm-3 btn btn-default" data-layer="8 Day" data-render="true" type="button"><i class="fa fa-circle ct-8day"></i>&nbsp;&nbsp;8 Day</button> 
-                            <button class="col-sm-3 btn btn-default" data-layer="Crosswalk" data-render="true" type="button"><i class="fa fa-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk</button>
-                        </div>
-                        <div style="clear:both;"></div>
-                        <h5>Specify years of interest: <span class="years" id="yearMin"></span> - <span class="years" id="yearMax"></span></h5>
-                        <div id="sliderWrap">
+                  <!-- Start Type Dropdown-->
+                    <div class="btn-group" id="count_types">
+                        <button type="button" id="count_types_dropdown"class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-road"></i>&nbsp;&nbsp;Count Types <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu keep-open-on-click">
+                        <h5>Specify count types:</h5>
+                            <button class="btn btn-default" data-layer="Volume" data-render="true" type="button" data-tooltip="tooltip"title="The automated measurement of traffic volume collected and presented in hourly increments."><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</button> 
+                            <button class="btn btn-default" data-layer="15 min Volume" data-render="true" type="button" data-tooltip="tooltip" title="The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments."><i class="fa fa-circle ct-15min" title="The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments."></i>&nbsp;&nbsp;15 Min Volume</button> 
+                            <button class="btn btn-default" data-layer="Speed" data-render="true" type="button" data-tooltip="tooltip" title="Speed counts..still need this"><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</button> 
+                            <button class="btn btn-default" data-layer="Class" data-render="true" type="button" data-tooltip="tooltip" title="Automated measurement of traffic volume by vehicle class (type)."><i class="fa fa-circle ct-class"></i>&nbsp;&nbsp;Class</button> 
+                            <button class="btn btn-default" data-layer="Manual Class" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of traffic volume by vehicle class (type)."><i class="fa fa-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class</button> 
+                            <button class="btn btn-default" data-layer="Turning Movement" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of intersection turning movement volumes."><i class="fa fa-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement</button> 
+                            <button class="btn btn-default" data-layer="Loop" data-render="true" type="button" data-tooltip="tooltip" title="Vehicle volume counts via fixed-location inductive-loop counters."><i class="fa fa-circle ct-loop"></i>&nbsp;&nbsp;Loop</button> 
+                            <button class="btn btn-default" data-layer="8 Day" data-render="true" type="button" data-tooltip="tooltip" title="A week long volume count utilized by NJDOT."><i class="fa fa-circle ct-8day"></i>&nbsp;&nbsp;8 Day</button> 
+                            <button class="btn btn-default" data-layer="Crosswalk" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of crosswalk movement by pedestrains and bicycles."><i class="fa fa-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk</button>
+                        </ul>
+                    </div>
+                  <!-- End Type Dropdown-->
+                      <!-- Start Type Dropdown-->
+                    <div class="btn-group" id="count_year">
+                        <button type="button" id="count_year_dropdown"class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;Years <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                             <h5>Specify years of interest: <span class="years" id="yearMin"></span> - <span class="years" id="yearMax"></span></h5>
+                            <div id="sliderWrap">
                             <div class="sliders" id="yearSlider"></div>
                         </div>
-                        <button class="btn btn-primary accordion-toggle btn-sm" data-toggle="collapse" id="updateSearchbtn">Update Search</button>
+                        </ul>
                     </div>
+                  <!-- End Type Dropdown-->
+                   <button class="btn btn-success accordion-toggle" data-toggle="collapse" id="updateSearchbtn">Update Search</button>
+                    <div style="clear:both;"></div>
                 </div>
                 <div class="collapse" id="search"><!-- start location query -->
                     <div id="filterWrapper">

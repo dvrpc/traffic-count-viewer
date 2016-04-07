@@ -411,7 +411,9 @@ a,
 /* ========================================= */
 /* === Legend/traffic count type buttons === */
 /* ========================================= */
-
+.btn.btn-primary.dropdown-toggle.inactive{
+   color:white; 
+}
 .fa-circle {
     color: #FEE900;
     font-size: 75%;
@@ -683,4 +685,8 @@ span.cnt-direction {
 #noresults .panel-heading,
 #return-to-search .panel-heading {
     padding: 10px 15px;
+}
+/* Added to extent Legend tooltip width */
+.tooltip-inner {
+    width: 350px !important;
 }
