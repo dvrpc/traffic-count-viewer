@@ -150,8 +150,8 @@
                             <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="City, State or Zip" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
                         </div>
                     </form>
-                    <button class="btn btn-primary btn-md" data-toggle="collapse" id="doaSearch"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button> 
-                    <button class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" id="filterBtn"><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;<span id="preFilter">Show</span> Filters</button> 
+                    <button id="doaSearch" class="btn btn-primary btn-md" data-toggle="collapse" href="#aoi-draw"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
+                    <button id="filterBtn" class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" href="#filter" ><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;<span id="preFilter">Show</span> Filters</button>
                     <!--    <button id="searchBtn" class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" href="#search" ><i class="glyphicon glyphicon-search"></i>&nbsp;&nbsp;Modify Search Area</button> -->
                     <button class="btn btn-primary accordion-toggle btn-md" id="records-by-number" onclick="$('#count-modal').modal('show'); return false;"><i class="glyphicon glyphicon-flash"></i>&nbsp;&nbsp;Search by Record #</button>
                     <div style="clear:both;"></div>
