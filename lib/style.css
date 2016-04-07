@@ -647,6 +647,8 @@ color:#ff7f00;
     color: #B1B1B1;
     font-weight: 200;
 }
+
+/* === count results table styles === */
 span.cnt-direction{
     color: #9C9C9C;
     padding-left:4px;
@@ -661,12 +663,15 @@ table.table-bordered.dataTable tbody td.table-date{
     width:auto;
     transition: height 500ms;
 }
+
 table.table-bordered.dataTable tbody td.max-char {
     max-width:200px;
 }
+
 table.table-bordered.dataTable tbody td.table-type{
     max-width:115px;
 }
+
 table.table-bordered.dataTable tbody td.table-type{
     max-width:90px;
 }
@@ -677,10 +682,12 @@ table.table-bordered.dataTable tbody td.table-date:hover {
     white-space: normal;
     overflow:visible;
 }
+
 .table>thead>tr>th.select-report, 
 .table>tbody>tr>th.select-report{
     padding: 8px 10px 8px 8px!important;
 }
+
 .dataTables_paginate.pull-right{
     margin-right:-15px;
 }

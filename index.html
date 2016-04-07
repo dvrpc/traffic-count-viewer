@@ -135,10 +135,7 @@
                 <ul id="results"><ul>
             </div>
             <div class="col-sm-6 col-lg-6 off-right" id="sidebarMirror"></div>
-            
-            <!--sidebar -->
-            
-                <!--Siderbar Close-->
+    
             </div>
         </div><!--end Map and Sidebar-->
         <div class="row dataEnvironment" id="appContainer">
@@ -184,7 +181,6 @@
                         <button id="fit-search" type="button" class="btn btn-danger"><i class="glyphicon glyphicon-search"></i>&nbsp;&nbsp;Return to Search Area</button>
                     </div>
                 </div>
-                <!--<div id="mapDIV" class="col-sm-12 col-lg-12" style="opacity:0.0;"></div>-->
             </div>
             <div class="col-md-7 col-lg-6 off-right" id="sidebar">
                 <div class="tab-content" >
@@ -196,7 +192,7 @@
                         </div>
                         <div class="collapse" id="filter">
                             <div id="filterWrapper">
-                                <h5>Specify count types:</h5><div id="count_types" class="btn-group-sm" role="group" aria-label="...">
+                                <h5>Specify count types:</h5><div id="count_types" class="btn-group-sm" role="group" aria-label="Legend of count types">
                                   <button type="button" data-layer="Volume" data-render="true" class="col-sm-3 btn btn-default"><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</button>
                                   <button type="button" data-layer="15 min Volume" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-15min"></i>&nbsp;&nbsp;15 Min Volume</button>
                                   <button type="button" data-layer="Speed" data-render="true" class="col-sm-3 btn btn-default "><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</button>
@@ -209,7 +205,6 @@
                                 </div>
                                 <div style="clear:both;"></div>
                                 <h5>Specify years of interest: <span id="yearMin"class="years"></span> - <span id="yearMax"class="years"></span></h5>
-                                <!--<p>Current selection: <span id="yearMin">1999</span> - <span id="yearMax">2015</span></p>-->
                                 <div id="sliderWrap">
                                     <div class="sliders" id="yearSlider"></div>
                                 </div>
@@ -237,21 +232,9 @@
                             </div>   
                         </div>
                         <div id="results-panel" >
-                            
                             <table id="table" class="table table-striped table-bordered">
-                                <!--<thead>
-                                    <tr>
-                                        <th>Street Name</th>
-                                        <th>Count Type</th>
-                                        <th>Count Date</th>
-                                        <th>AADT</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="tableRows">
-                                </tbody>-->
-                            </table>
-                            
-                            
+                                <!-- table content build here -->
+                            </table>                            
                         </div>
                         
                 </div>
