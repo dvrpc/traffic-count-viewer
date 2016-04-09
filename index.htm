@@ -81,6 +81,8 @@
             <ul id="landing" class="nav navbar-nav navbar-right">
                 <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#aboutModal').modal('show'); return false;"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;About</a></li>
                 <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#aboutModal').modal('show'); return false;"><i class="glyphicon glyphicon-question-sign"></i>&nbsp;&nbsp;Help</a></li>
+                <li><a class="btn btn-primary accordion-toggle btn-md" id="records-by-number" onclick="$('#count-modal').modal('show'); return false;"><i class="glyphicon glyphicon-flash"></i>&nbsp;&nbsp;Search by Record #</a></li>
+            <!--  <button ><i class="glyphicon glyphicon-flash"></i>&nbsp;&nbsp;Search by Record #</button> --> 
             </ul>
         
         </div><!--/.navbar-collapse -->
@@ -143,18 +145,37 @@
         </div><!--end Map and Sidebar-->
 
         <div class="row dataEnvironment" id="appContainer">
-            <div class="col-sm-12 col-lg-12" id="search-bar-container">
-                <div id="search-bar-nav">
-                    <form class="" id="map_query" name="map_query">
-                        <div class="input-group">
-                            <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="City, State or Zip" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
+            <!-- Start Search Bar Container -->
+          <div class="col-sm-12 col-lg-12" id="search-bar-container">  
+            <!-- Start Search Container -->
+                <div class="col-sm-6 col-lg-6" id="search-container">
+                    <div id="search-bar-nav">
+                        <form class="" id="map_query" name="map_query">
+                            <div class="input-group">
+                                <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="City, State or Zip" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
+                            </div>
+                        </form>
+                        <button id="doaSearch" class="btn btn-primary btn-md" data-toggle="collapse" href="#aoi-draw"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
+                      <!--   <button id="filterBtn" class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" href="#filter" ><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;<span id="preFilter">Show</span> Filters</button> -->
+                        <!--    <button id="searchBtn" class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" href="#search" ><i class="glyphicon glyphicon-search"></i>&nbsp;&nbsp;Modify Search Area</button> -->
+                        <div style="clear:both;"></div>
+                    </div>
+                    <div class="collapse" id="search">
+                        <div id="filterWrapper">
+                            <span>Search by location:</span>
+                            <form class="" id="map_query" name="map_query">
+                                <div class="input-group">
+                                    <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="City, State or Zip" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
+                                </div>
+                            </form>
+                            <div style="clear:both;"></div>
                         </div>
-                    </form>
-                    <button id="doaSearch" class="btn btn-primary btn-md" data-toggle="collapse" href="#aoi-draw"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
-                  <!--   <button id="filterBtn" class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" href="#filter" ><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;<span id="preFilter">Show</span> Filters</button> -->
-                    <!--    <button id="searchBtn" class="btn btn-primary accordion-toggle btn-md" data-toggle="collapse" href="#search" ><i class="glyphicon glyphicon-search"></i>&nbsp;&nbsp;Modify Search Area</button> -->
-                    <button class="btn btn-primary accordion-toggle btn-md" id="records-by-number" onclick="$('#count-modal').modal('show'); return false;"><i class="glyphicon glyphicon-flash"></i>&nbsp;&nbsp;Search by Record #</button>
-                  <!-- Start Type Dropdown-->
+                    </div>
+                </div>
+                <!-- End Search Container -->
+                <!-- Start Filter Container -->
+                <div class="col-sm-6 col-lg-6" id="filter-bar-container">
+                    <div id="filter-bar-nav">
                     <div class="btn-group" id="count_types">
                         <button type="button" id="count_types_dropdown"class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-road"></i>&nbsp;&nbsp;Count Types <span class="caret"></span>
                         </button>
@@ -171,8 +192,6 @@
                             <button class="btn btn-default" data-layer="Crosswalk" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of crosswalk movement by pedestrains and bicycles."><i class="fa fa-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk</button>
                         </ul>
                     </div>
-                  <!-- End Type Dropdown-->
-                      <!-- Start Type Dropdown-->
                     <div class="btn-group" id="count_year">
                         <button type="button" id="count_year_dropdown"class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;Years <span class="caret"></span>
                         </button>
@@ -183,22 +202,12 @@
                         </div>
                         </ul>
                     </div>
-                  <!-- End Type Dropdown-->
-                   <button class="btn btn-success accordion-toggle" data-toggle="collapse" id="updateSearchbtn">Update Search</button>
-                    <div style="clear:both;"></div>
-                </div>
-                <div class="collapse" id="search"><!-- start location query -->
-                    <div id="filterWrapper">
-                        <span>Search by location:</span>
-                        <form class="" id="map_query" name="map_query">
-                            <div class="input-group">
-                                <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="City, State or Zip" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
-                            </div>
-                        </form>
-                        <div style="clear:both;"></div>
-                    </div>
-                </div><!-- end location query -->
+                    <button class="btn btn-success accordion-toggle" data-toggle="collapse" id="updateSearchbtn">Update Search</button>
+                  </div>
+                </div>   
+                <!-- Ends Filter Container --> 
             </div>
+        <!-- END Search Bar Container -->
 
             <div id="mapDIV" class="col-md-5 col-lg-6 mapElement" style="opacity:0.0;">
                 <div class="collapse fade" id="aoi-draw">

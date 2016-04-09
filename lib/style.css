@@ -405,8 +405,15 @@ a,
     border-left: 1px #3881C0 solid;
 }
 #search-bar-nav{
-    float:left; 
-    margin-left:35px;
+    float:right; 
+  /*  margin-left:35px; */
+}
+#filter-bar-container{
+    padding-right: 5px;
+}
+#filter-bar-nav{
+    float:right; 
+  /*  margin-right:5px; */
 }
 /* ========================================= */
 /* === Legend/traffic count type buttons === */
