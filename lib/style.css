@@ -406,14 +406,19 @@ a,
 }
 #search-bar-nav{
     float:right; 
-  /*  margin-left:35px; */
 }
 #filter-bar-container{
     padding-right: 5px;
 }
 #filter-bar-nav{
     float:right; 
-  /*  margin-right:5px; */
+}
+#dropdown_years{
+  min-width:300px;
+  width: 100%;
+  text-align: center; 
+  left: 50% !important;
+  margin-left: -150px;
 }
 /* ========================================= */
 /* === Legend/traffic count type buttons === */

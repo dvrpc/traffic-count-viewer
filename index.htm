@@ -179,11 +179,11 @@
                     <div class="btn-group" id="count_types">
                         <button type="button" id="count_types_dropdown"class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-road"></i>&nbsp;&nbsp;Count Types <span class="caret"></span>
                         </button>
-                        <ul class="dropdown-menu keep-open-on-click">
+                        <ul class="dropdown-menu keep-open-on-click" id="dropdown_types">
                         <h5>Specify count types:</h5>
                             <button class="btn btn-default" data-layer="Volume" data-render="true" type="button" data-tooltip="tooltip"title="The automated measurement of traffic volume collected and presented in hourly increments."><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</button> 
                             <button class="btn btn-default" data-layer="15 min Volume" data-render="true" type="button" data-tooltip="tooltip" title="The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments."><i class="fa fa-circle ct-15min" title="The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments."></i>&nbsp;&nbsp;15 Min Volume</button> 
-                            <button class="btn btn-default" data-layer="Speed" data-render="true" type="button" data-tooltip="tooltip" title="Speed counts..still need this"><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</button> 
+                            <button class="btn btn-default" data-layer="Speed" data-render="true" type="button" data-tooltip="tooltip" title="A vehicle count where volumes are reported in 5 mph speed bins"><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</button> 
                             <button class="btn btn-default" data-layer="Class" data-render="true" type="button" data-tooltip="tooltip" title="Automated measurement of traffic volume by vehicle class (type)."><i class="fa fa-circle ct-class"></i>&nbsp;&nbsp;Class</button> 
                             <button class="btn btn-default" data-layer="Manual Class" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of traffic volume by vehicle class (type)."><i class="fa fa-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class</button> 
                             <button class="btn btn-default" data-layer="Turning Movement" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of intersection turning movement volumes."><i class="fa fa-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement</button> 
@@ -193,9 +193,9 @@
                         </ul>
                     </div>
                     <div class="btn-group" id="count_year">
-                        <button type="button" id="count_year_dropdown"class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;Years <span class="caret"></span>
+                        <button type="button" id="count_years_dropdown"class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;Years <span class="caret"></span>
                         </button>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu keep-open-on-click" id="dropdown_years">
                              <h5>Specify years of interest: <span class="years" id="yearMin"></span> - <span class="years" id="yearMax"></span></h5>
                             <div id="sliderWrap">
                             <div class="sliders" id="yearSlider"></div>
