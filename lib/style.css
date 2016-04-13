@@ -60,6 +60,10 @@ body,
     width:120px;
     margin-top: 2px;
 }
+.title-title{
+  display: inline-block;  
+  margin-right:20px;
+}
 .navbar-top {
     margin-bottom: 0px;
     z-index: 25;
@@ -405,7 +409,13 @@ a,
     border-left: 1px #3881C0 solid;
 }
 #search-bar-nav{
-    float:right; 
+    float:left; 
+    margin-top: 5px;
+}
+.filterBar-title{
+  display: inline-block;  
+  margin-right:20px;
+  color: #fff;
 }
 #filter-bar-container{
     padding-right: 5px;
@@ -541,7 +551,7 @@ a,
 #filterWrapper {
     border-left: 1px #ddd solid;
     border-bottom: 1px #ddd solid;
-    padding: 15px;
+    padding: 10px;
     background-color: #efefef;
 }
 #filter {
@@ -678,8 +688,9 @@ span.cnt-direction {
 #aoi-draw {
     position: absolute;
     top: 10px;
-    right: 10px;
+    left: 10px;
     width: 315px;
+    height: 40px;
     z-index: 3000;
 }
 #aoi-draw #filterWrapper {
