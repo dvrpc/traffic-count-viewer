@@ -81,8 +81,8 @@
         </div>
         <div id="navbar-links" class="navbar-collapse collapse">
             <ul id="landing" class="nav navbar-nav navbar-right">
-                <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#aboutModal').modal('show'); return false;"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;About</a></li>
-                <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#aboutModal').modal('show'); return false;"><i class="glyphicon glyphicon-question-sign"></i>&nbsp;&nbsp;Help</a></li>
+                <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#aboutModal').modal('show'); return false;"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;About</a></li>
+                <li><a href="#legend" class="toggleLanding" data-tab="legend" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#legendModal').modal('show'); return false;"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;Legend</a></li>
                 <li><a class="btn btn-primary accordion-toggle btn-md" id="records-by-number" onclick="$('#count-modal').modal('show'); return false;">&nbsp;&nbsp;Search by Record #</a></li>
             </ul>
         
@@ -181,15 +181,18 @@
                         </button>
                         <ul class="dropdown-menu keep-open-on-click" id="dropdown_types">
                         <h5>Specify count types:</h5>
-                            <button class="btn btn-default" data-layer="Volume" data-render="true" type="button" data-tooltip="tooltip"title="The automated measurement of traffic volume collected and presented in hourly increments."><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</button> 
-                            <button class="btn btn-default" data-layer="15 min Volume" data-render="true" type="button" data-tooltip="tooltip" title="The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments."><i class="fa fa-circle ct-15min" title="The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments."></i>&nbsp;&nbsp;15 Min Volume</button> 
-                            <button class="btn btn-default" data-layer="Speed" data-render="true" type="button" data-tooltip="tooltip" title="A vehicle count where volumes are reported in 5 mph speed bins"><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</button> 
-                            <button class="btn btn-default" data-layer="Class" data-render="true" type="button" data-tooltip="tooltip" title="Automated measurement of traffic volume by vehicle class (type)."><i class="fa fa-circle ct-class"></i>&nbsp;&nbsp;Class</button> 
-                            <button class="btn btn-default" data-layer="Manual Class" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of traffic volume by vehicle class (type)."><i class="fa fa-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class</button> 
-                            <button class="btn btn-default" data-layer="Turning Movement" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of intersection turning movement volumes."><i class="fa fa-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement</button> 
-                            <button class="btn btn-default" data-layer="Loop" data-render="true" type="button" data-tooltip="tooltip" title="Vehicle volume counts via fixed-location inductive-loop counters."><i class="fa fa-circle ct-loop"></i>&nbsp;&nbsp;Loop</button> 
-                            <button class="btn btn-default" data-layer="8 Day" data-render="true" type="button" data-tooltip="tooltip" title="A week long volume count utilized by NJDOT."><i class="fa fa-circle ct-8day"></i>&nbsp;&nbsp;8 Day</button> 
-                            <button class="btn btn-default" data-layer="Crosswalk" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of crosswalk movement by pedestrains and bicycles."><i class="fa fa-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk</button>
+
+                        <li><a href="#" data-layer="Volume" data-render="true" data-tooltip="tooltip" title="The automated measurement of traffic volume collected and presented in hourly increments."><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                            <li class="btn btn-default btn-md" data-layer="15 min Volume" data-render="true" type="button" data-tooltip="tooltip" title="The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments."><i class="fa fa-circle ct-15min" title="The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments."></i>&nbsp;&nbsp;15 Min Volume</li> 
+                            <button class="btn btn-default btn-md" data-layer="Speed" data-render="true" type="button" data-tooltip="tooltip" title="A vehicle count where volumes are reported in 5 mph speed bins"><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</button> 
+                            <button class="btn btn-default btn-md" data-layer="Class" data-render="true" type="button" data-tooltip="tooltip" title="Automated measurement of traffic volume by vehicle class (type)."><i class="fa fa-circle ct-class"></i>&nbsp;&nbsp;Class</button> 
+                            <button class="btn btn-default btn-md" data-layer="Manual Class" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of traffic volume by vehicle class (type)."><i class="fa fa-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class</button> 
+                            <button class="btn btn-default btn-md" data-layer="Turning Movement" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of intersection turning movement volumes."><i class="fa fa-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement</button> 
+                            <button class="btn btn-default btn-md" data-layer="Loop" data-render="true" type="button" data-tooltip="tooltip" title="Vehicle volume counts via fixed-location inductive-loop counters."><i class="fa fa-circle ct-loop"></i>&nbsp;&nbsp;Loop</button> 
+                            <button class="btn btn-default btn-md" data-layer="Crosswalk" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of crosswalk movement by pedestrains and bicycles."><i class="fa fa-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk</button>
+                            <button class="btn btn-default btn-md" data-layer="8 Day" data-render="true" type="button" data-tooltip="tooltip" title="A week long volume count utilized by NJDOT."><i class="fa fa-circle ct-8day"></i>&nbsp;&nbsp;8 Day</button> 
                         </ul>
                     </div>
                     <div class="btn-group" id="count_year">
@@ -274,33 +277,26 @@
                         <div class="clearfix">
                             <ul class="nav nav-tabs" id="aboutTabs">
                                 <li class="active">
-                                    <a data-toggle="tab" href="#about"><i class=""></i>&nbsp;About</a>
+                                    <a data-toggle="tab" href="#about"><i class="about"></i>&nbsp;About</a>
                                 </li>
                                 <li>
                                     <a data-toggle="tab" href="#disclaimer"><i class="i"></i>&nbsp;Disclaimer</a>
                                 </li>
-                                <li>
-                                    <a data-toggle="tab" href="#contact"><i class="icon-globe"></i>&nbsp;Contact</a>
-                                </li>
                             </ul>
                             <div class="tab-content" id="aboutTabsContent" style="padding-top: 10px;">
                                 <div class="tab-pane fade active in" id="about">
-                                    <p>Traffic count data on this website is provided as a public service. The data item "Annual Average Daily Traffic (AADT)" represents an estimate of all traffic during a 24 hour period at the location indicated for the year in which it was collected. While every effort is made on the part of DVRPC to provide valid and current information, DVRPC makes no representation or warranties, express or implied, about the validity of this information and is not to be held responsible for errors in data obtained from this website.</p>
+                                    <p>Traffic count data on this website is provided as a public service. The data item <b>"Annual Average Daily Traffic (AADT)"</b> represents an estimate of all traffic during a <i class="fa fa-clock-o" aria-hidden="true"></i> 24 hour period  at the location indicated for the year in which it was collected. While every effort is made on the part of DVRPC to provide valid and current information, DVRPC makes no representation or warranties, express or implied, about the validity of this information and is not to be held responsible for errors in data obtained from this website.</p>
+                                    <p><h4>For further information contact our Office of Travel Monitoring</h4>
+                                    Scott Brady, <em>Manager</em><br>
+                                    Phone: 215.238.2814  |  Email: <a href="mailto:sbrady@dvrpc.org">sbrady@dvrpc.org</a>
+                                    <br><br>
+                                    Charles Henry, <em>Traffic Counting Supervisor</em><br>
+                                    Phone: 215.238.2895  |  Email: <a href="mailto:chenry@dvrpc.org">chenry@dvrpc.org</a><br>
+                                    <br>
+                                    <b>DVRPC Main Number:</b> 215.592.1800</p>
                                 </div>
-                                <div class="tab-pane fade text-danger" id="disclaimer">
+                                <div class="tab-pane fade" id="disclaimer">
                                     <p>This web page is a public resource of general information. The Delaware Valley Regional Commission (DVRPC) makes no warranty, representation, or guarantee as to the content, sequence, accuracy, timeliness, or completeness of any of the spatial data or database information provided herein. DVRPC and partner state, local, and other agencies shall assume no liability for errors, omissions, or inaccuracies in the information provided regardless of how caused; or any decision made or action taken or not taken by any person relying on any information or data furnished within.</p>
-                                </div>
-                                <div class="tab-pane fade" id="contact">
-                                    <p><b>Office of Travel Monitoring</b><br>
-                                    Scott Brady, Manager<br>
-                                    (215) 238-2814<br>
-                                    <a href="mailto:sbrady@dvrpc.org">sbrady@dvrpc.org</a><br>
-                                    <br>
-                                    Charles Henry, Traffic Counting Supervisor<br>
-                                    (215) 238-2895<br>
-                                    <a href="mailto:chenry@dvrpc.org">chenry@dvrpc.org</a><br>
-                                    <br>
-                                    <b>DVRPC Main Number:</b> (215) 592-1800</p>
                                 </div>
                             </div><!-- /.tab-content -->
                         </div><!-- /.clearfix -->
@@ -310,6 +306,30 @@
         </div><!-- /.modal -->
         <!-- end About Modal -->
 
+        <!-- Legend Modal -->
+         <div class="modal fade" id="legendModal">
+          <div class="modal-dialog" style="width:710px;">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Traffic Count Types</h4>
+                  </div>
+                  <div class="modal-body">
+                            <p><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume -- The automated measurement of traffic volume collected and presented in hourly increments.</p>
+                            <p><i class="fa fa-circle ct-15min"></i>&nbsp;&nbsp;15 Min Volume -- The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments.</p> 
+                            <p><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed -- A vehicle count where volumes are reported in 5 mph speed bins.</p> 
+                            <p><i class="fa fa-circle ct-class"></i>&nbsp;&nbsp;Class -- Automated measurement of traffic volume by vehicle class (type).</p> 
+                            <p><i class="fa fa-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class -- Manual observation and measurement of traffic volume by vehicle class (type).</p> 
+                            <p><i class="fa fa-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement -- Manual observation and measurement of intersection turning movement volumes.</p> 
+                            <p><i class="fa fa-circle ct-loop"></i>&nbsp;&nbsp;Loop -- Vehicle volume counts via fixed-location inductive-loop counters.</p> 
+                            <p><i class="fa fa-circle ct-8day"></i>&nbsp;&nbsp;8 Day -- A week long volume count utilized by NJDOT.</p> 
+                            <p><i class="fa fa-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk -- Manual observation and measurement of crosswalk movement by pedestrains and bicycles.</button>
+                  </div><!-- /.modal-body -->
+              </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+      </div><!-- /.modal fade-->
+         
+        
 
         <div class="modal fade" id="count-modal">
             <div class="modal-dialog">
