@@ -424,17 +424,18 @@ a,
     float:right; 
 }
 #dropdown_years{
-  min-width:300px;
+  min-width:350px;
   width: 100%;
   text-align: center; 
   left: 50% !important;
-  margin-left: -150px;
-}#dropdown_types{
-  min-width:300px;
+  margin-left: -190px;
+}
+#dropdown_types{
+  min-width:290px;
   width: 100%;
-  text-align: center; 
+  text-align: left; 
   left: 50% !important;
-  margin-left: -170px;
+  margin-left: -130px;
 }
 /* ========================================= */
 /* === Legend/traffic count type buttons === */
@@ -444,7 +445,8 @@ a,
 }
 .fa-circle {
     color: #FEE900;
-    font-size: 75%;
+   /* font-size: 75%; */
+    font-size: 90%;  
 }
 .btn-type {
     color: white;
@@ -468,7 +470,8 @@ a,
    color:#35978f;
 }
 .ct-speed {
-    color: #a6cee3;
+ /*   color: #a6cee3; */
+    color:#c2e699;
 }
 .ct-class {
     color: #fb9a99;

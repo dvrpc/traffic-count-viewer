@@ -12,10 +12,12 @@
         <link href="https://cdn.datatables.net/1.10.8/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
 
         <link rel="stylesheet" href="lib/assets/jquery.nouislider.min.css">
         <link rel="stylesheet" href="lib/dvrpc.draw.css">       
         <link rel="stylesheet" href="lib/style.css" />
+        <link rel="stylesheet" href="lib/awesome-bootstrap-checkbox-css.css" />
         <style>
 
 
@@ -75,7 +77,7 @@
             <div class="navbar-brand">
                 <!--  <span><a href="http://www.dvrpc.org/" target="_blank"><img class="title-logo" src="http://www.dvrpc.org/webmaps/img/dataportal/banner_logo.png" alt="DVRPC"/></a></span> -->
                 <a class="navbar-brand" href="http://www.dvrpc.org" style="margin:10px 0px 0px 5px;"><img src="http://www.dvrpc.org/webmaps/pedbikecounts/img/dvrpc_tiny.png" height="40"/></a>
-                 <h3 class="title-title">Regional Traffic Counts</h3>
+                 <h3 class="title-title">TRAFFIC COUNTS</h3>
                 
             </div>
         </div>
@@ -83,7 +85,7 @@
             <ul id="landing" class="nav navbar-nav navbar-right">
                 <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#aboutModal').modal('show'); return false;"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;About</a></li>
                 <li><a href="#legend" class="toggleLanding" data-tab="legend" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#legendModal').modal('show'); return false;"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;Legend</a></li>
-                <li><a class="toggleLanding" id="records-by-number" onclick="$('#count-modal').modal('show'); return false;">&nbsp;&nbsp;Search by Record #</a></li>
+                <li><a class="toggleLanding" id="records-by-number" onclick="$('#count-modal').modal('show'); return false;"><i class="glyphicon glyphicon-flash"></i>&nbsp;&nbsp;Search by Record #</a></li>
             </ul>
         
         </div><!--/.navbar-collapse -->
@@ -180,16 +182,49 @@
                        <button type="button" id="count_types_dropdown"class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-road"></i>&nbsp;&nbsp;Count Type <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu keep-open-on-click" id="dropdown_types">
-                        <h5>Specify count types:</h5>
-                            <button class="btn btn-default btn-md" data-layer="Volume" data-render="true" type="button" data-tooltip="tooltip" title="The automated measurement of traffic volume collected and presented in hourly increments."><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</button>
-                            <button class="btn btn-default btn-md" data-layer="15 min Volume" data-render="true" type="button" data-tooltip="tooltip" title="The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments."><i class="fa fa-circle ct-15min" title="The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments."></i>&nbsp;&nbsp;15 Min Volume</button> 
-                            <button class="btn btn-default btn-md" data-layer="Speed" data-render="true" type="button" data-tooltip="tooltip" title="A vehicle count where volumes are reported in 5 mph speed bins."><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</button> 
-                            <button class="btn btn-default btn-md" data-layer="Class" data-render="true" type="button" data-tooltip="tooltip" title="Automated measurement of traffic volume by vehicle class (type)."><i class="fa fa-circle ct-class"></i>&nbsp;&nbsp;Class</button> 
-                            <button class="btn btn-default btn-md" data-layer="Manual Class" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of traffic volume by vehicle class (type)."><i class="fa fa-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class</button> 
-                            <button class="btn btn-default btn-md" data-layer="Turning Movement" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of intersection turning movement volumes."><i class="fa fa-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement</button> 
-                            <button class="btn btn-default btn-md" data-layer="Loop" data-render="true" type="button" data-tooltip="tooltip" title="Vehicle volume counts via fixed-location inductive-loop counters."><i class="fa fa-circle ct-loop"></i>&nbsp;&nbsp;Loop</button> 
-                            <button class="btn btn-default btn-md" data-layer="Crosswalk" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of crosswalk movement by pedestrains and bicycles."><i class="fa fa-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk</button>
-                            <button class="btn btn-default btn-md" data-layer="8 Day" data-render="true" type="button" data-tooltip="tooltip" title="A week long volume count utilized by NJDOT."><i class="fa fa-circle ct-8day"></i>&nbsp;&nbsp;8 Day</button> 
+                   
+                      <!--    <button class="btn btn-default btn-md" data-layer="Volume" data-render="true" type="button" data-tooltip="tooltip" title="The automated measurement of traffic volume collected and presented in hourly increments."><input type="checkbox" id="colors-1-toggle-0" name="colors-1[]" value="color_c"/><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</button> -->
+                        <div class="col-sm-10 col-lg-10">
+                         <h5><i class="fa fa-info-circle" aria-hidden="true" data-tooltip="tooltip" title="Learn about these types" onclick="$('#legendModal').modal('show'); return false;"></i>&nbsp;&nbsp;SPECIFY COUNT TYPES</h5>
+                           <li role="separator" class="divider"></li>
+                            <div class="checkbox" data-layer="Volume" data-render="true" type="checkbox">
+                            <input id="checkbox1" class="styled" type="checkbox" checked>
+                            <label for="checkbox1"><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</label>
+                            </div>
+                             <div class="checkbox" data-layer="15 min Volume" data-render="true" type="checkbox">
+                            <input id="checkbox2" class="styled" type="checkbox" checked>
+                            <label for="checkbox2"><i class="fa fa-circle ct-15min"></i>&nbsp;&nbsp;15 Min Volume</label>
+                            </div>
+                             <div class="checkbox" data-layer="Speed" data-render="true" type="checkbox">
+                            <input id="checkbox3" class="styled" type="checkbox" checked>
+                            <label for="checkbox3"><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</label>
+                            </div>
+                             <div class="checkbox" data-layer="Class" data-render="true" type="checkbox">
+                            <input id="checkbox4" class="styled" type="checkbox" checked>
+                            <label for="checkbox4"><i class="fa fa-circle ct-class"></i>&nbsp;&nbsp;Class</label>
+                            </div>
+                            <div class="checkbox" data-layer="Manual Class" data-render="true" type="checkbox">
+                            <input id="checkbox5" class="styled" type="checkbox" checked>
+                            <label for="checkbox5"><i class="fa fa-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class</label>
+                            </div>
+                            <div class="checkbox" data-layer="Turning Movement" data-render="true" type="checkbox">
+                            <input id="checkbox6" class="styled" type="checkbox" checked>
+                            <label for="checkbox6"><i class="fa fa-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement</label>
+                            </div>
+                             <div class="checkbox" data-layer="Loop" data-render="true" type="checkbox">
+                            <input id="checkbox7" class="styled" type="checkbox" checked>
+                            <label for="checkbox7"><i class="fa fa-circle ct-loop"></i>&nbsp;&nbsp;Loop</label>
+                            </div>
+                             <div class="checkbox" data-layer="Crosswalk" data-render="true" type="checkbox">
+                            <input id="checkbox8" class="styled" type="checkbox" checked>
+                            <label for="checkbox8"><i class="fa fa-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk</label>
+                            </div>
+                            <div class="checkbox" data-layer="8 Day" data-render="true" type="checkbox">
+                            <input id="checkbox9" class="styled" type="checkbox" checked>
+                            <label for="checkbox9"><i class="fa fa-circle ct-8day"></i>&nbsp;&nbsp;8 Day</label>
+                            </div>
+                        </div>
+                         
                         </ul>
                     </div>
                     <div class="btn-group" id="count_year">
@@ -268,7 +303,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
-                        <h4>DVRPC - Regional Traffic Counts</h4>
+                        <h4>TRAFFIC COUNTS</h4>
                     </div>
                     <div class="modal-body">
                         <div class="clearfix">
@@ -333,11 +368,11 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title white">Search by record number</h4>
+                        <h4 class="modal-title white">Search counts by record number</h4>
                     </div>
                     <div class="modal-body">
                         <form id="recnum-form">
-                        <p>Enter the DVRPC record number for counts which you would like to view. When entering more than one record number, values should be in a comma separated list.</p>
+                        <p>Enter the DVRPC record number for traffic counts which you would like to view. When entering more than one record number, values should be in a comma separated list.<br><em>example (117852,118337,118545)</em></p>
                         
                             <div class="form-group">
                                 <label for="comment">Record numbers:</label>
