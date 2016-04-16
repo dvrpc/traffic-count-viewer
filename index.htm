@@ -83,7 +83,7 @@
             <ul id="landing" class="nav navbar-nav navbar-right">
                 <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#aboutModal').modal('show'); return false;"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;About</a></li>
                 <li><a href="#legend" class="toggleLanding" data-tab="legend" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#legendModal').modal('show'); return false;"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;Legend</a></li>
-                <li><a class="btn btn-primary accordion-toggle btn-md" id="records-by-number" onclick="$('#count-modal').modal('show'); return false;">&nbsp;&nbsp;Search by Record #</a></li>
+                <li><a class="toggleLanding" id="records-by-number" onclick="$('#count-modal').modal('show'); return false;">&nbsp;&nbsp;Search by Record #</a></li>
             </ul>
         
         </div><!--/.navbar-collapse -->
@@ -123,7 +123,7 @@
                                 <div class="col-lg-9">
                                     <label class="sr-only" for="userLocation">Amount (in dollars)</label>
                                     
-                                      <input type="text" class="form-control input-lg" id="userQuery" placeholder="City, State or Zip">  
+                                      <input type="text" class="form-control input-lg" id="userQuery" placeholder="Enter Municipality, City, or Zip">  
                                 </div>
                                 <div class="col-lg-3">
                                   <div id="homeLocSearch" class="col-lg-12 btn btn-primary btn-lg">Search</div>
@@ -153,7 +153,7 @@
                     <div id="search-bar-nav">
                         <form class="" id="map_query" name="map_query">
                             <div class="input-group">
-                                <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="City, State or Zip" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
+                                <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter Municipality, City, or Zip" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
                             </div>
                         </form>
                         <button id="doaSearch" class="btn btn-primary btn-md" data-toggle="collapse" href="#aoi-draw"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
@@ -164,7 +164,7 @@
                             <span>Search by location:</span>
                             <form class="" id="map_query" name="map_query">
                                 <div class="input-group">
-                                    <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="City, State or Zip" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
+                                    <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter Municipality, City, or Zip" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
                                 </div>
                             </form>
                             <div style="clear:both;"></div>
@@ -181,12 +181,9 @@
                         </button>
                         <ul class="dropdown-menu keep-open-on-click" id="dropdown_types">
                         <h5>Specify count types:</h5>
-
-                        <li><a href="#" data-layer="Volume" data-render="true" data-tooltip="tooltip" title="The automated measurement of traffic volume collected and presented in hourly increments."><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</a></li>
-                        <li><a href="#">CSS</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                            <li class="btn btn-default btn-md" data-layer="15 min Volume" data-render="true" type="button" data-tooltip="tooltip" title="The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments."><i class="fa fa-circle ct-15min" title="The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments."></i>&nbsp;&nbsp;15 Min Volume</li> 
-                            <button class="btn btn-default btn-md" data-layer="Speed" data-render="true" type="button" data-tooltip="tooltip" title="A vehicle count where volumes are reported in 5 mph speed bins"><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</button> 
+                            <button class="btn btn-default btn-md" data-layer="Volume" data-render="true" type="button" data-tooltip="tooltip" title="The automated measurement of traffic volume collected and presented in hourly increments."><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</button>
+                            <button class="btn btn-default btn-md" data-layer="15 min Volume" data-render="true" type="button" data-tooltip="tooltip" title="The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments."><i class="fa fa-circle ct-15min" title="The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments."></i>&nbsp;&nbsp;15 Min Volume</button> 
+                            <button class="btn btn-default btn-md" data-layer="Speed" data-render="true" type="button" data-tooltip="tooltip" title="A vehicle count where volumes are reported in 5 mph speed bins."><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</button> 
                             <button class="btn btn-default btn-md" data-layer="Class" data-render="true" type="button" data-tooltip="tooltip" title="Automated measurement of traffic volume by vehicle class (type)."><i class="fa fa-circle ct-class"></i>&nbsp;&nbsp;Class</button> 
                             <button class="btn btn-default btn-md" data-layer="Manual Class" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of traffic volume by vehicle class (type)."><i class="fa fa-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class</button> 
                             <button class="btn btn-default btn-md" data-layer="Turning Movement" data-render="true" type="button" data-tooltip="tooltip" title="Manual observation and measurement of intersection turning movement volumes."><i class="fa fa-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement</button> 
@@ -271,7 +268,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
-                        <h4 style="color:white;">DVRPC - Traffic Counts</h4>
+                        <h4>DVRPC - Regional Traffic Counts</h4>
                     </div>
                     <div class="modal-body">
                         <div class="clearfix">

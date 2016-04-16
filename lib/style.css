@@ -429,6 +429,12 @@ a,
   text-align: center; 
   left: 50% !important;
   margin-left: -150px;
+}#dropdown_types{
+  min-width:300px;
+  width: 100%;
+  text-align: center; 
+  left: 50% !important;
+  margin-left: -170px;
 }
 /* ========================================= */
 /* === Legend/traffic count type buttons === */
@@ -454,10 +460,12 @@ a,
     color: #949494;
 }
 .ct-vol {
-    color: #b2df8a;
+   /* color: #b2df8a; */
+    color: #ff7f00;
 }
 .ct-15min {
-    color: #33a02c;
+   /* color: #33a02c; */
+   color:#35978f;
 }
 .ct-speed {
     color: #a6cee3;
@@ -469,7 +477,7 @@ a,
     color: #e31a1c;
 }
 .ct-tm {
-    color: #1f78b4;
+   color: #1f78b4;
 }
 .ct-loop {
     color: #cab2d6;
@@ -478,7 +486,9 @@ a,
     color: #fdbf6f;
 }
 .ct-cwalk {
-    color: #ff7f00;
+   /* color: #ff7f00; 
+    color: #b2df8a; */
+    color:#dd3497;
 }
 /* =========================== */
 /* === no-ui slider styles === */
@@ -711,5 +721,5 @@ span.cnt-direction {
 }
 /* Added to extent Legend tooltip width */
 .tooltip-inner {
-    width: 350px !important;
+    width: 250px !important;
 }
