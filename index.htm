@@ -184,45 +184,45 @@
                         <ul class="dropdown-menu keep-open-on-click" id="dropdown_types">
                    
                       <!--    <button class="btn btn-default btn-md" data-layer="Volume" data-render="true" type="button" data-tooltip="tooltip" title="The automated measurement of traffic volume collected and presented in hourly increments."><input type="checkbox" id="colors-1-toggle-0" name="colors-1[]" value="color_c"/><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</button> -->
-                        <div class="col-sm-10 col-lg-10">
+                        <div id="count_types" class="col-sm-10 col-lg-10">
                          <h5><i class="fa fa-info-circle" aria-hidden="true" data-tooltip="tooltip" title="Learn about these types" onclick="$('#legendModal').modal('show'); return false;"></i>&nbsp;&nbsp;SPECIFY COUNT TYPES</h5>
                            <li role="separator" class="divider"></li>
-                            <div class="checkbox" data-layer="Volume" data-render="true" type="checkbox">
-                            <input id="checkbox1" class="styled" type="checkbox" checked>
-                            <label for="checkbox1"><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</label>
-                            </div>
-                             <div class="checkbox" data-layer="15 min Volume" data-render="true" type="checkbox">
-                            <input id="checkbox2" class="styled" type="checkbox" checked>
-                            <label for="checkbox2"><i class="fa fa-circle ct-15min"></i>&nbsp;&nbsp;15 Min Volume</label>
-                            </div>
-                             <div class="checkbox" data-layer="Speed" data-render="true" type="checkbox">
-                            <input id="checkbox3" class="styled" type="checkbox" checked>
-                            <label for="checkbox3"><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</label>
-                            </div>
-                             <div class="checkbox" data-layer="Class" data-render="true" type="checkbox">
-                            <input id="checkbox4" class="styled" type="checkbox" checked>
-                            <label for="checkbox4"><i class="fa fa-circle ct-class"></i>&nbsp;&nbsp;Class</label>
-                            </div>
-                            <div class="checkbox" data-layer="Manual Class" data-render="true" type="checkbox">
-                            <input id="checkbox5" class="styled" type="checkbox" checked>
-                            <label for="checkbox5"><i class="fa fa-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class</label>
-                            </div>
-                            <div class="checkbox" data-layer="Turning Movement" data-render="true" type="checkbox">
-                            <input id="checkbox6" class="styled" type="checkbox" checked>
-                            <label for="checkbox6"><i class="fa fa-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement</label>
-                            </div>
-                             <div class="checkbox" data-layer="Loop" data-render="true" type="checkbox">
-                            <input id="checkbox7" class="styled" type="checkbox" checked>
-                            <label for="checkbox7"><i class="fa fa-circle ct-loop"></i>&nbsp;&nbsp;Loop</label>
-                            </div>
-                             <div class="checkbox" data-layer="Crosswalk" data-render="true" type="checkbox">
-                            <input id="checkbox8" class="styled" type="checkbox" checked>
-                            <label for="checkbox8"><i class="fa fa-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk</label>
-                            </div>
-                            <div class="checkbox" data-layer="8 Day" data-render="true" type="checkbox">
-                            <input id="checkbox9" class="styled" type="checkbox" checked>
-                            <label for="checkbox9"><i class="fa fa-circle ct-8day"></i>&nbsp;&nbsp;8 Day</label>
-                            </div>
+                            <li class="checkbox">
+                                <input id="checkbox1" class="styled" type="checkbox" data-layer="Volume" checked>
+                                <label for="checkbox1"><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</label>
+                            </li>
+                            <li class="checkbox">
+                                <input id="checkbox2" class="styled" type="checkbox" data-layer="15 min Volume" checked>
+                                <label for="checkbox2"><i class="fa fa-circle ct-15min"></i>&nbsp;&nbsp;15 Min Volume</label>
+                            </li>
+                            <li class="checkbox">
+                                <input id="checkbox3" class="styled" type="checkbox" data-layer="Speed" checked>
+                                <label for="checkbox3"><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</label>
+                            </li>
+                            <li class="checkbox">
+                                <input id="checkbox4" class="styled" type="checkbox" data-layer="Class" checked>
+                                <label for="checkbox4"><i class="fa fa-circle ct-class"></i>&nbsp;&nbsp;Class</label>
+                            </li>
+                            <li class="checkbox">
+                                <input id="checkbox5" class="styled" type="checkbox" data-layer="Manual Class" checked>
+                                <label for="checkbox5"><i class="fa fa-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class</label>
+                            </li>
+                            <li class="checkbox">
+                                <input id="checkbox6" class="styled" type="checkbox" data-layer="Turning Movement"  checked>
+                                <label for="checkbox6"><i class="fa fa-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement</label>
+                            </li>
+                            <li class="checkbox">
+                                <input id="checkbox7" class="styled" type="checkbox" data-layer="Loop" checked>
+                                <label for="checkbox7"><i class="fa fa-circle ct-loop"></i>&nbsp;&nbsp;Loop</label>
+                            </li>
+                            <li class="checkbox">
+                                <input id="checkbox8" class="styled" type="checkbox" data-layer="Crosswalk" checked>
+                                <label for="checkbox8"><i class="fa fa-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk</label>
+                            </li>
+                            <li class="checkbox">
+                                <input id="checkbox9" class="styled" type="checkbox" data-layer="8 Day" checked>
+                                <label for="checkbox9"><i class="fa fa-circle ct-8day"></i>&nbsp;&nbsp;8 Day</label>
+                            </li>
                         </div>
                          
                         </ul>
