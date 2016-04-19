@@ -54,15 +54,34 @@ body,
     font-size: 22px;
     color: #FFF;
     white-space: nowrap;
-    padding: 0;
+    padding: 0 10px;
+}
+.navbar-brand img {
+    margin-top: -3px;
+}
+.navbar-brand a, .navbar-brand a:hover {
+    text-decoration: none;
+}
+.title-logo{
+    width:120px;
+    margin-top: 2px;
+}
+.navbar-brand-title{
+  display: inline-block;  
+  margin-right:20px;
 }
 .navbar-top {
     margin-bottom: 0px;
     z-index: 25;
     transition: all 0.8s linear;
 }
+#primary-nav {
+    padding: 0 10px;
+}
 .oheader {
+    z-index: 201;
     height: 45%;
+    min-height:60px;
 }
 .logo-container {
     display: inline-block;
@@ -370,6 +389,11 @@ a,
 #map_query .input-group {
     width: 100%;
 }
+#map_query{
+    float:left;
+    width:300px;
+    margin-right:10px;
+}
 .search-form-icon {
     padding: 8px 12px;
     font-weight: 400;
@@ -387,14 +411,63 @@ a,
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
 }
+#search-bar-container{
+    position: absolute;
+    top: 60px;
+    z-index: 200;
+    background-color: #7aadd9;
+    padding: 10px;
+    border-bottom: 1px #3881C0 solid;
+    border-left: 1px #3881C0 solid;
+}
+#search-bar-nav{
+    float:left; 
+    margin-top: 5px;
+}
+.filterBar-title{
+  display: inline-block;  
+  margin-right:20px;
+  color: #fff;
+}
+#filter-bar-container{
+    padding-right: 5px;
+}
+#filter-bar-nav{
+    float:right; 
+}
+#dropdown_years{
+    padding: 5px;
+    min-width: 340px;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%,0);
+}
+#dropdown-types{
+    padding: 5px 20px;
+    min-width: 250px;
+    width: 100%;
+    text-align: left;
+    transform: translate(-25%,0);
+}
 /* ========================================= */
 /* === Legend/traffic count type buttons === */
 /* ========================================= */
-
-.fa-circle {
-    color: #FEE900;
-    font-size: 75%;
+.btn.btn-primary.dropdown-toggle.inactive{
+   color:white; 
 }
+.glyphicon.glyphicon-circle {
+    margin-bottom: -.1em;
+    overflow: hidden;
+    margin-top: -1em;
+}
+.glyphicon.glyphicon-circle:before {
+    content:"\25cf";
+    font-size: 2.1em;
+}
+/*.glyphicon-circle {
+    color: #FEE900;
+    font-size: 90%;  
+}*/
 .btn-type {
     color: white;
     border-color: #636363;
@@ -409,13 +482,16 @@ a,
     color: #949494;
 }
 .ct-vol {
-    color: #b2df8a;
+   /* color: #b2df8a; */
+    color: #ff7f00;
 }
 .ct-15min {
-    color: #33a02c;
+   /* color: #33a02c; */
+   color:#35978f;
 }
 .ct-speed {
-    color: #a6cee3;
+ /*   color: #a6cee3; */
+    color:#c2e699;
 }
 .ct-class {
     color: #fb9a99;
@@ -424,7 +500,7 @@ a,
     color: #e31a1c;
 }
 .ct-tm {
-    color: #1f78b4;
+   color: #1f78b4;
 }
 .ct-loop {
     color: #cab2d6;
@@ -433,7 +509,9 @@ a,
     color: #fdbf6f;
 }
 .ct-cwalk {
-    color: #ff7f00;
+   /* color: #ff7f00; 
+    color: #b2df8a; */
+    color:#dd3497;
 }
 /* =========================== */
 /* === no-ui slider styles === */
@@ -489,7 +567,7 @@ a,
 .dataEnvironment {
     width: 100%;
     position: absolute;
-    top: 60px;
+    top: 123px;
     bottom: 0px;
     margin: 0px;
 }
@@ -506,7 +584,7 @@ a,
 #filterWrapper {
     border-left: 1px #ddd solid;
     border-bottom: 1px #ddd solid;
-    padding: 15px;
+    padding: 10px;
     background-color: #efefef;
 }
 #filter {
@@ -525,8 +603,8 @@ a,
 #results-panel {
     width: 100%;
     z-index: -1;
-    position: absolute;
-    top: 55px;
+    height: 100%;
+    top: 5px;
     bottom: 0;
     margin-top: -1px;
     border-top: 1px #ddd solid;
@@ -534,6 +612,12 @@ a,
     padding: 10px;
     background-color: #fff;
     overflow: hidden;
+}
+.results-toolbar {
+    float: left;
+    padding-top: 5px;
+    color: #B1B1B1;
+    font-weight: 200;
 }
 /* ================================== */
 /* === count results table styles === */
@@ -643,9 +727,10 @@ span.cnt-direction {
 #aoi-draw {
     position: absolute;
     top: 10px;
-    right: 10px;
+    left: 10px;
     width: 315px;
-    z-index: 3000;
+    height: 40px;
+    z-index: 300;
 }
 #aoi-draw #filterWrapper {
     background-color: #fff;
@@ -662,4 +747,8 @@ span.cnt-direction {
 #noresults .panel-heading,
 #return-to-search .panel-heading {
     padding: 10px 15px;
+}
+/* Added to extent Legend tooltip width */
+.tooltip-inner {
+    width: 250px !important;
 }
