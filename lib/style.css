@@ -60,7 +60,7 @@ body,
     width:120px;
     margin-top: 2px;
 }
-.title-title{
+.navbar-brand-title{
   display: inline-block;  
   margin-right:20px;
 }
@@ -70,6 +70,7 @@ body,
     transition: all 0.8s linear;
 }
 .oheader {
+    z-index: 201;
     height: 45%;
     min-height:60px;
 }
@@ -402,7 +403,9 @@ a,
     border-bottom-right-radius: 4px;
 }
 #search-bar-container{
-    /* background-color: #428BCA; */
+    position: absolute;
+    top: 60px;
+    z-index: 200;
     background-color: #7aadd9;
     padding: 10px;
     border-bottom: 1px #3881C0 solid;
@@ -424,18 +427,18 @@ a,
     float:right; 
 }
 #dropdown_years{
-  min-width:350px;
-  width: 100%;
-  text-align: center; 
-  left: 50% !important;
-  margin-left: -190px;
+    padding: 5px;
+    min-width: 340px;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%,0);
 }
-#dropdown_types{
-  min-width:290px;
-  width: 100%;
-  text-align: left; 
-  left: 50% !important;
-  margin-left: -130px;
+#dropdown-types{
+    padding: 5px 20px;
+    min-width: 230px;
+    width: 100%;
+    text-align: left;
+    transform: translate(-25%,0);
 }
 /* ========================================= */
 /* === Legend/traffic count type buttons === */
@@ -547,7 +550,7 @@ a,
 .dataEnvironment {
     width: 100%;
     position: absolute;
-    top: 60px;
+    top: 123px;
     bottom: 0px;
     margin: 0px;
 }
@@ -583,7 +586,7 @@ a,
 #results-panel {
     width: 100%;
     z-index: -1;
-    /*position: absolute;*/
+    height: 100%;
     top: 5px;
     bottom: 0;
     margin-top: -1px;
@@ -592,6 +595,12 @@ a,
     padding: 10px;
     background-color: #fff;
     overflow: hidden;
+}
+.results-toolbar {
+    float: left;
+    padding-top: 5px;
+    color: #B1B1B1;
+    font-weight: 200;
 }
 /* ================================== */
 /* === count results table styles === */
@@ -704,7 +713,7 @@ span.cnt-direction {
     left: 10px;
     width: 315px;
     height: 40px;
-    z-index: 3000;
+    z-index: 300;
 }
 #aoi-draw #filterWrapper {
     background-color: #fff;

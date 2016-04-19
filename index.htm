@@ -77,7 +77,7 @@
             <div class="navbar-brand">
                 <!--  <span><a href="http://www.dvrpc.org/" target="_blank"><img class="title-logo" src="http://www.dvrpc.org/webmaps/img/dataportal/banner_logo.png" alt="DVRPC"/></a></span> -->
                 <a class="navbar-brand" href="http://www.dvrpc.org" style="margin:10px 0px 0px 5px;"><img src="http://www.dvrpc.org/webmaps/pedbikecounts/img/dvrpc_tiny.png" height="40"/></a>
-                 <h3 class="title-title">TRAFFIC COUNTS</h3>
+                 <h3 class="navbar-brand-title text-uppercase">Traffic Counts</h3>
                 
             </div>
         </div>
@@ -122,9 +122,7 @@
                     <div class="row">
                         <form class="">
                             <div class="form-group">
-                                <div class="col-lg-9">
-                                    <label class="sr-only" for="userLocation">Amount (in dollars)</label>
-                                    
+                                <div class="col-lg-9">                                    
                                       <input type="text" class="form-control input-lg" id="userQuery" placeholder="Enter Municipality, City, or Zip">  
                                 </div>
                                 <div class="col-lg-3">
@@ -145,105 +143,100 @@
             <div class="col-sm-6 col-lg-6 off-right" id="sidebarMirror"></div>
     
             </div>
-        </div><!--end Map and Sidebar-->
+        </div><!--end landing content -->
 
-        <div class="row dataEnvironment" id="appContainer">
-            <!-- Start Search Bar Container -->
-          <div class="col-sm-12 col-lg-12" id="search-bar-container">  
-            <!-- Start Search Container -->
-                <div class="col-sm-6 col-lg-6" id="search-container">
-                    <div id="search-bar-nav">
+        <!-- Start Search Bar Container -->
+        <div class="col-sm-12 col-lg-12" id="search-bar-container">  
+        <!-- Start Search Container -->
+            <div class="col-sm-6 col-lg-6" id="search-container">
+                <div id="search-bar-nav">
+                    <form class="" id="map_query" name="map_query">
+                        <div class="input-group">
+                            <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter Municipality, City, or Zip" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
+                        </div>
+                    </form>
+                    <button id="doaSearch" class="btn btn-primary btn-md" data-toggle="collapse" href="#aoi-draw"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
+                    <div style="clear:both;"></div>
+                </div>
+                <div class="collapse" id="search">
+                    <div id="filterWrapper">
+                        <span>Search by location:</span>
                         <form class="" id="map_query" name="map_query">
                             <div class="input-group">
                                 <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter Municipality, City, or Zip" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
                             </div>
                         </form>
-                        <button id="doaSearch" class="btn btn-primary btn-md" data-toggle="collapse" href="#aoi-draw"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
                         <div style="clear:both;"></div>
                     </div>
-                    <div class="collapse" id="search">
-                        <div id="filterWrapper">
-                            <span>Search by location:</span>
-                            <form class="" id="map_query" name="map_query">
-                                <div class="input-group">
-                                    <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter Municipality, City, or Zip" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
-                                </div>
-                            </form>
-                            <div style="clear:both;"></div>
-                        </div>
-                    </div>
                 </div>
-                <!-- End Search Container -->
-                <!-- Start Filter Container -->
-                <div class="col-sm-6 col-lg-6" id="filter-bar-container">
-                    <div id="filter-bar-nav">
-                    <h4 class="filterBar-title"><i class="glyphicon glyphicon-filter"></i>Filter Results:</h4>
-                    <div class="btn-group" id="count_types">
-                       <button type="button" id="count_types_dropdown"class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-road"></i>&nbsp;&nbsp;Count Type <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu keep-open-on-click" id="dropdown_types">
-                   
-                      <!--    <button class="btn btn-default btn-md" data-layer="Volume" data-render="true" type="button" data-tooltip="tooltip" title="The automated measurement of traffic volume collected and presented in hourly increments."><input type="checkbox" id="colors-1-toggle-0" name="colors-1[]" value="color_c"/><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</button> -->
-                        <div id="count_types" class="col-sm-10 col-lg-10">
-                         <h5><i class="fa fa-info-circle" aria-hidden="true" data-tooltip="tooltip" title="Learn about these types" onclick="$('#legendModal').modal('show'); return false;"></i>&nbsp;&nbsp;SPECIFY COUNT TYPES</h5>
-                           <li role="separator" class="divider"></li>
-                            <li class="checkbox">
-                                <input id="checkbox1" class="styled" type="checkbox" data-layer="Volume" checked>
-                                <label for="checkbox1"><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</label>
-                            </li>
-                            <li class="checkbox">
-                                <input id="checkbox2" class="styled" type="checkbox" data-layer="15 min Volume" checked>
-                                <label for="checkbox2"><i class="fa fa-circle ct-15min"></i>&nbsp;&nbsp;15 Min Volume</label>
-                            </li>
-                            <li class="checkbox">
-                                <input id="checkbox3" class="styled" type="checkbox" data-layer="Speed" checked>
-                                <label for="checkbox3"><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</label>
-                            </li>
-                            <li class="checkbox">
-                                <input id="checkbox4" class="styled" type="checkbox" data-layer="Class" checked>
-                                <label for="checkbox4"><i class="fa fa-circle ct-class"></i>&nbsp;&nbsp;Class</label>
-                            </li>
-                            <li class="checkbox">
-                                <input id="checkbox5" class="styled" type="checkbox" data-layer="Manual Class" checked>
-                                <label for="checkbox5"><i class="fa fa-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class</label>
-                            </li>
-                            <li class="checkbox">
-                                <input id="checkbox6" class="styled" type="checkbox" data-layer="Turning Movement"  checked>
-                                <label for="checkbox6"><i class="fa fa-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement</label>
-                            </li>
-                            <li class="checkbox">
-                                <input id="checkbox7" class="styled" type="checkbox" data-layer="Loop" checked>
-                                <label for="checkbox7"><i class="fa fa-circle ct-loop"></i>&nbsp;&nbsp;Loop</label>
-                            </li>
-                            <li class="checkbox">
-                                <input id="checkbox8" class="styled" type="checkbox" data-layer="Crosswalk" checked>
-                                <label for="checkbox8"><i class="fa fa-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk</label>
-                            </li>
-                            <li class="checkbox">
-                                <input id="checkbox9" class="styled" type="checkbox" data-layer="8 Day" checked>
-                                <label for="checkbox9"><i class="fa fa-circle ct-8day"></i>&nbsp;&nbsp;8 Day</label>
-                            </li>
-                        </div>
-                         
-                        </ul>
-                    </div>
-                    <div class="btn-group" id="count_year">
-                        <button type="button" id="count_years_dropdown"class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;Years <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu keep-open-on-click" id="dropdown_years">
-                             <h5>Specify years of interest: <span class="years" id="yearMin"></span> - <span class="years" id="yearMax"></span></h5>
-                            <div id="sliderWrap">
+            </div>
+            <!-- End Search Container -->
+            <!-- Start Filter Container -->
+            <div class="col-sm-6 col-lg-6" id="filter-bar-container">
+                <div id="filter-bar-nav">
+                <h4 class="filterBar-title"><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;Filter Results:</h4>
+                <div class="btn-group" id="count_types">
+                   <button type="button" id="count_types_dropdown"class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-road"></i>&nbsp;&nbsp;Count Type <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu keep-open-on-click" id="dropdown-types">
+                        <h5 class="text-uppercase"><i class="fa fa-info-circle" aria-hidden="true" data-tooltip="tooltip" title="Learn about these types" onclick="$('#legendModal').modal('show'); return false;"></i>&nbsp;&nbsp;Specify count types:</h5>
+                        <li role="separator" class="divider"></li>
+                        <li class="checkbox">
+                            <input id="checkbox1" class="styled" type="checkbox" data-layer="Volume" checked>
+                            <label for="checkbox1"><i class="fa fa-circle ct-vol"></i>&nbsp;&nbsp;Volume</label>
+                        </li>
+                        <li class="checkbox">
+                            <input id="checkbox2" class="styled" type="checkbox" data-layer="15 min Volume" checked>
+                            <label for="checkbox2"><i class="fa fa-circle ct-15min"></i>&nbsp;&nbsp;15 Min Volume</label>
+                        </li>
+                        <li class="checkbox">
+                            <input id="checkbox3" class="styled" type="checkbox" data-layer="Speed" checked>
+                            <label for="checkbox3"><i class="fa fa-circle ct-speed"></i>&nbsp;&nbsp;Speed</label>
+                        </li>
+                        <li class="checkbox">
+                            <input id="checkbox4" class="styled" type="checkbox" data-layer="Class" checked>
+                            <label for="checkbox4"><i class="fa fa-circle ct-class"></i>&nbsp;&nbsp;Class</label>
+                        </li>
+                        <li class="checkbox">
+                            <input id="checkbox5" class="styled" type="checkbox" data-layer="Manual Class" checked>
+                            <label for="checkbox5"><i class="fa fa-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class</label>
+                        </li>
+                        <li class="checkbox">
+                            <input id="checkbox6" class="styled" type="checkbox" data-layer="Turning Movement"  checked>
+                            <label for="checkbox6"><i class="fa fa-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement</label>
+                        </li>
+                        <li class="checkbox">
+                            <input id="checkbox7" class="styled" type="checkbox" data-layer="Loop" checked>
+                            <label for="checkbox7"><i class="fa fa-circle ct-loop"></i>&nbsp;&nbsp;Loop</label>
+                        </li>
+                        <li class="checkbox">
+                            <input id="checkbox8" class="styled" type="checkbox" data-layer="Crosswalk" checked>
+                            <label for="checkbox8"><i class="fa fa-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk</label>
+                        </li>
+                        <li class="checkbox">
+                            <input id="checkbox9" class="styled" type="checkbox" data-layer="8 Day" checked>
+                            <label for="checkbox9"><i class="fa fa-circle ct-8day"></i>&nbsp;&nbsp;8 Day</label>
+                        </li>                     
+                    </ul>
+                </div>
+                <div class="btn-group" id="count_year">
+                    <button type="button" id="count_years_dropdown"class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;Years <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu keep-open-on-click" id="dropdown_years">
+                         <h5>Specify years of interest: <span class="years" id="yearMin"></span> - <span class="years" id="yearMax"></span></h5>
+                        <div id="sliderWrap">
                             <div class="sliders" id="yearSlider"></div>
                         </div>
-                        </ul>
-                    </div>
-                    <button class="btn btn-success accordion-toggle" data-toggle="collapse" id="updateSearchbtn">Update Map</button>
-                  </div>
-                </div>   
-                <!-- Ends Filter Container --> 
-            </div>
+                    </ul>
+                </div>
+                <button class="btn btn-success accordion-toggle" data-toggle="collapse" id="updateSearchbtn">Update Map</button>
+              </div>
+            </div>   
+            <!-- Ends Filter Container --> 
+        </div>
         <!-- END Search Bar Container -->
-
+        <div class="dataEnvironment" id="appContainer">
+            
             <div id="mapDIV" class="col-md-5 col-lg-6 mapElement" style="opacity:0.0;">
                 <!-- Start aoi draw -->
                 <div class="collapse fade" id="aoi-draw">
@@ -303,7 +296,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
-                        <h4>TRAFFIC COUNTS</h4>
+                        <h4 class="text-uppercase">Traffic Counts</h4>
                     </div>
                     <div class="modal-body">
                         <div class="clearfix">
