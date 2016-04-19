@@ -80,9 +80,9 @@
         </div>
         <div id="navbar-links" class="navbar-collapse collapse">
             <ul id="primary-nav" class="nav navbar-nav navbar-right">
-                <li><a href="#about" class="toggleLanding" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#aboutModal').modal('show'); return false;"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;About</a></li>
-                <li><a href="#legend" class="toggleLanding" data-tab="legend" data-toggle="collapse" data-target=".navbar-collapse.in" onclick="$('#legendModal').modal('show'); return false;"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;Legend</a></li>
-                <li><a class="toggleLanding" id="records-by-number" onclick="$('#count-modal').modal('show'); return false;"><i class="glyphicon glyphicon-flash"></i>&nbsp;&nbsp;Search by Record #</a></li>
+                <li><a class="nav-item" href="#about" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="about-modal"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;About</a></li>
+                <li><a class="nav-item" href="#legend" data-tab="legend" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="legend-modal"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;Legend</a></li>
+                <li><a class="nav-item" id="records-by-number" data-modal="count-modal"><i class="glyphicon glyphicon-flash"></i>&nbsp;&nbsp;Search by Record #</a></li>
             </ul>
         
         </div><!--/.navbar-collapse -->
@@ -132,7 +132,7 @@
                     <div class="row">
                         <div class="col-lg-3"><button id="aoiSearch" class="col-lg-12 btn btn-primary btn-lg" data-toggle="collapse" href="#aoi-draw">Draw your own<br/>Area of Interest</button></div>
                         <div class="col-lg-3"><a target="_new" href="http://arcgis.dvrpc.org/arcgis/rest/services/Transportation/TrafficCounts/MapServer"><button class="col-lg-12 btn btn-primary btn-lg">Access counts</br>as Service</button></a></div>
-                        <div class="col-lg-3"><button id="count_num" onclick="$('#count-modal').modal('show'); return false;" class="col-lg-12 btn btn-primary btn-lg">Search counts <br/>by record number</button></div>
+                        <div class="col-lg-3"><button id="count_num" data-modal="count-modal" class="col-lg-12 btn btn-primary btn-lg nav-item">Search counts <br/>by record number</button></div>
                     </div>
                 </div>
                 <ul id="results"><ul>
@@ -176,7 +176,7 @@
                    <button type="button" id="count_types_dropdown" class="btn btn-primary dropdown-toggle filter-btn" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-road"></i>&nbsp;&nbsp;Count Type <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu keep-open-on-click" id="dropdown-types">
-                        <h5 class="text-uppercase"><i class="glyphicon glyphicon-info-sign" aria-hidden="true" data-tooltip="tooltip" title="Learn about these types" onclick="$('#legendModal').modal('show'); return false;"></i>&nbsp;&nbsp;Specify count types:</h5>
+                        <h5 class="text-uppercase"><i class="glyphicon glyphicon-info-sign nav-item" aria-hidden="true" data-tooltip="tooltip" title="Learn about these types" data-modal="legend-modal"></i>&nbsp;&nbsp;Specify count types:</h5>
                         <li role="separator" class="divider"></li>
                         <li class="checkbox">
                             <input id="checkbox1" class="styled" type="checkbox" data-layer="Volume" checked>
@@ -288,7 +288,7 @@
         </div>
 
         <!--modal -->
-        <div class="modal fade" id="aboutModal">
+        <div class="modal fade" id="about-modal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -329,7 +329,7 @@
         <!-- end About Modal -->
 
         <!-- Legend Modal -->
-         <div class="modal fade" id="legendModal">
+         <div class="modal fade" id="legend-modal">
           <div class="modal-dialog" style="width:710px;">
               <div class="modal-content">
                   <div class="modal-header">
