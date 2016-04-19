@@ -54,7 +54,13 @@ body,
     font-size: 22px;
     color: #FFF;
     white-space: nowrap;
-    padding: 0;
+    padding: 0 10px;
+}
+.navbar-brand img {
+    margin-top: -3px;
+}
+.navbar-brand a, .navbar-brand a:hover {
+    text-decoration: none;
 }
 .title-logo{
     width:120px;
@@ -68,6 +74,9 @@ body,
     margin-bottom: 0px;
     z-index: 25;
     transition: all 0.8s linear;
+}
+#primary-nav {
+    padding: 0 10px;
 }
 .oheader {
     z-index: 201;
@@ -435,7 +444,7 @@ a,
 }
 #dropdown-types{
     padding: 5px 20px;
-    min-width: 230px;
+    min-width: 250px;
     width: 100%;
     text-align: left;
     transform: translate(-25%,0);
@@ -446,11 +455,19 @@ a,
 .btn.btn-primary.dropdown-toggle.inactive{
    color:white; 
 }
-.fa-circle {
-    color: #FEE900;
-   /* font-size: 75%; */
-    font-size: 90%;  
+.glyphicon.glyphicon-circle {
+    margin-bottom: -.1em;
+    overflow: hidden;
+    margin-top: -1em;
 }
+.glyphicon.glyphicon-circle:before {
+    content:"\25cf";
+    font-size: 2.1em;
+}
+/*.glyphicon-circle {
+    color: #FEE900;
+    font-size: 90%;  
+}*/
 .btn-type {
     color: white;
     border-color: #636363;
