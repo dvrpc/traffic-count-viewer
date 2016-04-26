@@ -7,7 +7,7 @@ body,
 }
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    overflow-y: hidden;
+  /*  overflow-y: hidden; */
 }
 p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -751,4 +751,26 @@ span.cnt-direction {
 /* Added to extent Legend tooltip width */
 .tooltip-inner {
     width: 250px !important;
+}
+.hp-tool-links {
+    background-color: #FFF;
+    border: 1px solid #B7B7B7;
+    text-align: center;
+    padding: 10px 20px 20px;
+    margin-bottom: 30px;
+    transition: all .3s ease-in-out;
+}
+.hp-tool-links, .stat-block {
+    box-shadow: 0 0 10px #b7b7b7;
+}
+.hp-tool-btn {
+    background-color: #312867;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2em;
+    border: none;
+}
+.hp-btn-upper {
+    margin-bottom: 10px;
 }

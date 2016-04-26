@@ -64,7 +64,7 @@
     </head>
 
     <body>
-        <div id="TC_header" class="navbar navbar-inverse navbar-top dk-gray-border oheader">
+    <div id="TC_header" class="navbar navbar-inverse navbar-top dk-gray-border oheader">
         <div class="navbar-header" >
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse dk-gray-border">
                     <span class="icon-bar"></span>
@@ -114,27 +114,65 @@
             
             <!---Map Pane -->
             <div id="landing_map" class="col-sm-12 col-lg-12">
-
+                 <!-- Start Landing Search -->
                 <div id="landingSearch" class="col-lg-8 center-block" style="float:none;">
+                   <div class='clearfix'>
                     <div class="row">
-                        <form class="">
-                            <div class="form-group">
-                                <div class="col-lg-9">                                    
-                                      <input type="text" class="form-control input-lg" id="userQuery" placeholder="Enter Municipality, City, or Zip">  
-                                </div>
-                                <div class="col-lg-3">
-                                  <div id="homeLocSearch" class="col-lg-12 btn btn-primary btn-lg">Search</div>
-                                </div>
-
+                    <div class='col-sm-6 col-md-12'>
+                        <div class="hp-tool-links">
+                            <h3>Search Traffic Counts by Location</h3>
+                            <div class="row">
+                                <form class="">
+                                    <div class="form-group">
+                                        <div class="col-lg-9">                                    
+                                              <input type="text" class="form-control input-lg" id="userQuery" placeholder="Enter a municipality, city, or Zip code">  
+                                        </div>
+                                        <div class="col-lg-3">
+                                          <div id="homeLocSearch" class="col-lg-12 btn btn-primary btn-lg">Search</div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
+                             <i>(initial search time period from 2011 - 2016)</i>
+                        </div>
                     </div>
+                  
+                    </div>
+                    <!-- Lower Row-->
                     <div class="row">
-                        <div class="col-lg-3"><button id="aoiSearch" class="col-lg-12 btn btn-primary btn-lg" data-toggle="collapse" href="#aoi-draw">Draw your own<br/>Area of Interest</button></div>
-                        <div class="col-lg-3"><a target="_new" href="http://arcgis.dvrpc.org/arcgis/rest/services/Transportation/TrafficCounts/MapServer"><button class="col-lg-12 btn btn-primary btn-lg">Access counts</br>as Service</button></a></div>
-                        <div class="col-lg-3"><button id="count_num" data-modal="count-modal" class="col-lg-12 btn btn-primary btn-lg nav-item">Search counts <br/>by record number</button></div>
+                    <a href="#demo" data-toggle="collapse" class='col-sm-12 col-md-12'><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;More Options...</a>
+                    <div id="demo" class="collapse" style="margin-top:25px">
+                      <div class='col-sm-6 col-md-4'>
+                        <div class="hp-tool-links">
+                            <span><h3><img src="lib/images/draw_polygon.png"/>&nbsp;&nbsp; Custom Search</h3></span>
+                            <p>Create custom shapes with the draw tool on the map.</p>
+                            <button id="aoiSearch" class="btn btn-primary btn-lg" data-toggle="collapse" href="#aoi-draw">Draw Search Area</button>
+                            <!-- <i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp; -->
+                        </div>
                     </div>
+                        <div class='col-sm-6 col-md-4'>
+                            <div class="hp-tool-links">
+                              <span><h3><img src="lib/images/bug.png"/>&nbsp;&nbsp; Record Number</h3></span>
+                                <p>Search traffic counts by DVRPC record number.</p>
+                                <button id="count_num" data-modal="count-modal" class="btn btn-primary btn-lg nav-item">Search by Record Number</button>
+                                <!-- <i class="glyphicon glyphicon-flash"></i>&nbsp;&nbsp; -->
+                            </div>
+                        </div>
+                        <div class='col-sm-6 col-md-4'>
+                            <div class="hp-tool-links">
+                                <span><h3><img src="lib/images/map_services.png"/>&nbsp;&nbsp; Map Service</h3></span>
+                                <p>Connect directly to our ArcGIS Server map services.</p>
+                                <a target="_new" href="http://arcgis.dvrpc.org/arcgis/rest/services/Transportation/TrafficCounts/MapServer"><button class="btn btn-primary btn-lg">Access Map Service</button></a>
+                               <!-- <i class="glyphicon glyphicon-cog"></i>&nbsp;&nbsp; -->
+                            </div>
+                        </div>
+                          </div>
+                  </div>
+                    <!-- Lower Row-->
+
                 </div>
+            
+            <!-- End Landing Search -->
                 <ul id="results"><ul>
             </div>
             <div class="col-sm-6 col-lg-6 off-right" id="sidebarMirror"></div>
