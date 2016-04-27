@@ -32,6 +32,9 @@ a:focus {
 a:hover {
     color: #5876A2;
 }
+.text-left {
+    text-align:left;
+}
 /* ===================================== */
 /* ===  Bootstrap/UI Element Styles  === */
 /* ===================================== */
@@ -151,6 +154,9 @@ a,
     border-left-width: 1px;
     border-left-color: #d3d3d3;
     border-left-style: solid;
+}
+#download-container .btn{
+    margin-bottom: 10px;
 }
 /* ================================ *\
 \* ===  HTML5 VIDEO BACKGROUND  === *\
@@ -734,6 +740,9 @@ table.table-bordered.dataTable tbody td.table-date:hover {
 span.cnt-direction {
     color: #9C9C9C;
     padding-left: 4px;
+}
+.results-toolbar button{
+    margin-right: 8px;
 }
 /* ========================= */
 /* ===  Map UI Elements  === */
