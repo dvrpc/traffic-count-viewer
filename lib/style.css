@@ -418,6 +418,9 @@ a,
     width:300px;
     margin-right:10px;
 }
+.form-group {
+    text-align:left; 
+}
 .search-form-icon {
     padding: 8px 8px;
     font-weight: 400;
