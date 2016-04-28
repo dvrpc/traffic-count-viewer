@@ -64,7 +64,7 @@
     </head>
 
     <body>
-        <div id="TC_header" class="navbar navbar-inverse navbar-top dk-gray-border oheader">
+    <div id="TC_header" class="navbar navbar-inverse navbar-top dk-gray-border oheader">
         <div class="navbar-header" >
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse dk-gray-border">
                     <span class="icon-bar"></span>
@@ -110,37 +110,68 @@
     </div>
         
     <!--Map and Sidebar-->
-       <div class="row ocontent" id="container">
+   <div class="row ocontent" id="container">
             
-            <!---Map Pane -->
-            <div id="landing_map" class="col-sm-12 col-lg-12">
-
-                <div id="landingSearch" class="col-lg-8 center-block" style="float:none;">
+        <!---Map Pane -->
+        <div class="col-xs-12" id="landing_map">
+            <!-- Start Landing Search -->
+            <div class="container center-block" id="landingSearch" style="float:none;">
+                <div class='clearfix'>
                     <div class="row">
-                        <form class="">
-                            <div class="form-group">
-                                <div class="col-lg-9">                                    
-                                      <input type="text" class="form-control input-lg" id="userQuery" placeholder="Enter Municipality, City, or Zip">  
-                                </div>
-                                <div class="col-lg-3">
-                                  <div id="homeLocSearch" class="col-lg-12 btn btn-primary btn-lg">Search</div>
-                                </div>
-
+                        <div class='col-xs-12'>
+                            <div class="hp-tool-links">
+                                <h3>Search Traffic Counts by Location</h3>
+                                <div class="row">
+                                    <form class="">
+                                        <div class="form-group">
+                                            <div class="col-lg-12">
+                                             <input class="form-control input-lg" id="userQuery" placeholder="Enter a municipality, city, zip code, or philadelphia neighborhood" type="text">
+                                            </div>
+                                      <!--      <div class="col-lg-2">
+                                                <div class="col-lg-12 btn btn-primary btn-lg" id="homeLocSearch">
+                                                    Search
+                                                </div>
+                                            </div>  -->
+                                        </div>
+                                    </form>
+                            
+                                </div><small><em>(initial search time period from 2011 - 2016)</em></small>
                             </div>
-                        </form>
+                        </div>
                     </div>
+                    <!-- Lower Row-->
                     <div class="row">
-                        <div class="col-lg-3"><button id="aoiSearch" class="col-lg-12 btn btn-primary btn-lg" data-toggle="collapse" href="#aoi-draw">Draw your own<br/>Area of Interest</button></div>
-                        <div class="col-lg-3"><a target="_new" href="http://arcgis.dvrpc.org/arcgis/rest/services/Transportation/TrafficCounts/MapServer"><button class="col-lg-12 btn btn-primary btn-lg">Access counts</br>as Service</button></a></div>
-                        <div class="col-lg-3"><button id="count_num" data-modal="count-modal" class="col-lg-12 btn btn-primary btn-lg nav-item">Search counts <br/>by record number</button></div>
-                    </div>
-                </div>
-                <ul id="results"><ul>
+                        <h3 class="divider"><a data-toggle="collapse" href="#landing-advanced">advanced options</a></h3>
+                        <div class="collapse" id="landing-advanced" style="margin-top:25px">
+                            <div class='col-sm-6 col-md-4'>
+                                <div class="hp-tool-links">
+                                    <span></span>
+                                    <h3><span><img src="lib/images/draw_polygon.png">&nbsp;&nbsp; Custom Search</span></h3>
+                                    <p>Create custom shapes with the draw tool on the map.</p><button class="btn btn-primary btn-lg" data-toggle="collapse" id="aoiSearch">Draw Search Area</button>
+                                </div>
+                            </div>
+                            <div class='col-sm-6 col-md-4'>
+                                <div class="hp-tool-links">
+                                    <span></span>
+                                    <h3><span><img src="lib/images/bug.png">&nbsp;&nbsp; Record Number</span></h3>
+                                    <p>Search traffic counts by DVRPC record number.</p><button class="btn btn-primary btn-lg nav-item" data-modal="count-modal" id="count_num">Search by Record Number</button>
+                                </div>
+                            </div>
+                            <div class='col-sm-6 col-md-4'>
+                                <div class="hp-tool-links">
+                                    <span></span>
+                                    <h3><span><img src="lib/images/map_services.png">&nbsp;&nbsp; Map Service</span></h3>
+                                    <p>Connect directly to our ArcGIS Server map services.</p>
+                                    <button class="btn btn-primary btn-lg nav-item" href="#ags" data-tab="ags" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="ags-modal">Access Map Service</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Lower Row-->
+                </div><!-- End Landing Search -->
             </div>
             <div class="col-sm-6 col-lg-6 off-right" id="sidebarMirror"></div>
-    
-            </div>
-        </div><!--end landing content -->
+        </div>
+    </div><!--end landing content -->
 
         <!-- Start Search Bar Container -->
         <div class="col-sm-12 col-lg-12" id="search-bar-container">  
@@ -149,7 +180,7 @@
                 <div id="search-bar-nav">
                     <form class="" id="map_query" name="map_query">
                         <div class="input-group">
-                            <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter Municipality, City, or Zip" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
+                            <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter municipality, city, or zip code" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
                         </div>
                     </form>
                     <button id="doaSearch" class="btn btn-primary btn-md" data-toggle="collapse" href="#aoi-draw"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
@@ -160,7 +191,7 @@
                         <span>Search by location:</span>
                         <form class="" id="map_query" name="map_query">
                             <div class="input-group">
-                                <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter Municipality, City, or Zip" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
+                                <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter municipality, city, or zip code" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
                             </div>
                         </form>
                         <div style="clear:both;"></div>
@@ -345,11 +376,28 @@
                             <p><i class="glyphicon glyphicon-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement -- Manual observation and measurement of intersection turning movement volumes.</p> 
                             <p><i class="glyphicon glyphicon-circle ct-loop"></i>&nbsp;&nbsp;Loop -- Vehicle volume counts via fixed-location inductive-loop counters.</p> 
                             <p><i class="glyphicon glyphicon-circle ct-8day"></i>&nbsp;&nbsp;8 Day -- A week long volume count utilized by NJDOT.</p> 
-                            <p><i class="glyphicon glyphicon-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk -- Manual observation and measurement of crosswalk movement by pedestrains and bicycles.</button>
+                            <p><i class="glyphicon glyphicon-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk -- Manual observation and measurement of crosswalk movement by pedestrains and bicycles.
                   </div><!-- /.modal-body -->
               </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
       </div><!-- /.modal fade-->
+
+       <!-- AGS link Modal -->
+        <div class="modal fade" id="ags-modal">
+            <div class="modal-dialog" style="width:710px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                        <h4 class="modal-title">ArcGIS Server Map Services</h4>
+                    </div>
+                    <div class="modal-body">
+                        This area is under construction... <img src="http://www.dvrpc.org/webmaps/img/dataportal/Transportation_service.png"> 
+                        <!--      <a href="http://arcgis.dvrpc.org/arcgis/rest/services/Transportation/TrafficCounts/MapServer" -->
+                        <a href="http://dvrpc.dvrpcgis.opendata.arcgis.com/datasets/8eb412d170af43e58dbb9ff382e71777_0?uiTab=table&orderByFields=CO_NAME+ASC&where=CO_NAME+like+%27%25Chester&geometry=-77.42%2C39.687%2C-73.822%2C40.319" target="_new"><button class="btn btn-primary btn-lg">Access Map Service</button></a>
+                    </div><!-- /.modal-body -->
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal fade-->
          
         
 

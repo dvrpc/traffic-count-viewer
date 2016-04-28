@@ -7,7 +7,7 @@ body,
 }
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    overflow-y: hidden;
+  /*  overflow-y: hidden; */
 }
 p {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -22,6 +22,30 @@ h6 {
     font-weight: 500;
     line-height: 1.1;
     color: #6689BC;
+}
+h3.divider {
+    overflow: hidden;
+    text-align: center;
+    font-size: 1em;
+    margin: 20px;
+}
+h3.divider:before,
+h3.divider:after {
+    background-color: #6689BC;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+h3.divider:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+h3.divider:after {
+    left: 0.5em;
+    margin-right: -50%;
 }
 label {
     font-weight: 400;
@@ -400,6 +424,9 @@ a,
     width:300px;
     margin-right:10px;
 }
+.form-group {
+    text-align:left; 
+}
 .search-form-icon {
     padding: 8px 8px;
     font-weight: 400;
@@ -600,11 +627,33 @@ a,
 /*--------------------------------------------------------*/
 
 #landingSearch {
+    max-width: 970px;
     padding-top: 40px;
     transition: all 0.3s linear;
 }
 #landingSearch .row {
     margin-bottom: 15px;
+}
+.hp-tool-links {
+    background-color: #FFF;
+    border: 1px solid #B7B7B7;
+    text-align: center;
+    padding: 10px 20px 20px;
+    transition: all .3s ease-in-out;
+}
+.hp-tool-links, .stat-block {
+    box-shadow: 0 0 10px #b7b7b7;
+}
+.hp-tool-btn {
+    background-color: #312867;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2em;
+    border: none;
+}
+.hp-btn-upper {
+    margin-bottom: 10px;
 }
 .ocontent {
     padding-bottom: 0!important;
