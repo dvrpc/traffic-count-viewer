@@ -80,9 +80,20 @@
         </div>
         <div id="navbar-links" class="navbar-collapse collapse">
             <ul id="primary-nav" class="nav navbar-nav navbar-right">
-                <li><a class="nav-item" href="#about" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="about-modal"><i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;About</a></li>
-                <li><a class="nav-item" href="#legend" data-tab="legend" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="legend-modal"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;&nbsp;Data Definitions</a></li>
-                <li><a class="nav-item" id="records-by-number" data-modal="count-modal"><i class="glyphicon glyphicon-flash"></i>&nbsp;&nbsp;Search by Record #</a></li>
+                   <li class="dropdown">
+                    <a id="toolsDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;About & Tools
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="nav-item" href="#about" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="about-modal">About</a></li>
+                        <li><a class="nav-item" href="#help" data-tab="help" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="help-modal">Help Guide</a></li>
+                        <li><a class="nav-item" href="#legend" data-tab="legend" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="legend-modal">Data Definitions</a></li>
+                        <li><a class="nav-item" id="records-by-number" data-modal="count-modal">Search by DVRPC File #</a></li>
+                        <li><a class="nav-item" href="#ags" data-tab="ags" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="ags-modal">Access Map Service</a></li>
+                    </ul>
+                </li>
+                
             </ul>
         
         </div><!--/.navbar-collapse -->
@@ -257,7 +268,7 @@
                         </div>
                     </ul>
                 </div>
-                <button class="btn btn-success accordion-toggle filter-btn" data-toggle="collapse" id="updateSearchbtn">Update Map</button>
+                <button class="btn btn-success accordion-toggle filter-btn" data-toggle="collapse" id="updateSearchbtn"><i class="glyphicon glyphicon-picture"></i>&nbsp;&nbsp;Update Map</button>
               </div>
             </div>   
             <!-- Ends Filter Container --> 
@@ -382,6 +393,23 @@
           </div><!-- /.modal-dialog -->
       </div><!-- /.modal fade-->
 
+       <!--  Help Guide Modal -->
+        <div class="modal fade" id="help-modal">
+            <div class="modal-dialog" style="width:710px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                        <h4 class="modal-title">Help Guide</h4>
+                    </div>
+                    <div class="modal-body">
+                        HELP ME!!! This area is under construction... <img src="http://www.dvrpc.org/webmaps/img/dataportal/Transportation_service.png"> 
+                        <!--      <a href="http://arcgis.dvrpc.org/arcgis/rest/services/Transportation/TrafficCounts/MapServer" -->
+                        <a href="http://dvrpc.dvrpcgis.opendata.arcgis.com/datasets/8eb412d170af43e58dbb9ff382e71777_0?uiTab=table&orderByFields=CO_NAME+ASC&where=CO_NAME+like+%27%25Chester&geometry=-77.42%2C39.687%2C-73.822%2C40.319" target="_new"><button class="btn btn-primary btn-lg">Access Map Service</button></a>
+                    </div><!-- /.modal-body -->
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal fade-->
+
        <!-- AGS link Modal -->
         <div class="modal fade" id="ags-modal">
             <div class="modal-dialog" style="width:710px;">
@@ -399,8 +427,6 @@
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal fade-->
          
-        
-
         <div class="modal fade" id="count-modal">
             <div class="modal-dialog">
                 <div class="modal-content">
