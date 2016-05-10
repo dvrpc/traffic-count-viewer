@@ -182,6 +182,11 @@ a,
 #download-container .btn{
     margin-bottom: 10px;
 }
+#download-help {
+    float: right;
+    color: #848181;
+    cursor:pointer; 
+}
 /* ================================ *\
 \* ===  HTML5 VIDEO BACKGROUND  === *\
 \* ================================ */
@@ -421,7 +426,7 @@ a,
 }
 #map_query{
     float:left;
-    width:300px;
+    width:420px;
     margin-right:10px;
 }
 .form-group {
@@ -566,8 +571,7 @@ a,
 #legend-definition {
     float: right;
     color: #848181;
-    cursor:pointer;
-    
+    cursor:pointer; 
 }
 #legend-icon {
     line-height: 27px;

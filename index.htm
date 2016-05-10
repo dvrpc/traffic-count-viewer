@@ -73,7 +73,7 @@
                 </button>
             <div class="navbar-brand">
                 <a class=" " href="http://www.dvrpc.org">
-                    <img src="http://www.dvrpc.org/webmaps/pedbikecounts/img/dvrpc_tiny.png" height="40"/>
+                <img src="http://www.dvrpc.org/webmaps/pedbikecounts/img/dvrpc_tiny.png" target="_new" height="40"/>
                 </a>
                 <h3 class="navbar-brand-title text-uppercase">Traffic Counts</h3>
             </div>
@@ -81,13 +81,13 @@
         <div id="navbar-links" class="navbar-collapse collapse">
             <ul id="primary-nav" class="nav navbar-nav navbar-right">
                    <li class="dropdown">
-                    <a id="toolsDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;About & Tools
+                     <a id="toolsDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;Info & Tools
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="nav-item" href="#about" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="about-modal">About</a></li>
-                        <li><a class="nav-item" href="#help" data-tab="help" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="help-modal">Help Guide</a></li>
+                      <!--  <li><a class="nav-item" href="#help" data-tab="help" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="help-modal">Help Guide</a></li> -->
                         <li><a class="nav-item" href="#legend" data-tab="legend" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="legend-modal">Data Definitions</a></li>
                         <li><a class="nav-item" id="records-by-number" data-modal="count-modal">Search by DVRPC File #</a></li>
                         <li><a class="nav-item" href="#ags" data-tab="ags" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="ags-modal">Access Map Service</a></li>
@@ -164,8 +164,8 @@
                             <div class='col-sm-6 col-md-4'>
                                 <div class="hp-tool-links">
                                     <span></span>
-                                    <h3><span><img src="lib/images/bug.png">&nbsp;&nbsp; Record Number</span></h3>
-                                    <p>Search traffic counts by DVRPC record number.</p><button class="btn btn-primary btn-lg nav-item" data-modal="count-modal" id="count_num">Search by Record Number</button>
+                                    <h3><span><img src="lib/images/bug.png">&nbsp;&nbsp; DVRPC File #</span></h3>
+                                    <p>Search traffic counts by DVRPC file number.</p><button class="btn btn-primary btn-lg nav-item" data-modal="count-modal" id="count_num">Search by DVRPC File #</button>
                                 </div>
                             </div>
                             <div class='col-sm-6 col-md-4'>
@@ -191,7 +191,7 @@
                 <div id="search-bar-nav">
                     <form class="" id="map_query" name="map_query">
                         <div class="input-group">
-                            <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter municipality, city, or zip code" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
+                            <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter a municipality, city, zip code, or philly neighborhood" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
                         </div>
                     </form>
                     <button id="doaSearch" class="btn btn-primary btn-md" data-toggle="collapse" href="#aoi-draw"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
@@ -202,7 +202,7 @@
                         <span>Search by location:</span>
                         <form class="" id="map_query" name="map_query">
                             <div class="input-group">
-                                <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter municipality, city, or zip code" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
+                                <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter a municipality, city, zip code, or philly neighborhood" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
                             </div>
                         </form>
                         <div style="clear:both;"></div>
@@ -213,7 +213,7 @@
             <!-- Start Filter Container -->
             <div class="col-sm-6 col-lg-6" id="filter-bar-container">
                 <div id="filter-bar-nav">
-                <h4 class="filterBar-title"><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;Filter map results:</h4>
+                <h4 class="filterBar-title"><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;Filter map results</h4>
                 <div class="btn-group" id="count_types">
                    <button type="button" id="count_types_dropdown" class="btn btn-primary dropdown-toggle filter-btn" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-road"></i>&nbsp;&nbsp;Count Type <span class="caret"></span>
                     </button>
@@ -268,7 +268,7 @@
                         </div>
                     </ul>
                 </div>
-                <button class="btn btn-success accordion-toggle filter-btn" data-toggle="collapse" id="updateSearchbtn"><i class="glyphicon glyphicon-picture"></i>&nbsp;&nbsp;Update Map</button>
+                <button class="btn btn-success accordion-toggle filter-btn" data-toggle="collapse" id="updateSearchbtn">Update Map</button>
               </div>
             </div>   
             <!-- Ends Filter Container --> 
@@ -291,7 +291,7 @@
                         <div style="clear:both;"></div>
                     </div> 
                     <div id="aoi-help" class="collapse">
-                        <p>Define your area of interest by drawing on the map the location for which you would like to search for counts. Click once to start drawing a polygon search area. To undo a point or clear the polygon use the buttons above. Double-click to close the search area.</p>
+                        <p>Draw on the map to define your area of interest to search for counts. Click once to start drawing a polygon search area. To undo a point or clear the polygon, use the buttons above. Double-click to close the search area.</p>
                     </div>
                 </div>
             <!-- End aoi draw -->  
@@ -389,6 +389,14 @@
                             <p><i class="glyphicon glyphicon-circle ct-8day"></i>&nbsp;&nbsp;8 Day -- A week long volume count utilized by NJDOT.</p> 
                             <p><i class="glyphicon glyphicon-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk -- Manual observation and measurement of crosswalk movement by pedestrains and bicycles.
                   </div><!-- /.modal-body -->
+                  <div class="modal-footer text-left">
+                        <small>
+                             <p>For more information, contact our Office of Travel Monitoring:<br>
+                                Scott Brady, <em>Manager</em>, <a href="mailto:sbrady@dvrpc.org">sbrady@dvrpc.org</a>
+                              <br>Charles Henry, <em>Traffic Counting Supervisor</em>, <a href="mailto:chenry@dvrpc.org">chenry@dvrpc.org</a>
+                            </p>
+                        </small>    
+                    </div>
               </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
       </div><!-- /.modal fade-->
@@ -399,12 +407,15 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
-                        <h4 class="modal-title">Help Guide</h4>
+                        <h4 class="modal-title">Record Download Help Guide</h4>
                     </div>
                     <div class="modal-body">
-                        HELP ME!!! This area is under construction... <img src="http://www.dvrpc.org/webmaps/img/dataportal/Transportation_service.png"> 
-                        <!--      <a href="http://arcgis.dvrpc.org/arcgis/rest/services/Transportation/TrafficCounts/MapServer" -->
-                        <a href="http://dvrpc.dvrpcgis.opendata.arcgis.com/datasets/8eb412d170af43e58dbb9ff382e71777_0?uiTab=table&orderByFields=CO_NAME+ASC&where=CO_NAME+like+%27%25Chester&geometry=-77.42%2C39.687%2C-73.822%2C40.319" target="_new"><button class="btn btn-primary btn-lg">Access Map Service</button></a>
+                    <div class="clearfix">
+                        <p>Please <i class="glyphicon glyphicon-check"></i>&nbsp;select any traffic counts that you wish to download. The counts you select will be downloaded as a zipped directory (.zip) with a PDF report for each of the requested counts as well as a comma-separated file (.csv) containing the summary data for all the counts. Click the <button class="btn btn-primary btn-xs active">download selected</button> once you have selected all your records.<br><br>
+                         All <i class="glyphicon glyphicon-unchecked"></i>&nbsp;unchecked records will not be included in the download file.
+                        <img src="lib/images/download.png"> 
+                        </p>
+                    </div>
                     </div><!-- /.modal-body -->
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
@@ -416,12 +427,24 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
-                        <h4 class="modal-title">ArcGIS Server Map Services</h4>
+                        <h4 class="modal-title">ArcGIS Server map services</h4>
                     </div>
                     <div class="modal-body">
-                        This area is under construction... <img src="http://www.dvrpc.org/webmaps/img/dataportal/Transportation_service.png"> 
-                        <!--      <a href="http://arcgis.dvrpc.org/arcgis/rest/services/Transportation/TrafficCounts/MapServer" -->
-                        <a href="http://dvrpc.dvrpcgis.opendata.arcgis.com/datasets/8eb412d170af43e58dbb9ff382e71777_0?uiTab=table&orderByFields=CO_NAME+ASC&where=CO_NAME+like+%27%25Chester&geometry=-77.42%2C39.687%2C-73.822%2C40.319" target="_new"><button class="btn btn-primary btn-lg">Access Map Service</button></a>
+                     <div class="clearfix">
+                        
+                        <div>
+                        <img src="lib/images/ags_connect.png" style="float:right;"> 
+                        <b>ArcGIS for Desktop:</b> Copy and paste the URL below to access our ArcGIS Server map services.
+                        <pre><code>http://arcgis.dvrpc.org/arcgis/rest/services</code></pre>
+                        </div>
+                        <br><br><br><br><br><br><br>
+                        <div>
+                        <img src="http://www.dvrpc.org/webmaps/img/dataportal/Transportation_service.png" style="float:right;"> 
+                        <b>Developers:</b> Access our Traffic Count REST API from the URL below.
+                        <pre><code>http://arcgis.dvrpc.org/arcgis/rest/services/Transportation/TrafficCounts/FeatureServer</code></pre>
+                        </div>
+
+                      </div>
                     </div><!-- /.modal-body -->
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
@@ -432,14 +455,14 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title white">Search counts by record number</h4>
+                        <h4 class="modal-title white">Search traffic counts by DVRPC file number</h4>
                     </div>
                     <div class="modal-body">
                         <form id="recnum-form">
-                        <p>Enter the DVRPC record number for traffic counts which you would like to view. When entering more than one record number, values should be in a comma separated list.<br><em>example (117852,118337,118545)</em></p>
+                        <p>Enter the DVRPC file number for traffic counts which you would like to view. When entering more than one file number, values should be in a comma separated list.<br><em>example (117852,118337,118545)</em></p>
                         
                             <div class="form-group">
-                                <label for="comment">Record numbers:</label>
+                                <label for="comment">File numbers:</label>
                                 <textarea class="form-control" rows="8" id="records"></textarea>
                             </div>
                         </form>
