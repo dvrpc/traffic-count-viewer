@@ -183,6 +183,7 @@ a,
     margin-bottom: 10px;
 }
 #download-help {
+    padding-top: 4px;
     float: right;
     color: #848181;
     cursor:pointer; 
