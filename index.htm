@@ -73,7 +73,7 @@
                 </button>
             <div class="navbar-brand">
                 <a class=" " href="http://www.dvrpc.org">
-                <img src="http://www.dvrpc.org/webmaps/pedbikecounts/img/dvrpc_tiny.png" target="_new" height="40"/>
+                    <img src="http://www.dvrpc.org/webmaps/pedbikecounts/img/dvrpc_tiny.png" target="_new" height="40"/>
                 </a>
                 <h3 class="navbar-brand-title text-uppercase">Traffic Counts</h3>
             </div>
@@ -82,7 +82,7 @@
             <ul id="primary-nav" class="nav navbar-nav navbar-right">
                    <li class="dropdown">
                      <a id="toolsDrop" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;Info & Tools
+                        <i class="glyphicon glyphicon-info-sign"></i>&nbsp;&nbsp;Info &amp; Tools
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -430,21 +430,23 @@
                         <h4 class="modal-title">ArcGIS Server map services</h4>
                     </div>
                     <div class="modal-body">
-                     <div class="clearfix">
-                        
-                        <div>
-                        <img src="lib/images/ags_connect.png" style="float:right;"> 
-                        <b>ArcGIS for Desktop:</b> Copy and paste the URL below to access our ArcGIS Server map services.
-                        <pre><code>http://arcgis.dvrpc.org/arcgis/rest/services</code></pre>
+                        <div class="clearfix">
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <b>ArcGIS for Desktop:</b>Copy and paste the URL below to access our ArcGIS Server map services.
+                                    <pre data-initialized="true"><code>http://arcgis.dvrpc.org/arcgis/rest/services</code></pre>
+                                </div>
+                                <div class="col-xs-4 text-right"><img src="lib/images/ags_connect.png"></div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <b>Developers:</b> Access our Traffic Count REST API from the URL below.
+                                    <pre data-initialized="true"><code>http://arcgis.dvrpc.org/arcgis/rest/services/Transportation/TrafficCounts/FeatureServer</code></pre>
+                                </div>
+                                <div class="col-xs-4 text-right"><img src="http://www.dvrpc.org/webmaps/img/dataportal/Transportation_service.png"></div>
+                            </div>
                         </div>
-                        <br><br><br><br><br><br><br>
-                        <div>
-                        <img src="http://www.dvrpc.org/webmaps/img/dataportal/Transportation_service.png" style="float:right;"> 
-                        <b>Developers:</b> Access our Traffic Count REST API from the URL below.
-                        <pre><code>http://arcgis.dvrpc.org/arcgis/rest/services/Transportation/TrafficCounts/FeatureServer</code></pre>
-                        </div>
-
-                      </div>
                     </div><!-- /.modal-body -->
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
