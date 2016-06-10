@@ -81,7 +81,7 @@ body,
     font-size: 22px;
     color: #FFF;
     white-space: nowrap;
-    padding: 0 10px;
+  /*  padding: 0 10px; */
 }
 .navbar-brand img {
     margin-top: -3px;
@@ -238,8 +238,7 @@ a,
     right: 0;
     pointer-events: none;
     /* Allows right click menu on the video */
-    
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0,0, 0.2);
     /* You can play with the opacity */
 }
 /**
@@ -278,7 +277,7 @@ a,
     height: 100%;
     -ms-transform: translateY(40%);
     -webkit-transform: translateY(40%);
-    transform: translateY(40%);
+    transform: translateY(20%);
 }
 .video-hero h2 {
     color: #fff;
@@ -304,6 +303,23 @@ a,
 .video-hero--content p {
     font-size: 20px;
     margin: 0;
+}
+#video-hero--logo{
+    height:190px;
+    float:left;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#video-hero--logoscreen{
+    position: absolute;
+    top: 20;
+    left: 0;
+    bottom: 70;
+    right: 0;
+    pointer-events: none;
+    /* Allows right click menu on the video */
+    background: rgba(240, 240,240, 0.85);
+    height:210px;
 }
 /* ================================= */
 /* ===  Typeahead Search Styles  === */
