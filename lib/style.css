@@ -394,7 +394,7 @@ a,
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px 4px 4px 4px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 4px;
+    margin-top: 5px;
     padding: 4px 0;
     width: 100%;
     max-height: 300px;
@@ -429,7 +429,7 @@ a,
     padding-left: 11px!important;
 }
 #mapQuery {
-    padding-left: 12px!important;
+    padding-left: 11px!important;
 }
 #map_query .tt-suggestion {
     font-size: 14px;
