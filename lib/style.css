@@ -21,7 +21,8 @@ h6 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
     line-height: 1.1;
-    color: #6689BC;
+/*  color: #6689BC; */
+    color:#008FAE;
 }
 h3.divider {
     overflow: hidden;
@@ -31,7 +32,8 @@ h3.divider {
 }
 h3.divider:before,
 h3.divider:after {
-    background-color: #6689BC;
+ /* background-color: #6689BC; */
+    background-color:#008FAE;
     content: "";
     display: inline-block;
     height: 1px;
@@ -58,6 +60,14 @@ a:hover {
 }
 .text-left {
     text-align:left;
+}
+#timerange{
+    color:#666666;
+    margin-bottom: 5px;
+}
+#searchloc{
+    margin-top:5px;
+    margin-bottom: 2px;
 }
 /* ===================================== */
 /* ===  Bootstrap/UI Element Styles  === */
@@ -166,10 +176,12 @@ body,
 }
 a,
 .navbar-inverse .navbar-nav>li>a {
-    color: #6689BC;
+    /*  color: #6689BC; */
+    color:#008FAE;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-    background-color: #6689BC;
+ /*  color: #6689BC; */
+    color:#008FAE;
 }
 .input-group #searchbox.form-control {
     float: right;
@@ -187,6 +199,38 @@ a,
     float: right;
     color: #848181;
     cursor:pointer; 
+}
+.btn-primary {
+    color: #fff;
+    background-color: #008FAE;
+    border-color: #00728b;
+}
+.btn-primary:hover,.btn-primary:active,.btn-primary:focus  {
+    color: #fff !important;
+    background-color: #00728b !important;
+    border-color: #00728b !important;
+}
+.btn-primary.disabled {
+    color: #fff;
+    background-color: #66BCCE;
+    border-color: #00728b;
+}
+.btn-success {
+    color: #fff;
+    background-color: #00AE76;
+    border-color: #008b5e;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #008b5e;
+    border-color: #008b5e;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #008FAE;
+    border-color: #008FAE;
+}
+.pagination > li > a, .pagination > li > span {
+    color: #008FAE;
 }
 /* ================================ *\
 \* ===  HTML5 VIDEO BACKGROUND  === *\
@@ -454,8 +498,10 @@ a,
     font-weight: 400;
     line-height: .2;
     color: #fff;
-    background-color: #428BCA;
-    border: 1px solid #428BCA;
+ /* background-color: #428BCA;
+    border: 1px solid #428BCA; */
+    background-color: #008FAE;
+    border: 1px #00728b;
     display: table-cell;
     height: 14px;
     max-width: 28px;
@@ -470,10 +516,13 @@ a,
     position: absolute;
     top: 60px;
     z-index: 200;
-    background-color: #7aadd9;
+/*  background-color: #7aadd9; */
+    background-color: #66BCCE;
     padding: 10px;
-    border-bottom: 1px #3881C0 solid;
-    border-left: 1px #3881C0 solid;
+ /* border-bottom: 1px #3881C0 solid;
+    border-left: 1px #3881C0 solid; */
+    border-bottom: 1px #66BCCE solid;
+    border-left: 1px #66BCCE solid;
 }
 #search-bar-nav{
     float:left; 
@@ -628,7 +677,8 @@ a,
     font-weight: bold;
 }
 .noUi-connect {
-    background: #5876A2;
+  /*  background: #5876A2; */
+    background: #008FAE;
 }
 .noUi-marker-horizontal.noUi-marker-sub {
     height: 5px;
@@ -652,9 +702,9 @@ a,
     padding-top: 40px;
     transition: all 0.3s linear;
 }
-#landingSearch .row {
+/* #landingSearch .row {
     margin-bottom: 15px;
-}
+} */
 .hp-tool-links {
     background-color: #FFF;
     border: 1px solid #B7B7B7;
@@ -796,11 +846,13 @@ table.table-bordered.dataTable tbody td.table-date:hover {
 }
 #table tbody tr.coincident>td,
 #table tbody tr.coincident {
-    background-color: #FBE8CC;
+ /* background-color: #FBE8CC; */
+    background-color: #D0C5DF;
 }
 #table tbody tr.coincident:hover>td,
 #table tbody tr.coincident:hover {
-    background-color: #f5d9b0;
+ /* background-color: #f5d9b0; */
+    background-color: #8F70AE;
 }
 .pagination>li>a,
 .pagination>li>span {
@@ -866,7 +918,8 @@ span.cnt-direction {
 }
 #aoi-help {
     margin: -2px 6px;
-    background-color: #428BCA;
+  /*  background-color: #428BCA; */
+    background-color: #008FAE;
     color: #fff;
     padding: 15px;
 }
