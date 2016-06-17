@@ -17,8 +17,6 @@
         <link rel="stylesheet" href="lib/style.css" />
         <link rel="stylesheet" href="lib/awesome-bootstrap-checkbox-css.css" />
         <style>
-
-
         #loading, #noresults, #return-to-search {
           position: absolute;
           width: 220px;
@@ -40,10 +38,6 @@
             overflow: hidden;
             outline: 0px none;
         }
-        .navbar-brand h3{
-            margin:15px;
-        }
-        
         @media (max-width: 1270px) {
             .navbar .navbar-brand {
                 font-size: 18px;
@@ -54,7 +48,97 @@
             }
             
         }
-
+        @media (max-width: 970px) {
+             .btn-responsive {
+            padding:4px 9px;
+            font-size:90%;
+            line-height: 1.2;
+            margin-top: 10px;
+            } 
+            .btn-responsive-draw {
+            padding:4px 9px;
+            font-size:90%;
+            line-height: 1.2;
+            margin-top: 5px;
+            } 
+            .filterBar-title{
+                display:none; 
+            }
+            #map_query{
+                margin-top: 5px;
+                width: 250px;
+                height: 15px;
+            }
+            #filter-bar-nav {
+                margin-bottom: 12px;
+            }
+            #map_query .twitter-typeahead {
+                height: 20px;
+            }
+            .search-form-icon {
+                font-size: 10px;
+                padding: 3px 8px;
+            }
+            #map_query .tt-hint, #map_query .form-control {
+                font-size: 11px !important;
+                height: 25px !important;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+        }
+        @media (min-width: 971px) and (max-width: 1110px) {
+            .btn-responsive {
+            padding:4px 9px;
+            font-size:90%;
+            line-height: 1.2;
+            margin-top: 5px;
+            } 
+            .btn-responsive-draw {
+            padding:4px 9px;
+            font-size:90%;
+            line-height: 1.2;
+            margin-top: 5px;
+            } 
+            .filterBar-title{
+            font-size:90%; 
+            margin-top: 12px;
+            margin-bottom: 15px;  
+            }
+            #map_query{
+                margin-top: 5px;
+                width: 250px;
+                height: 15px;
+            }
+            #map_query .twitter-typeahead {
+                height: 20px;
+            }
+            .search-form-icon {
+                font-size: 10px;
+                padding: 3px 8px;
+            }
+            #map_query .tt-hint {
+               height: 15px;
+            }
+            #map_query .form-control{
+              height: 15px;  
+            }
+            #map_query .tt-hint, #map_query .form-control {
+                font-size: 11px !important;
+                height: 25px !important;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+        }
+        @media (min-width: 1111px) and (max-width: 1270px) {
+            .filterBar-title{
+            font-size:95%; 
+            margin-top: 12px;
+            margin-bottom: 15px;  
+            }
+            #map_query{
+                width:340px;
+            }
+        }
         </style> 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -72,10 +156,12 @@
                     <span class="icon-bar"></span>
                 </button>
             <div class="navbar-brand">
-                <a class=" " href="http://www.dvrpc.org">
-                    <img src="http://www.dvrpc.org/webmaps/pedbikecounts/img/dvrpc_tiny.png" target="_new" height="40"/>
-                </a>
-                <h3 class="navbar-brand-title text-uppercase">Traffic Counts</h3>
+              <span>
+                <a href="http://www.dvrpc.org" target="_new"><img src="lib/images/TCC_dvrpc_logo_tiny.png" /></a>
+                <img src="lib/images/TCC_divider.png" />
+                <img src="lib/images/TCC_logo.png" />
+                <img src="lib/images/TCC_title.png" />
+               </span>
             </div>
         </div>
         <div id="navbar-links" class="navbar-collapse collapse">
@@ -113,8 +199,9 @@
             <div class="video-overlay"></div>
             <div class="page-width">
                 <div class="video-hero--content">
-                    <h2>DVRPC Travel Monitoring</h2>
-                    <p>Counting a region in motion</p>
+                    <div id="video-hero--logoscreen">
+                    <img id="video-hero--logo" src="lib/images/TCC_full.png"/>
+                    </div>
                 </div>
             </div>
         </div> 
@@ -131,7 +218,8 @@
                     <div class="row">
                         <div class='col-xs-12'>
                             <div class="hp-tool-links">
-                                <h3>Search Traffic Counts by Location</h3>
+                                <h3 id="searchloc">Search Traffic Counts by Location</h3>
+                                <div id="timerange"><em>(initial time range set to 2011 - 2016)</em></div>
                                 <div class="row">
                                     <form class="">
                                         <div class="form-group">
@@ -145,8 +233,7 @@
                                             </div>  -->
                                         </div>
                                     </form>
-                            
-                                </div><small><em>(initial search time period from 2011 - 2016)</em></small>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -191,10 +278,10 @@
                 <div id="search-bar-nav">
                     <form class="" id="map_query" name="map_query">
                         <div class="input-group">
-                            <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter a municipality, city, zip code, or philly neighborhood" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
+                            <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter a mcd, city, zip, or philly neighborhood" type="sr-text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
                         </div>
                     </form>
-                    <button id="doaSearch" class="btn btn-primary btn-md" data-toggle="collapse" href="#aoi-draw"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
+                    <button id="doaSearch" class="btn btn-primary btn-md btn-responsive-draw" data-toggle="collapse" href="#aoi-draw"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
                     <div style="clear:both;"></div>
                 </div>
                 <div class="collapse" id="search">
@@ -202,7 +289,7 @@
                         <span>Search by location:</span>
                         <form class="" id="map_query" name="map_query">
                             <div class="input-group">
-                                <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter a municipality, city, zip code, or philly neighborhood" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
+                                <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter a mcd, city, zip, or philly neighborhood" type="sr-text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
                             </div>
                         </form>
                         <div style="clear:both;"></div>
@@ -215,7 +302,7 @@
                 <div id="filter-bar-nav">
                 <h4 class="filterBar-title"><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;Filter map results</h4>
                 <div class="btn-group" id="count_types">
-                   <button type="button" id="count_types_dropdown" class="btn btn-primary dropdown-toggle filter-btn" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-road"></i>&nbsp;&nbsp;Count Type <span class="caret"></span>
+                   <button type="button" id="count_types_dropdown" class="btn btn-primary dropdown-toggle filter-btn btn-responsive" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-road"></i>&nbsp;&nbsp;Count Type <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu keep-open-on-click" id="dropdown-types">
                         <h5 class="text-uppercase"><i class="glyphicon glyphicon-info-sign nav-item" aria-hidden="true" data-tooltip="tooltip" title="Learn about these types" data-modal="legend-modal"></i>&nbsp;&nbsp;Specify count types:</h5>
@@ -259,7 +346,7 @@
                     </ul>
                 </div>
                 <div class="btn-group" id="count_year">
-                    <button type="button" id="count_years_dropdown" class="btn btn-primary dropdown-toggle filter-btn" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;Years <span class="caret"></span>
+                    <button type="button" id="count_years_dropdown" class="btn btn-primary dropdown-toggle filter-btn btn-responsive" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;Years <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu keep-open-on-click" id="dropdown_years">
                          <h5>Specify years of interest: <span class="years" id="yearMin"></span> - <span class="years" id="yearMax"></span></h5>
@@ -268,7 +355,7 @@
                         </div>
                     </ul>
                 </div>
-                <button class="btn btn-success accordion-toggle filter-btn" data-toggle="collapse" id="updateSearchbtn">Update Map</button>
+                <button class="btn btn-success accordion-toggle filter-btn btn-responsive" data-toggle="collapse" id="updateSearchbtn">Update Map</button>
               </div>
             </div>   
             <!-- Ends Filter Container --> 
