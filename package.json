@@ -1,0 +1,28 @@
+{
+  "name": "dvrpc_travel_monitoring",
+  "version": "1.0.0",
+  "description": "An online application for accessing DVRPC regional transportation counts for the Delaware Valley.",
+  "scripts": {
+    "serve": "python -m SimpleHTTPServer 8080",
+    "minify:css": "echo \"css minified with source-map!\" && cleancss -o lib/style.min.css lib/css/style.css --source-map",
+    "watch": "onchange \"lib/css/*.css\" -- npm run minify:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DVRPCfreight/TrafficCountConcept.git"
+  },
+  "author": "Michael Ruane, DVRPC; Will Tsay, DVRPC",
+  "bugs": {
+    "url": "https://github.com/DVRPCfreight/TrafficCountConcept/issues"
+  },
+  "homepage": "https://github.com/DVRPCfreight/TrafficCountConcept#readme",
+  "devDependencies": {
+    "clean-css": "^3.4.18",
+    "onchange": "^2.5.0"
+  },
+  "browserify-css": {
+    "autoInject": true,
+    "minify": true,
+    "rootDir": "."
+  }
+}

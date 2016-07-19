@@ -1,3 +1,10 @@
+@import url("http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css");
+@import url("https://cdn.datatables.net/1.10.8/css/dataTables.bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css");
+@import url("/lib/assets/jquery.nouislider.min.css");
+@import url("dvrpc.draw.css");
+@import url("awesome-bootstrap-checkbox-css.css");
+
 html,
 body,
 #sidebar,
