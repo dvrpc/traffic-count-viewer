@@ -5,7 +5,7 @@
   "scripts": {
     "start": "http-server ./dist/ -e .htm  -o --cors",
     "install": "grunt imagemin && npm run demo",
-    "demo": "grunt && npm start"
+    "demo": "grunt && start npm start && grunt watch "
   },
   "repository": {
     "type": "git",

@@ -99,20 +99,16 @@ module.exports = function(grunt){
 		// 	tools : ['lib/tools/*.js']
 		// },
 
-		// watch: {
-		// 	toolscripts: {
-  //     			files: ['dev/tools/*.js'],
-  //     			tasks: ['uglify:tools']
-  //     		},
-  //     		cssUpdate: {
-  //     			files: ['dev/css/*.css'],
-  //     			tasks: ['postcss', 'cssmin']
-  //     		},
-  //     		coreUpdate: {
-  //     			files: ['dev/core/*.js', 'dev/actions.js', 'dev/map.js'],
-  //     			tasks: ['concat:build', 'uglify:build']
-  //     		}
-		// },
+		watch: {
+			js: {
+      			files: ['lib/js/*.js'],
+      			tasks: ['uglify:app']
+      		},
+      		css: {
+      			files: ['lib/css/*.css'],
+      			tasks: ['postcss', 'cssmin', 'clean']
+      		}
+		},
 
 		imagemin:{
 			png:{
