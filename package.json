@@ -4,6 +4,7 @@
   "description": "An online application for accessing DVRPC regional transportation counts for the Delaware Valley.",
   "scripts": {
     "start": "http-server ./dist/ -e .htm  -o --cors",
+    "initialize": "grunt imagemin && npm run demo",
     "demo": "grunt && npm start"
   },
   "repository": {
