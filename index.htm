@@ -6,16 +6,15 @@
         <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="description" content="version 1.0.1">
-        <meta name="author" content="Michael Ruane">     
-        <title>DVRPC - Regional Traffic Counts</title>
-        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="https://cdn.datatables.net/1.10.8/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet" type="text/css">  
+        <meta name="author" content="Michael Ruane, DVRPC">     
+        <title>DVRPC - Regional Traffic Counts</title> 
 
-        <link rel="stylesheet" href="lib/assets/jquery.nouislider.min.css">
-        <link rel="stylesheet" href="lib/dvrpc.draw.css">       
-        <link rel="stylesheet" href="lib/style.css" />
-        <link rel="stylesheet" href="lib/awesome-bootstrap-checkbox-css.css" />
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.8/css/dataTables.bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/>
+
+        <link rel="stylesheet" href="lib/css/style.min.css"/>
+        
         <style>
         #loading, #noresults, #return-to-search {
           position: absolute;
@@ -178,7 +177,6 @@
                         <li><a class="nav-item" href="#ags" data-tab="ags" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="ags-modal">Access Map Service</a></li>
                     </ul>
                 </li>
-                
             </ul>
         
         </div><!--/.navbar-collapse -->
@@ -199,7 +197,9 @@
             <div class="page-width">
                 <div class="video-hero--content">
                     <div id="video-hero--logoscreen">
-                    <img id="video-hero--logo" src="lib/images/TCC_full.png" alt="DVRPC Travel Monitoring, Counting a Region in Motion"/>
+                        <div class="container">
+                            <img id="video-hero--logo" src="lib/images/TCC_full.png" alt="DVRPC Travel Monitoring, Counting a Region in Motion"/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -225,11 +225,6 @@
                                             <div class="col-lg-12">
                                              <input class="form-control input-lg" id="userQuery" placeholder="Enter a municipality, city, zip code, or philadelphia neighborhood" type="text">
                                             </div>
-                                      <!--      <div class="col-lg-2">
-                                                <div class="col-lg-12 btn btn-primary btn-lg" id="homeLocSearch">
-                                                    Search
-                                                </div>
-                                            </div>  -->
                                         </div>
                                     </form>
                                 </div>
@@ -283,17 +278,6 @@
                     <button id="doaSearch" class="btn btn-primary btn-md btn-responsive-draw" data-toggle="collapse" ><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
                     <div style="clear:both;"></div>
                 </div>
-                <!-- <div class="collapse" id="search">
-                    <div id="filterWrapper">
-                        <span>Search by location:</span>
-                        <form class="" id="map_query" name="map_query">
-                            <div class="input-group">
-                                <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter a mcd, city, zip, or philly neighborhood" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
-                            </div>
-                        </form>
-                        <div style="clear:both;"></div>
-                    </div>
-                </div> -->
             </div>
             <!-- End Search Container -->
             <!-- Start Filter Container -->
@@ -594,21 +578,17 @@
             <!--no footer included-->
 
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
         <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/dataTables.bootstrap.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/leaflet.esri/1.0.0/esri-leaflet.js"></script>
         
-         <script type="text/javascript" src="lib/locals/esri.tasks.js"></script> 
-        <script type="text/javascript" src="lib/assets/jquery.nouislider.min.js"></script>
-        <script type="text/javascript" src="lib/dvrpc.draw.js"></script>
-        <!-- <script type="text/javascript" src="lib/core/dyna-icons.js"></script> -->
-        <script type="text/javascript" src="lib/typeahead.bundle.js"></script>
-        <script type="text/javascript" src="lib/assets/numeral.min.js"></script>
-        <script type="text/javascript" src="lib/assets/leaflet.label.js"></script>
-        <script type="text/javascript" src="lib/papaparse.min.js"></script>
-        <script type="text/javascript" src="lib/map.js"></script><!--customized mapping functions to load data -->
-         <!-- Load Esri Leaflet from CDN -->
-        <script src="//cdn.jsdelivr.net/leaflet.esri/1.0.0/esri-leaflet.js"></script>
+        <script type="text/javascript" src="lib/js/vendor.min.js"></script>
+        <script type="text/javascript" src="lib/js/map.min.js"></script>
+      <!--   <script>
+            var _gaq=[['_setAccount','UA-9825778-1'],['_trackPageview']];
+        </script> 
+        <script async src="//www.google-analytics.com/ga.js"></script> -->
     </body>
 </html>
