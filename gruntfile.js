@@ -107,6 +107,10 @@ module.exports = function(grunt){
       		css: {
       			files: ['lib/css/*.css'],
       			tasks: ['postcss', 'cssmin', 'clean']
+      		},
+      		html: {
+      			files: ['*.htm'],
+      			tasks: ['copy:index']
       		}
 		},
 

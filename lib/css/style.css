@@ -53,6 +53,9 @@ h3.divider:after {
     left: 0.5em;
     margin-right: -50%;
 }
+h4 {
+    font-size: 16px;
+}
 label {
     font-weight: 400;
 }
@@ -298,7 +301,7 @@ a,
 .video-bg.demo-video {
     /*background-image: url(files/blurred-traffic-crosswalk.jpg);*/
     
-    background-image: url(./lib/files/Street-View.jpg);
+    background-image: url(/lib/files/Street-View.jpg);
 }
 /**
  * Fade in videos
@@ -491,7 +494,7 @@ a,
 }
 #map_query{
     float:left;
-    width:420px;
+    width:400px;
     margin-right:10px;
 }
 .form-group {
@@ -519,6 +522,7 @@ a,
 #search-bar-container{
     position: absolute;
     top: 60px;
+    height: 63px;
     z-index: 200;
 /*  background-color: #7aadd9; */
     background-color: #66BCCE;
