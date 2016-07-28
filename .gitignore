@@ -1,3 +1,8 @@
+node_modules
+dist
+lib/images/enhanced
+npm-debug.log*
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

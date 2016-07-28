@@ -1,0 +1,36 @@
+{
+  "name": "dvrpc_travel_monitoring",
+  "version": "1.0.0",
+  "description": "An online application for accessing DVRPC regional transportation counts for the Delaware Valley.",
+  "scripts": {
+    "start": "http-server ./dist/ -e .htm  -o --cors",
+    "install": "grunt imagemin && npm run demo",
+    "demo": "grunt && start npm start && grunt watch "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DVRPCfreight/TrafficCountConcept.git"
+  },
+  "author": "Michael Ruane, DVRPC; Will Tsay, DVRPC",
+  "bugs": {
+    "url": "https://github.com/DVRPCfreight/TrafficCountConcept/issues"
+  },
+  "homepage": "https://github.com/DVRPCfreight/TrafficCountConcept#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-convert": "^0.1.12",
+    "grunt-htmlhint-plus": "^0.4.0",
+    "grunt-postcss": "^0.8.0",
+    "http-server": "^0.9.0",
+    "jshint-stylish": "^2.2.0",
+    "matchdep": "^1.0.1"
+  }
+}

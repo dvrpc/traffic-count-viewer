@@ -5,17 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="description" content="version 1.0.1">
-        <meta name="author" content="Michael Ruane">     
-        <title>DVRPC - Regional Traffic Counts</title>
-        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="https://cdn.datatables.net/1.10.8/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet" type="text/css">  
+        <meta name="description" content="DVRPC is counting a region in motion. As leaders in travel monitoring, we provide access to thousands of traffics counts throughout the region.">
+        <meta name="author" content="Delaware Valley Regional Planning Commission">     
+        
+        <title>DVRPC Travel Monitoring | Counting a region in motion</title> 
 
-        <link rel="stylesheet" href="lib/assets/jquery.nouislider.min.css">
-        <link rel="stylesheet" href="lib/dvrpc.draw.css">       
-        <link rel="stylesheet" href="lib/style.css" />
-        <link rel="stylesheet" href="lib/awesome-bootstrap-checkbox-css.css" />
+        <meta property="og:title" content="DVRPC Travel Monitoring Application" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@DVRPC" />
+        <meta property="og:url" content="http://www.dvrpc.org/webmaps/trafficcounts/" />
+        <meta property="og:image" content="http://www.dvrpc.org/webmaps/trafficcounts/images/dvrpc-tm-app-social-card.png" />
+
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.8/css/dataTables.bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/>
+
+        <link rel="stylesheet" href="lib/css/style.min.css"/>
+        
         <style>
         #loading, #noresults, #return-to-search {
           position: absolute;
@@ -148,7 +155,7 @@
     </head>
 
     <body>
-    <div id="TC_header" class="navbar navbar-inverse navbar-top dk-gray-border oheader">
+    <header id="TC_header" class="navbar navbar-inverse navbar-top dk-gray-border oheader">
         <div class="navbar-header" >
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse dk-gray-border">
                     <span class="icon-bar"></span>
@@ -157,10 +164,10 @@
                 </button>
             <div class="navbar-brand">
               <span>
-                <a href="http://www.dvrpc.org" target="_new"><img src="lib/images/TCC_dvrpc_logo_tiny.png" /></a>
-                <img src="lib/images/TCC_divider.png" />
-                <img src="lib/images/TCC_logo.png" />
-                <img src="lib/images/TCC_title.png" />
+                <a href="http://www.dvrpc.org" target="_blank"><img src="lib/images/TCC_dvrpc_logo_tiny.png" alt="DVRPC logo"/></a>
+                <img src="lib/images/TCC_divider.png" alt=""/>
+                <img src="lib/images/TCC_logo.png" alt=""/>
+                <img src="lib/images/TCC_title.png" alt="DVRPC Travel Monitoring, Counting a Region in Motion"/>
                </span>
             </div>
         </div>
@@ -173,13 +180,11 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="nav-item" href="#about" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="about-modal">About</a></li>
-                      <!--  <li><a class="nav-item" href="#help" data-tab="help" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="help-modal">Help Guide</a></li> -->
                         <li><a class="nav-item" href="#legend" data-tab="legend" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="legend-modal">Data Definitions</a></li>
                         <li><a class="nav-item" id="records-by-number" data-modal="count-modal">Search by DVRPC File #</a></li>
                         <li><a class="nav-item" href="#ags" data-tab="ags" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="ags-modal">Access Map Service</a></li>
                     </ul>
                 </li>
-                
             </ul>
         
         </div><!--/.navbar-collapse -->
@@ -200,12 +205,14 @@
             <div class="page-width">
                 <div class="video-hero--content">
                     <div id="video-hero--logoscreen">
-                    <img id="video-hero--logo" src="lib/images/TCC_full.png"/>
+                        <div class="container">
+                            <img id="video-hero--logo" src="lib/images/TCC_full.png" alt="DVRPC Travel Monitoring, Counting a Region in Motion"/>
+                        </div>
                     </div>
                 </div>
             </div>
         </div> 
-    </div>
+    </header>
         
     <!--Map and Sidebar-->
    <div class="row ocontent" id="container">
@@ -226,11 +233,6 @@
                                             <div class="col-lg-12">
                                              <input class="form-control input-lg" id="userQuery" placeholder="Enter a municipality, city, zip code, or philadelphia neighborhood" type="text">
                                             </div>
-                                      <!--      <div class="col-lg-2">
-                                                <div class="col-lg-12 btn btn-primary btn-lg" id="homeLocSearch">
-                                                    Search
-                                                </div>
-                                            </div>  -->
                                         </div>
                                     </form>
                                 </div>
@@ -244,23 +246,23 @@
                             <div class='col-sm-6 col-md-4'>
                                 <div class="hp-tool-links">
                                     <span></span>
-                                    <h3><span><img src="lib/images/draw_polygon.png">&nbsp;&nbsp; Custom Search</span></h3>
+                                    <h3><span><img src="lib/images/draw_polygon.png" alt="">&nbsp;&nbsp; Custom Search</span></h3>
                                     <p>Create custom shapes with the draw tool on the map.</p><button class="btn btn-primary btn-lg" data-toggle="collapse" id="aoiSearch">Draw Search Area</button>
                                 </div>
                             </div>
                             <div class='col-sm-6 col-md-4'>
                                 <div class="hp-tool-links">
                                     <span></span>
-                                    <h3><span><img src="lib/images/bug.png">&nbsp;&nbsp; DVRPC File #</span></h3>
+                                    <h3><span><img src="lib/images/bug.png" alt="">&nbsp;&nbsp; DVRPC File #</span></h3>
                                     <p>Search traffic counts by DVRPC file number.</p><button class="btn btn-primary btn-lg nav-item" data-modal="count-modal" id="count_num">Search by DVRPC File #</button>
                                 </div>
                             </div>
                             <div class='col-sm-6 col-md-4'>
                                 <div class="hp-tool-links">
                                     <span></span>
-                                    <h3><span><img src="lib/images/map_services.png">&nbsp;&nbsp; Map Service</span></h3>
+                                    <h3><span><img src="lib/images/map_services.png" alt="">&nbsp;&nbsp; Map Service</span></h3>
                                     <p>Connect directly to our ArcGIS Server map services.</p>
-                                    <button class="btn btn-primary btn-lg nav-item" href="#ags" data-tab="ags" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="ags-modal">Access Map Service</button>
+                                    <button class="btn btn-primary btn-lg nav-item" data-tab="ags" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="ags-modal">Access Map Service</button>
                                 </div>
                             </div>
                         </div>
@@ -278,22 +280,11 @@
                 <div id="search-bar-nav">
                     <form class="" id="map_query" name="map_query">
                         <div class="input-group">
-                            <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter a mcd, city, zip, or philly neighborhood" type="sr-text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
+                            <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter a mcd, city, zip, or philly neighborhood" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
                         </div>
                     </form>
-                    <button id="doaSearch" class="btn btn-primary btn-md btn-responsive-draw" data-toggle="collapse" href="#aoi-draw"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
+                    <button id="doaSearch" class="btn btn-primary btn-md btn-responsive-draw" data-toggle="collapse" ><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
                     <div style="clear:both;"></div>
-                </div>
-                <div class="collapse" id="search">
-                    <div id="filterWrapper">
-                        <span>Search by location:</span>
-                        <form class="" id="map_query" name="map_query">
-                            <div class="input-group">
-                                <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter a mcd, city, zip, or philly neighborhood" type="sr-text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
-                            </div>
-                        </form>
-                        <div style="clear:both;"></div>
-                    </div>
                 </div>
             </div>
             <!-- End Search Container -->
@@ -302,10 +293,10 @@
                 <div id="filter-bar-nav">
                 <h4 class="filterBar-title"><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;Filter map results</h4>
                 <div class="btn-group" id="count_types">
-                   <button type="button" id="count_types_dropdown" class="btn btn-primary dropdown-toggle filter-btn btn-responsive" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-road"></i>&nbsp;&nbsp;Count Type <span class="caret"></span>
+                   <button type="button" id="count_types_dropdown" class="btn btn-primary dropdown-toggle filter-btn btn-responsive" data-toggle="dropdown"><i class="glyphicon glyphicon-road"></i>&nbsp;&nbsp;Count Type <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu keep-open-on-click" id="dropdown-types">
-                        <h5 class="text-uppercase"><i class="glyphicon glyphicon-info-sign nav-item" aria-hidden="true" data-tooltip="tooltip" title="Learn about these types" data-modal="legend-modal"></i>&nbsp;&nbsp;Specify count types:</h5>
+                        <li><h5 class="text-uppercase"><i class="glyphicon glyphicon-info-sign nav-item" aria-hidden="true" data-tooltip="tooltip" title="Learn about these types" data-modal="legend-modal"></i>&nbsp;&nbsp;Specify count types:</h5></li>
                         <li role="separator" class="divider"></li>
                         <li class="checkbox">
                             <input id="checkbox1" class="styled" type="checkbox" data-layer="Volume" checked>
@@ -346,10 +337,10 @@
                     </ul>
                 </div>
                 <div class="btn-group" id="count_year">
-                    <button type="button" id="count_years_dropdown" class="btn btn-primary dropdown-toggle filter-btn btn-responsive" data-toggle="dropdown" href="javascript:;"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;Years <span class="caret"></span>
+                    <button type="button" id="count_years_dropdown" class="btn btn-primary dropdown-toggle filter-btn btn-responsive" data-toggle="dropdown"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;Years <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu keep-open-on-click" id="dropdown_years">
-                         <h5>Specify years of interest: <span class="years" id="yearMin"></span> - <span class="years" id="yearMax"></span></h5>
+                         <li><h5>Specify years of interest: <span class="years" id="yearMin"></span> - <span class="years" id="yearMax"></span></h5></li>
                         <div id="sliderWrap">
                             <div class="sliders" id="yearSlider"></div>
                         </div>
@@ -369,7 +360,7 @@
                     <div id="filterWrapper">
                         <div class="col-lg-12">
                             <div class="btn-group btn-group-sm" role="group">
-                                <button id="draw-help" data-toggle="collapse" href="#aoi-help" type="button" class="btn btn-primary "><i class="glyphicon glyphicon-question-sign"></i></button>
+                                <button id="draw-help" data-toggle="collapse" data-target="#aoi-help" type="button" class="btn btn-primary "><i class="glyphicon glyphicon-question-sign"></i></button>
                                 <button id="delete-last" type="button" class="btn btn-warning "><i class="glyphicon glyphicon-repeat"></i>&nbsp;&nbsp;Undo last point</button>
                                 <button id="draw-cancel" type="button" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i>&nbsp;&nbsp;Clear drawing</button>
                             </div>
@@ -437,14 +428,14 @@
                             <div class="tab-content" id="aboutTabsContent" style="padding-top: 10px;">
                                 <div class="tab-pane fade active in" id="about">
                                     <p>Traffic count data on this website is provided as a public service. The data item <b>"Annual Average Daily Traffic (AADT)"</b> represents an estimate of all traffic during a <i class="glyphicon glyphicon-time" aria-hidden="true"></i> 24-hour period  at the location indicated for the year in which it was collected. While every effort is made on the part of DVRPC to provide valid and current information, DVRPC makes no representation or warranties, express or implied, about the validity of this information and is not to be held responsible for errors in data obtained from this website.</p>
-                                    <p><h4>For more information, contact our Office of Travel Monitoring:</h4>
+                                    <h4>For more information, contact our Office of Travel Monitoring:</h4>
                                     Scott Brady, <em>Manager</em><br>
                                     Phone: 215.238.2814  |  Email: <a href="mailto:sbrady@dvrpc.org">sbrady@dvrpc.org</a>
                                     <br><br>
                                     Charles Henry, <em>Traffic Counting Supervisor</em><br>
                                     Phone: 215.238.2895  |  Email: <a href="mailto:chenry@dvrpc.org">chenry@dvrpc.org</a><br>
                                     <br>
-                                    <b>DVRPC Main Number:</b> 215.592.1800</p>
+                                    <b>DVRPC Main Number:</b> 215.592.1800
                                 </div>
                                 <div class="tab-pane fade" id="disclaimer">
                                     <p>This web page is a public resource of general information. The Delaware Valley Regional Commission (DVRPC) makes no warranty, representation, or guarantee as to the content, sequence, accuracy, timeliness, or completeness of any of the spatial data or database information provided herein. DVRPC and partner state, local, and other agencies shall assume no liability for errors, omissions, or inaccuracies in the information provided regardless of how caused; or any decision made or action taken or not taken by any person relying on any information or data furnished within.</p>
@@ -478,10 +469,9 @@
                   </div><!-- /.modal-body -->
                   <div class="modal-footer text-left">
                         <small>
-                             <p>For more information, contact our Office of Travel Monitoring:<br>
-                                Scott Brady, <em>Manager</em>, <a href="mailto:sbrady@dvrpc.org">sbrady@dvrpc.org</a>
-                              <br>Charles Henry, <em>Traffic Counting Supervisor</em>, <a href="mailto:chenry@dvrpc.org">chenry@dvrpc.org</a>
-                            </p>
+                            For more information, contact our Office of Travel Monitoring:<br>
+                            Scott Brady, <em>Manager</em>, <a href="mailto:sbrady@dvrpc.org">sbrady@dvrpc.org</a>
+                            <br>Charles Henry, <em>Traffic Counting Supervisor</em>, <a href="mailto:chenry@dvrpc.org">chenry@dvrpc.org</a>
                         </small>    
                     </div>
               </div><!-- /.modal-content -->
@@ -500,7 +490,7 @@
                     <div class="clearfix">
                         <p>Please <i class="glyphicon glyphicon-check"></i>&nbsp;select any traffic counts that you wish to download. The counts you select will be downloaded as a zipped directory (.zip) with a PDF report for each of the requested counts as well as a comma-separated file (.csv) containing the summary data for all the counts. Click the <button class="btn btn-primary btn-xs active">download selected</button> once you have selected all your records.<br><br>
                          All <i class="glyphicon glyphicon-unchecked"></i>&nbsp;unchecked records will not be included in the download file.
-                        <img src="lib/images/download.png"> 
+                        <img src="lib/images/download.png" alt=""> 
                         </p>
                     </div>
                     </div><!-- /.modal-body -->
@@ -523,7 +513,7 @@
                                     <b>ArcGIS for Desktop:</b>Copy and paste the URL below to access our ArcGIS Server map services.
                                     <pre data-initialized="true"><code>http://arcgis.dvrpc.org/arcgis/rest/services</code></pre>
                                 </div>
-                                <div class="col-xs-4 text-right"><img src="lib/images/ags_connect.png"></div>
+                                <div class="col-xs-4 text-right"><img src="lib/images/ags_connect.png" alt=""></div>
                             </div>
                             <br>
                             <div class="row">
@@ -531,7 +521,7 @@
                                     <b>Developers:</b> Access our Traffic Count REST API from the URL below.
                                     <pre data-initialized="true"><code>http://arcgis.dvrpc.org/arcgis/rest/services/Transportation/TrafficCounts/FeatureServer</code></pre>
                                 </div>
-                                <div class="col-xs-4 text-right"><img src="http://www.dvrpc.org/webmaps/img/dataportal/Transportation_service.png"></div>
+                                <div class="col-xs-4 text-right"><img src="http://www.dvrpc.org/webmaps/img/dataportal/Transportation_service.png" alt=""></div>
                             </div>
                         </div>
                     </div><!-- /.modal-body -->
@@ -551,7 +541,7 @@
                         <p>Enter the DVRPC file number for traffic counts which you would like to view. When entering more than one file number, values should be in a comma separated list.<br><em>example (117852,118337,118545)</em></p>
                         
                             <div class="form-group">
-                                <label for="comment">File numbers:</label>
+                                <label for="records">File numbers:</label>
                                 <textarea class="form-control" rows="8" id="records"></textarea>
                             </div>
                         </form>
@@ -596,21 +586,17 @@
             <!--no footer included-->
 
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
         <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/dataTables.bootstrap.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/leaflet.esri/1.0.0/esri-leaflet.js"></script>
         
-         <script type="text/javascript" src="lib/locals/esri.tasks.js"></script> 
-        <script type="text/javascript" src="lib/assets/jquery.nouislider.min.js"></script>
-        <script type="text/javascript" src="lib/dvrpc.draw.js"></script>
-        <!-- <script type="text/javascript" src="lib/core/dyna-icons.js"></script> -->
-        <script type="text/javascript" src="lib/typeahead.bundle.js"></script>
-        <script type="text/javascript" src="lib/assets/numeral.min.js"></script>
-        <script type="text/javascript" src="lib/assets/leaflet.label.js"></script>
-        <script type="text/javascript" src="lib/papaparse.min.js"></script>
-        <script type="text/javascript" src="lib/map.js"></script><!--customized mapping functions to load data -->
-         <!-- Load Esri Leaflet from CDN -->
-        <script src="//cdn.jsdelivr.net/leaflet.esri/1.0.0/esri-leaflet.js"></script>
+        <script type="text/javascript" src="lib/js/vendor.min.js"></script>
+        <script type="text/javascript" src="lib/js/map.min.js"></script>
+      <!--   <script>
+            var _gaq=[['_setAccount','UA-9825778-1'],['_trackPageview']];
+        </script> 
+        <script async src="//www.google-analytics.com/ga.js"></script> -->
     </body>
 </html>
