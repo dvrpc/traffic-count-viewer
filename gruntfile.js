@@ -15,8 +15,7 @@ module.exports = function(grunt){
 		    			'lib/js/vendor/jquery.nouislider.min.js',
 		    			'lib/js/vendor/typeahead.bundle.js',
 		    			'lib/js/vendor/numeral.min.js',
-		    			'lib/js/vendor/leaflet.label.js',
-		    			'lib/js/vendor/csvToArray.v2.1.min.js'
+		    			'lib/js/vendor/leaflet.label.js'
 		    		]
 		    	}
 		    },
@@ -80,16 +79,20 @@ module.exports = function(grunt){
 					dest: './dist/lib/files/',
 					src: ['**']
 				},
-				data: {
-					expand: true,
-					cwd: 'data/',
-					dest: './dist/data/',
-					src: ['**']
-				},
 				index: {
 					src: ['index.htm'],
 					dest: './dist/'
 				}	
+		},
+
+		convert: {
+		    options: {
+		      explicitArray: false,
+		    },
+		    csv2json: {
+		      src: ['data/search_locations.csv'],
+		      dest: 'dist/data/search_locations.json'
+		    }
 		},
 
 		// jshint: {
@@ -160,5 +163,5 @@ module.exports = function(grunt){
 		}
     });
 
-    grunt.registerTask('default', ['uglify', 'postcss', 'cssmin', 'clean', 'copy']);
+    grunt.registerTask('default', ['uglify', 'postcss', 'cssmin', 'clean', 'copy', 'convert']);
 };
