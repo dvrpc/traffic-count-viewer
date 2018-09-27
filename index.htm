@@ -183,7 +183,7 @@
                         <li><a class="nav-item" href="#about" data-tab="about" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="about-modal">About</a></li>
                         <li><a class="nav-item" href="#legend" data-tab="legend" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="legend-modal">Data Definitions</a></li>
                         <li><a class="nav-item" id="records-by-number" data-modal="count-modal">Search by DVRPC File #</a></li>
-                        <li><a class="nav-item" href="#ags" data-tab="ags" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="ags-modal">Access Map Service</a></li>
+                        <li><a class="nav-item" href="#ags" data-tab="ags" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="ags-modal">Data Access</a></li>
                     </ul>
                 </li>
             </ul>
@@ -227,7 +227,7 @@
                         <div class='col-xs-12'>
                             <div class="hp-tool-links">
                                 <h3 id="searchloc">Search Traffic Counts by Location</h3>
-                                <div id="timerange"><em>(initial time range set to 2011 - 2016)</em></div>
+                                <div id="timerange"><em>(initial time range set to 2013 - 2018)</em></div>
                                 <div class="row">
                                     <form class="">
                                         <div class="form-group">
@@ -261,9 +261,9 @@
                             <div class='col-sm-6 col-md-4'>
                                 <div class="hp-tool-links">
                                     <span></span>
-                                    <h3><span><img src="lib/images/map_services.png" alt="">&nbsp;&nbsp; Map Service</span></h3>
-                                    <p>Connect directly to our ArcGIS Server map services.</p>
-                                    <button class="btn btn-primary btn-lg nav-item" data-tab="ags" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="ags-modal">Access Map Service</button>
+                                    <h3><span><img src="lib/images/map_services.png" alt="">&nbsp;&nbsp; Data Access</span></h3>
+                                    <p>Access traffic count data directly from our ArcGIS Server or GIS Data Portal </p>
+                                    <button class="btn btn-primary btn-lg nav-item" data-tab="ags" data-toggle="collapse" data-target=".navbar-collapse.in" data-modal="ags-modal">Access Our Data</button>
                                 </div>
                             </div>
                         </div>
@@ -505,22 +505,22 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
-                        <h4 class="modal-title">ArcGIS Server map services</h4>
+                        <h4 class="modal-title">Data Access</h4>
                     </div>
                     <div class="modal-body">
                         <div class="clearfix">
                             <div class="row">
                                 <div class="col-xs-8">
                                     <b>ArcGIS for Desktop:</b>Copy and paste the URL below to access our ArcGIS Server map services.
-                                    <pre data-initialized="true"><code>http://arcgis.dvrpc.org/arcgis/rest/services</code></pre>
+                                    <pre data-initialized="true"><code>https://services1.arcgis.com/LWtWv6q6BJyKidj8/ArcGIS/rest/services</code></pre>
                                 </div>
                                 <div class="col-xs-4 text-right"><img src="lib/images/ags_connect.png" alt=""></div>
                             </div>
                             <br>
                             <div class="row">
                                 <div class="col-xs-8">
-                                    <b>Developers:</b> Access our Traffic Count REST API from the URL below.
-                                    <pre data-initialized="true"><code>http://arcgis.dvrpc.org/arcgis/rest/services/Transportation/TrafficCounts/FeatureServer</code></pre>
+                                    <b>Developers:</b> Access our Traffic Counts API's via our Open Data Portal.
+                                    <pre data-initialized="true"><code>https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-traffic-counts</code></pre>
                                 </div>
                                 <div class="col-xs-4 text-right"><img src="http://www.dvrpc.org/webmaps/img/dataportal/Transportation_service.png" alt=""></div>
                             </div>
