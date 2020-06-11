@@ -594,39 +594,37 @@ a,
     color: #949494;
 }
 .ct-vol {
-   /* color: #b2df8a; */
     color: #ff7f00;
 }
 .ct-15min {
-   /* color: #33a02c; */
    color:#35978f;
 }
 .ct-speed {
- /*   color: #a6cee3; */
-    color:#c2e699;
+    color:#42ce73;
 }
 .ct-class {
-    color: #fb9a99;
+    color: #952eff;
 }
 .ct-mclass {
-    color: #e31a1c;
-}
-.ct-tm {
-   color: #1f78b4;
-}
-.ct-loop {
     color: #cab2d6;
 }
+.ct-tm {
+   color: #eb2b2b;
+}
+.ct-loop {
+    color: #00ffff;
+}
 .ct-8day {
-    color: #fdbf6f;
+    color: #ffd06d;
 }
 .ct-cwalk {
-   /* color: #ff7f00; 
-    color: #b2df8a; */
-    color:#dd3497;
+    color:#74add1;
 }
 .ct-bike {
-    color:#228B22;
+    color:#2e5c95;
+}
+.ct-ped {
+    color:#d4007e;
 }
 .map-legend {
     padding: 2px 4px;
