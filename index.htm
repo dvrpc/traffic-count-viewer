@@ -165,10 +165,9 @@
                 </button>
             <div class="navbar-brand">
               <span>
-                <a href="http://www.dvrpc.org" target="_blank"><img src="lib/images/TCC_dvrpc_logo_tiny.png" alt="DVRPC logo"/></a>
-                <img src="lib/images/TCC_divider.png" alt=""/>
-                <img src="lib/images/TCC_logo.png" alt=""/>
-                <img src="lib/images/TCC_title.png" alt="DVRPC Travel Monitoring, Counting a Region in Motion"/>
+                <a href="http://www.dvrpc.org" target="_blank"><img id="banner-dvrpc" src="lib/images/TCC_dvrpc_logo_tiny.png" alt="DVRPC logo"/></a>
+                <img id="banner-div" src="lib/images/TCC_divider.png" alt=""/>
+                <img id="banner-title" src="lib/images/TCC.png" alt="DVRPC Travel Monitoring, Counting a Region in Motion"/>
                </span>
             </div>
         </div>
@@ -227,12 +226,12 @@
                         <div class='col-xs-12'>
                             <div class="hp-tool-links">
                                 <h3 id="searchloc">Search Traffic Counts by Location</h3>
-                                <div id="timerange"><em>(initial time range set to 2014 - 2020)</em></div>
+                                <div id="timerange"><em>(initial time range set to 2014 - 2021)</em></div>
                                 <div class="row">
                                     <form class="">
                                         <div class="form-group">
                                             <div class="col-lg-12">
-                                             <input class="form-control input-lg" id="userQuery" placeholder="Enter a municipality, city, zip code, or philadelphia neighborhood" type="text">
+                                             <input class="form-control input-lg" id="userQuery" style="text-align: center;" placeholder="Enter a municipality, city, zip code, or philadelphia neighborhood" type="text">
                                             </div>
                                         </div>
                                     </form>
@@ -292,9 +291,9 @@
             <!-- Start Filter Container -->
             <div class="col-sm-6 col-lg-6" id="filter-bar-container">
                 <div id="filter-bar-nav">
-                <h4 class="filterBar-title"><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;Filter map results</h4>
+                <h4 class="filterBar-title">&nbsp;&nbsp;Filter map results</h4>
                 <div class="btn-group" id="count_types">
-                   <button type="button" id="count_types_dropdown" class="btn btn-primary dropdown-toggle filter-btn btn-responsive" data-toggle="dropdown"><i class="glyphicon glyphicon-road"></i>&nbsp;&nbsp;Count Type <span class="caret"></span>
+                   <button type="button" id="count_types_dropdown" class="btn btn-primary dropdown-toggle filter-btn btn-responsive" data-toggle="dropdown">&nbsp;&nbsp;Count Type <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu keep-open-on-click" id="dropdown-types">
                         <li><h5 class="text-uppercase"><i class="glyphicon glyphicon-info-sign nav-item" aria-hidden="true" data-tooltip="tooltip" title="Learn about these types" data-modal="legend-modal"></i>&nbsp;&nbsp;Specify count types:</h5></li>
