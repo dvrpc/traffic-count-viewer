@@ -165,10 +165,9 @@
                 </button>
             <div class="navbar-brand">
               <span>
-                <a href="http://www.dvrpc.org" target="_blank"><img src="lib/images/TCC_dvrpc_logo_tiny.png" alt="DVRPC logo"/></a>
-                <img src="lib/images/TCC_divider.png" alt=""/>
-                <img src="lib/images/TCC_logo.png" alt=""/>
-                <img src="lib/images/TCC_title.png" alt="DVRPC Travel Monitoring, Counting a Region in Motion"/>
+                <a href="http://www.dvrpc.org" target="_blank"><img id="banner-dvrpc" src="lib/images/TCC_dvrpc_logo_tiny.png" alt="DVRPC logo"/></a>
+                <img id="banner-div" src="lib/images/TCC_divider.png" alt=""/>
+                <img id="banner-title" src="lib/images/TCC.png" alt="DVRPC Travel Monitoring, Counting a Region in Motion"/>
                </span>
             </div>
         </div>
@@ -227,12 +226,12 @@
                         <div class='col-xs-12'>
                             <div class="hp-tool-links">
                                 <h3 id="searchloc">Search Traffic Counts by Location</h3>
-                                <div id="timerange"><em>(initial time range set to 2014 - 2020)</em></div>
+                                <div id="timerange"><em>(initial time range set to 2017 - 2022)</em></div>
                                 <div class="row">
                                     <form class="">
                                         <div class="form-group">
                                             <div class="col-lg-12">
-                                             <input class="form-control input-lg" id="userQuery" placeholder="Enter a municipality, city, zip code, or philadelphia neighborhood" type="text">
+                                             <input class="form-control input-lg" id="userQuery" style="text-align: center;" placeholder="Enter a municipality, city, zip code, or philadelphia neighborhood" type="text">
                                             </div>
                                         </div>
                                     </form>
@@ -292,13 +291,14 @@
             <!-- Start Filter Container -->
             <div class="col-sm-6 col-lg-6" id="filter-bar-container">
                 <div id="filter-bar-nav">
-                <h4 class="filterBar-title"><i class="glyphicon glyphicon-filter"></i>&nbsp;&nbsp;Filter map results</h4>
+                <h4 class="filterBar-title">&nbsp;&nbsp;Filter map results</h4>
                 <div class="btn-group" id="count_types">
-                   <button type="button" id="count_types_dropdown" class="btn btn-primary dropdown-toggle filter-btn btn-responsive" data-toggle="dropdown"><i class="glyphicon glyphicon-road"></i>&nbsp;&nbsp;Count Type <span class="caret"></span>
+                   <button type="button" id="count_types_dropdown" class="btn btn-primary dropdown-toggle filter-btn btn-responsive" data-toggle="dropdown">&nbsp;&nbsp;Count Type <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu keep-open-on-click" id="dropdown-types">
                         <li><h5 class="text-uppercase"><i class="glyphicon glyphicon-info-sign nav-item" aria-hidden="true" data-tooltip="tooltip" title="Learn about these types" data-modal="legend-modal"></i>&nbsp;&nbsp;Specify count types:</h5></li>
                         <li role="separator" class="divider"></li>
+                        <p><B>Motorized Traffic</B></p>
                         <li class="checkbox">
                             <input id="checkbox1" class="styled" type="checkbox" data-layer="Volume" checked>
                             <label for="checkbox1"><i class="glyphicon glyphicon-circle ct-vol"></i>&nbsp;&nbsp;Volume</label>
@@ -328,13 +328,22 @@
                             <label for="checkbox7"><i class="glyphicon glyphicon-circle ct-loop"></i>&nbsp;&nbsp;Loop</label>
                         </li>
                         <li class="checkbox">
-                            <input id="checkbox8" class="styled" type="checkbox" data-layer="Crosswalk" checked>
-                            <label for="checkbox8"><i class="glyphicon glyphicon-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk</label>
-                        </li>
-                        <li class="checkbox">
                             <input id="checkbox9" class="styled" type="checkbox" data-layer="8 Day" checked>
                             <label for="checkbox9"><i class="glyphicon glyphicon-circle ct-8day"></i>&nbsp;&nbsp;8 Day</label>
-                        </li>                     
+                        </li>  
+                        <p><B>Bicycle and Pedestrian Counts</B></p>
+                        <li class="checkbox">
+                            <input id="checkbox10" class="styled" type="checkbox" data-layer="Bicycle" checked>
+                            <label for="checkbox10"><i class="glyphicon glyphicon-circle ct-bike"></i>&nbsp;&nbsp;Bicycle</label>
+                        </li>   
+                            <li class="checkbox">
+                            <input id="checkbox11" class="styled" type="checkbox" data-layer="Pedestrian" checked>
+                            <label for="checkbox11"><i class="glyphicon glyphicon-circle ct-ped"></i>&nbsp;&nbsp;Pedestrian</label>
+                        </li>         
+                        <li class="checkbox">
+                            <input id="checkbox8" class="styled" type="checkbox" data-layer="Crosswalk" checked>
+                            <label for="checkbox8"><i class="glyphicon glyphicon-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk</label>
+                        </li>         
                     </ul>
                 </div>
                 <div class="btn-group" id="count_year">
@@ -433,8 +442,8 @@
                                     Joshua Rocks, <em>Manager</em><br>
                                     Phone: 215.238.2854  |  Email: <a href="mailto:jrocks@dvrpc.org">jrocks@dvrpc.org</a>
                                     <br><br>
-                                    Charles Henry, <em>Associate Manager</em><br>
-                                    Phone: 215.238.2895  |  Email: <a href="mailto:chenry@dvrpc.org">chenry@dvrpc.org</a><br>
+                                    Jonathan W. Ferullo, <em>Associate Manager</em><br>
+                                    Phone: 215.238.2883  |  Email: <a href="mailto:jferullo@dvrpc.org">jferullo@dvrpc.org</a><br>
                                     <br>
                                     <b>DVRPC Main Number:</b> 215.592.1800
                                 </div>
@@ -458,21 +467,25 @@
                       <h4 class="modal-title">Traffic Count Types</h4>
                   </div>
                   <div class="modal-body">
-                            <p><i class="glyphicon glyphicon-circle ct-vol"></i>&nbsp;&nbsp;Volume -- The automated measurement of traffic volume collected and presented in hourly increments.</p>
-                            <p><i class="glyphicon glyphicon-circle ct-15min"></i>&nbsp;&nbsp;15 Min Volume -- The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments.</p> 
-                            <p><i class="glyphicon glyphicon-circle ct-speed"></i>&nbsp;&nbsp;Speed -- A vehicle count where volumes are reported in 5 mph speed bins.</p> 
-                            <p><i class="glyphicon glyphicon-circle ct-class"></i>&nbsp;&nbsp;Class -- Automated measurement of traffic volume by vehicle class (type).</p> 
-                            <p><i class="glyphicon glyphicon-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class -- Manual observation and measurement of traffic volume by vehicle class (type).</p> 
-                            <p><i class="glyphicon glyphicon-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement -- Manual observation and measurement of intersection turning movement volumes.</p> 
-                            <p><i class="glyphicon glyphicon-circle ct-loop"></i>&nbsp;&nbsp;Loop -- Vehicle volume counts via fixed-location inductive-loop counters.</p> 
-                            <p><i class="glyphicon glyphicon-circle ct-8day"></i>&nbsp;&nbsp;8 Day -- A week long volume count utilized by NJDOT.</p> 
-                            <p><i class="glyphicon glyphicon-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk -- Manual observation and measurement of crosswalk movement by pedestrains and bicycles.
+                    <p><B>Motorized Traffic</B></p>
+                    <p><i class="glyphicon glyphicon-circle ct-vol"></i>&nbsp;&nbsp;Volume -- The automated measurement of traffic volume collected and presented in hourly increments.</p>
+                    <p><i class="glyphicon glyphicon-circle ct-15min"></i>&nbsp;&nbsp;15 Min Volume -- The automated measurement of traffic volume collected in 15 min. increment and presented in hourly increments.</p> 
+                    <p><i class="glyphicon glyphicon-circle ct-speed"></i>&nbsp;&nbsp;Speed -- A vehicle count where volumes are reported in 5 mph speed bins.</p> 
+                    <p><i class="glyphicon glyphicon-circle ct-class"></i>&nbsp;&nbsp;Class -- Automated measurement of traffic volume by vehicle class (type).</p> 
+                    <p><i class="glyphicon glyphicon-circle ct-mclass"></i>&nbsp;&nbsp;Manual Class -- Manual observation and measurement of traffic volume by vehicle class (type).</p> 
+                    <p><i class="glyphicon glyphicon-circle ct-tm"></i>&nbsp;&nbsp;Turning Movement -- Manual observation and measurement of intersection turning movement volumes.</p>  
+                    <p><i class="glyphicon glyphicon-circle ct-loop"></i>&nbsp;&nbsp;Loop -- Vehicle volume counts via fixed-location inductive-loop counters.</p> 
+                    <p><i class="glyphicon glyphicon-circle ct-8day"></i>&nbsp;&nbsp;8 Day -- A week long volume count utilized by NJDOT.</p> 
+                    <p><B>Bicycle and Pedestrian Counts</B></p>
+                    <p><i class="glyphicon glyphicon-circle ct-bike"></i>&nbsp;&nbsp;Bicycle --  The automated measurement of bicycle volume collected and presented in hourly increments. Counts are typically conducted with pneumatic tubes or infrared devices for seven days to capture the variation across the week. ADB is an estimate of traffic during a 24-hour period.</p> 
+                    <p><i class="glyphicon glyphicon-circle ct-ped"></i>&nbsp;&nbsp;Pedestrian  -- The automated measurement of pedestrian volume collected and presented in hourly increments. Counts are typically conducted with pneumatic tubes or infrared devices for seven days to capture the variation across the week. ADP is an estimate of traffic during a 24-hour period.</p>
+                    <p><i class="glyphicon glyphicon-circle ct-cwalk"></i>&nbsp;&nbsp;Crosswalk -- Manual observation and measurement of crosswalk movement by pedestrains and bicycles.</p>
                   </div><!-- /.modal-body -->
                   <div class="modal-footer text-left">
                         <small>
                             For more information, contact our Office of Travel Monitoring:<br>
                             Josh Rocks, <em>Manager</em>, <a href="mailto:jrocks@dvrpc.org">jrocks@dvrpc.org</a>
-                            <br>Charles Henry, <em>Associte Manager</em>, <a href="mailto:chenry@dvrpc.org">chenry@dvrpc.org</a>
+                            <br>Jonathan Ferullo , <em>Associte Manager</em>, <a href="mailto:jferullo@dvrpc.org">jferullo@dvrpc.org</a>
                         </small>    
                     </div>
               </div><!-- /.modal-content -->
@@ -511,19 +524,19 @@
                         <div class="clearfix">
                             <div class="row">
                                 <div class="col-xs-8">
-                                    <b>ArcGIS for Desktop:</b>Copy and paste the URL below to access our ArcGIS Server map services.
-                                    <pre data-initialized="true"><code>https://services1.arcgis.com/LWtWv6q6BJyKidj8/ArcGIS/rest/services</code></pre>
+                                    <b>ArcGIS for Desktop:</b> Copy and paste the URL below to access our ArcGIS Server map services.
+                                    <pre data-initialized="true"><code>https://arcgis.dvrpc.org/portal/services</code></pre>
+                                    <b>Developers:</b> Access our Traffic Counts API's via our Open Data Portal.<br>
+                                    Vehicle Volumes<pre data-initialized="true"><code><a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpcgis::greater-philadelphia-vehicle-volume-counts/about" target="_new">https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpcgis::greater-philadelphia-vehicle-volume-counts</a></code></pre>
+                                    Bicycle Counts <pre data-initialized="true"><code><a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpcgis::greater-philadelphia-bicycle-counts/about" target="_new">https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpcgis::greater-philadelphia-bicycle-counts</a></code></pre> 
+                                    Pedestrian Counts<pre data-initialized="true"><code><a href="https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpcgis::greater-philadelphia-pedestrian-counts/about" target="_new">https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpcgis::greater-philadelphia-pedestrian-counts</a></code></pre>
+                                    
                                 </div>
-                                <div class="col-xs-4 text-right"><img src="lib/images/ags_connect.png" alt=""></div>
+                                <div class="col-xs-4 text-right"><img src="lib/images/portal.png" alt="">
+                                    <img src="http://www.dvrpc.org/webmaps/img/dataportal/Transportation_service.png" alt=""></div>
+                                
                             </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-xs-8">
-                                    <b>Developers:</b> Access our Traffic Counts API's via our Open Data Portal.
-                                    <pre data-initialized="true"><code>https://dvrpc-dvrpcgis.opendata.arcgis.com/datasets/dvrpc-traffic-counts</code></pre>
-                                </div>
-                                <div class="col-xs-4 text-right"><img src="http://www.dvrpc.org/webmaps/img/dataportal/Transportation_service.png" alt=""></div>
-                            </div>
+                            
                         </div>
                     </div><!-- /.modal-body -->
                 </div><!-- /.modal-content -->
