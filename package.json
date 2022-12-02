@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "An online application for accessing DVRPC regional transportation counts for the Delaware Valley.",
   "scripts": {
-    "start": "http-server ./dist/ -e .htm  -o --cors",
+    "start": "http-server ./dist/ -a 127.0.0.1 -e .htm  -o --cors",
     "install": "grunt imagemin && npm run demo",
     "demo": "grunt && start npm start && grunt watch "
   },
