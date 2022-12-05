@@ -1,6 +1,6 @@
 {
-  "name": "dvrpc_travel_monitoring",
-  "version": "1.0.0",
+  "name": "dvrpc_traffic_count_viewer",
+  "version": "1.0.1",
   "description": "An online application for accessing DVRPC regional transportation counts for the Delaware Valley.",
   "scripts": {
     "start": "http-server ./dist/ -a 127.0.0.1 -e .htm  -o --cors",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DVRPCfreight/TrafficCountConcept.git"
+    "url": "git+https://github.com/dvrpc/traffic-count-viewer.git"
   },
   "author": "Michael Ruane, DVRPC; Will Tsay, DVRPC",
   "bugs": {
-    "url": "https://github.com/DVRPCfreight/TrafficCountConcept/issues"
+    "url": "https://github.com/dvrpc/traffic-count-viewer/issues"
   },
-  "homepage": "https://github.com/DVRPCfreight/TrafficCountConcept#readme",
+  "homepage": "https://github.com/dvrpc/traffic-count-viewer#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.7",
     "grunt": "^1.0.1",
