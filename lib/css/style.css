@@ -76,10 +76,20 @@ a:hover {
     margin-top:5px;
     margin-bottom: 2px;
 }
+.flex-row {
+    display: flex;
+}
+.flex-align-center {
+    align-items: center;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+
 /* ===================================== */
 /* ===  Bootstrap/UI Element Styles  === */
 /* ===================================== */
-
 body,
 .landing,
 #sidebar {
@@ -251,11 +261,13 @@ a,
     height:40px;
     margin-top: -12px;
 }
+
+
+
 /* ================================ *\
 \* ===  HTML5 VIDEO BACKGROUND  === *\
 \* ================================ */
 /* This first class is not necessary for full-screen backgrounds */
-
 .video-hero {
     position: relative;
     overflow: hidden;
@@ -330,12 +342,14 @@ a,
 .js .video-bg video.is-playing {
     opacity: 1;
 }
+
+
+
 /* =============================================== *\
     HTML5 VIDEO HERO
     You don't need to copy this, but you might
     draw some inspiration from it
 \* =============================================== */
-
 .page-width {
     height: 100%;
     -ms-transform: translateY(40%);
@@ -383,10 +397,12 @@ a,
     background: rgba(240, 240,240, 0.85);
     height:210px;
 }
+
+
+
 /* ================================= */
 /* ===  Typeahead Search Styles  === */
 /* ================================= */
-
 .typeahead {
     background-color: #FFF;
 }
@@ -576,6 +592,9 @@ a,
     text-align: left;
     transform: translate(-25%,0);
 }
+
+
+
 /* ========================================= */
 /* === Legend/traffic count type buttons === */
 /* ========================================= */
@@ -687,10 +706,11 @@ a,
     height: 5px;
 }
 
+
+
 /* =========================== */
 /* === no-ui slider styles === */
 /* =========================== */
-
 #sliderWrap {
     min-height: 80px;
 }
@@ -717,10 +737,12 @@ a,
 .noUi-value-horizontal.noUi-value-sub {
     padding-top: 10px;
 }
+
+
+
 /*--------------------------------------------------------*/
 /*--------  Landing-Map-Sidebar  ----------------------*/
 /*--------------------------------------------------------*/
-
 #landingSearch {
     max-width: 970px;
     padding-top: 40px;
@@ -816,10 +838,12 @@ a,
     color: #B1B1B1;
     font-weight: 200;
 }
+
+
+
 /* ================================== */
 /* === count results table styles === */
 /* ================================== */
-
 #table {
     font-size: 12px;
     width: auto !important;
@@ -890,6 +914,9 @@ span.cnt-direction {
 .results-toolbar button{
     margin-right: 8px;
 }
+
+
+
 /* ========================= */
 /* ===  Map UI Elements  === */
 /* ========================= */
