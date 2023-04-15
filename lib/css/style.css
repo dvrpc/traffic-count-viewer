@@ -2,6 +2,19 @@
 @import url("dvrpc.draw.css");
 @import url("awesome-bootstrap-checkbox-css.css");
 
+:root {
+    --theme-main: #008FAE;
+    --theme-black: #1E2019;
+    --theme-white: #f7f7f7;
+    --theme-grey: #d9d9d9;
+    --theme-purple: #470276;
+    --theme-pedestrian: #D4007E;
+    --theme-bicycle: #2E5C95;
+
+    --box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    --border-radius: 5px;
+}
+
 html,
 body,
 #sidebar,
@@ -79,12 +92,20 @@ a:hover {
 .flex-row {
     display: flex;
 }
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
 .flex-align-center {
     align-items: center;
+}
+.flex-between {
+    justify-content: space-between;
 }
 .flex-wrap {
     flex-wrap: wrap;
 }
+
 
 
 /* ===================================== */
@@ -981,4 +1002,41 @@ span.cnt-direction {
 /* Added to extent Legend tooltip width */
 .tooltip-inner {
     width: 250px !important;
+}
+
+
+
+/* ========================= */
+/* ===  Sidebar Reports  === */
+/* ========================= */
+.report-back-btn {
+    background: none;
+    border: none;
+    padding: 10px 0;
+}
+.report-header {
+    width: 100%;
+    margin: 10px 0;
+}
+.report-road-name {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.report-type {
+    font-size: 1.25rem;
+}
+.report-type .vehicle {
+    color: var(--theme-purple);
+}
+.report-type .pedestrian {
+    color: var(--theme-pedestrian);
+}
+.report-type .bicycle {
+    color: var(--theme-bicycle);
+}
+.report-download-btn {
+    box-shadow: var(--box-shadow);
+    background: var(--theme-purple);
+    border-radius: var(--border-radius);
+    color: var(--theme-white);
 }
