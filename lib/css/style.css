@@ -2,6 +2,132 @@
 @import url("dvrpc.draw.css");
 @import url("awesome-bootstrap-checkbox-css.css");
 
+
+/* Inline Style Tag */
+#loading, #noresults, #return-to-search {
+    position: absolute;
+    width: 220px;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -110px;
+    z-index: 1028;
+    text-align: center;
+  }
+  .omodal{
+      position: absolute;
+      width: 220px;
+      height: 19px;
+      top: 50%;
+      left: 50%;
+      margin: -10px 0 0 -110px;
+      z-index: 1028;
+      display: none;
+      overflow: hidden;
+      outline: 0px none;
+  }
+  @media (max-width: 1270px) {
+      .navbar .navbar-brand {
+          font-size: 18px;
+          float: left;
+      }
+      .leaflet-control-attribution {
+          display: none;
+      }
+      
+  }
+  @media (max-width: 970px) {
+       .btn-responsive {
+      padding:4px 9px;
+      font-size:90%;
+      line-height: 1.2;
+      margin-top: 10px;
+      } 
+      .btn-responsive-draw {
+      padding:4px 9px;
+      font-size:90%;
+      line-height: 1.2;
+      margin-top: 5px;
+      } 
+      .filterBar-title{
+          display:none; 
+      }
+      #map_query{
+          margin-top: 5px;
+          width: 250px;
+          height: 15px;
+      }
+      #filter-bar-nav {
+          margin-bottom: 12px;
+      }
+      #map_query .twitter-typeahead {
+          height: 20px;
+      }
+      .search-form-icon {
+          font-size: 10px;
+          padding: 3px 8px;
+      }
+      #map_query .tt-hint, #map_query .form-control {
+          font-size: 11px !important;
+          height: 25px !important;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+      }
+  }
+  @media (min-width: 971px) and (max-width: 1110px) {
+      .btn-responsive {
+      padding:4px 9px;
+      font-size:90%;
+      line-height: 1.2;
+      margin-top: 5px;
+      } 
+      .btn-responsive-draw {
+      padding:4px 9px;
+      font-size:90%;
+      line-height: 1.2;
+      margin-top: 5px;
+      } 
+      .filterBar-title{
+      font-size:90%; 
+      margin-top: 12px;
+      margin-bottom: 15px;  
+      }
+      #map_query{
+          margin-top: 5px;
+          width: 250px;
+          height: 15px;
+      }
+      #map_query .twitter-typeahead {
+          height: 20px;
+      }
+      .search-form-icon {
+          font-size: 10px;
+          padding: 3px 8px;
+      }
+      #map_query .tt-hint {
+         height: 15px;
+      }
+      #map_query .form-control{
+        height: 15px;  
+      }
+      #map_query .tt-hint, #map_query .form-control {
+          font-size: 11px !important;
+          height: 25px !important;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+      }
+  }
+  @media (min-width: 1111px) and (max-width: 1270px) {
+      .filterBar-title{
+      font-size:95%; 
+      margin-top: 12px;
+      margin-bottom: 15px;  
+      }
+      #map_query{
+          width:340px;
+      }
+  }
+/* @END inline style tag */
+
 :root {
     --theme-main: #008FAE;
     --theme-black: #1E2019;

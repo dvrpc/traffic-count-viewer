@@ -33,7 +33,6 @@ const TerserPlugin = require("terser-webpack-plugin");
 /***** Steps to copy and minify existing HTML files using html-webpack-plugin *****/
 let indexConfig = new HtmlWebpackPlugin({
     template: path.resolve(__dirname + "/index.html"),
-    favicon: './favicon.ico',
     file: 'index.html',
     inject: 'head',
     scriptLoading: 'defer',
@@ -61,7 +60,7 @@ module.exports = {
             }
         }
     },
-    entry: ['./js/index.js'],
+    entry: path.resolve(__dirname + "/lib/js/map.js"),
     mode: 'production',
     module: {
         rules: [
@@ -116,14 +115,29 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: './img',
-                    to: 'img',
+                    from: './lib/images',
+                    to: 'lib/images',
                     toType: 'dir'
                 },
                 {
-                    from: './css',
-                    to: 'css',
+                    from: './lib/css',
+                    to: 'lib/css',
                     toType: 'dir'
+                },
+                {
+                    from: './lib/files',
+                    to: 'lib/files',
+                    toType: 'dir' 
+                },
+                {
+                    from: './data/search_locations.js',
+                    to: 'lib/data',
+                    toType: 'dir'
+                },
+                {
+                    from: './lib/js/vendor.min.js',
+                    to: 'vendor.min.js',
+                    toType: 'file'
                 }
             ]
         }),

@@ -1,18 +1,19 @@
-{
-  // JSHint options for DVRPC Travel Monitoring Application
-  // "homepage": "https://github.com/DVRPCfreight/TrafficCountConcept#readme"\
+// @WEBPACK: disable jshint
+// {
+//   // JSHint options for DVRPC Travel Monitoring Application
+//   // "homepage": "https://github.com/DVRPCfreight/TrafficCountConcept#readme"\
 
 
-  "browser": true,
-  "esnext": true,
-  "globals": {
-    "$": false,
-    "Bloodhound": false,
-    "L": false,
-    "jQuery": false,
-    "noUiSlider": false
-  },
-  "strict": "global",
-  "undef": true,
-  "unused": true
-}
+//   "browser": true,
+//   "esnext": true,
+//   "globals": {
+//     "$": false,
+//     "Bloodhound": false,
+//     "L": false,
+//     "jQuery": false,
+//     "noUiSlider": false
+//   },
+//   "strict": "global",
+//   "undef": true,
+//   "unused": true
+// }
