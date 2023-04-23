@@ -138,6 +138,11 @@ module.exports = {
                     from: './lib/js/vendor.min.js',
                     to: 'vendor.min.js',
                     toType: 'file'
+                },
+                {
+                    from: './lib/js/dvrpc.draw.js',
+                    to: 'dvrpc.draw.js',
+                    toType: 'file'
                 }
             ]
         }),
