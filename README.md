@@ -7,4 +7,4 @@ This regional traffic count app is built to utilize Delaware Valley Regional Pla
 
 ## @TODO
 - Webpack update
-    - L.draw and other L.* functions are undefined. Leaflet isn't carrying over
+    - better way to include dvrpc.draw and vendor.min than the brute copy 
