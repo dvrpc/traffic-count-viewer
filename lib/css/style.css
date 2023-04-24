@@ -1139,6 +1139,9 @@ span.cnt-direction {
     background: none;
     border: none;
     padding: 10px 0;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 0;
 }
 .report-header {
     width: 100%;
@@ -1147,9 +1150,11 @@ span.cnt-direction {
 .report-road-name {
     font-size: 2rem;
     font-weight: 700;
+    color: inherit;
 }
 .report-type {
     font-size: 1.25rem;
+    margin-top: 0;
 }
 .report-type .vehicle {
     color: var(--theme-purple);
@@ -1165,4 +1170,5 @@ span.cnt-direction {
     background: var(--theme-purple);
     border-radius: var(--border-radius);
     color: var(--theme-white);
+    padding: 10px;
 }
