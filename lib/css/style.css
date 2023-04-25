@@ -128,6 +128,7 @@ body,
     font-size: 22px;
     color: #FFF;
     white-space: nowrap;
+    padding-left: 24px;
 }
 .navbar-brand img {
     margin-top: -3px;
@@ -149,7 +150,7 @@ body,
     transition: all 0.8s linear;
 }
 #primary-nav {
-    padding: 0 10px;
+    padding: 0;
 }
 .oheader {
     z-index: 201;
@@ -166,6 +167,7 @@ body,
 .navbar-nav>li>a,
 .navbar-nav>li>.dropdown {
     margin: 6px 4px;
+    margin-right: 24px;
     padding: 9px 10px;
     border-radius: 5px;
 }
@@ -518,7 +520,8 @@ a,
 #map_query .tt-hint,
 #map_query .form-control {
     font-size: 13px!important;
-    height: 34px!important;
+    height: 34.5px!important;
+    border: none;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
@@ -572,13 +575,16 @@ a,
     height: 63px;
     z-index: 200;
     background-color: #66BCCE;
-    padding: 10px;
+    padding: 10px 24px;
     border-bottom: 1px #66BCCE solid;
     border-left: 1px #66BCCE solid;
 }
 #search-bar-nav{
     float:left; 
     margin-top: 5px;
+}
+#search-container {
+    padding-left: 0;
 }
 .filterBar-title{
   display: inline-block;  
@@ -587,7 +593,7 @@ a,
   font-weight: 700;
 }
 #filter-bar-container{
-    padding-right: 5px;
+    padding-right: 0;
 }
 #filter-bar-nav{
     float:right; 
@@ -839,7 +845,7 @@ a,
     margin-top: -1px;
     border-top: 1px #ddd solid;
     border-left: 1px #ddd solid;
-    padding: 10px;
+    padding: 10px 24px;
     background-color: #fff;
     overflow: hidden;
 }
@@ -868,6 +874,7 @@ table.table-bordered.dataTable tbody td.table-date {
     overflow: hidden;
     width: auto;
     transition: height 500ms;
+    vertical-align: middle;
 }
 table.table-bordered.dataTable tbody td.max-char {
     max-width: 200px;
@@ -922,6 +929,9 @@ span.cnt-direction {
 }
 .results-toolbar button{
     margin-right: 8px;
+}
+.btn-report {
+    padding: 3px 6px;
 }
 
 
