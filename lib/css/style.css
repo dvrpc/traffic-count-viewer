@@ -128,7 +128,6 @@ body,
     font-size: 22px;
     color: #FFF;
     white-space: nowrap;
-  /*  padding: 0 10px; */
 }
 .navbar-brand img {
     margin-top: -3px;
@@ -213,11 +212,9 @@ body,
 }
 a,
 .navbar-inverse .navbar-nav>li>a {
-    /*  color: #6689BC; */
     color:var(--theme-main);
 }
 .navbar-inverse .navbar-toggle .icon-bar {
- /*  color: #6689BC; */
     color:var(--theme-main);
 }
 .input-group #searchbox.form-control {
@@ -346,9 +343,7 @@ a,
  * I.e. '.demo-video' is the name of the video
  */
 
-.video-bg.demo-video {
-    /*background-image: url(files/blurred-traffic-crosswalk.jpg);*/
-    
+.video-bg.demo-video {    
     background-image: url(/lib/files/Street-View.jpg);
 }
 /**
@@ -634,10 +629,6 @@ a,
     content:"\25cf";
     font-size: 2.1em;
 }
-/*.glyphicon-circle {
-    color: #FEE900;
-    font-size: 90%;  
-}*/
 .btn-type {
     color: white;
     border-color: #636363;
@@ -745,7 +736,6 @@ a,
     font-weight: bold;
 }
 .noUi-connect {
-  /*  background: #5876A2; */
     background: var(--theme-main);
 }
 .noUi-marker-horizontal.noUi-marker-sub {
@@ -772,9 +762,6 @@ a,
     padding-top: 40px;
     transition: all 0.3s linear;
 }
-/* #landingSearch .row {
-    margin-bottom: 15px;
-} */
 .hp-tool-links {
     background-color: #FFF;
     border: 1px solid #B7B7B7;
@@ -918,12 +905,10 @@ table.table-bordered.dataTable tbody td.table-date:hover {
 }
 #table tbody tr.coincident>td,
 #table tbody tr.coincident {
- /* background-color: #FBE8CC; */
     background-color: #D0C5DF;
 }
 #table tbody tr.coincident:hover>td,
 #table tbody tr.coincident:hover {
- /* background-color: #f5d9b0; */
     background-color: #8F70AE;
 }
 .pagination>li>a,
@@ -993,7 +978,6 @@ span.cnt-direction {
 }
 #aoi-help {
     margin: -2px 6px;
-  /*  background-color: #428BCA; */
     background-color: var(--theme-main);
     color: #fff;
     padding: 15px;
