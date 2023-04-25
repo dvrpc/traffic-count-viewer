@@ -271,7 +271,7 @@ a,
     color: var(--theme-main);
 }
 #banner-dvrpc {
-    height:60px;
+    height: 50px;
     margin-top: -14px;
 }
 #banner-div{
