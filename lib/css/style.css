@@ -863,7 +863,8 @@ a,
 /* ================================== */
 #table {
     font-size: 12px;
-    width: auto !important;
+    /* width: auto !important; */
+    width: 100% !important;
     /* necessary to override the dataTables build functionality*/
 }
 table.table-bordered.dataTable tbody td.max-char,
