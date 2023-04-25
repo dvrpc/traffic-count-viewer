@@ -165,7 +165,7 @@ h6 {
     font-weight: 500;
     line-height: 1.1;
 /*  color: #6689BC; */
-    color:#008FAE;
+    color:var(--theme-main);
 }
 h3.divider {
     overflow: hidden;
@@ -176,7 +176,7 @@ h3.divider {
 h3.divider:before,
 h3.divider:after {
  /* background-color: #6689BC; */
-    background-color:#008FAE;
+    background-color:var(--theme-main);
     content: "";
     display: inline-block;
     height: 1px;
@@ -341,11 +341,11 @@ body,
 a,
 .navbar-inverse .navbar-nav>li>a {
     /*  color: #6689BC; */
-    color:#008FAE;
+    color:var(--theme-main);
 }
 .navbar-inverse .navbar-toggle .icon-bar {
  /*  color: #6689BC; */
-    color:#008FAE;
+    color:var(--theme-main);
 }
 .input-group #searchbox.form-control {
     float: right;
@@ -365,9 +365,13 @@ a,
     cursor:pointer; 
 }
 .btn-primary {
-    color: #fff;
-    background-color: #008FAE;
-    border-color: #00728b;
+    color: var(--theme-white);
+    background-color: var(--theme-purple);
+    box-shadow: var(--box-shadow);
+}
+.btn-secondary {
+    color: var(--theme-main);
+    background-color: var(--theme-white);
 }
 .btn-primary:hover,.btn-primary:active,.btn-primary:focus  {
     color: #fff !important;
@@ -390,11 +394,11 @@ a,
     border-color: #612889;
 }
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
-    background-color: #008FAE;
-    border-color: #008FAE;
+    background-color: var(--theme-main);
+    border-color: var(--theme-main);
 }
 .pagination > li > a, .pagination > li > span {
-    color: #008FAE;
+    color: var(--theme-main);
 }
 #banner-dvrpc {
     height:60px;
@@ -685,7 +689,7 @@ a,
     color: #fff;
  /* background-color: #428BCA;
     border: 1px solid #428BCA; */
-    background-color: #008FAE;
+    background-color: var(--theme-main);
     border: 1px #00728b;
     display: table-cell;
     height: 14px;
@@ -869,7 +873,7 @@ a,
 }
 .noUi-connect {
   /*  background: #5876A2; */
-    background: #008FAE;
+    background: var(--theme-main);
 }
 .noUi-marker-horizontal.noUi-marker-sub {
     height: 5px;
@@ -1117,7 +1121,7 @@ span.cnt-direction {
 #aoi-help {
     margin: -2px 6px;
   /*  background-color: #428BCA; */
-    background-color: #008FAE;
+    background-color: var(--theme-main);
     color: #fff;
     padding: 15px;
 }
