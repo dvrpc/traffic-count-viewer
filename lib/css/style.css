@@ -1053,6 +1053,12 @@ span.cnt-direction {
     color: var(--theme-white);
     padding: 10px;
 }
+.report-thead th {
+    text-align: center;
+}
+/* END report */
+
+
 
 /* Media Queries */
 @media (max-width: 1270px) {
