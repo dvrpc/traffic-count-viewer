@@ -123,12 +123,17 @@ body,
 .dk-gray-border {
     border-color: #ddd;
 }
+.navbar-header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 .navbar .navbar-brand {
     font-weight: 700;
     font-size: 22px;
     color: #FFF;
     white-space: nowrap;
-    padding-left: 24px;
+    padding: 0 24px;
 }
 .navbar-brand img {
     margin-top: -3px;
@@ -590,7 +595,6 @@ a,
   display: inline-block;  
   margin-right: 10px;
   color: #fff;
-  font-weight: 700;
 }
 #filter-bar-container{
     padding-right: 0;
@@ -620,6 +624,7 @@ a,
 /* ========================================= */
 .dropdown-toggle {
     background-color: #fff;
+    color: var(--theme-main);
     border: 1px solid var(--theme-grey);
     margin-right: 10px;
 }
