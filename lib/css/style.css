@@ -865,6 +865,7 @@ a,
     font-size: 12px;
     /* width: auto !important; */
     width: 100% !important;
+    margin: 6px 0;
     /* necessary to override the dataTables build functionality*/
 }
 table.table-bordered.dataTable tbody td.max-char,
@@ -1016,26 +1017,30 @@ span.cnt-direction {
 /* ========================= */
 /* ===  Sidebar Reports  === */
 /* ========================= */
+.report {
+    height: 100%;
+}
 .report-back-btn {
     background: none;
     border: none;
     padding: 10px 0;
-    font-size: 4rem;
-    font-weight: 900;
+    font-size: 3.5rem;
     line-height: 0;
 }
 .report-header {
     width: 100%;
-    margin: 10px 0;
+    margin: 10px 0 15px 0;
 }
 .report-road-name {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: inherit;
+    text-transform: capitalize;
+    margin: 0;
 }
 .report-type {
     font-size: 1.25rem;
-    margin-top: 0;
+    margin: 0;
 }
 .report-type .vehicle {
     color: var(--theme-purple);
@@ -1051,10 +1056,26 @@ span.cnt-direction {
     background: var(--theme-purple);
     border-radius: var(--border-radius);
     color: var(--theme-white);
-    padding: 10px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+.report-table-overflow {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 70%;
+}
+.report-table {
+    font-size: 12px;
+    margin: 0;
+}
+.report-thead {
+    position: sticky;
+    background-color: white;
+    top: 0;
 }
 .report-thead th {
     text-align: center;
+    padding-right: 8px !important;
 }
 /* END report */
 
