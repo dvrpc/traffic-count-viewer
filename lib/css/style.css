@@ -123,17 +123,20 @@ body,
 .dk-gray-border {
     border-color: #ddd;
 }
-.navbar-header {
+
+/* @UPDATE: WHAT */
+/* .navbar-header {
     height: 100%;
     display: flex;
     align-items: center;
-}
+} */
 .navbar .navbar-brand {
     font-weight: 700;
     font-size: 22px;
     color: #FFF;
     white-space: nowrap;
-    padding: 0 24px;
+    padding-left: 24px;
+    /* padding: 0 24px; */
 }
 .navbar-brand img {
     margin-top: -3px;
@@ -388,8 +391,8 @@ a,
 .video-hero {
     transition: all 0.8s linear;
     background-color: #efefef;
-    height: 101%;
-    top: -50px;
+    height: 100%;
+    top: -53px;
     margin-left: -1px;
     margin-right: -1px;
 }
@@ -1037,14 +1040,14 @@ span.cnt-direction {
     margin: 10px 0 15px 0;
 }
 .report-road-name {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2.75rem;
     color: inherit;
     text-transform: capitalize;
-    margin: 0;
+    margin: 0 0 4px 0;
 }
 .report-type {
     font-size: 1.25rem;
+    font-weight: 700;
     margin: 0;
 }
 .report-type .vehicle {
@@ -1081,6 +1084,19 @@ span.cnt-direction {
 .report-thead th {
     text-align: center;
     padding-right: 8px !important;
+}
+.subheader {
+    margin: 10px 0;
+}
+.subheader-span {
+    border-right: 1px solid var(--theme-black);
+    padding: 9px;
+}
+.subheader-span:last-child {
+    border: none;
+}
+.subheader-span strong {
+    color: var(--theme-main);
 }
 /* END report */
 
