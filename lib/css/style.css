@@ -1076,6 +1076,10 @@ span.cnt-direction {
     font-size: 12px;
     margin: 0;
 }
+.report-table tbody tr:hover,
+.report-table tbody tr:hover>td {
+    background-color: #A4D2F9;
+}
 .report-thead {
     position: sticky;
     background-color: white;
