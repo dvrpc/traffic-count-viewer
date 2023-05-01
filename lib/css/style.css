@@ -1085,17 +1085,21 @@ span.cnt-direction {
     text-align: center;
     padding-right: 8px !important;
 }
+.report-totals {
+    font-weight: 700;
+}
 .subheader {
     margin: 10px 0;
 }
 .subheader-span {
     border-right: 1px solid var(--theme-black);
-    padding: 9px;
+    padding: 0 8px;
+    margin-bottom: 8px;
 }
 .subheader-span:last-child {
     border: none;
 }
-.subheader-span strong {
+.subheader-span span {
     color: var(--theme-main);
 }
 /* END report */
