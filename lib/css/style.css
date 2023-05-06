@@ -258,6 +258,9 @@ a,
     background-color: #00728b !important;
     border-color: #00728b !important;
 }
+.btn-primary:active {
+    box-shadow: none;
+}
 .btn-primary.disabled {
     color: #fff;
     background-color: #66BCCE;
