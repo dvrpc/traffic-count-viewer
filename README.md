@@ -6,9 +6,16 @@ This regional traffic count app is built to utilize Delaware Valley Regional Pla
 
 
 ## @TODO
-- Crystal Reports
+- Report Rendering
+    - H1 Format: #{DVRPC Number} - {Road Name} (SR #), {Municipality} {County} (remove fields from bottom)
+        - no record type? i.e. vehicle, bicycle?
+    - H2: Limits
+    - Add AADT/AADB/AADP, Segment/Offset, PM Peak Hours to bottom
+    - Move Temp/Weather rows to bottom of table
+    - Right align table cells
+    - Zoom and Highlight point on map
     - Smooth transition from data table to report table
-        - some kind of loading indicator. The API call can take a second or two, users need to know work is happening in the meantime. 
+        - add loading indicator / feedback
 
 - Webpack update
     - better way to include .js dependencies
