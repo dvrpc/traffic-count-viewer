@@ -8,10 +8,11 @@ This regional traffic count app is built to utilize Delaware Valley Regional Pla
 ## @TODO
 - Report Rendering
     - H1 Format: #{DVRPC Number} - {Road Name} (SR #), {Municipality} {County} (remove fields from bottom)
-        - no record type? i.e. vehicle, bicycle?
-    - H2: Limits
+    - H2: Count Type + Limits
+    - ^ @NOTE: all of these are optional
     - Add AADT/AADB/AADP, Segment/Offset, PM Peak Hours to bottom
-    - Move Temp/Weather rows to bottom of table
+    - Move hi temp, low temp & Weather rows to bottom of table
+        - For now: just move it to the bottom
     - Right align table cells
     - Zoom and Highlight point on map
     - Smooth transition from data table to report table
