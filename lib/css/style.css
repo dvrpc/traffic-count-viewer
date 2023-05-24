@@ -1046,20 +1046,25 @@ span.cnt-direction {
     font-size: 2.75rem;
     color: inherit;
     text-transform: capitalize;
-    margin: 0 0 4px 0;
+    margin: 0 0 8px 0;
 }
-.report-type {
+.count-context {
     font-size: 1.25rem;
-    font-weight: 700;
     margin: 0;
+    color: inherit;
+    text-transform: capitalize;
 }
-.report-type .vehicle {
+.count-type {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.vehicle {
     color: var(--theme-purple);
 }
-.report-type .pedestrian {
+.pedestrian {
     color: var(--theme-pedestrian);
 }
-.report-type .bicycle {
+.bicycle {
     color: var(--theme-bicycle);
 }
 .report-download-btn {
