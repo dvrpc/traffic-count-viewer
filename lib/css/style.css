@@ -1030,6 +1030,7 @@ span.cnt-direction {
 /* ========================= */
 .report {
     height: 100%;
+    overflow-y: auto;
 }
 .report-back-btn {
     background: none;
@@ -1043,7 +1044,7 @@ span.cnt-direction {
     margin: 10px 0 15px 0;
 }
 .header-text {
-    max-width: 80%;
+    max-width: 77%;
 }
 .report-road-name {
     font-size: 2.75rem;
