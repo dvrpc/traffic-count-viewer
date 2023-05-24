@@ -7,7 +7,6 @@ This regional traffic count app is built to utilize Delaware Valley Regional Pla
 
 ## @TODO
 - Report Rendering
-    - Add AADT/AADB/AADP, Segment/Offset, PM Peak Hours to bottom
     - Right align table cells
     - Zoom and Highlight point on map
     - Smooth transition from data table to report table

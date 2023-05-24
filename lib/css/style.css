@@ -1042,6 +1042,9 @@ span.cnt-direction {
     width: 100%;
     margin: 10px 0 15px 0;
 }
+.header-text {
+    max-width: 80%;
+}
 .report-road-name {
     font-size: 2.75rem;
     color: inherit;
@@ -1083,6 +1086,10 @@ span.cnt-direction {
 .report-table {
     font-size: 12px;
     margin: 0;
+    text-align: right;
+}
+.report-tbody {
+    text-align: right;
 }
 .report-table tbody tr:hover,
 .report-table tbody tr:hover>td {
@@ -1095,6 +1102,7 @@ span.cnt-direction {
 }
 .report-thead th {
     padding-right: 8px !important;
+    text-align: right;
 }
 .report-totals {
     font-weight: 700;
