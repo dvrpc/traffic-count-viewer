@@ -9,6 +9,7 @@ This regional traffic count app is built to utilize Delaware Valley Regional Pla
 - Report Rendering
     - Smooth transition from data table to report table
         - add loading indicator / feedback
+    - reset sidebar on polygon draw
 
 - Webpack update
     - better way to include .js dependencies
