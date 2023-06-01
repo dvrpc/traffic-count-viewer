@@ -1005,7 +1005,7 @@ span.cnt-direction {
     color: #fff;
     padding: 15px;
 }
-#loading, #noresults, #return-to-search {
+#loading, #noresults, #return-to-search, #loading-report {
     position: absolute;
     width: 220px;
     top: 50%;
@@ -1013,6 +1013,9 @@ span.cnt-direction {
     margin: -40px 0 0 -110px;
     z-index: 1028;
     text-align: center;
+}
+#loading-report {
+    display: none;
 }
 #noresults .panel-heading,
 #return-to-search .panel-heading {
