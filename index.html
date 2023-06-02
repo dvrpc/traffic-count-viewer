@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="description" content="DVRPC is counting a region in motion. As leaders in travel monitoring, we provide access to thousands of traffics counts throughout the region.">
@@ -22,137 +21,10 @@
         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.8/css/dataTables.bootstrap.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/>
 
-        <link rel="stylesheet" href="lib/css/style.min.css"/>
-        
-        <style>
-        #loading, #noresults, #return-to-search {
-          position: absolute;
-          width: 220px;
-          top: 50%;
-          left: 50%;
-          margin: -40px 0 0 -110px;
-          z-index: 1028;
-          text-align: center;
-        }
-        .omodal{
-            position: absolute;
-            width: 220px;
-            height: 19px;
-            top: 50%;
-            left: 50%;
-            margin: -10px 0 0 -110px;
-            z-index: 1028;
-            display: none;
-            overflow: hidden;
-            outline: 0px none;
-        }
-        @media (max-width: 1270px) {
-            .navbar .navbar-brand {
-                font-size: 18px;
-                float: left;
-            }
-            .leaflet-control-attribution {
-                display: none;
-            }
-            
-        }
-        @media (max-width: 970px) {
-             .btn-responsive {
-            padding:4px 9px;
-            font-size:90%;
-            line-height: 1.2;
-            margin-top: 10px;
-            } 
-            .btn-responsive-draw {
-            padding:4px 9px;
-            font-size:90%;
-            line-height: 1.2;
-            margin-top: 5px;
-            } 
-            .filterBar-title{
-                display:none; 
-            }
-            #map_query{
-                margin-top: 5px;
-                width: 250px;
-                height: 15px;
-            }
-            #filter-bar-nav {
-                margin-bottom: 12px;
-            }
-            #map_query .twitter-typeahead {
-                height: 20px;
-            }
-            .search-form-icon {
-                font-size: 10px;
-                padding: 3px 8px;
-            }
-            #map_query .tt-hint, #map_query .form-control {
-                font-size: 11px !important;
-                height: 25px !important;
-                border-top-left-radius: 4px;
-                border-bottom-left-radius: 4px;
-            }
-        }
-        @media (min-width: 971px) and (max-width: 1110px) {
-            .btn-responsive {
-            padding:4px 9px;
-            font-size:90%;
-            line-height: 1.2;
-            margin-top: 5px;
-            } 
-            .btn-responsive-draw {
-            padding:4px 9px;
-            font-size:90%;
-            line-height: 1.2;
-            margin-top: 5px;
-            } 
-            .filterBar-title{
-            font-size:90%; 
-            margin-top: 12px;
-            margin-bottom: 15px;  
-            }
-            #map_query{
-                margin-top: 5px;
-                width: 250px;
-                height: 15px;
-            }
-            #map_query .twitter-typeahead {
-                height: 20px;
-            }
-            .search-form-icon {
-                font-size: 10px;
-                padding: 3px 8px;
-            }
-            #map_query .tt-hint {
-               height: 15px;
-            }
-            #map_query .form-control{
-              height: 15px;  
-            }
-            #map_query .tt-hint, #map_query .form-control {
-                font-size: 11px !important;
-                height: 25px !important;
-                border-top-left-radius: 4px;
-                border-bottom-left-radius: 4px;
-            }
-        }
-        @media (min-width: 1111px) and (max-width: 1270px) {
-            .filterBar-title{
-            font-size:95%; 
-            margin-top: 12px;
-            margin-bottom: 15px;  
-            }
-            #map_query{
-                width:340px;
-            }
-        }
-        </style> 
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
-        <![endif]-->
+        <link rel="stylesheet" href="lib/css/style.css"/>
+
+        <script defer src="./vendor.min.js"></script>
+        <script defer src="./dvrpc.draw.js"></script>
     </head>
 
     <body>
@@ -186,8 +58,8 @@
                     </ul>
                 </li>
             </ul>
-        
-        </div><!--/.navbar-collapse -->
+        </div>
+        <!--/.navbar-collapse -->
         <div class="video-hero" >
             <div class="video-bg demo-video">
                 <video id="hero-video" autoplay muted loop poster="lib/files/Street-View.jpg">
@@ -195,11 +67,6 @@
                     <source src="lib/files/Street-View.webm" type="video/webm">Your browser does not support webm. I suggest you upgrade your browser.
                     <source src="lib/files/Street-View.ogv" type="video/ogg">
                 </video>
-                <!--<video autoplay muted loop poster="lib/files/blurred-traffic-crosswalk.jpg">
-                    <source src="lib/files/blurred-traffic-crosswalk.mp4" type="video/mp4">Your browser does not support mp4. I suggest you upgrade your browser.
-                    <source src="lib/files/blurred-traffic-crosswalk.webm" type="video/webm">Your browser does not support webm. I suggest you upgrade your browser.
-                    <source src="lib/files/blurred-traffic-crosswalk.ogv" type="video/ogg">
-                </video>-->
             </div>
             <div class="video-overlay"></div>
             <div class="page-width">
@@ -283,17 +150,18 @@
                             <label class="sr-only" for="userLocation">Location query</label> <input class="form-control" data-provide="typeahead" id="mapQuery" placeholder="Enter a mcd, city, zip, or philly neighborhood" type="text"> <span class="search-form-icon"><i class="glyphicon glyphicon-search"></i></span>
                         </div>
                     </form>
-                    <button id="doaSearch" class="btn btn-primary btn-md btn-responsive-draw" data-toggle="collapse" ><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
+                    <button id="doaSearch" class="btn btn-secondary btn-md btn-responsive-draw" data-toggle="collapse" ><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Draw Search Area</button>
                     <div style="clear:both;"></div>
                 </div>
             </div>
             <!-- End Search Container -->
+            
             <!-- Start Filter Container -->
             <div class="col-sm-6 col-lg-6" id="filter-bar-container">
                 <div id="filter-bar-nav">
-                <h4 class="filterBar-title">&nbsp;&nbsp;Filter map results</h4>
+                <h4 class="filterBar-title">&nbsp;&nbsp;Filter map results:</h4>
                 <div class="btn-group" id="count_types">
-                   <button type="button" id="count_types_dropdown" class="btn btn-primary dropdown-toggle filter-btn btn-responsive" data-toggle="dropdown">&nbsp;&nbsp;Count Type <span class="caret"></span>
+                   <button type="button" id="count_types_dropdown" class="btn dropdown-toggle filter-btn btn-responsive" data-toggle="dropdown">&nbsp;&nbsp;Count Type <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu keep-open-on-click" id="dropdown-types">
                         <li><h5 class="text-uppercase"><i class="glyphicon glyphicon-info-sign nav-item" aria-hidden="true" data-tooltip="tooltip" title="Learn about these types" data-modal="legend-modal"></i>&nbsp;&nbsp;Specify count types:</h5></li>
@@ -347,7 +215,7 @@
                     </ul>
                 </div>
                 <div class="btn-group" id="count_year">
-                    <button type="button" id="count_years_dropdown" class="btn btn-primary dropdown-toggle filter-btn btn-responsive" data-toggle="dropdown"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;Years <span class="caret"></span>
+                    <button type="button" id="count_years_dropdown" class="btn dropdown-toggle filter-btn btn-responsive" data-toggle="dropdown"><i class="glyphicon glyphicon-calendar"></i>&nbsp;&nbsp;Years <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu keep-open-on-click" id="dropdown_years">
                          <li><h5>Specify years of interest: <span class="years" id="yearMin"></span> - <span class="years" id="yearMax"></span></h5></li>
@@ -356,11 +224,12 @@
                         </div>
                     </ul>
                 </div>
-                <button class="btn btn-success accordion-toggle filter-btn btn-responsive" data-toggle="collapse" id="updateSearchbtn">Update Map</button>
+                <button class="btn btn-secondary accordion-toggle filter-btn btn-responsive" data-toggle="collapse" id="updateSearchbtn">Filter Map</button>
               </div>
             </div>   
             <!-- Ends Filter Container --> 
         </div>
+
         <!-- END Search Bar Container -->
         <div class="dataEnvironment" id="appContainer">
             
@@ -409,10 +278,20 @@
                 </div>
             </div>
             <div class="col-md-7 col-lg-6 off-right" id="sidebar">
+                <div id="loading-report" class="panel panel-default">
+                    <div class="panel-body">
+                        <span>Loading count report...</span>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div id="results-panel" >
                     <table id="table" class="table table-striped table-bordered">
                         <!-- table content build here -->
-                    </table>                            
+                    </table>
                 </div>
             </div>
         </div>
@@ -576,9 +455,7 @@
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/1.10.8/js/dataTables.bootstrap.min.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/leaflet.esri/1.0.0/esri-leaflet.js"></script>
-        
-        <script type="text/javascript" src="lib/js/vendor.min.js"></script>
-        <script type="text/javascript" src="lib/js/map.min.js?ver=1.2.3"></script>
+
         <script>var _gaq=[['_setAccount','UA-9825778-1'],['_trackPageview']];</script> 
         <script async src="//www.google-analytics.com/ga.js"></script>
     </body>

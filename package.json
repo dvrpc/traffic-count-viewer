@@ -3,9 +3,9 @@
   "version": "1.0.1",
   "description": "An online application for accessing DVRPC regional transportation counts for the Delaware Valley.",
   "scripts": {
-    "start": "http-server ./dist/ -a 127.0.0.1 -e .htm  -o --cors",
-    "install": "grunt imagemin && npm run demo",
-    "demo": "grunt && start npm start && grunt watch "
+    "start": "webpack && webpack serve",
+    "build": "webpack",
+    "build:prod": "webpack -p && npm version minor"
   },
   "repository": {
     "type": "git",
@@ -18,19 +18,21 @@
   "homepage": "https://github.com/dvrpc/traffic-count-viewer#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.7",
-    "grunt": "^1.0.1",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^1.0.1",
-    "grunt-contrib-imagemin": "^1.0.1",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-uglify": "^2.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-convert": "^0.1.12",
-    "grunt-htmlhint-plus": "^0.4.0",
-    "grunt-postcss": "^0.8.0",
-    "http-server": "^0.9.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^5.0.1",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.0",
     "jshint-stylish": "^2.2.0",
-    "matchdep": "^1.0.1"
+    "matchdep": "^1.0.1",
+    "mini-css-extract-plugin": "^1.3.3",
+    "path": "^0.12.7",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^4.13.3"
+  },
+  "dependencies": {
+    "bloodhound-js": "^1.2.3"
   }
 }
