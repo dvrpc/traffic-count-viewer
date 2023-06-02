@@ -5,11 +5,6 @@ const searchLocations = [
       "source": "mun_boundary"
     },
     {
-      "value": "2",
-      "name": "Pine Valley Borough, NJ",
-      "source": "mun_boundary"
-    },
-    {
       "value": "3",
       "name": "Waterford Township, NJ",
       "source": "mun_boundary"
