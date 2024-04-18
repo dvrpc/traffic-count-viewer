@@ -849,9 +849,9 @@ a,
     top: 5px;
     bottom: 0;
     border-left: 1px #ddd solid;
-    padding: 10px 24px;
+    padding: 16px 24px;
     background-color: #fff;
-    overflow: hidden;
+    overflow-y: auto;
 }
 .results-toolbar {
     float: left;
@@ -1026,8 +1026,6 @@ span.cnt-direction {
 /* ========================= */
 .report {
     height: 100%;
-    overflow-y: auto;
-    margin-top: 8px;
 }
 .report-header {
     width: 100%;
@@ -1041,7 +1039,7 @@ span.cnt-direction {
     font-size: 2.25rem;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     color: inherit;
     text-transform: capitalize;
 }
