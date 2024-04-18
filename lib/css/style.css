@@ -38,7 +38,6 @@ h6 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
     line-height: 1.1;
-    /* @UPDATE: header default color */
     color:var(--theme-main);
 }
 h3.divider {
@@ -95,8 +94,14 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
+.flex-align-start {
+    align-items: flex-start;
+}
 .flex-align-center {
     align-items: center;
+}
+.flex-align-end {
+    align-items: flex-end;
 }
 .flex-between {
     justify-content: space-between;
@@ -123,20 +128,12 @@ body,
 .dk-gray-border {
     border-color: #ddd;
 }
-
-/* @UPDATE: WHAT */
-/* .navbar-header {
-    height: 100%;
-    display: flex;
-    align-items: center;
-} */
 .navbar .navbar-brand {
     font-weight: 700;
     font-size: 22px;
     color: #FFF;
     white-space: nowrap;
     padding-left: 24px;
-    /* padding: 0 24px; */
 }
 .navbar-brand img {
     margin-top: -3px;
@@ -251,7 +248,8 @@ a,
 }
 .btn-secondary {
     color: var(--theme-main);
-    background-color: var(--theme-white);
+    background-color: #fff;
+    border: 1px solid var(--theme-grey);
 }
 .btn-primary:hover,.btn-primary:active,.btn-primary:focus  {
     color: #fff !important;
@@ -629,9 +627,6 @@ a,
 /* === Legend/traffic count type buttons === */
 /* ========================================= */
 .dropdown-toggle {
-    background-color: #fff;
-    color: var(--theme-main);
-    border: 1px solid var(--theme-grey);
     margin-right: 10px;
 }
 .btn.btn-primary.dropdown-toggle.inactive{
@@ -853,8 +848,6 @@ a,
     height: 100%;
     top: 5px;
     bottom: 0;
-    margin-top: -1px;
-    border-top: 1px #ddd solid;
     border-left: 1px #ddd solid;
     padding: 10px 24px;
     background-color: #fff;
@@ -1034,29 +1027,26 @@ span.cnt-direction {
 .report {
     height: 100%;
     overflow-y: auto;
-}
-.report-back-btn {
-    background: none;
-    border: none;
-    padding: 10px 0;
-    font-size: 3.5rem;
-    line-height: 0;
+    margin-top: 8px;
 }
 .report-header {
     width: 100%;
-    margin: 10px 0 15px 0;
+    margin-bottom: 24px;
+    text-align: center;
 }
 .header-text {
-    max-width: 77%;
+    max-width: 62%;
 }
 .report-road-name {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 8px;
     color: inherit;
     text-transform: capitalize;
-    margin: 0 0 8px 0;
 }
 .count-context {
-    font-size: 1.25rem;
+    font-size: 1.32rem;
     margin: 0;
     color: inherit;
     text-transform: capitalize;
@@ -1112,7 +1102,7 @@ span.cnt-direction {
     font-weight: 700;
 }
 .subheader {
-    margin: 10px 0;
+    margin-top: 24px;
 }
 .subheader-span {
     border-right: 1px solid var(--theme-black);
