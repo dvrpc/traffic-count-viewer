@@ -38,7 +38,6 @@ h6 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
     line-height: 1.1;
-    /* @UPDATE: header default color */
     color:var(--theme-main);
 }
 h3.divider {
@@ -95,8 +94,14 @@ a:hover {
     display: flex;
     flex-direction: column;
 }
+.flex-align-start {
+    align-items: flex-start;
+}
 .flex-align-center {
     align-items: center;
+}
+.flex-align-end {
+    align-items: flex-end;
 }
 .flex-between {
     justify-content: space-between;
@@ -123,20 +128,12 @@ body,
 .dk-gray-border {
     border-color: #ddd;
 }
-
-/* @UPDATE: WHAT */
-/* .navbar-header {
-    height: 100%;
-    display: flex;
-    align-items: center;
-} */
 .navbar .navbar-brand {
     font-weight: 700;
     font-size: 22px;
     color: #FFF;
     white-space: nowrap;
     padding-left: 24px;
-    /* padding: 0 24px; */
 }
 .navbar-brand img {
     margin-top: -3px;
@@ -251,7 +248,8 @@ a,
 }
 .btn-secondary {
     color: var(--theme-main);
-    background-color: var(--theme-white);
+    background-color: #fff;
+    border: 1px solid var(--theme-grey);
 }
 .btn-primary:hover,.btn-primary:active,.btn-primary:focus  {
     color: #fff !important;
@@ -582,6 +580,7 @@ a,
 }
 #search-bar-container{
     position: absolute;
+    width: 100%;
     top: 60px;
     height: 63px;
     z-index: 200;
@@ -591,6 +590,7 @@ a,
     border-left: 1px #66BCCE solid;
 }
 #search-bar-nav{
+    width: max-content;
     float:left; 
     margin-top: 5px;
 }
@@ -629,9 +629,6 @@ a,
 /* === Legend/traffic count type buttons === */
 /* ========================================= */
 .dropdown-toggle {
-    background-color: #fff;
-    color: var(--theme-main);
-    border: 1px solid var(--theme-grey);
     margin-right: 10px;
 }
 .btn.btn-primary.dropdown-toggle.inactive{
@@ -853,12 +850,10 @@ a,
     height: 100%;
     top: 5px;
     bottom: 0;
-    margin-top: -1px;
-    border-top: 1px #ddd solid;
     border-left: 1px #ddd solid;
-    padding: 10px 24px;
+    padding: 16px 24px;
     background-color: #fff;
-    overflow: hidden;
+    overflow-y: auto;
 }
 .results-toolbar {
     float: left;
@@ -1033,37 +1028,41 @@ span.cnt-direction {
 /* ========================= */
 .report {
     height: 100%;
-    overflow-y: auto;
 }
-.report-back-btn {
-    background: none;
+.btn-back {
     border: none;
-    padding: 10px 0;
-    font-size: 3.5rem;
+    padding-left: 0;
+    font-size: 1em;
+}
+.btn-back-arrow {
+    font-size: 1.5em;
     line-height: 0;
 }
 .report-header {
     width: 100%;
-    margin: 10px 0 15px 0;
+    /* back btn has 6px padding. margin top to 10 to keep 16px buffer */
+    margin: 10px 0 16px 0;
 }
 .header-text {
-    max-width: 77%;
+    max-width: 80%;
+}
+.report-road-name, .count-context, .count-type {
+    text-transform: capitalize;
 }
 .report-road-name {
-    font-size: 2.75rem;
-    color: inherit;
-    text-transform: capitalize;
+    font-size: 1.5em;
+    font-weight: 700;
     margin: 0 0 8px 0;
+    color: inherit;
 }
 .count-context {
-    font-size: 1.25rem;
+    font-size: 1em;
+    color: #777;
+    font-weight: 300;
     margin: 0;
-    color: inherit;
-    text-transform: capitalize;
 }
 .count-type {
     font-weight: 700;
-    text-transform: capitalize;
 }
 .vehicle {
     color: var(--theme-purple);
@@ -1086,6 +1085,12 @@ span.cnt-direction {
     overflow-x: auto;
     overflow-y: auto;
     height: 70%;
+    border: 1px solid #ddd;
+}
+.report-table-overflow .table-bordered {
+    /* override bootstrap styles to apply border to overflow container for report table */
+    /* don't remove class in map.js b/c table-bordered has other styles that depend on it */
+    border: none !important; 
 }
 .report-table {
     font-size: 12px;
@@ -1112,7 +1117,7 @@ span.cnt-direction {
     font-weight: 700;
 }
 .subheader {
-    margin: 10px 0;
+    margin-top: 16px;
 }
 .subheader-span {
     border-right: 1px solid var(--theme-black);
