@@ -1032,6 +1032,7 @@ span.cnt-direction {
 .btn-back {
     border: none;
     padding-left: 0;
+    padding-top: 0;
     font-size: 1em;
 }
 .btn-back-arrow {
@@ -1050,7 +1051,7 @@ span.cnt-direction {
     text-transform: capitalize;
 }
 .report-road-name {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 700;
     margin: 0 0 8px 0;
     color: inherit;
