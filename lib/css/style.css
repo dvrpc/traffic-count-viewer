@@ -1062,9 +1062,6 @@ span.cnt-direction {
     font-weight: 300;
     margin: 0;
 }
-.count-type {
-    font-weight: 700;
-}
 .vehicle {
     color: var(--theme-purple);
 }
@@ -1094,7 +1091,6 @@ span.cnt-direction {
     border: none !important; 
 }
 .report-table {
-    font-size: 12px;
     margin: 0;
     text-align: right;
 }
@@ -1121,15 +1117,14 @@ span.cnt-direction {
     margin-top: 16px;
 }
 .subheader-span {
-    border-right: 1px solid var(--theme-black);
-    padding: 0 8px;
+    padding-right: 16px;
     margin-bottom: 8px;
 }
 .subheader-span:last-child {
-    border: none;
+    padding: 0;
 }
 .subheader-span span {
-    color: var(--theme-main);
+    font-weight: 700;
 }
 /* END report */
 
