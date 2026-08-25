@@ -21,6 +21,7 @@
     "copy-webpack-plugin": "^7.0.0",
     "css-loader": "^5.0.1",
     "css-minimizer-webpack-plugin": "^4.2.2",
+    "dotenv-webpack": "^9.0.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
     "jshint-stylish": "^2.2.0",
@@ -33,6 +34,7 @@
     "webpack-dev-server": "^4.13.3"
   },
   "dependencies": {
-    "bloodhound-js": "^1.2.3"
+    "bloodhound-js": "^1.2.3",
+    "dotenv": "^17.4.2"
   }
 }

@@ -3,7 +3,8 @@ dist
 build
 lib/images/enhanced
 npm-debug.log*
-
+config.js
+.env
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
