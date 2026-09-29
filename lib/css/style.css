@@ -355,7 +355,7 @@ a,
  */
 
 .video-bg.demo-video {    
-    background-image: url(/lib/files/Street-View.jpg);
+    background-image: url(../files/Street-View.jpg);
 }
 /**
  * Fade in videos

@@ -35,7 +35,7 @@ let indexConfig = new HtmlWebpackPlugin({
   file: "index.html",
   inject: "head",
   scriptLoading: "defer",
-  hash: true,
+  hash: false,
   minify: {
     collapseWhitespace: true,
     removeComments: true,
@@ -99,7 +99,7 @@ module.exports = {
     ],
   },
   output: {
-    filename: "bundle.js",
+    filename: "bundle.[contenthash].js",
     path: path.resolve(__dirname, "build"),
   },
   plugins: [
